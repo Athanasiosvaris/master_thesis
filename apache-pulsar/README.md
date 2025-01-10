@@ -1,1 +1,1 @@
-# Apache-Pulsar---Master-Thesis-Project-
+# Apache Pulsar-Master Thesis Project
