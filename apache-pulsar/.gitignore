@@ -1,0 +1,25 @@
+# Maven build directory
+/target/
+
+# Compiled class files
+*.class
+
+# Maven POM files backup
+*.pom.*
+
+# Log files
+*.log
+
+# IDE-specific files (Eclipse, IntelliJ, etc.)
+*.iml
+.idea/
+.classpath
+.project
+.settings/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
