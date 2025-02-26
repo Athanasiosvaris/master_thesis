@@ -3,16 +3,17 @@ package Producer_package;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.io.IOException;
 
 import org.apache.pulsar.client.api.BatcherBuilder;
 import org.apache.pulsar.client.api.Producer;
 import org.apache.pulsar.client.api.PulsarClient;
+import org.apache.pulsar.client.api.Schema;
 import org.apache.pulsar.client.impl.schema.JSONSchema;
 
 
 import ApachePulsarExample.mavenproject.configuration_info;
 import User.User;
+
 
 public class Test_Producer {
 
@@ -26,7 +27,7 @@ public class Test_Producer {
 			    //2. Create a producer
 			    Producer<User> producer = pulsarClient.newProducer(JSONSchema.of(User.class))
 			    		.producerName("test_producer")
-			    		.topic("test_topic") //It is interpreted as "persistent://public/default/test-topic"
+			    		.topic("persistent://public/default/test_topic") //It is interpreted as "persistent://public/default/test-topic"
 //			    		.enableBatching(true)
 //			    		.batcherBuilder(BatcherBuilder.KEY_BASED) //This ensures that messages with the same key will end up in the same batch
 			    		.create();
@@ -36,8 +37,6 @@ public class Test_Producer {
 			    //3. Initiate a producer work loop/ Injecting data / What my producer does
 			    
 			    List<User> userList = new ArrayList<>();
-			    
-			    
 			    
 			    userList.add(new User("Tom", 27));
 		        userList.add(new User("Alice", 30));
@@ -58,6 +57,22 @@ public class Test_Producer {
 			    	.send();
 			    System.out.printf("I have sent message with key %s\n",user.getName());
 		        }
+		        
+//		        List<String> stringList = new ArrayList<>();
+//		        
+//		        stringList.add("Thanos");
+//		        stringList.add("Kostas");
+//		        stringList.add("Maria");
+//		        stringList.add("Lampbros");
+//		        stringList.add("Eleni");
+//		        
+//		        for (String s: stringList) {
+//		        	producer.newMessage()
+//		        			.key(s)
+//		        			.value(s)
+//		        			.send();
+//		        	System.out.printf("I have sent message with key %s\n",s);
+//		        }
 			    
 			    producer.flush();
 			    

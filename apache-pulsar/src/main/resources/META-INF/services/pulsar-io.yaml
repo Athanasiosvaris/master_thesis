@@ -1,0 +1,4 @@
+name: java-function
+description: my java function
+functionClass: test_function_package.Test_function
+

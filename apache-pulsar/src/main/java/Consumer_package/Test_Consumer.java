@@ -2,6 +2,7 @@ package Consumer_package;
 
 import org.apache.pulsar.client.api.PulsarClient;
 import org.apache.pulsar.client.api.PulsarClientException;
+import org.apache.pulsar.client.api.Schema;
 import org.apache.pulsar.client.api.SubscriptionInitialPosition;
 import org.apache.pulsar.client.impl.schema.JSONSchema;
 
@@ -22,8 +23,9 @@ public class Test_Consumer {
 		    	.build();
 	 
 	 //2.Create producer
-	 Consumer<User> consumer = pulsarClient.newConsumer(JSONSchema.of(User.class))
-			 .topic("test_topic")
+	 //Consumer<User> consumer = pulsarClient.newConsumer(JSONSchema.of(User.class))
+	 Consumer<String> consumer = pulsarClient.newConsumer(Schema.STRING)
+			 .topic("persistent://public/default/test-topic-String-outputt")
 			 .consumerName("Test_consumer")
 			 .subscriptionInitialPosition(SubscriptionInitialPosition.Earliest)
              .subscriptionName("test-subscriptions")
@@ -33,7 +35,8 @@ public class Test_Consumer {
      try {
          // Assuming consumer is already created and initialized
          while (true) {
-             Message<User> message = consumer.receive(1000, TimeUnit.MILLISECONDS); // 1-second timeout
+            // Message<User> message = consumer.receive(1000, TimeUnit.MILLISECONDS); // 1-second timeout
+             Message<String> message = consumer.receive(1000, TimeUnit.MILLISECONDS);
 
              if (message == null) {
                  // No message received within timeout period, break the loop
@@ -41,7 +44,7 @@ public class Test_Consumer {
                  break;
              }
 
-             System.out.println("Acked message [" + message.getKey() + "]");
+             System.out.println("Acked message [" + message.getValue() + "]");
              try {
                  consumer.acknowledge(message);  // Acknowledge message
              } catch (Exception e) {
