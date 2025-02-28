@@ -1,4 +1,4 @@
-package Producer_package;
+package producer_package_native_function;
 
 import java.util.*;
 import java.io.IOException;
@@ -6,8 +6,7 @@ import java.io.IOException;
 import org.apache.pulsar.client.api.*;
 import ApachePulsarExample.mavenproject.configuration_info;
 
-public class Test_Producer_native_function {
-
+public class Test_producer_native_function {
 	public static void main(String[] args) throws IOException {
 		//1. Create a Pulsar Client
 		PulsarClient client = PulsarClient.builder().serviceUrl(configuration_info.SERVICE_URL).build();
