@@ -16,7 +16,7 @@ public class Test_producer_native_function {
 				producerName("Test_Producer_native_function")
 				.topic("persistent://public/default/test_topic-Stringg")
 				.create();
-		
+	
 		System.out.println("Producer created");
 		
 		//3. Send messages to the topic/ Initiate a producer work loop

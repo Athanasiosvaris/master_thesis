@@ -24,7 +24,7 @@ public class Test_Producer {
 			    	.serviceUrl(configuration_info.SERVICE_URL)
 			    	.build();
 			    
-			    //2. Create a producer
+		    //2. Create a producer
 			    Producer<User> producer = pulsarClient.newProducer(JSONSchema.of(User.class))
 			    		.producerName("test_producer")
 			    		.topic("persistent://public/default/test_topic") //It is interpreted as "persistent://public/default/test-topic"
@@ -58,22 +58,6 @@ public class Test_Producer {
 			    System.out.printf("I have sent message with key %s\n",user.getName());
 		        }
 		        
-//		        List<String> stringList = new ArrayList<>();
-//		        
-//		        stringList.add("Thanos");
-//		        stringList.add("Kostas");
-//		        stringList.add("Maria");
-//		        stringList.add("Lampbros");
-//		        stringList.add("Eleni");
-//		        
-//		        for (String s: stringList) {
-//		        	producer.newMessage()
-//		        			.key(s)
-//		        			.value(s)
-//		        			.send();
-//		        	System.out.printf("I have sent message with key %s\n",s);
-//		        }
-			    
 			    producer.flush();
 			    
 			    //4. Close the producer and the client

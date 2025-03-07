@@ -1,4 +1,8 @@
+#name: java-function
+#description: my java function
+#functionClass: test_function_package.Test_function
+
 name: java-function
 description: my java function
-functionClass: test_function_package.Test_function
+functionClass: test_SDK_function_package.Test_SDK_function
 
