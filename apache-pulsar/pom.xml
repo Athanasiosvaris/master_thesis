@@ -31,15 +31,14 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<!-- 
+
 	<dependencies>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!- - Optionally: parameterized tests support 
-		- ->
+		<!-- Optionally: parameterized tests support -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-params</artifactId>
@@ -50,28 +49,20 @@
 			<artifactId>pulsar-client</artifactId>
 			<version>${pulsar.version}</version>
 		</dependency>
-		<!- - When you write Pulsar functions you need this dependency 
-		- ->
+		<!-- When you write Pulsar functions you need this dependency -->
 		<dependency>
 			<groupId>org.apache.pulsar</groupId>
 			<artifactId>pulsar-functions-api</artifactId>
 			<version>${pulsar.version}</version>
 		</dependency>
+		<!-- When you write Pulsar connectors you need this dependency -->
+		<dependency>
+			<groupId>org.apache.pulsar</groupId>
+			<artifactId>pulsar-io-core</artifactId>
+			<version>${pulsar.version}</version>
+		</dependency>
 	</dependencies>
-	-->
 
-	<dependencies>
-		<dependency>
-			<groupId>org.apache.pulsar</groupId>
-			<artifactId>pulsar-client</artifactId>
-			<version>${pulsar.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.pulsar</groupId>
-			<artifactId>pulsar-functions-api</artifactId>
-			<version>${pulsar.version}</version>
-		</dependency>
-	</dependencies>
 	<!-- 
 	<build>
 		<pluginManagement><!- - lock down plugins versions to avoid using Maven
@@ -159,14 +150,14 @@
 				<artifactId>nifi-nar-maven-plugin</artifactId>
 				<version>1.5.0</version>
 				<extensions>true</extensions>
-					<executions>
-						<execution>
-							<phase>package</phase>
-							<goals>
-								<goal>nar</goal>
-							</goals>
-						</execution>
-					</executions>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>nar</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -175,6 +166,27 @@
 				<configuration>
 					<release>17</release>
 				</configuration>
+			</plugin>
+			<!-- Plugin gia Jar file gia ton sink connector-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.1.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<filters>
+								<filter>
+									<artifact>*:*</artifact>
+								</filter>
+							</filters>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
