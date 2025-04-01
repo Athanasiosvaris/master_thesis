@@ -1,0 +1,14 @@
+tenant: public
+namespace: default
+name: mongo-test-sink
+inputs: 
+- "persistent://public/default/test_mongo_sink"
+processingGuarantees: ATLEAST_ONCE
+
+# Connector specific config
+configs:
+   mongoUri: "mongodb://mongodb:27017" 
+   database: "pulsar_database" 
+   collection: "example" 
+   batchSize: 1
+   batchTimeMs: 1000
