@@ -1,0 +1,13 @@
+tenant: public #That's where the sink will be created
+namespace: default
+name: postgress-sink #That's the name of the sink
+inputs: 
+- "persistent://public/default/postgress_sink"
+processingGuarantees: ATLEAST_ONCE
+
+# Connector specific config
+configs:
+  userName: "postgres"
+  password: "password"
+  jdbcUrl: "jdbc:postgresql://pulsar-postgres:5432/postgres"
+  tableName: "pulsar_postgres_jdbc_sink"
