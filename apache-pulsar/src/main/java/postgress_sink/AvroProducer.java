@@ -43,15 +43,15 @@ public class AvroProducer {
 	    
 	  //3. Initiate a producer work loop/ Injecting data / What my producer does
 	    GenericRecord record = schema.newRecordBuilder()
-                .set("id", 1)
-                .set("name", "Thanos")
+                .set("id", 2)
+                .set("name", "Maria")
                 .build();
 	    
 	    producer.newMessage()
 	    			.key("id")
 	    			.value(record)
 	    			.send();
-	    System.out.printf("I have sent message");
+	    System.out.printf("I have sent message/n");
 	    
         
 	    producer.flush();
