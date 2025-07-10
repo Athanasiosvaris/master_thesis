@@ -1,0 +1,50 @@
+Some notes about the database
+
+Connect to the database 
+ psql -U postgres postgres
+
+List table's info
+\d pulsar_postgres_json_jdbc_sink
+
+Insert test value 
+INSERT INTO  pulsar_postgres_json_jdbc_sink(name,age,salary) VALUES ('test',1,1);
+
+Some notes about the .avsc file
+Because I put it as an argument in the pulsar CLI I MUST have it in this string format.
+The Pulsar CLI expects the Avro schema to be passed as a string inside the schema field when 
+registering schemas or configuring sinks/sources. 
+You put \ before every double quote inside the schema string
+ because the whole schema is a JSON string, and the inner schema itself contains double quotes.
+So this :
+{
+  "type": "AVRO",
+  "schema": {
+    "type": "record",
+    "name": "Test_Json",
+    "fields": [
+      {
+        "name": "name",
+        "type": ["null", "string"]
+      },
+      {
+        "name": "age",
+        "type": ["null", "int"]
+      },
+      {
+        "name": "salary",
+        "type": ["null", "int"]
+      },
+      {
+        "name": "date",
+        "type": ["null", "int"],
+        "logicalType": "date"
+      }
+    ]
+  },
+  "properties": {}
+} should became this :
+{
+  "type": "AVRO",
+  "schema": "{\"type\":\"record\",\"name\":\"Test_Json\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",\"string\"]},{\"name\":\"age\",\"type\":[\"null\",\"int\"]},{\"name\":\"salary\",\"type\":[\"null\",\"int\"]},{\"name\":\"date\",\"type\":[\"null\",\"int\"],\"logicalType\":\"date\"}]}",
+  "properties": {}
+}

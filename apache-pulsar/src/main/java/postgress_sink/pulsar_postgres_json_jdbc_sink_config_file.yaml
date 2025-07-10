@@ -1,8 +1,8 @@
 tenant: public #That's where the sink will be created
 namespace: default
-name: postgress-sink #That's the name of the sink
+name: postgresssinkJSONNNn #That's the name of the sink
 inputs: 
-- "persistent://public/default/postgress_sink"
+- "persistent://public/default/postgressSinkJSONNNn"
 processingGuarantees: ATLEAST_ONCE
 
 # Connector specific config
@@ -10,4 +10,4 @@ configs:
   userName: "postgres" #The username used to connect to the PostgreSQL database."postgress" is the default admin user in most PostgreSQL setups.
   password: "password" #The password for the database user 
   jdbcUrl: "jdbc:postgresql://pulsar-postgres:5432/postgres" #The JDBC connection string for PostgreSQL. Foramt : jdbc:postgresql://<host>:<port>/<database>
-  tableName: "pulsar_postgres_jdbc_sink" #The name of the table in PostgreSQL where Pulsar will write the data
+  tableName: "pulsar_postgres_json_jdbc_sink" #The name of the table in PostgreSQL where Pulsar will write the data

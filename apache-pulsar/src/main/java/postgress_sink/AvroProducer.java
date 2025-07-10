@@ -28,7 +28,6 @@ public class AvroProducer {
 	    
 	    RecordSchemaBuilder schemabuilder = SchemaBuilder.record("Test");
 	    schemabuilder.field("id").type(SchemaType.INT32); // Integer field for id (serial)
-	    
 	    schemabuilder.field("name").type(SchemaType.STRING);  // String field for name (VARCHAR)
 	    SchemaInfo schemaInfo = schemabuilder.build(SchemaType.AVRO);
         GenericSchema<GenericRecord> schema = Schema.generic(schemaInfo);
@@ -41,17 +40,20 @@ public class AvroProducer {
 	    
 	    System.out.println("Running producer work loop");
 	    
+	    User U = new User("Kostas",5);
+	    
+	    
 	  //3. Initiate a producer work loop/ Injecting data / What my producer does
 	    GenericRecord record = schema.newRecordBuilder()
-                .set("id", 2)
-                .set("name", "Maria")
+                .set("id", U.getAge())
+                .set("name", U.getName())
                 .build();
 	    
 	    producer.newMessage()
 	    			.key("id")
 	    			.value(record)
 	    			.send();
-	    System.out.printf("I have sent message/n");
+	    System.out.printf("I have sent message\n");
 	    
         
 	    producer.flush();
