@@ -1,12 +1,13 @@
 package sensor;
 
 import java.sql.Timestamp;
-
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Sensor {
 	private int sensor_id;
 	private double sensor_energy_value;
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss.SSS")
 	private Timestamp sensor_creation_timestamp;
 	
 	//Constructors
@@ -40,7 +41,8 @@ public class Sensor {
 		this.sensor_energy_value = sensor_energy_value;
 	}
 	
-	public void setSensor_creation_timestamp () {
+	public void setSensor_creation_timestamp (Timestamp sensor_timestamp) {
+		this.sensor_creation_timestamp = sensor_timestamp;
 	}
 	
 	@Override

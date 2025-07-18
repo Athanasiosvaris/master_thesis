@@ -1,0 +1,11 @@
+className: mqtt_sensor_function.Mqtt_sensor_function
+tenant: public 
+namespace: default 
+name: Mqtt_sensor_function_v7.0 #It is not obligated to be the same as the name of function in the source code
+inputs: 
+- "persistent://public/default/MQTTtopic7"
+output: "persistent://public/default/MQTTtopic_output"
+autoAck: true
+logTopic: persistent://public/default/Mqtt_sensor_function-log
+processingGuarantees: ATLEAST_ONCE  
+jar: "/pulsar/mavenproject-0.0.1-SNAPSHOT.jar"   
