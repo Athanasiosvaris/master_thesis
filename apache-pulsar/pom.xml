@@ -67,6 +67,12 @@
    			 <artifactId>mqtt-client</artifactId>
    			 <version>1.16</version>
 		</dependency>
+		<!-- Dependy to use Java json library -->
+		<dependency>
+		 	<groupId>org.json</groupId>
+    		<artifactId>json</artifactId>
+    		<version> 20250517</version>
+    	</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 	<dependency>
