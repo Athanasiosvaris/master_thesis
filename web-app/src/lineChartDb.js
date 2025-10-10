@@ -1,5 +1,17 @@
 import Chart from "chart.js/auto";
 
+const btn1 = document.getElementById("btn1");
+let Chart1;
+let Chart2;
+let help = false;
+
+btn1.addEventListener("click", () => {
+  if (help) {
+    autoUpdate();
+    Chart1.update();
+  } else window.alert("Please try again");
+});
+
 async function getData() {
   //Retrives the data from the database - Calls backend API
   try {
@@ -18,9 +30,9 @@ async function getData() {
   }
 }
 
-async function plotLineDiagram(dataSet) {
+function plotLineDiagram(dataSet) {
   //Plots a line diagram
-  new Chart(document.getElementById("lineChartDB"), {
+  const Chart1 = new Chart(document.getElementById("lineChartDB"), {
     type: "line",
     options: {},
     data: {
@@ -33,11 +45,12 @@ async function plotLineDiagram(dataSet) {
       ],
     },
   });
+  return Chart1;
 }
 
-async function plotLineDiagram2(dataSet) {
+function plotLineDiagram2(dataSet) {
   //Plots a line diagram
-  new Chart(document.getElementById("lineChartDBForecast"), {
+  const Chart2 = new Chart(document.getElementById("lineChartDBForecast"), {
     type: "line",
     options: {},
     data: {
@@ -50,14 +63,28 @@ async function plotLineDiagram2(dataSet) {
       ],
     },
   });
+  return Chart2;
 }
-
-// updateChartData = () => {};
 
 async function DrawPlots() {
   const dataSet1 = await getData(); // Retreived Dataset
-  plotLineDiagram(dataSet1);
-  plotLineDiagram2(dataSet1);
+  Chart1 = plotLineDiagram(dataSet1);
+  Chart2 = plotLineDiagram2(dataSet1);
 }
 
-DrawPlots();
+DrawPlots().then(() => {
+  help = true;
+});
+
+async function autoUpdate() {
+  // It updates the chart
+  const newDataset = await getData();
+  let data = [];
+  for (let obj of newDataset) {
+    // data.push(obj.sensorvalue);
+    data.push(0.5);
+  }
+  console.log(data);
+  Chart1.config._config.data.datasets[0].data = data;
+  Chart1.update();
+}
