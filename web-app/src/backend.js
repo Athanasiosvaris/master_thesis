@@ -6,14 +6,21 @@ const app = express();
 
 app.use(cors()); //Enables all cors requests
 
-app.get("/", async (req, res) => {
+app.get("/sensor1Data", async (req, res) => {
   try {
     //Querys the databases and brings back the results as JSON
-    const result1 = await db.query(
-      "SELECT json_agg(sensor_example) FROM sensor_example"
+    const realValues = await db.query(
+      "SELECT json_agg(t)FROM ( SELECT * FROM sensor1realvalues ORDER BY sensordate DESC LIMIT 10) AS t"
     );
 
-    res.json(result1.rows);
+    const forecastedValues = await db.query(
+      "SELECT json_agg(t)FROM ( SELECT * FROM sensor1forecastedvalues ORDER BY sensordate DESC LIMIT 10) AS t"
+    );
+    let realValuesData = realValues.rows[0].json_agg; //Array of objects
+    let forecastedValuesData = forecastedValues.rows[0].json_agg;
+    let finaldata = forecastedValuesData.concat(realValuesData); // The first 10 values of the array are the real data and the next 10 values are the fprecasted data
+
+    res.json(finaldata);
   } catch (err) {
     console.error(err);
     res.status(500).send("Internal Server Error");
@@ -24,7 +31,7 @@ app.get("/", async (req, res) => {
 app.get("/postData", async (req, res) => {
   try {
     //Creates data
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 5; i++) {
       function data() {
         return new Promise((resolve, reject) => {
           setTimeout(() => {
@@ -43,17 +50,13 @@ app.get("/postData", async (req, res) => {
       async function insertData() {
         const result = await data();
         await db.query(
-          `INSERT INTO sensor_example (sensorId ,sensorValue,sensorDate) VALUES ('${result[0]}', ${result[1]},'${result[2]}');`
-          //Instead of {result[2]} (which is a timestamp created by JS) I can use NOW()::TIMESTAMP (SQL prodcues the timestamp)
+          `INSERT INTO sensor1realvalues (sensorId ,sensorValue,sensorDate) VALUES ('${result[0]}', ${result[1]},'${result[2]}');`
         );
       }
 
       await insertData();
     }
 
-    // const result = await db.query(
-    //   "SELECT sensorvalue,sensordate FROM sensor_example"
-    // );
     res.send("done");
   } catch (err) {
     console.error(err);

@@ -1,11 +1,5 @@
-// const bnt = document.getElementById("btn");
+const bnt1 = document.getElementById("btn1");
 
-// bnt.addEventListener("click", () => {
-//   window.location.href = "lineChart.html";
-// });
-
-const bnt2 = document.getElementById("btn2");
-
-bnt2.addEventListener("click", () => {
+bnt1.addEventListener("click", () => {
   window.location.href = "backend.html";
 });
