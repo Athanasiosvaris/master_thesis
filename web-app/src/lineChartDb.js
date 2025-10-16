@@ -1,4 +1,3 @@
-// const { set } = require("mongoose");
 const func = require("./functions");
 
 const btn1 = document.getElementById("btn1");
@@ -20,9 +19,8 @@ DrawPlots().then(() => {
 });
 
 async function autoUpdate() {
-  // It updates the chart
+  // It updates the chart with the 20 most recent values (based on timestamp). Values [0-9] are real values and values [10-19] are forecasted values.
   const newDataset = await func.getData(); //New data from the database
-  // console.log(newDataset);
   let data = [];
   let labels1 = [];
   for (let obj of newDataset) {
@@ -31,12 +29,11 @@ async function autoUpdate() {
   }
   console.log("Updated");
   Chart1.config._config.data.datasets[0].data = data;
-
   Chart1.config._config.data.labels = labels1;
   Chart1.update();
 }
 
-// setInterval(autoUpdate, 5000);
+setInterval(autoUpdate, 5000);
 
 // async function postData2() {
 //   try {

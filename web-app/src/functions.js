@@ -12,7 +12,7 @@ export async function getData() {
       picked["sensordate"] = result[i].sensordate.replace("T", " ");
       data.push(picked);
     }
-    console.log(data);
+    // console.log(data);
     return data;
   } catch (e) {
     console.log(e.message);
