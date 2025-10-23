@@ -2,13 +2,11 @@ package sensor;
 
 import java.sql.Timestamp;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Sensor {
 	private int sensor_id;
 	private double sensor_energy_value;
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss.SSS")
-	private Timestamp sensor_creation_timestamp;
+	private long sensor_timestamp;
 	
 	//Constructors
 	public Sensor () {}
@@ -16,7 +14,7 @@ public class Sensor {
 	public Sensor (int sensor_id,double sensor_energy_value) {
 		this.sensor_id = sensor_id;
 		this.sensor_energy_value = sensor_energy_value;
-		this.sensor_creation_timestamp = new Timestamp(System.currentTimeMillis());
+		this.sensor_timestamp = System.currentTimeMillis();
 	}
 	
 	//Getters
@@ -28,8 +26,8 @@ public class Sensor {
 		return sensor_energy_value;
 	}
 	
-	public Timestamp getSensor_creation_timestamp () {
-		return sensor_creation_timestamp;
+	public long getSensor_timestamp () {
+		return sensor_timestamp;
 	}
 	
 	//Setters
@@ -41,13 +39,13 @@ public class Sensor {
 		this.sensor_energy_value = sensor_energy_value;
 	}
 	
-	public void setSensor_creation_timestamp (Timestamp sensor_timestamp) {
-		this.sensor_creation_timestamp = sensor_timestamp;
+	public void setSensor_timestamp (long sensor_timestamp) {
+		this.sensor_timestamp = sensor_timestamp;
 	}
 	
 	@Override
 	public String toString() {
-		return "Sensor id:" + sensor_id + " Sensor_energy_value: " + sensor_energy_value + " Sensor_creation_timestamp: " + sensor_creation_timestamp;
+		return "Sensor id:" + sensor_id + " Sensor_energy_value: " + sensor_energy_value + " Sensor_creation_timestamp: " + sensor_timestamp;
 	}
 	
 }

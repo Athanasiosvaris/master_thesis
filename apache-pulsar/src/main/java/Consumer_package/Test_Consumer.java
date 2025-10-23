@@ -4,16 +4,15 @@ import org.apache.pulsar.client.api.PulsarClient;
 import org.apache.pulsar.client.api.PulsarClientException;
 import org.apache.pulsar.client.api.Schema;
 import org.apache.pulsar.client.api.SubscriptionInitialPosition;
-import org.apache.pulsar.client.impl.schema.JSONSchema;
+import org.apache.pulsar.client.impl.schema.AvroSchema;
 
 import java.util.concurrent.TimeUnit;
 import java.io.IOException;
-
 import org.apache.pulsar.client.api.Consumer;
 import org.apache.pulsar.client.api.Message;
-
 import ApachePulsarExample.mavenproject.configuration_info;
-import User.User;
+import sensor.Sensor;
+
 
 public class Test_Consumer {
 	 public static void main(String[] args) throws IOException {
@@ -24,11 +23,19 @@ public class Test_Consumer {
 		    	.build();
 	 
 	 //2.Create producer
-	 Consumer<User> consumer = pulsarClient.newConsumer(JSONSchema.of(User.class))
-			 .topic("persistent://public/default/test_topic")
-			 .consumerName("Test_consumer")
+//	 Consumer<User> consumer = pulsarClient.newConsumer(JSONSchema.of(User.class))
+//			 .topic("persistent://public/default/test_topic")
+//			 .consumerName("Test_consumer")
+//			 .subscriptionInitialPosition(SubscriptionInitialPosition.Earliest)
+//             .subscriptionName("test-subscriptions")
+////             .subscriptionType(null) If I don't specify one subscription type by default it is exclusive.
+//             .subscribe();
+	 
+	 Consumer<Sensor> consumer = pulsarClient.newConsumer(AvroSchema.of(Sensor.class))
+			 .topic("persistent://public/default/FlinkTopicSinkFinal2")
+			 .consumerName("Test_consumer1")
 			 .subscriptionInitialPosition(SubscriptionInitialPosition.Earliest)
-             .subscriptionName("test-subscriptions")
+             .subscriptionName("test-subscriptions1")
 //             .subscriptionType(null) If I don't specify one subscription type by default it is exclusive.
              .subscribe();
 	 	 
@@ -36,15 +43,17 @@ public class Test_Consumer {
          // Assuming consumer is already created and initialized
          while (true) {
             // Message<User> message = consumer.receive(1000, TimeUnit.MILLISECONDS); // 1-second timeout
-             Message<User> message = consumer.receive(1000, TimeUnit.MILLISECONDS);
+             Message<Sensor> message = consumer.receive(1000, TimeUnit.MILLISECONDS);
 
              if (message == null) {
                  // No message received within timeout period, break the loop
                  System.out.println("No more messages, closing consumer.");
                  break;
              }
-
-             System.out.println("Acked message with key [" + message.getKey() + "]");
+             
+             System.out.println(message.getValue());
+//             System.out.println("Acked message with key [" + message.getKey() + "]");
+            
              try {
                  consumer.acknowledge(message);  // Acknowledge message
              } catch (Exception e) {
