@@ -3,7 +3,7 @@
 The thesis focused on creating a real-time forecasting app for the consumption of varius energy sensors.The forecasting was created and updated in real-time,as soon as the messages were created by the sensors.   
 The software stack used was the following:
 
-- **Mqtt protocol** to receive messages from sensors,  
+- **Mqtt protocol** to receive messages from sensors,   
 - **Apache Pulsar** to stream the messages,  
 - **Apache Flink** to compute forecasting,
 - **PostegresSQL** database to store the data
