@@ -7,7 +7,7 @@ The software stack used was the following:
 - **Apache Pulsar** to stream the messages,  
 - **Apache Flink** to compute forecasting,
 - **PostegresSQL** database to store the data,
-- - **WebApp** application to view the results
+- **WebApp** application to view the results on localhost
   
 The project was built in containerized environment using **Docker Desktop**.  
 Below follows a detailed guide in order to recreate and test the project.
