@@ -6,7 +6,8 @@ The software stack used was the following:
 - **Mqtt protocol** to receive messages from sensors,   
 - **Apache Pulsar** to stream the messages,  
 - **Apache Flink** to compute forecasting,
-- **PostegresSQL** database to store the data
+- **PostegresSQL** database to store the data,
+- - **WebApp** application to view the results
   
 The project was built in containerized environment using **Docker Desktop**.  
 Below follows a detailed guide in order to recreate and test the project.
