@@ -13,7 +13,7 @@ The project was built in containerized environment using **Docker Desktop**.
 Below follows a detailed guide in order to recreate and test the project.
 
 ---
-## Step 1: Install Mqtt Mosquitto Broker using Docker
+## Step 1: Install Mqtt Mosquitto Broker on Docker
 Create a local folder named **mosquitto** with the following structure :  
 - /mosquitto/config/mosquitto.conf
 - /mosquitto/config/pwfile
@@ -52,7 +52,7 @@ mosquitto_passwd -c /mosquitto/config/pwfile user1
 With those credentials your Mqtt client will be able to communicate with the Mqtt broker.  
 More details about mosquitto_passwd can be found under the official [mosquitto documentation](https://mosquitto.org/man/mosquitto_passwd-1.html). 
 
-## Step 2: Install Apache Pulsar using Docker
+## Step 2: Install Apache Pulsar on Docker
 
 Use the following command to download and start a Pulsar standalone container:
 
@@ -74,4 +74,4 @@ To install MQTT support in Pulsar, integrate the MoP (MQTT on Pulsar) protocol h
 Follow the official guide here:
 👉 https://github.com/streamnative/mop
 
-## Step 4: Run Apache Flink in Docker
+## Step 4: Install Apache Flink on Docker
