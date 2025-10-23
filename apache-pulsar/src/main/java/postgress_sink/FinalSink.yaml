@@ -1,0 +1,13 @@
+tenant: public #That's where the sink will be created
+namespace: default
+name: postgresSinkFinal #That's the name of the sink
+inputs: 
+- "persistent://public/default/FlinkTopicSinkFinal2"
+processingGuarantees: ATLEAST_ONCE
+
+# Connector specific config
+configs:
+  userName: "postgres" #The username used to connect to the PostgreSQL database."postgress" is the default admin user in most PostgreSQL setups.
+  password: "postgres" #The password for the database user 
+  jdbcUrl: "jdbc:postgresql://pulsar-postgres:5432/postgres" #The JDBC connection string for PostgreSQL. Foramt : jdbc:postgresql://<host>:<port>/<database>
+  tableName: "pulsarsinkfinal" #The name of the table in PostgreSQL where Pulsar will write the data
