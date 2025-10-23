@@ -75,3 +75,22 @@ Follow the official guide here:
 👉 https://github.com/streamnative/mop
 
 ## Step 4: Install Apache Flink on Docker
+## Step 5: Install Postgres on Docker
+The following command will pull you the image for postgres 12 and create a container based on that image.
+```bash
+docker run -d -it --rm \
+  --name pulsar-postgres \
+  -p 5432:5432 \
+  -e POSTGRES_PASSWORD=password \
+  -e POSTGRES_USER=postgres \
+  postgres:12
+```
+
+ ## Step 6: Docker Configuration
+ Create a docker network and add its container to it.At the end your docker network should consist of:  
+ 1)Pulsar container (Apache Pulsar)  
+ 2)Taskmanager and Jobmanager containers (Apache Flink)  
+ 3)Mosquitto broker container (MQTT)  
+ 4)Postgres container (Postgres database)
+
+ For detailed instructions on creating a Docker network and connecting containers, see the official Docker [documentation](https://docs.docker.com/reference/cli/docker/network/).
