@@ -55,6 +55,12 @@
 			<artifactId>pulsar-functions-api</artifactId>
 			<version>${pulsar.version}</version>
 		</dependency>
+		<!-- When I use Pulsar Admin I need this dependenny -->
+		<dependency>
+			<groupId>org.apache.pulsar</groupId>
+			<artifactId>pulsar-client-admin</artifactId>
+			<version>${pulsar.version}</version>
+		</dependency>
 		<!-- When you write Pulsar connectors you need this dependency -->
 		<dependency>
 			<groupId>org.apache.pulsar</groupId>
