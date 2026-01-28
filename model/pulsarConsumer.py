@@ -2,6 +2,11 @@ import pulsar
 from pulsar.schema import *
 from dataPreparationFunc import dataPreparation
 import pandas as pd
+import os
+
+
+OUTPUT_FILE = "sorted_data.csv"
+TEMP_FILE = "sorted_data.tmp"
 
 
 class Sensor(Record):
@@ -34,13 +39,13 @@ while True:
             print("Current data...")
             SortdedDf = dataPreparation(data)
             print(SortdedDf)
+
+            SortdedDf.to_csv(TEMP_FILE, index=False)
+            os.replace(TEMP_FILE, OUTPUT_FILE)
             # -> SortedDf must be sent to the model
+            # -> SortedDf must be sent to the ActualData table in the database
             data.clear()
             # print("No data yet in the list")
-        # else:
-        #   print("The list has the following data")
-        #    SortdedDf = dataPreparation(data)
-        #    print(SortdedDf)
 
         continue
 
