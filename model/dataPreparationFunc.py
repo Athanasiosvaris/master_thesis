@@ -32,9 +32,6 @@ def dataPreparation(data):
     df = df.assign(
         sensor_energy_value=df.sensor_energy_value.fillna(df.sensor_energy_value.mean())
     )
-    # print(df)
     df = df.reset_index()
     df = df.rename(columns={"index": "sensor_timestamp"})
-    # print("Final Data")
-    # print(df)
     return df
