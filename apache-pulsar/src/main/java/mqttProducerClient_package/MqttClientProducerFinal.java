@@ -9,7 +9,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -31,7 +30,7 @@ public class MqttClientProducerFinal {
 			// Client's credentials to connect to MQTT broker
 			mqtt.setUserName("user1");
 			mqtt.setPassword("user1");
-
+            System.out.println("Connecting...");
 			BlockingConnection connection = mqtt.blockingConnection();
 			// Asynchronous method to connect to MQTT broker
 			connection.connect();
@@ -56,8 +55,6 @@ public class MqttClientProducerFinal {
 	//Function that receives as arguments the name of the csv file 
 	//and the character that separates the records and returns the records a List<List<String>>
 	public static List<List<String>> records (String csvName,String delimeterChar) {
-		//final String COMMA_DELIMITER = ",";
-		//System.out.println(System.getProperty("user.dir"));
 		
 		List<List<String>> records = new ArrayList<>();
 		
@@ -118,7 +115,7 @@ public class MqttClientProducerFinal {
 			}
 			
 			stop++;
-			if (stop == 180) //Right now I am only reading the first 180 messages
+			if (stop == 400) //Right now I am only reading the first 180 messages
 				break;
 		}
 		return messages;
