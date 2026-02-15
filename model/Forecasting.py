@@ -3,13 +3,13 @@ import pandas as pd
 import tensorflow as tf
 import joblib
 import os
-import time
 import psycopg2
 
 pd.options.mode.chained_assignment = None
 tf.random.set_seed(0)
 
 CSV_FILE = "sorted_data.csv"
+CSV_FILE_60_BATCHES = "60_batch_values.csv"
 
 
 def connect_to_database():
@@ -26,13 +26,13 @@ def connect_to_database():
         print(e)
 
 
-def insert_data_to_db(con, Sorted_Dataframe: pd.DataFrame):
+def insert_data_to_db(con, forecasted_values_df: pd.DataFrame, table_name: str) -> bool:
     try:
         cur = con.cursor()
-        for _, row in Sorted_Dataframe.iterrows():
+        for _, row in forecasted_values_df.iterrows():
             cur.execute(
-                """
-                     INSERT INTO ForecastedValues
+                f"""
+                     INSERT INTO {table_name}
                      (sensor_timestamp, sensor_id, sensor_energy_value_prediction)
                      VALUES (%s, %s, %s)
                     """,
@@ -48,30 +48,39 @@ def insert_data_to_db(con, Sorted_Dataframe: pd.DataFrame):
     except psycopg2.OperationalError as e:
         print("Unable to insert data into database\n")
         print(e)
+        return False
 
 
 conn = connect_to_database()
 print("Waiting for CSV...")
 
 while True:
-    if not os.path.exists(CSV_FILE):
+    if not os.path.exists(CSV_FILE) or not os.path.exists(CSV_FILE_60_BATCHES):
         continue
 
-    SortdedDf = pd.read_csv(CSV_FILE)
+    if os.path.exists(CSV_FILE):
+        help = "CSV_FILE"
+        actual_values_df = pd.read_csv(CSV_FILE)
+    else:
+        help = "CSV_FILE_60_BATCHES"
+        actual_values_df = pd.read_csv(CSV_FILE_60_BATCHES)
+
     print("CSV received")
 
-    ForecastedDF = SortdedDf[["sensor_timestamp", "sensor_id"]]
-    ForecastedDF["sensor_timestamp"] = pd.to_datetime(ForecastedDF["sensor_timestamp"])
-    print(ForecastedDF.dtypes)
-    ForecastedDF["sensor_timestamp"] = ForecastedDF["sensor_timestamp"] + pd.Timedelta(
-        minutes=1
+    forecasted_values_df = actual_values_df[["sensor_timestamp", "sensor_id"]]
+    forecasted_values_df["sensor_timestamp"] = pd.to_datetime(
+        forecasted_values_df["sensor_timestamp"]
     )
+    print(forecasted_values_df.dtypes)
+    forecasted_values_df["sensor_timestamp"] = forecasted_values_df[
+        "sensor_timestamp"
+    ] + pd.Timedelta(minutes=1)
 
     model = tf.keras.models.load_model("lstm_initial_model_600.keras")
 
-    id_values = SortdedDf["sensor_id"].values
-    timestamp_values = SortdedDf["sensor_timestamp"].values
-    sensor_energy_value = SortdedDf["sensor_energy_value"].values
+    id_values = actual_values_df["sensor_id"].values
+    timestamp_values = actual_values_df["sensor_timestamp"].values
+    sensor_energy_value = actual_values_df["sensor_energy_value"].values
 
     # Reshaping in NumPy refers to modifying the dimensions of an existing array without changing its data. The reshape() function is used for this purpose.
     # It reorganizes the elements into a new shape, which is useful in machine learning, matrix operations and data preparation.
@@ -107,10 +116,26 @@ while True:
     ).flatten()
 
     # Add the predictions into the ForecastedDF
-    ForecastedDF = ForecastedDF.assign(sensor_energy_value_prediction=predictions)
-    print(ForecastedDF)
+    forecasted_values_df = forecasted_values_df.assign(
+        sensor_energy_value_prediction=predictions
+    )
+    print(forecasted_values_df)
 
     # Send into db
-    if insert_data_to_db(conn, ForecastedDF):
-        os.remove(CSV_FILE)
-        print("CSV deleted")
+
+    if help == "CSV_FILE":
+        if insert_data_to_db(
+            conn,
+            forecasted_values_df,
+            "ForecastedValues",
+        ):
+            os.remove(CSV_FILE)
+            print("CSV_FILE deleted")
+    else:
+        if insert_data_to_db(
+            conn,
+            forecasted_values_df,
+            "ForecastedValuesBatched",
+        ):
+            os.remove(CSV_FILE_60_BATCHES)
+            print("CSV_FILE_60_BATCHES deleted")

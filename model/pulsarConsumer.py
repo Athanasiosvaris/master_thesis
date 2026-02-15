@@ -58,21 +58,23 @@ print("Python Consumer started")
 
 data = []
 SortedDf = pd.DataFrame()
-conn = connect_to_database()
+# conn = connect_to_database()
+
 
 while True:
     try:
         msg = consumer.receive(5000)
-        if data.__len__() == 60:
+
+    except pulsar.Timeout:
+        print("No new messages received yet.Trying again...")
+        if data:
             print("Current data...")
             SortedDf = dataPreparation(data)
             print(SortedDf)
             SortedDf.to_csv(TEMP_FILE, index=False)
             os.replace(TEMP_FILE, OUTPUT_FILE)
-            insert_data_to_db(conn, SortedDf)
+            # insert_data_to_db(conn, SortedDf)
             data.clear()
-    except pulsar.Timeout:
-        print("No new messages received yet.Trying again.....")
         continue
 
     try:
