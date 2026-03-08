@@ -1,0 +1,115 @@
+#To be tested
+services:
+
+  pulsar:
+    image: athanasiosvaris/backupimage_pulsar
+    container_name: pulsar
+    command: bin/pulsar standalone
+    ports:
+      - "6650:6650"
+      - "8080:8080"
+      - "1883:1883"
+    volumes:
+      - pulsardata:/pulsar/data
+      - pulsarconf:/pulsar/conf
+
+  jobmanager:
+    image: flink:1.17.2-scala_2.12-java11
+    container_name: jobmanager
+    command: jobmanager
+    ports:
+      - "8081:8081"
+    environment:
+      - FLINK_PROPERTIES=jobmanager.rpc.address: jobmanager
+
+  taskmanager:
+    image: flink:1.17.2-scala_2.12-java11
+    container_name: taskmanager
+    command: taskmanager
+    depends_on:
+      - jobmanager
+    environment:
+      - FLINK_PROPERTIES=jobmanager.rpc.address: jobmanager
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    privileged: true
+    devices:
+      - /dev/kmsg
+    ports:
+      - "8079:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - cadvisor
+
+  grafana:
+    image: grafana/grafana-oss
+    container_name: grafana
+    ports:
+      - "3000:3000"
+
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquittoo
+    ports:
+      - "1884:1883"
+      - "9001:9001"
+    volumes:
+      - ~/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ~/mosquitto/log:/mosquitto/log
+      - ~/mosquitto/data:/mosquitto/data
+      - ~/mosquitto/config/pwfile:/mosquitto/config/pwfile
+
+  postgres:
+    image: postgres:12
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - ~/postgres:/var/lib/postgresql/data
+
+  rustfs:
+    image: rustfs/rustfs:latest
+    container_name: rustfs_container
+    ports:
+      - "9000:9000"
+      - "9002:9001"   # 9001 already used by mosquitto; adjust as needed
+    environment:
+      RUSTFS_ACCESS_KEY: rustfsadmin
+      RUSTFS_SECRET_KEY: rustfsadmin
+      RUSTFS_CONSOLE_ENABLE: "true"
+      RUSTFS_SERVER_DOMAINS: example.com
+    volumes:
+      - /mnt/rustfs/data:/data
+    command: >
+      --address :9000
+      --console-enable
+      --server-domains example.com
+      --access-key rustfsadmin
+      --secret-key rustfsadmin
+      /data
+
+networks:
+  default:
+    name: pulsar-mosquitto
+
+volumes:
+  pulsardata:
+  pulsarconf:
