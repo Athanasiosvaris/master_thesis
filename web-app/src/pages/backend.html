@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./backend.css" />
+    <title>Backend</title>
+  </head>
+  <body>
+    <h1>Sensor 1 Plot from DB</h1>
+    <div class="flex-container">
+      <div class="flex-child">
+        <canvas id="lineChartDB"></canvas>
+      </div>
+
+      <div class="flex-child">
+        <canvas id="lineChartDBForecast"></canvas>
+        <p>
+          The blue points represent the real values of the sensor and the red
+          points represent the forecasted values.
+        </p>
+      </div>
+    </div>
+    <button id="btn1">Back</button>
+    <script type="module" src="/src/lineChartDb.js"></script>
+  </body>
+</html>
