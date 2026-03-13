@@ -1,0 +1,16 @@
+className: test_function_package.Test_function
+tenant: public 
+namespace: default 
+name: Test_function
+inputs: 
+- "persistent://public/default/test_topic-Stringg"
+output: "persistent://public/default/test-topic-String-outputt"
+autoAck: true 
+logTopic: persistent://public/default/test-function-log
+processingGuarantees: ATLEAST_ONCE 
+retainOrdering: false 
+jar: "/pulsar/mavenproject-0.0.1-SNAPSHOT.jar"
+timeoutMs: 30000
+cleanupSubscription: true
+inputSchemaType: "STRING"
+outputSchemaType: "STRING"

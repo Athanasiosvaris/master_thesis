@@ -1,0 +1,12 @@
+className: sink_connector_exaple.LocalFileSinnk
+tenant: public
+namespace: default
+name: LocalFileSinnk_1
+inputs: 
+- "persistent://public/default/test_sink"
+processingGuarantees: ATLEAST_ONCE
+
+# Connector specific config
+configs:
+   filenamePrefix: "test-out"
+   filenameSuffix: ".tmp"

@@ -1,0 +1,16 @@
+className: test_SDK_function_package.Test_SDK_function
+tenant: public 
+namespace: default 
+name: Test_SDK_function_1 #It is not obligated to be the same as the name of function in the source code
+inputs: 
+- "persistent://public/default/Test_SDK_func_topic"
+output: "persistent://public/default/Test_SDK_func_topic_output"
+autoAck: true 
+logTopic: persistent://public/default/Test_SDK_function-log
+processingGuarantees: ATLEAST_ONCE 
+retainOrdering: false 
+jar: "/pulsar/mavenproject-0.0.1-SNAPSHOT.jar"
+timeoutMs: 30000
+cleanupSubscription: true
+inputSchemaType: "STRING"
+outputSchemaType: "STRING"

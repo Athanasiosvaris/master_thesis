@@ -12,6 +12,7 @@ The software stack used was the following:
 The project was built in containerized environment using **Docker Desktop**.  
 Below follows a detailed guide in order to recreate and test the project.
 
+##The first time you clone this folder run "mvn clean install" in order to initialize it
 ---
 ## Step 1: Install Mqtt Mosquitto Broker on Docker
 Create a local folder named **mosquitto** with the following structure :  
