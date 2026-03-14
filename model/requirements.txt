@@ -1,0 +1,9 @@
+tensorflow
+pulsar-client
+scikit-learn
+psycopg2-binary
+pandas
+numpy
+matplotlib
+joblib
+boto3
