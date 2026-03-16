@@ -2,7 +2,7 @@
 services:
 
   pulsar:
-    image: athanasiosvaris/backupimage_pulsar
+    image: athanasiosvaris/backupimage_pulsar:version1
     container_name: pulsar
     command: bin/pulsar standalone
     ports:
@@ -20,7 +20,7 @@ services:
     ports:
       - "8081:8081"
     environment:
-      - FLINK_PROPERTIES=jobmanager.rpc.address: jobmanager
+      - "FLINK_PROPERTIES=jobmanager.rpc.address: jobmanager"
 
   taskmanager:
     image: flink:1.17.2-scala_2.12-java11
@@ -29,7 +29,7 @@ services:
     depends_on:
       - jobmanager
     environment:
-      - FLINK_PROPERTIES=jobmanager.rpc.address: jobmanager
+      - "FLINK_PROPERTIES=jobmanager.rpc.address: jobmanager"
 
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:latest
@@ -68,10 +68,10 @@ services:
       - "1884:1883"
       - "9001:9001"
     volumes:
-      - ~/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
-      - ~/mosquitto/log:/mosquitto/log
-      - ~/mosquitto/data:/mosquitto/data
-      - ~/mosquitto/config/pwfile:/mosquitto/config/pwfile
+      - ${HOST_HOME}/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ${HOST_HOME}/mosquitto/log:/mosquitto/log
+      - ${HOST_HOME}/mosquitto/data:/mosquitto/data
+      - ${HOST_HOME}/mosquitto/config/pwfile:/mosquitto/config/pwfile
 
   postgres:
     image: postgres:12
@@ -83,7 +83,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_DB: postgres
     volumes:
-      - ~/postgres:/var/lib/postgresql/data
+      - ${HOST_HOME}/postgres:/var/lib/postgresql/data
 
   rustfs:
     image: rustfs/rustfs:latest
