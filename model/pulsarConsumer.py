@@ -71,6 +71,7 @@ def check_if_table_exists(conn, table_name: str ):
         if exists == table_name.lower():
             cur.execute(f"""DROP TABLE {table_name};""")
             conn.commit()
+            print(f"Dropped table {table_name}")
 
         cur.execute(
             f"""CREATE TABLE {table_name} (
@@ -80,6 +81,7 @@ def check_if_table_exists(conn, table_name: str ):
             sensor_energy_value double precision);"""
         )
         conn.commit()
+        print(f"Table {table_name} created successfully")
     except psycopg2.OperationalError as e:
         print(e)
 
@@ -115,6 +117,7 @@ def forecasting(device_name: str, bucket_name: str,retrain: bool ,model_path: Op
         "--device_name", device_name,
         "--bucket_name", bucket_name,
         "--retrain", str(retrain),
+
     ]
     if model_path:
         cmd += ["--model_path", model_path]
@@ -140,6 +143,7 @@ if __name__ == "__main__":
         topic=topic,
         subscription_name="pythonSubscription",
         schema=AvroSchema(Sensor),
+        initial_position=pulsar.InitialPosition.Latest,
     )
     print("Python Consumer started")
 
@@ -159,7 +163,8 @@ if __name__ == "__main__":
             if data:
                 print("Current data...")
                 SortedDf = dataPreparation(data)
-                print(SortedDf)
+               # print("Actual data - Apache Pulsar Consumer")
+               # print(SortedDf)
                 #Check if we need to trigger retraining
                 #results = check_retrain(SortedDf, device_name, bucket_name)
                 #if results: ->Retrain is triggered
@@ -168,7 +173,7 @@ if __name__ == "__main__":
                     #forecasting(model, scaler, conn, bucket_name, database_table_name)
                 #Here I should call Forecasting.py to make the predictions and then insert the data to the database.
                 #Forecasting.py should be called with the new data and the new model to make the predictions and then insert the data to the database.
-                insert_data_to_db(conn, SortedDf, device_name)
+                insert_data_to_db(conn, SortedDf, database_table_name)
                 forecasting(device_name=device_name, bucket_name="missingtimestamp", retrain=False)
                 data.clear()
             continue

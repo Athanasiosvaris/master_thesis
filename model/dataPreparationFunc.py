@@ -21,6 +21,7 @@ def dataPreparation(data):
     # Converting epoch timestamp (it was in seconds) into data time {1765152003 =>2025-12-08 00:00:03}
     df["sensor_timestamp"] = pd.to_datetime(df["sensor_timestamp"], unit="s")
     df = df.set_index("sensor_timestamp")
+    df = df[~df.index.duplicated(keep="last")]
 
     # Determine the minute (floor to minute)
     minute_start = df.index.min().floor("min")

@@ -7,3 +7,4 @@ numpy
 matplotlib
 joblib
 boto3
+pulsar-client[avro]
