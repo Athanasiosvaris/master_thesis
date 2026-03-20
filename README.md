@@ -185,8 +185,9 @@ cd ..
 ```bash
 cd apache-flink
 mvn clean install
+cd target
 sudo docker cp ./ApacheFlink-0.0.1-SNAPSHOT.jar taskmanager:/opt/flink
-cd ..
+cd ../..
 ```
 
 ### 6. Python / Model
@@ -225,7 +226,20 @@ docker restart mosquittoo
 cat ~/mosquitto/config/pwfile
 ```
 
-### 9. Run the application
+### 9. Create Pulsar topics and schemas
+
+The Flink sink requires `FlinkTopicSinkFinal` to be a **partitioned topic** (Flink cannot auto-create partitioned topics). The `modelConsumeTopic` requires an Avro schema to be registered before producers can write to it.
+
+```bash
+# Create the partitioned topic for Flink sink
+docker exec pulsar bin/pulsar-admin topics create-partitioned-topic persistent://public/default/FlinkTopicSinkFinal --partitions 1
+
+# Upload the Avro schema for modelConsumeTopic
+docker cp ./apache-pulsar/sensor-schema.json pulsar:/tmp/sensor-schema.json
+docker exec pulsar bin/pulsar-admin schemas upload persistent://public/default/modelConsumeTopic --filename /tmp/sensor-schema.json
+```
+
+### 10. Run the application
 
 ```bash
 docker exec -it taskmanager /bin/bash
@@ -236,6 +250,70 @@ exit
 ```
 
 > **Note:** After the initial setup, `start_app.sh` handles compilation automatically. You only need to re-run `mvn clean install` if dependencies change.
+
+---
+
+## Data Flow Architecture
+
+The following diagram shows the end-to-end data flow from CSV ingestion through stream processing to forecasting. Topics and protocols are annotated on each edge.
+
+```mermaid
+flowchart LR
+    CSV[/"CSV File<br/>(sensor data)"/]
+
+    subgraph MQTT ["MQTT Broker (Mosquitto :1884)"]
+        MT["Topic: {device}"]
+    end
+
+    subgraph MOP ["Pulsar MOP (:1883)"]
+        PT1["Topic:<br/>persistent://public/default/{device}"]
+    end
+
+    subgraph Flink ["Apache Flink (Taskmanager)"]
+        FJ["SensorMqttPulsarConnector<br/>1-min Tumbling Window<br/>keyed by sensor_id"]
+    end
+
+    subgraph Pulsar ["Apache Pulsar (:6650)"]
+        PT2["Topic:<br/>persistent://public/default/{device}_sink<br/>(partitioned)"]
+        PT3["Topic:<br/>persistent://public/default/{device}_model_consume"]
+    end
+
+    subgraph RustFS ["RustFS (S3-compatible :9002)"]
+        B1["Bucket: missingtimestamp"]
+        B2["Bucket: batch"]
+        OBJ["Objects:<br/>{device}/initial/{device}.keras<br/>{device}/initial/scaler.save<br/>{device}/{ts-range}-model/{device}.keras<br/>{device}/{ts-range}-model/scaler.save"]
+    end
+
+    subgraph Python ["Python Model Service"]
+        PC["pulsarConsumer.py"]
+        FC["Forecasting.py"]
+        IT["initial_train.py"]
+        RT["retrain.py"]
+    end
+
+    subgraph DB ["PostgreSQL (:5432)"]
+        TBL_ACT[("Table:<br/>{device}_actualvalues")]
+        TBL_FC[("Table:<br/>{device}_forecastedvalues")]
+    end
+
+    CSV -->|"read rows"| P1
+    P1["MqttClientProducerFinal<br/>(Java)"] -->|"publish JSON<br/>{sensor_id, sensor_energy_value,<br/>sensor_timestamp}"| MT
+    MT -->|"subscribe"| C1["MqttClientConsumerFinal<br/>(Java)"]
+    C1 -->|"publish to MOP"| PT1
+    PT1 -->|"source-topic<br/>sub: FlinkSub"| FJ
+    FJ -->|"sink-topic"| PT2
+    PT2 -->|"consume<br/>sub: test-subscriptions"| TC["TestConsumerFinal<br/>(Java)"]
+    TC -->|"produce (Avro)"| PT3
+    PT3 -->|"consume<br/>sub: pythonSubscription<br/>(AvroSchema)"| PC
+    PC -->|"INSERT sensor data"| TBL_ACT
+    PC -->|"trigger on timeout"| FC
+    FC -->|"download model & scaler<br/>(boto3 S3 API)"| RustFS
+    FC -->|"SELECT last 60<br/>actual values"| TBL_ACT
+    FC -->|"INSERT predictions"| TBL_FC
+    IT -->|"upload initial model<br/>& scaler"| RustFS
+    RT -->|"SELECT last 600 rows"| TBL_ACT
+    RT -->|"upload retrained model<br/>& scaler"| RustFS
+```
 
 ---
 
