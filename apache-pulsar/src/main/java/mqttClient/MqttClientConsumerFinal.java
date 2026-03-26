@@ -6,6 +6,11 @@ import org.json.JSONObject;
 public class MqttClientConsumerFinal {
 
 	public static void main(String[] args) {
+		if (args.length < 1) {
+			System.err.println("Usage: MqttClientConsumerFinal <mqtt-topic>");
+			System.exit(1);
+		}
+
 		// Here I have 2 MQTT clients. One which connects to mosquito and acts as a
 		// consumer.
 
@@ -26,7 +31,7 @@ public class MqttClientConsumerFinal {
 				System.out.println("Mosquito connection establised");
 
 			// List of topics in which this client (consumer) will connect to
-			Topic[] topics = { new Topic("/home/fridge", QoS.AT_LEAST_ONCE) };
+			Topic[] topics = { new Topic(args[0], QoS.AT_LEAST_ONCE) };
 			mosquito_connection.subscribe(topics);
 
 			// Apache Pulsar (MOP) Client
@@ -48,7 +53,7 @@ public class MqttClientConsumerFinal {
 				System.out.println(Pulsar_message);
 
 				// Publish it to Apache Pulsar
-				mop_connection.publish("persistent://public/default/MQTTtopic9", Pulsar_message.getBytes(),QoS.AT_LEAST_ONCE, false);
+				mop_connection.publish("persistent://public/default/" + args[0], Pulsar_message.getBytes(),QoS.AT_LEAST_ONCE, false);
 			}
 
 		} catch (Exception e) {

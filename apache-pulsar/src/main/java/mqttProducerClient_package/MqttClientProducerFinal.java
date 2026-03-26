@@ -20,7 +20,11 @@ public class MqttClientProducerFinal {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
-		List<List<String>> records = MqttClientProducerFinal.records("device_1_data_manipulated_2025-12-08_2025-12-09.csv", ",");
+		if (args.length < 2) {
+			System.err.println("Usage: MqttClientProducerFinal <path-to-csv> <mqtt-topic>");
+			System.exit(1);
+		}
+		List<List<String>> records = MqttClientProducerFinal.records(args[0], ",");
 		List<String> messages = MqttClientProducerFinal.messages(records);			
 			
 		try {
@@ -41,7 +45,7 @@ public class MqttClientProducerFinal {
 				String message = messages.get(i);
 				TimeUnit.SECONDS.sleep(1); //1 seconds delay
 				// Publish message
-				connection.publish("/home/fridge", message.getBytes(), QoS.AT_LEAST_ONCE, false);
+				connection.publish(args[1], message.getBytes(), QoS.AT_LEAST_ONCE, false);
 			}
 			connection.disconnect();
 
@@ -110,13 +114,10 @@ public class MqttClientProducerFinal {
 				json.put("sensor_energy_value", sensor_energy_value);
 				json.put("sensor_timestamp", sensor_timestamp_epong);
 				String jsonString = json.toString();
-				//System.out.println(jsonString);
 				messages.add(jsonString);
 			}
 			
-			stop++;
-			if (stop == 400) //Right now I am only reading the first 180 messages
-				break;
+			
 		}
 		return messages;
 	}

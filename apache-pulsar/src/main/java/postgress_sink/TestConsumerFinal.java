@@ -34,20 +34,15 @@ public class TestConsumerFinal {
 
 		// 2.Create producer
 		Consumer<byte[]> consumer = pulsarClient.newConsumer(Schema.BYTES)
-				.topic("persistent://public/default/FlinkTopicSinkFinal").consumerName("Test_consumer")
-				.subscriptionInitialPosition(SubscriptionInitialPosition.Earliest)
+				.topic("persistent://public/default/"+args[0]).consumerName("Test_consumer")
+				.subscriptionInitialPosition(SubscriptionInitialPosition.Latest)
 				.subscriptionName("test-subscriptions").subscribe();
 		
-		// Producer that sends the messages to postgres's topic
-		Producer<Sensor> postgresProducer = pulsarClient.newProducer(AvroSchema.of(Sensor.class))
-				.producerName("test_producer2")
-				.topic("persistent://public/default/FlinkTopicSinkFinal2") 
-				.create();
 		
 		// Producer that sends the messages to pythonModelConsume topic
 		Producer<Sensor> modelConsumeTopicProducer = pulsarClient.newProducer(AvroSchema.of(Sensor.class))
 				.producerName("test_producer2")
-				.topic("persistent://public/default/modelConsumeTopic") 
+				.topic("persistent://public/default/"+args[1]) 
 				.create();
 		
 		
@@ -75,8 +70,7 @@ public class TestConsumerFinal {
 						e.printStackTrace();
 						break;
 					}
-					//Sending message to public/default/FlinkTopicSinkFinal2
-					//producer.newMessage().key("sensor_id").value(sensor).send(); // Ta stelno edo gia na pane stin vasi os 60ada
+					
 					modelConsumeTopicProducer.newMessage().key("sensor_id").value(sensor).send(); 
 				}
 			}
@@ -86,7 +80,6 @@ public class TestConsumerFinal {
 				if (consumer != null) {
 					consumer.close();
 					System.out.println("Consumer closed.");
-					postgresProducer.close();
 					modelConsumeTopicProducer.close();
 	                 System.out.println("Producers closed.");
 					pulsarClient.close();
