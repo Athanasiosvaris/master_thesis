@@ -1,6 +1,5 @@
 #To be tested
 services:
-
   pulsar:
     image: athanasiosvaris/backupimage_pulsar:version1
     container_name: pulsar
@@ -29,7 +28,10 @@ services:
     depends_on:
       - jobmanager
     environment:
-      - "FLINK_PROPERTIES=jobmanager.rpc.address: jobmanager"
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 5
 
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:latest
@@ -60,6 +62,9 @@ services:
     container_name: grafana
     ports:
       - "3000:3000"
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
 
   mosquitto:
     image: eclipse-mosquitto
@@ -89,7 +94,7 @@ services:
     container_name: rustfs_container
     ports:
       - "9000:9000"
-      - "9002:9001"   # 9001 already used by mosquitto; adjust as needed
+      - "9002:9001" # 9001 already used by mosquitto; adjust as needed
     environment:
       RUSTFS_ACCESS_KEY: rustfsadmin
       RUSTFS_SECRET_KEY: rustfsadmin
