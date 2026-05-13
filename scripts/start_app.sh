@@ -34,7 +34,7 @@ cleanup() {
         [ -n "$pids" ] && kill $pids && echo ">>> Stopped $class"
     done
 
-    pgrep -f "pulsarConsumer.py" | xargs -r kill && echo ">>> Stopped pulsarConsumer"
+    pgrep -f "coordinator_service.py" | xargs -r kill && echo ">>> Stopped coordinator_service"
 
     rm -f "./${device}.keras" "./scaler.save"
     echo ">>> Removed local model files for ${device}"
@@ -83,8 +83,8 @@ echo ">>> Pulsar topics created."
 
 MODEL_DIR="$SCRIPT_DIR/../model"
 source "$MODEL_DIR/.venv/bin/activate"
-python3 -u "$MODEL_DIR/pulsarConsumer.py" --topic "${device}_model_consume" --device_name "${device}" >> "$LOG_DIR/pulsarConsumer_${device}.log" 2>&1 &
-echo "    PID $!  | tail -f $LOG_DIR/pulsarConsumer_${device}.log"
+python3 -u "$MODEL_DIR/coordinator_service.py" --topic "${device}_model_consume" --device_name "${device}" >> "$LOG_DIR/coordinator_service_${device}.log" 2>&1 &
+echo "    PID $!  | tail -f $LOG_DIR/coordinator_service_${device}.log"
 
 echo "" 
 job_output=$(docker exec taskmanager flink run --detached -m jobmanager:8081 ApacheFlink-0.0.1-SNAPSHOT.jar \

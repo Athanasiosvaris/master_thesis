@@ -285,7 +285,7 @@ flowchart LR
     end
 
     subgraph Python ["Python Model Service"]
-        PC["pulsarConsumer.py"]
+        PC["coordinator_service.py"]
         FC["Forecasting.py"]
         IT["initial_train.py"]
         RT["retrain.py"]
