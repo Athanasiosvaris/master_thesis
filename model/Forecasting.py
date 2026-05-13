@@ -220,6 +220,9 @@ def forecasting(
     forecasted_values_df = forecasted_values_df.assign(
         sensor_energy_value_prediction=predictions
     )
+    forecasted_values_df = forecasted_values_df[
+        ["sensor_id", "sensor_energy_value_prediction", "sensor_timestamp"]
+    ]
     print("Forecasted values:")
     print(forecasted_values_df)
 
