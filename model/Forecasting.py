@@ -70,15 +70,13 @@ def check_if_table_exists(conn, database_table_name: str):
             conn.commit()
             print(f"Dropped table {database_table_name}")
 
-        cur.execute(
-            f"""CREATE TABLE {database_table_name} (
+        cur.execute(f"""CREATE TABLE {database_table_name} (
             id SERIAL PRIMARY KEY,
             sensor_id Integer,
             sensor_timestamp timestamp,
-            sensor_energy_value_prediction double precision);"""
-        )
+            sensor_energy_value_prediction double precision);""")
         conn.commit()
-        print(f"Table {database_table_name} created successfully")
+        print(f"Table {database_table_name} created successfully\n")
     except psycopg2.OperationalError as e:
         print(e)
 
@@ -130,7 +128,7 @@ def fetch_model_and_scaler_from_s3(
             model = tf.keras.models.load_model(f"./{device_name}.keras")
             scaler = joblib.load(f"./scaler.save")
             if model and scaler:
-                print("Successfully downloaded model and scaler from S3")
+                print("Successfully downloaded model and scaler from S3\n")
             return model, scaler
         except Exception as e:
             print("Unable to download model and scaler from S3\n")
@@ -281,7 +279,7 @@ if __name__ == "__main__":
             conn, database_table_name
         )  # This should be 2 functions. One to check if table exists and one to drop it
     s3_client = boto3_client()
-    print("Value of --retrain flags is: ", args.retrain)
+    print(f"Value of --retrain flag: {args.retrain}\n")
     model, scaler = fetch_model_and_scaler_from_s3(
         s3_client,
         args.device_name,

@@ -10,7 +10,6 @@ import os
 import psycopg2
 import argparse
 
-
 RETRAIN_TIMESTAMPS = {
     "first_batch": ["00:00:00", "00:09:59"],
     "second_batch": ["00:10:00", "00:19:59"],
@@ -80,15 +79,13 @@ def check_if_table_exists(conn, table_name: str):
             conn.commit()
             print(f"Dropped table {table_name}")
 
-        cur.execute(
-            f"""CREATE TABLE {table_name} (
+        cur.execute(f"""CREATE TABLE {table_name} (
             id SERIAL PRIMARY KEY,
             sensor_id Integer,
             sensor_timestamp timestamp,
-            sensor_energy_value double precision);"""
-        )
+            sensor_energy_value double precision);""")
         conn.commit()
-        print(f"Table {table_name} created successfully")
+        print(f"Table {table_name} created successfully\n")
     except psycopg2.OperationalError as e:
         print(e)
 
@@ -178,7 +175,7 @@ def forecasting(
     if result.returncode != 0:
         print(f"Forecasting.py failed:\n{result.stderr}")
     else:
-        print(f"Forecasting.py completed successfully:\n{result.stdout}")
+        print(f"Forecasting.py script logs\n{result.stdout}")
 
 
 if __name__ == "__main__":
@@ -209,7 +206,7 @@ if __name__ == "__main__":
         schema=AvroSchema(Sensor),
         initial_position=pulsar.InitialPosition.Latest,
     )
-    print("Python Consumer started")
+    print("Coordinator service started\n")
 
     data = []
     SortedDf = pd.DataFrame()
@@ -228,7 +225,7 @@ if __name__ == "__main__":
             if data:
                 SortedDf = dataPreparation(data)
                 insert_data_to_db(conn, SortedDf, database_table_name)
-                print("Actual data inserted to database")
+                print("\nActual data inserted to database")
                 # Check if we need to trigger retraining
                 results = check_retrain(
                     SortedDf,
@@ -256,7 +253,7 @@ if __name__ == "__main__":
                 # if results: ->Retrain is triggered
                 # Forecasting.py should be called with the new data and the new model to make the predictions and then insert the data to the database.
 
-                print("Triggering forecasting")
+                print("Triggering forecasting\n")
                 forecasting(
                     device_name=device_name,
                     bucket_name="missingtimestamp",
