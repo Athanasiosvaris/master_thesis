@@ -42,10 +42,13 @@ public class MqttClientProducerFinal {
 				System.out.println("Connection establised");
 
 			for (int i = 0; i < messages.size(); i++) {
-				String message = messages.get(i);
 				TimeUnit.SECONDS.sleep(1); //1 seconds delay
+				// Stamp the message_creation_time right before publishing so that the
+				// latency measurement reflects the actual publish moment.
+				JSONObject json = new JSONObject(messages.get(i));
+				json.put("message_creation_time", Instant.now().toEpochMilli());
 				// Publish message
-				connection.publish(args[1], message.getBytes(), QoS.AT_LEAST_ONCE, false);
+				connection.publish(args[1], json.toString().getBytes(), QoS.AT_LEAST_ONCE, false);
 			}
 			connection.disconnect();
 
@@ -109,6 +112,10 @@ public class MqttClientProducerFinal {
 					}
 						
 				}
+
+				// message_creation_time is stamped in the publish loop (right before
+				// publishing), so that it reflects the real publish moment instead of
+				// the moment this list was pre-built at startup.
 				JSONObject json = new JSONObject();
 				json.put("sensor_id", sensor_id);
 				json.put("sensor_energy_value", sensor_energy_value);

@@ -137,7 +137,7 @@ def fetch_model_and_scaler_from_s3(
 
 def fetch_actual_values_from_db(conn, database_table_name_actual_values: str):
     cur = conn.cursor()
-    query = f"select sensor_id,sensor_energy_value,sensor_timestamp from {database_table_name_actual_values} order by sensor_timestamp desc limit 60;"
+    query = f"select sensor_id,sensor_energy_value,sensor_timestamp,message_delay from {database_table_name_actual_values} order by sensor_timestamp desc limit 60;"
     cur.execute(query)
     rows = cur.fetchall()
     rows = rows[::-1]  # reverse the order of the list
@@ -147,10 +147,14 @@ def fetch_actual_values_from_db(conn, database_table_name_actual_values: str):
 def dataset_preparation(rows: list):
 
     df = pd.DataFrame(
-        rows, columns=["sensor_id", "sensor_energy_value", "sensor_timestamp"]
+        rows,
+        columns=[
+            "sensor_id",
+            "sensor_energy_value",
+            "sensor_timestamp",
+            "message_delay",
+        ],
     )
-    # values = df["sensor_energy_value"].values.astype("float32")
-    # dataset = values.reshape(-1, 1)
 
     return df
 

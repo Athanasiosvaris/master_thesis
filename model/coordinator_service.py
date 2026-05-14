@@ -26,6 +26,7 @@ class Sensor(Record):
     sensor_energy_value = Double()
     sensor_id = Integer()
     sensor_timestamp = Long()
+    message_creation_time = Long()
 
 
 def connect_to_database():
@@ -55,13 +56,14 @@ def insert_data_to_db(
         cur.execute(
             f"""
                 INSERT INTO {table_name}
-                (sensor_timestamp, sensor_id, sensor_energy_value)
-                VALUES (%s, %s, %s)
+                (sensor_timestamp, sensor_id, sensor_energy_value,message_delay)
+                VALUES (%s, %s, %s, %s)
                 """,
             (
                 row["sensor_timestamp"],
                 row["sensor_id"],
                 row["sensor_energy_value"],
+                row["message_delay"],
             ),
         )
     con.commit()
@@ -83,7 +85,8 @@ def check_if_table_exists(conn, table_name: str):
             id SERIAL PRIMARY KEY,
             sensor_id Integer,
             sensor_timestamp timestamp,
-            sensor_energy_value double precision);""")
+            sensor_energy_value double precision,
+            message_delay double precision);""")
         conn.commit()
         print(f"Table {table_name} created successfully\n")
     except psycopg2.OperationalError as e:
@@ -271,6 +274,7 @@ if __name__ == "__main__":
                     "sensor_id": ex.sensor_id,
                     "sensor_energy_value": ex.sensor_energy_value,
                     "sensor_timestamp": ex.sensor_timestamp,
+                    "message_creation_time": ex.message_creation_time,
                 }
             )
 
