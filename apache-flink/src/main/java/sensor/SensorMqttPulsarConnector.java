@@ -1,8 +1,34 @@
+/**
+ * SensorMqttPulsarConnector - Apache Flink Streaming Job
+ *
+ * Reads Sensor JSON messages from a Pulsar source topic, applies a 1-minute
+ * tumbling event-time window per sensor ID, and writes results to a Pulsar sink topic.
+ *
+ * Build:
+ *   cd apache-flink
+ *   mvn clean install -DskipTests
+ *   --> JAR produced at: target/apache-flink-*.jar
+ *
+ * Submit via Flink UI (http://localhost:8081):
+ *   1. Upload the JAR under "Submit New Job"
+ *   2. Set Program Arguments:
+ *      --source-topic persistent://public/default/MQTTtopic9 --sink-topic persistent://public/default/FlinkTopicSinkFinal
+ *
+ * Submit via Flink CLI:
+ *   flink run target/apache-flink-*.jar \
+ *     --source-topic persistent://public/default/MQTTtopic9 \
+ *     --sink-topic persistent://public/default/FlinkTopicSinkFinal
+ *
+ * Arguments (all optional, defaults shown above):
+ *   --source-topic  Pulsar topic to consume from (must exist)
+ *   --sink-topic    Pulsar topic to write results to (must be a partitioned topic)
+ */
 package sensor;
 
 import java.time.Duration;
 
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
+import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.api.common.functions.AggregateFunction;
 import org.apache.flink.connector.base.DeliveryGuarantee;
 import org.apache.flink.connector.pulsar.sink.PulsarSink;
@@ -14,7 +40,6 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.windowing.ProcessWindowFunction;
 import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows;
-//import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.util.Collector;
@@ -22,6 +47,10 @@ import org.apache.flink.util.Collector;
 public class SensorMqttPulsarConnector {
 
 	public static void main(String[] args) throws Exception {
+		ParameterTool params = ParameterTool.fromArgs(args);
+		String sourceTopic = params.get("source-topic", "persistent://public/default/MQTTtopic9");
+		String sinkTopic = params.get("sink-topic", "persistent://public/default/FlinkTopicSinkFinal");
+
 		StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 		System.out.println("App started");
 		
@@ -36,21 +65,20 @@ public class SensorMqttPulsarConnector {
 		PulsarSource<Sensor> source = PulsarSource.<Sensor>builder()
 				.setServiceUrl("pulsar://pulsar:6650")
 				.setAdminUrl("http://pulsar:8080")
-				.setStartCursor(StartCursor.earliest())
-				.setTopics("persistent://public/default/MQTTtopic9")
+				.setStartCursor(StartCursor.latest())
+				.setTopics(sourceTopic)
 				.setDeserializationSchema(jsonFormatDeserializationSchema)
 				.setSubscriptionName("FlinkSub")
 				.setConsumerName("FlinkConsumer").build();
 
 		System.out.println("Pulsar source created");
 
-//		DataStream<Sensor> Data = env.fromSource(source, WatermarkStrategy.<Sensor>noWatermarks(), "Pulsar Source");
-//		Data.print();
-		//DataStream<Sensor> Data = env.fromSource(source, WatermarkStrategy.<Sensor>forMonotonousTimestamps()
-		//		.withTimestampAssigner((event, timestamp) -> event.getSensor_timestamp() * 1000L ).withIdleness(Duration.ofMinutes(1)), "Pulsar Source");
 
-		DataStream<Sensor> Data = env.fromSource(source, WatermarkStrategy.<Sensor>forBoundedOutOfOrderness(Duration.ofSeconds(30))
-				.withTimestampAssigner((event, timestamp) ->  event.getSensor_timestamp() * 1000L ) , "Pulsar Source");
+		DataStream<Sensor> Data = env.fromSource(source, WatermarkStrategy.<Sensor>forMonotonousTimestamps()
+				.withTimestampAssigner((event, timestamp) -> event.getSensor_timestamp() * 1000L ).withIdleness(Duration.ofMinutes(1)), "Pulsar Source");
+
+		//DataStream<Sensor> Data = env.fromSource(source, WatermarkStrategy.<Sensor>forBoundedOutOfOrderness(Duration.ofSeconds(10))
+		//		.withTimestampAssigner((event, timestamp) ->  event.getSensor_timestamp() * 1000L ) , "Pulsar Source");
 		
 		
 		DataStream <Sensor> result = Data.keyBy(Sensor -> Sensor.getSensor_id())
@@ -61,12 +89,11 @@ public class SensorMqttPulsarConnector {
 		PulsarSink<Sensor> sink = PulsarSink.<Sensor>builder()
 				.setServiceUrl("pulsar://pulsar:6650")
 				.setAdminUrl("http://pulsar:8080")
-				.setTopics("persistent://public/default/FlinkTopicSinkFinal") // SOS It has to be a partitioned topic
+				.setTopics(sinkTopic) // SOS It has to be a partitioned topic
 				.setSerializationSchema(jsonFormatSerializationSchema)
 				.setDeliveryGuarantee(DeliveryGuarantee.AT_LEAST_ONCE)
 				.build();
 		
-//		SensorAverageValues.sinkTo(sink);
 		
 		result.sinkTo(sink);
 		env.execute();
@@ -91,13 +118,14 @@ public class SensorMqttPulsarConnector {
 				out.collect(s);
 				lastElementTimestamp = s.getSensor_timestamp();
 			}
-			System.out.println("That was the window beetween " + firstElementTimestamp + " and " + lastElementTimestamp);
+			System.out.println("That was the window between " + firstElementTimestamp + " and " + lastElementTimestamp);
 			System.out.println();
 		}
 		
 	}
 	
 	
+	/*
 	public static DataStream<Sensor> avgValuePer1Sec(DataStream<Sensor> stream) {
 		DataStream<Sensor> finalStream = stream.keyBy(Sensor -> Sensor.getSensor_id())
 				.window(TumblingEventTimeWindows.of(Time.seconds(5))) //5 seconds Tumbling window
@@ -108,8 +136,9 @@ public class SensorMqttPulsarConnector {
 		return finalStream;
 
 	}
+	*/
 	
-	
+	/*
 	public static class AverrageEnergyValue implements AggregateFunction<Sensor, Accumulator, Accumulator> {
 
 		private static final long serialVersionUID = 1L;
@@ -143,6 +172,7 @@ public class SensorMqttPulsarConnector {
 			// TODO Auto-generated method stub
 			return null;
 		}
-
+	
 	}
+	*/
 }
