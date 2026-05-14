@@ -221,7 +221,7 @@ if __name__ == "__main__":
 
     while True:
         try:
-            msg = consumer.receive(5000)
+            msg = consumer.receive(1000)
 
         except pulsar.Timeout:
             print("No new messages received yet.Trying again...")
