@@ -95,7 +95,9 @@ echo ">>> Flink job started: $FLINK_JOB_ID"
 
 sleep 2
 run "postgress_sink.TestConsumerFinal" "${device}_sink" "${device}_model_consume"
+sleep 2
 run "mqttClient.MqttClientConsumerFinal" "$device"
+sleep 1
 run "mqttProducerClient_package.MqttClientProducerFinal" "$CSV_PATH" "$device"
 
 echo ""
