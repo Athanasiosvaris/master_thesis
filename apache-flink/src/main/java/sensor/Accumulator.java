@@ -32,3 +32,5 @@ public class Accumulator extends Sensor{
 		this.accumulator_creation_timestamp = timestamp;
 	}
 }
+
+
