@@ -3,7 +3,7 @@ import Chart from "chart.js/auto";
 export async function getData() {
   //Retrives the data from the database - Calls backend API
   try {
-    const response = await fetch("http://localhost:3000/sensor1Data");
+    const response = await fetch("http://localhost:3001/sensor1Data");
     const result = await response.json();
     let data = [];
     for (let i = result.length - 1; i >= 0; i--) {
@@ -28,7 +28,7 @@ export function plotLineDiagram(dataSet, elementID, labelName) {
         point: {
           backgroundColor: (ctx) => {
             // console.log(ctx);
-            if (ctx.dataIndex >= 10) return "rgba(192, 93, 75, 1)";
+            if (ctx.dataIndex >= 60) return "rgba(192, 93, 75, 1)";
             else return "rgba(56, 92, 192, 1)";
           },
         },
@@ -43,7 +43,7 @@ export function plotLineDiagram(dataSet, elementID, labelName) {
           segment: {
             borderColor: (ctx) => {
               // console.log(ctx);
-              if (ctx.p1DataIndex >= 10) return "rgba(192, 93, 75, 1)";
+              if (ctx.p1DataIndex >= 60) return "rgba(192, 93, 75, 1)";
               else return "rgba(56, 92, 192, 1)";
             },
           },

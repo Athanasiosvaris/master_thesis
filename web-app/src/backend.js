@@ -10,15 +10,23 @@ app.get("/sensor1Data", async (req, res) => {
   try {
     //Querys the databases and brings back the results as JSON
     const realValues = await db.query(
-      "SELECT json_agg(t)FROM ( SELECT * FROM sensor1realvalues ORDER BY sensordate DESC LIMIT 10) AS t"
+      "SELECT json_agg(t) FROM ( SELECT sensor_energy_value AS sensorvalue, sensor_timestamp AS sensordate FROM device1_actualvalues ORDER BY sensor_timestamp DESC LIMIT 60) AS t"
     );
 
     const forecastedValues = await db.query(
-      "SELECT json_agg(t)FROM ( SELECT * FROM sensor1forecastedvalues ORDER BY sensordate DESC LIMIT 10) AS t"
+      "SELECT json_agg(t) FROM ( SELECT sensor_energy_value_prediction AS sensorvalue, sensor_timestamp AS sensordate FROM device1_forecastedvalues ORDER BY sensor_timestamp DESC LIMIT 60) AS t"
     );
-    let realValuesData = realValues.rows[0].json_agg; //Array of objects
-    let forecastedValuesData = forecastedValues.rows[0].json_agg;
-    let finaldata = forecastedValuesData.concat(realValuesData); // The first 10 values of the array are the real data and the next 10 values are the fprecasted data
+    let realValuesData = realValues.rows[0].json_agg || []; //Array of objects
+    let forecastedValuesData = forecastedValues.rows[0].json_agg || [];
+
+    // Only return data when both actual and forecasted values are available (120 total)
+    if (realValuesData.length < 60 || forecastedValuesData.length < 60) {
+      res.json([]);
+      return;
+    }
+
+    //let finaldata = realValuesData.concat(forecastedValuesData);
+    let finaldata = forecastedValuesData.concat(realValuesData); // The first 60 values are the real data and the next 60 values are the forecasted data
 
     res.json(finaldata);
   } catch (err) {
@@ -64,6 +72,6 @@ app.get("/postData", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Listening on port 3000");
+app.listen(3001, () => {
+  console.log("Listening on port 3001");
 });

@@ -11,7 +11,7 @@ btn1.addEventListener("click", () => {
 
 async function DrawPlots() {
   const dataSet1 = await func.getData(); // Retreived Dataset
-  Chart1 = func.plotLineDiagram(dataSet1, "lineChartDB", "Sensor 1");
+  Chart1 = func.plotLineDiagram(dataSet1 || [], "lineChartDB", "Sensor 1");
 }
 
 DrawPlots().then(() => {
@@ -21,6 +21,7 @@ DrawPlots().then(() => {
 async function autoUpdate() {
   // It updates the chart with the 20 most recent values (based on timestamp). Values [0-9] are real values and values [10-19] are forecasted values.
   const newDataset = await func.getData(); //New data from the database
+  if (!newDataset) return;
   let data = [];
   let labels1 = [];
   for (let obj of newDataset) {
@@ -28,8 +29,8 @@ async function autoUpdate() {
     labels1.push(obj.sensordate);
   }
   console.log("Updated");
-  Chart1.config._config.data.datasets[0].data = data;
-  Chart1.config._config.data.labels = labels1;
+  Chart1.data.datasets[0].data = data;
+  Chart1.data.labels = labels1;
   Chart1.update();
 }
 
