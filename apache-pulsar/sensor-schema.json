@@ -1,0 +1,5 @@
+{
+  "type": "AVRO",
+  "schema": "{\"type\":\"record\",\"name\":\"Sensor\",\"namespace\":\"sensor\",\"fields\":[{\"name\":\"sensor_energy_value\",\"type\":\"double\"},{\"name\":\"sensor_id\",\"type\":\"int\"},{\"name\":\"sensor_timestamp\",\"type\":\"long\"}]}",
+  "properties": {}
+}

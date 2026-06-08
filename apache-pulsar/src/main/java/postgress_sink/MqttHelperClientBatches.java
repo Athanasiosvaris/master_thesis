@@ -20,58 +20,56 @@ import ApachePulsarExample.mavenproject.configuration_info;
 import sensor.Sensor;
 
 public class MqttHelperClientBatches {
+
 	public static void main(String[] args) throws StreamReadException, DatabindException, IOException {
-		// 1.Initiate pulsar client
+		if (args.length < 2) {
+			System.err.println("Usage: MqttHelperClientBatches <source-topic> <model-consume-topic>");
+			System.exit(1);
+		}
+
 		PulsarClient pulsarClient = PulsarClient.builder().serviceUrl(configuration_info.SERVICE_URL).build();
 
-		// 2.Create producer
 		Consumer<byte[]> consumer = pulsarClient.newConsumer(Schema.BYTES)
-				.topic("persistent://public/default/model60BatchesConsumeTopicBatches").consumerName("Test_consumer")
-				.subscriptionInitialPosition(SubscriptionInitialPosition.Earliest)
-				.subscriptionName("test-subscriptions").subscribe();
-		
-		// Producer that sends the messages to pythonModelConsume topic
+				.topic("persistent://public/default/" + args[0])
+				.consumerName("MqttHelperClientBatches_consumer")
+				.subscriptionInitialPosition(SubscriptionInitialPosition.Latest)
+				.subscriptionName("mqtt-helper-subscription").subscribe();
+
 		Producer<Sensor> modelConsumeTopicProducer = pulsarClient.newProducer(AvroSchema.of(Sensor.class))
-				.producerName("test_producer2")
-				.topic("persistent://public/default/model60BatchesConsumeTopicPython") 
+				.producerName("MqttHelperClientBatches_producer")
+				.topic("persistent://public/default/" + args[1])
 				.create();
-		
-		
+
 		ObjectMapper objectMapper = new ObjectMapper();
 
 		try {
-			// Assuming consumer is already created and initialized
 			while (true) {
-				// Waiting up to 10 second to receive a message
 				Message<byte[]> message = consumer.receive(10000, TimeUnit.MILLISECONDS);
 
 				if (message == null) {
-					// No message received within timeout period, break the loop
 					System.out.println("No messages received");
 					System.out.println("Trying again.");
 				} else {
 					byte[] data = message.getValue();
-					Sensor sensor = objectMapper.readValue(data, Sensor.class); // readValue() method converts the
-																				// byte[] data into a Sensor object
+					Sensor sensor = objectMapper.readValue(data, Sensor.class);
 					System.out.println(sensor);
 					try {
-						consumer.acknowledge(message); // Acknowledge message
+						consumer.acknowledge(message);
 					} catch (Exception e) {
-						consumer.negativeAcknowledge(message); // Negative acknowledge on error
+						consumer.negativeAcknowledge(message);
 						e.printStackTrace();
 						break;
 					}
-					modelConsumeTopicProducer.newMessage().key("sensor_id").value(sensor).send(); 
+					modelConsumeTopicProducer.newMessage().key("sensor_id").value(sensor).send();
 				}
 			}
 		} finally {
-			// Make sure to close the consumer properly
 			try {
 				if (consumer != null) {
 					consumer.close();
 					System.out.println("Consumer closed.");
 					modelConsumeTopicProducer.close();
-	                 System.out.println("Producer closed.");
+					System.out.println("Producer closed.");
 					pulsarClient.close();
 					System.out.println("Pulsar client closed.");
 				}
@@ -80,7 +78,5 @@ public class MqttHelperClientBatches {
 				e.printStackTrace();
 			}
 		}
-
 	}
-
 }
