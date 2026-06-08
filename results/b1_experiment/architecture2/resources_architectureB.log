@@ -1,0 +1,78 @@
+============================================================================================
+B1 EXPERIMENT - ARCHITECTURE 2 (NO FLINK, DIRECT PATH) - RESOURCE METRICS
+Generated: 2026-05-14T16:18:28Z
+Source: Prometheus + cAdvisor (step = 15 s)
+Containers queried: pulsar, jobmanager, taskmanager, mosquittoo, postgres, rustfs_container
+Note: jobmanager and taskmanager are intentionally NOT started for architecture 2.
+      They appear as <no data>, which is the expected resource saving.
+Note: run times provided in Athens local (+0200); converted to UTC for queries.
+============================================================================================
+
+Queries:
+  CPU (cores) : rate(container_cpu_usage_seconds_total{name=...}[30s])
+  Memory (B)  : container_memory_usage_bytes{name=...}
+
+============================================================================================
+B1-direct-1   2026-05-14T15:10:00Z -> 2026-05-14T15:24:00Z   (840 s)
+============================================================================================
+  container              cpu_mean    cpu_p95    cpu_max   mem_mean_MB  mem_max_MB
+  pulsar                   0.0773     0.0785     1.3241        2473.8      2640.1
+  jobmanager           <no data> (0 cpu / 0 mem samples)
+  taskmanager          <no data> (0 cpu / 0 mem samples)
+  mosquittoo               0.0006     0.0007     0.0007           2.9         3.5
+  postgres                 0.0007     0.0010     0.0017          22.9        24.8
+  rustfs_container         0.0005     0.0014     0.0018         109.2       113.1
+
+============================================================================================
+B1-direct-2   2026-05-14T15:25:00Z -> 2026-05-14T15:40:00Z   (900 s)
+============================================================================================
+  container              cpu_mean    cpu_p95    cpu_max   mem_mean_MB  mem_max_MB
+  pulsar                   0.0872     0.0546     1.3541        2477.9      2483.6
+  jobmanager           <no data> (0 cpu / 0 mem samples)
+  taskmanager          <no data> (0 cpu / 0 mem samples)
+  mosquittoo               0.0006     0.0006     0.0007           2.9         3.5
+  postgres                 0.0007     0.0014     0.0017          23.8        25.6
+  rustfs_container         0.0005     0.0014     0.0023         113.1       115.8
+
+============================================================================================
+B1-direct-3   2026-05-14T15:40:00Z -> 2026-05-14T15:55:00Z   (900 s)
+============================================================================================
+  container              cpu_mean    cpu_p95    cpu_max   mem_mean_MB  mem_max_MB
+  pulsar                   0.0653     0.0531     1.3056        2483.3      2646.9
+  jobmanager           <no data> (0 cpu / 0 mem samples)
+  taskmanager          <no data> (0 cpu / 0 mem samples)
+  mosquittoo               0.0005     0.0006     0.0007           2.8         3.2
+  postgres                 0.0007     0.0016     0.0021          25.0        26.7
+  rustfs_container         0.0006     0.0015     0.0050         117.7       122.3
+
+============================================================================================
+B1-direct-4   2026-05-14T15:55:00Z -> 2026-05-14T16:10:00Z   (900 s)
+============================================================================================
+  container              cpu_mean    cpu_p95    cpu_max   mem_mean_MB  mem_max_MB
+  pulsar                   0.0852     0.0533     1.3464        2481.4      2482.6
+  jobmanager           <no data> (0 cpu / 0 mem samples)
+  taskmanager          <no data> (0 cpu / 0 mem samples)
+  mosquittoo               0.0006     0.0006     0.0007           2.9         3.7
+  postgres                 0.0006     0.0015     0.0024          26.9        28.7
+  rustfs_container         0.0004     0.0010     0.0062         122.1       125.5
+
+============================================================================================
+ACROSS-RUN MEAN (mean of run-level statistic, n=4 runs)
+============================================================================================
+  container             cpu_mean_avg  cpu_p95_avg  cpu_max_avg   mem_mean_MB  mem_max_MB
+  pulsar                      0.0787       0.0599       1.3325        2479.1      2563.3
+  jobmanager           <no data>  (container not running for architecture 2)
+  taskmanager          <no data>  (container not running for architecture 2)
+  mosquittoo                  0.0006       0.0006       0.0007           2.9         3.5
+  postgres                    0.0007       0.0014       0.0020          24.6        26.4
+  rustfs_container            0.0005       0.0013       0.0039         115.6       119.2
+
+============================================================================================
+Notes
+============================================================================================
+  CPU is reported in cores (1.0 = one full vCPU saturated).
+  Memory is shown in MB in the table for readability; the CSV keeps bytes.
+  jobmanager + taskmanager are not running in architecture 2 by design.
+  cadvisor / grafana / prometheus containers are excluded.
+  Host-side processes (producer / bridge / MqttHelperClientBatches /
+  pulsarConsumer60Batches.py) are not visible to cAdvisor.

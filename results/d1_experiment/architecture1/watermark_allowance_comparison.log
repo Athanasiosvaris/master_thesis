@@ -1,0 +1,55 @@
+====================================================================================================
+D1 EXPERIMENT — ARCHITECTURE 1 (Apache Flink) — WATERMARK ALLOWANCE vs IMPUTATION
+Summary across all three live runs (0s / 5s / 10s out-of-orderness allowance)
+====================================================================================================
+Each run replayed the same 5 disordered device streams (missing_timestamp_data/) through Flink
+with a different forBoundedOutOfOrderness allowance.  "Imputed" rows are mean-fills inserted by
+dataPreparation after Flink dropped out-of-order events (computed_value = YES in the device logs);
+"real" rows are genuine sensor readings (computed_value = NO).
+
+All three live runs side by side
+--------------------------------
+
+  ┌───────────┬────────────┬─────────┬───────────┐
+  │ Allowance │ Total rows │ Imputed │ Imputed % │
+  ├───────────┼────────────┼─────────┼───────────┤
+  │ 0s        │      2 700 │     785 │    29.1 % │
+  ├───────────┼────────────┼─────────┼───────────┤
+  │ 5s        │      3 000 │     865 │    28.8 % │
+  ├───────────┼────────────┼─────────┼───────────┤
+  │ 10s       │      2 700 │     776 │    28.7 % │
+  └───────────┴────────────┴─────────┴───────────┘
+
+Per-device imputed % by allowance
+---------------------------------
+
+  ┌─────────┬──────────┬─────────┬─────────┐
+  │ Device  │   0s     │   5s    │   10s   │
+  ├─────────┼──────────┼─────────┼─────────┤
+  │ device1 │  (see ./0sec_watermark/imputation_counts.log)                │
+  │ device2 │  (see ./0sec_watermark/imputation_counts.log)                │
+  │ device3 │  (see ./0sec_watermark/imputation_counts.log)                │
+  │ device4 │  (see ./0sec_watermark/imputation_counts.log)                │
+  │ device5 │  (see ./0sec_watermark/imputation_counts.log)                │
+  └─────────┴──────────┴─────────┴─────────┘
+  (Per-device, per-window breakdowns live in each allowance subfolder's imputation_counts.log.)
+
+Interpretation
+--------------
+  Increasing the watermark allowance from 0s to 10s has NO meaningful effect on the
+  imputation rate (~29% throughout).  The input streams have a mean event lateness of
+  roughly 50s (max ~180-256s), which dwarfs the 0-10s allowances tested, so almost all
+  out-of-order events are dropped regardless.  Meaningfully reducing imputation would
+  require an allowance on the order of the disorder itself (~50s+), which would in turn
+  add that same delay to every window's end-to-end latency — the fundamental
+  latency-vs-completeness tradeoff of event-time windowing.
+
+Note on row counts: total rows differ (2700 vs 3000) only because the staggered-start runs
+captured a different number of complete 60-row windows before the experiment ended, not
+because of the allowance itself.
+
+Sources:
+  ./0sec_watermark/imputation_counts.log
+  ./5sec_watermark/imputation_counts.log
+  ./10sec_watermark/imputation_counts.log
+====================================================================================================

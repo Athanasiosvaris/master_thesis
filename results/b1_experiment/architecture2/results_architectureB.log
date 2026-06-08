@@ -1,0 +1,181 @@
+============================================================================================
+B1 EXPERIMENT - ARCHITECTURE 2 (NO FLINK, DIRECT PATH) - DELAY METRICS
+Generated: 2026-05-14T16:15:52Z
+Input data: ordered 15-min stream (device_1_15min_streaming_data_2025-12-08.csv)
+Pipeline  : producer -> mosquitto -> bridge -> Pulsar(${device}) ->
+            MqttHelperClientBatches -> Pulsar(${device}_model_consume) ->
+            pulsarConsumer60Batches.py (count-based 60-message flush) -> Postgres
+Source logs: architecture2_1st_run_logs.log, architecture2_2nd_run_logs.log, architecture2_3d_run_logs.log, architecture2_4th_run_logs.log
+============================================================================================
+
+Definitions
+-----------
+  message_delay_ms        = db_insert_time - message_creation_time (per message)
+  position_in_window      = row index 0..59 within the 60-message batch
+  analytic_window_wait_ms = (59 - position_in_window) * 1000
+                            i.e. the deterministic floor imposed by waiting for
+                            the 60th (last) message to arrive at the coordinator.
+                            Same formula as architecture A so columns line up;
+                            for architecture A the formula under-counts by 1 s
+                            (Flink waits for the 61st message to trigger the window).
+  processing_overhead_ms  = message_delay_ms - analytic_window_wait_ms
+                            i.e. infrastructure overhead above the structural floor
+
+============================================================================================
+1. PER-RUN SUMMARY
+============================================================================================
+run                                       blocks   msgs      p50      p90      p95      p99      max     min
+architecture2_1st_run_logs.log                13    780    29571    53241    56202    59106    59164      12
+architecture2_2nd_run_logs.log                14    840    29565    53236    56195    59091    59156       9
+architecture2_3d_run_logs.log                 14    840    29556    53218    56179    59093    59143       7
+architecture2_4th_run_logs.log                14    840    29561    53228    56188    59092    59152       6
+All values in ms.  blocks = number of windows; msgs = number of messages.
+
+============================================================================================
+2. AGGREGATE ACROSS ALL 4 RUNS  (n = 3300 messages, 55 windows)
+============================================================================================
+  p50   message_delay :   29564.0 ms
+  p90   message_delay :   53238.8 ms
+  p95   message_delay :   56201.1 ms
+  p99   message_delay :   59096.0 ms
+  max   message_delay :   59164.0 ms
+  min   message_delay :       6.0 ms
+  mean  message_delay :   29561.5 ms
+  std   message_delay :   17346.1 ms
+  CV    (std/mean)    :     0.587
+
+============================================================================================
+3. RUN-TO-RUN STABILITY  (mean +/- std of run-level percentile, n=4 runs)
+============================================================================================
+  p50  across runs : 29563 +/- 6 ms  (min 29556, max 29571)
+  p90  across runs : 53231 +/- 9 ms  (min 53218, max 53241)
+  p99  across runs : 59095 +/- 6 ms  (min 59091, max 59106)
+  mean across runs : 29562 +/- 5 ms
+
+============================================================================================
+4. PER-POSITION-IN-WINDOW  (averaged across all windows in all runs)
+============================================================================================
+   pos    n      mean     std       p50       p90
+     0   55     59107      25     59108     59144
+     1   55     58106      25     58107     58142
+     2   55     57105      25     57105     57140
+     3   55     56104      24     56104     56138
+     4   55     55103      24     55103     55136
+     5   55     54102      23     54102     54134
+     6   55     53100      23     53101     53131
+     7   55     52098      23     52099     52128
+     8   55     51097      22     51097     51127
+     9   55     50095      22     50096     50124
+    10   55     49094      21     49094     49122
+    11   55     48092      21     48092     48120
+    12   55     47090      21     47089     47118
+    13   55     46089      20     46087     46115
+    14   55     45087      20     45086     45113
+    15   55     44085      19     44084     44110
+    16   55     43084      19     43082     43109
+    17   55     42082      19     42081     42107
+    18   55     41080      18     41079     41105
+    19   55     40078      18     40077     40102
+    20   55     39077      17     39075     39100
+    21   55     38075      17     38074     38098
+    22   55     37074      16     37072     37096
+    23   55     36072      16     36070     36094
+    24   55     35070      16     35068     35091
+    25   55     34069      15     34067     34089
+    26   55     33067      15     33066     33088
+    27   55     32066      15     32064     32086
+    28   55     31064      14     31063     31085
+    29   55     30062      14     30061     30082
+    30   55     29061      14     29059     29080
+    31   55     28059      13     28058     28079
+    32   55     27057      13     27056     27076
+    33   55     26056      13     26055     26074
+    34   55     25054      13     25053     25071
+    35   55     24052      12     24051     24069
+    36   55     23051      12     23050     23068
+    37   55     22049      12     22048     22066
+    38   55     21048      11     21047     21064
+    39   55     20046      11     20045     20062
+    40   55     19044      11     19044     19059
+    41   55     18043      10     18042     18057
+    42   55     17041      10     17040     17055
+    43   55     16039      10     16039     16053
+    44   55     15038       9     15038     15051
+    45   55     14036       9     14036     14049
+    46   55     13035       8     13034     13047
+    47   55     12033       8     12033     12045
+    48   55     11031       8     11031     11042
+    49   55     10030       7     10029     10040
+    50   55      9028       7      9027      9038
+    51   55      8027       7      8026      8035
+    52   55      7025       6      7024      7033
+    53   55      6023       6      6022      6032
+    54   55      5022       6      5021      5030
+    55   55      4020       5      4019      4027
+    56   55      3019       5      3018      3026
+    57   55      2017       5      2016      2025
+    58   55      1016       4      1015      1022
+    59   55        14       4        13        19
+  Slope is approximately -1000 ms per position, matching the producer's 1-Hz pacing.
+  Floor for position 59 is essentially zero (small Pulsar/DB overhead only).
+
+============================================================================================
+5. DECOMPOSED: processing_overhead_ms = message_delay - analytic_window_wait
+============================================================================================
+  p50  processing_overhead :      58.0 ms
+  p90  processing_overhead :     108.0 ms
+  p99  processing_overhead :     143.0 ms
+  max  processing_overhead :     164.0 ms
+  min  processing_overhead :       6.0 ms
+  mean processing_overhead :      61.5 ms
+  std  processing_overhead :      32.0 ms
+  Composition (approximate, mean):
+    Pulsar consume + build_batch + Postgres INSERT.
+    No Flink window wait, no TestConsumerFinal serial-send burst.
+
+============================================================================================
+6. COVERAGE SANITY CHECK
+============================================================================================
+  architecture2_1st_run_logs.log: 780 distinct timestamps, 780 rows, 13 windows  <-- only 13 windows captured (expected 14 for a 15-min run)
+  architecture2_2nd_run_logs.log: 840 distinct timestamps, 840 rows, 14 windows
+  architecture2_3d_run_logs.log: 840 distinct timestamps, 840 rows, 14 windows
+  architecture2_4th_run_logs.log: 840 distinct timestamps, 840 rows, 14 windows
+
+============================================================================================
+7. ANOMALIES TO REVIEW BEFORE PUBLISHING
+============================================================================================
+  - architecture2_1st_run_logs.log captured only 13 windows (expected 14).
+    Likely early termination or producer/coordinator startup delay.
+    Inspect the tail of the log to decide whether to include or discard.
+
+============================================================================================
+8. HEAD-TO-HEAD WITH ARCHITECTURE A (FROM results_architectureA.log)
+============================================================================================
+  metric                            A (Flink)     B (direct)    delta (A - B)
+  p50 message_delay (ms)              35559.5        29564.0           5995.5
+  p99 message_delay (ms)              65386.5        59096.0           6290.5
+  max message_delay (ms)              67302.0        59164.0           8138.0
+  mean processing_overhead             6224.7           61.5           6163.2
+  Note: 1000 ms of the A-vs-B gap is structural (Flink waits for the 61st
+  message to trigger the window; architecture B flushes on the 60th).
+  Subtract 1000 ms from the deltas above for a strict apples-to-apples view.
+
+============================================================================================
+9. THESIS-READY SUMMARY PARAGRAPH
+============================================================================================
+  Under ordered input on the direct architecture (no Flink), 3300 messages
+  across 55 windows in 4 runs showed median end-to-end latency
+  29564.0 ms with p99 59096.0 ms and max 59164 ms.
+  The latency distribution is uniform on [0, ~59 s], a direct consequence of the
+  coordinator's count-based 60-message batching: each consecutive message in a
+  window waits 1 s less than the previous one.  After subtracting the deterministic
+  batching wait, the pure infrastructure overhead is 62 +/- 32 ms
+  per message - dominated by Pulsar receive, DataFrame construction, and the
+  Postgres INSERT.  Compared to architecture A (Flink path), this represents a
+  6.0 s reduction in p50 latency, of which 1 s is structural and the
+  remaining 5.0 s is the cost of the Flink path itself (predominantly
+  TestConsumerFinal's synchronous serial publish loop).
+
+============================================================================================
+END OF REPORT
+============================================================================================

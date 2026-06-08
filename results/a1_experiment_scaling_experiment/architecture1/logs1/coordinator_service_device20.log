@@ -1,0 +1,20 @@
+2026-05-15 20:07:43.101 INFO  [131809221701760] Client:86 | Subscribing on Topic :device20_model_consume
+2026-05-15 20:07:43.102 INFO  [131809221701760] ClientConnection:196 | [<none> -> pulsar://localhost:6650] Create ClientConnection, timeout=10000
+2026-05-15 20:07:43.102 INFO  [131809221701760] ConnectionPool:125 | Created connection for pulsar://localhost:6650-pulsar://localhost:6650-0
+2026-05-15 20:07:43.107 INFO  [131808693843648] ClientConnection:416 | [127.0.0.1:55164 -> 127.0.0.1:6650] Connected to broker
+2026-05-15 20:07:43.110 INFO  [131808693843648] HandlerBase:112 | [persistent://public/default/device20_model_consume, pythonSubscription, 0] Getting connection from pool
+2026-05-15 20:07:43.112 INFO  [131808693843648] BinaryProtoLookupService:85 | Lookup response for persistent://public/default/device20_model_consume, lookup-broker-url pulsar://localhost:6650, from [127.0.0.1:55164 -> 127.0.0.1:6650] 
+2026-05-15 20:07:43.125 INFO  [131808693843648] ConsumerImpl:337 | [persistent://public/default/device20_model_consume, pythonSubscription, 0] Created consumer on broker [127.0.0.1:55164 -> 127.0.0.1:6650] 
+2026-05-15 20:07:43.126 INFO  [131808693843648] HandlerBase:134 | Finished connecting to broker after 15 ms
+Coordinator service started
+
+Database connection established
+Table device20_actualvalues created successfully
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+2026-05-15 20:07:48.693 INFO  [131808693843648] ConsumerImpl:1334 | Broker notification of Closed consumer: 0
+2026-05-15 20:07:48.693 INFO  [131808693843648] HandlerBase:186 | [persistent://public/default/device20_model_consume, pythonSubscription, 0] Schedule reconnection in 0.1 s

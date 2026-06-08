@@ -1,0 +1,37 @@
+====================================================================================================
+C1 EXPERIMENT — ARCHITECTURE 2 (no Flink, direct path, ordered input)
+Forecast accuracy metrics — computed on forecast_vs_actual_architecture2.csv
+====================================================================================================
+Scoring : ground-truth = device_1_in_order_data_2025-12-08.csv
+          (same source used as arch 2's producer input — so the actual_value column is
+          effectively identical to the pipeline's own observations)
+Input   : forecast_vs_actual_architecture2.csv
+
+┌────────────────────────┬────────────────────────────────────────────┐
+│         Metric         │                   Value                    │
+├────────────────────────┼────────────────────────────────────────────┤
+│ n                      │ 3 540 paired (forecast, actual) timestamps │
+├────────────────────────┼────────────────────────────────────────────┤
+│ Actuals with value = 0 │ 0 — MAPE safe                              │
+├────────────────────────┼────────────────────────────────────────────┤
+│ MAE                    │ 450.52 W                                   │
+├────────────────────────┼────────────────────────────────────────────┤
+│ MSE                    │ 807 495 W²                                 │
+├────────────────────────┼────────────────────────────────────────────┤
+│ RMSE                   │ 898.61 W                                   │
+├────────────────────────┼────────────────────────────────────────────┤
+│ MAPE                   │ 39.90 %                                    │
+├────────────────────────┼────────────────────────────────────────────┤
+│ sMAPE                  │ 28.35 %                                    │
+├────────────────────────┼────────────────────────────────────────────┤
+│ MAE ÷ mean(actuals)    │ 36.04 %                                    │
+└────────────────────────┴────────────────────────────────────────────┘
+
+Supporting context:
+  actuals range / mean   : 537.5 .. 1 731.3 W   (mean = 1 250.1 W)
+  actual std             : 380.67 W
+  predictions mean       : 1 445.7 W
+  prediction std         : 872.83 W
+  pred_std / actual_std  : 2.293   (predictions vary ~129% more than reality)
+  mean residual (a - p)  : -195.61 W   (model over-predicts on average)
+====================================================================================================

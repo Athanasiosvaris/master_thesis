@@ -1,0 +1,48 @@
+====================================================================================================
+C1 EXPERIMENT — DATASETS USED (inputs and ground truth per architecture)
+====================================================================================================
+
+ARCHITECTURE 1 (with Apache Flink)
+----------------------------------
+  Input fed to the pipeline:
+      apache-pulsar/data/missing_timestamp_data/device_1_data_2025-12-08_2025-12-09.csv
+      (disordered / out-of-order stream; first 60 minutes used)
+
+  Actual values used for scoring the forecasts:
+    - Originally: architecture 1's OWN observed actuals, parsed from the
+      "Actual values fetched" blocks of coordinator_service_device1.log
+      (these contain real readings + Flink-imputed mean-fill values).
+    - Final version (after re-scoring): the shared ground truth file
+      apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv
+      The current metrics (MAE 404.21 W, RMSE 614.37 W, MAPE 36.29 %) are computed against this file.
+
+
+ARCHITECTURE 2 (no Flink, direct path)
+--------------------------------------
+  Input fed to the pipeline:
+      apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv
+      (ordered stream)
+
+  Actual values used for scoring the forecasts:
+      The SAME file: apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv
+    - Originally: architecture 2's own observed actuals (from pulsarConsumer60Batches_device1.log).
+    - Re-scored against the same in_order file.
+  Because arch 2's input IS the in-order file, its observed actuals already matched the ground
+  truth — which is why its metrics (MAE 450.52 W, RMSE 898.61 W, MAPE 39.90 %) did NOT change
+  when we switched to ground-truth scoring, while architecture 1's did.
+
+
+CORRELATION BETWEEN THE TWO SOURCE DATASETS
+-------------------------------------------
+  in_order_data/device_1_in_order_data_2025-12-08.csv
+      =  sort + per-minute-mean-fill of the FIRST 60 MINUTES of
+         missing_timestamp_data/device_1_data_2025-12-08_2025-12-09.csv
+
+  Verification: all 3 600 rows match to floating-point precision.  The 5 truly-missing
+  seconds (00:01:00–00:01:03 and 00:18:00) are filled with the per-minute mean of the
+  real values; everything else is identical to the disordered source.
+
+  So they are the SAME underlying data for the first hour — one shuffled (~49 % of events
+  out-of-order), the other sorted and gap-filled.  After 60 minutes only the
+  missing_timestamp file continues (it spans ~48 h total).
+====================================================================================================

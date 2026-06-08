@@ -1,0 +1,1740 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36mApachePulsarExample:mavenproject[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding mavenproject 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.6.3:java[m [1m(default-cli)[m @ [36mmavenproject[0;1m ---[m
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:674.6 Sensor_creation_timestamp:1765152000 Message_creation_time:1778866491330
+Sensor id:12 Sensor_energy_value:685.8 Sensor_creation_timestamp:1765152001 Message_creation_time:1778866492338
+Sensor id:12 Sensor_energy_value:670.3 Sensor_creation_timestamp:1765152002 Message_creation_time:1778866493342
+Sensor id:12 Sensor_energy_value:670.3 Sensor_creation_timestamp:1765152003 Message_creation_time:1778866494343
+Sensor id:12 Sensor_energy_value:668.7 Sensor_creation_timestamp:1765152004 Message_creation_time:1778866495347
+Sensor id:12 Sensor_energy_value:670.2 Sensor_creation_timestamp:1765152005 Message_creation_time:1778866496354
+Sensor id:12 Sensor_energy_value:669.9 Sensor_creation_timestamp:1765152006 Message_creation_time:1778866497357
+Sensor id:12 Sensor_energy_value:669.4 Sensor_creation_timestamp:1765152007 Message_creation_time:1778866498361
+Sensor id:12 Sensor_energy_value:668.6 Sensor_creation_timestamp:1765152008 Message_creation_time:1778866499370
+Sensor id:12 Sensor_energy_value:675.2 Sensor_creation_timestamp:1765152009 Message_creation_time:1778866500373
+Sensor id:12 Sensor_energy_value:677.3 Sensor_creation_timestamp:1765152010 Message_creation_time:1778866501378
+Sensor id:12 Sensor_energy_value:669.8 Sensor_creation_timestamp:1765152011 Message_creation_time:1778866502381
+Sensor id:12 Sensor_energy_value:669.7 Sensor_creation_timestamp:1765152012 Message_creation_time:1778866503384
+Sensor id:12 Sensor_energy_value:668.1 Sensor_creation_timestamp:1765152013 Message_creation_time:1778866504386
+Sensor id:12 Sensor_energy_value:670.3 Sensor_creation_timestamp:1765152014 Message_creation_time:1778866505387
+Sensor id:12 Sensor_energy_value:668.7 Sensor_creation_timestamp:1765152015 Message_creation_time:1778866506390
+Sensor id:12 Sensor_energy_value:669.5 Sensor_creation_timestamp:1765152016 Message_creation_time:1778866507395
+Sensor id:12 Sensor_energy_value:669.6 Sensor_creation_timestamp:1765152017 Message_creation_time:1778866508397
+Sensor id:12 Sensor_energy_value:671.1 Sensor_creation_timestamp:1765152018 Message_creation_time:1778866509399
+Sensor id:12 Sensor_energy_value:683.9 Sensor_creation_timestamp:1765152019 Message_creation_time:1778866510400
+Sensor id:12 Sensor_energy_value:672.9 Sensor_creation_timestamp:1765152020 Message_creation_time:1778866511402
+Sensor id:12 Sensor_energy_value:676.4 Sensor_creation_timestamp:1765152021 Message_creation_time:1778866512404
+Sensor id:12 Sensor_energy_value:670.0 Sensor_creation_timestamp:1765152022 Message_creation_time:1778866513405
+Sensor id:12 Sensor_energy_value:670.6 Sensor_creation_timestamp:1765152023 Message_creation_time:1778866514408
+Sensor id:12 Sensor_energy_value:670.7 Sensor_creation_timestamp:1765152024 Message_creation_time:1778866515410
+Sensor id:12 Sensor_energy_value:665.8 Sensor_creation_timestamp:1765152025 Message_creation_time:1778866516414
+Sensor id:12 Sensor_energy_value:668.2 Sensor_creation_timestamp:1765152026 Message_creation_time:1778866517416
+Sensor id:12 Sensor_energy_value:688.7 Sensor_creation_timestamp:1765152027 Message_creation_time:1778866518418
+Sensor id:12 Sensor_energy_value:670.1 Sensor_creation_timestamp:1765152028 Message_creation_time:1778866519420
+Sensor id:12 Sensor_energy_value:669.1 Sensor_creation_timestamp:1765152029 Message_creation_time:1778866520425
+Sensor id:12 Sensor_energy_value:666.4 Sensor_creation_timestamp:1765152030 Message_creation_time:1778866521427
+Sensor id:12 Sensor_energy_value:665.4 Sensor_creation_timestamp:1765152031 Message_creation_time:1778866522430
+Sensor id:12 Sensor_energy_value:670.3 Sensor_creation_timestamp:1765152032 Message_creation_time:1778866523432
+Sensor id:12 Sensor_energy_value:802.1 Sensor_creation_timestamp:1765152033 Message_creation_time:1778866524436
+Sensor id:12 Sensor_energy_value:772.3 Sensor_creation_timestamp:1765152034 Message_creation_time:1778866525444
+Sensor id:12 Sensor_energy_value:778.6 Sensor_creation_timestamp:1765152035 Message_creation_time:1778866526447
+Sensor id:12 Sensor_energy_value:771.7 Sensor_creation_timestamp:1765152036 Message_creation_time:1778866527448
+Sensor id:12 Sensor_energy_value:679.4 Sensor_creation_timestamp:1765152037 Message_creation_time:1778866528450
+Sensor id:12 Sensor_energy_value:767.7 Sensor_creation_timestamp:1765152038 Message_creation_time:1778866529452
+Sensor id:12 Sensor_energy_value:825.3 Sensor_creation_timestamp:1765152039 Message_creation_time:1778866530455
+Sensor id:12 Sensor_energy_value:783.5 Sensor_creation_timestamp:1765152040 Message_creation_time:1778866531460
+Sensor id:12 Sensor_energy_value:785.8 Sensor_creation_timestamp:1765152041 Message_creation_time:1778866532462
+Sensor id:12 Sensor_energy_value:784.5 Sensor_creation_timestamp:1765152042 Message_creation_time:1778866533464
+Sensor id:12 Sensor_energy_value:774.3 Sensor_creation_timestamp:1765152043 Message_creation_time:1778866534467
+Sensor id:12 Sensor_energy_value:772.1 Sensor_creation_timestamp:1765152044 Message_creation_time:1778866535470
+Sensor id:12 Sensor_energy_value:769.5 Sensor_creation_timestamp:1765152045 Message_creation_time:1778866536472
+Sensor id:12 Sensor_energy_value:774.0 Sensor_creation_timestamp:1765152046 Message_creation_time:1778866537473
+Sensor id:12 Sensor_energy_value:770.6 Sensor_creation_timestamp:1765152047 Message_creation_time:1778866538476
+Sensor id:12 Sensor_energy_value:774.2 Sensor_creation_timestamp:1765152048 Message_creation_time:1778866539480
+Sensor id:12 Sensor_energy_value:770.9 Sensor_creation_timestamp:1765152049 Message_creation_time:1778866540484
+Sensor id:12 Sensor_energy_value:772.5 Sensor_creation_timestamp:1765152050 Message_creation_time:1778866541486
+Sensor id:12 Sensor_energy_value:776.1 Sensor_creation_timestamp:1765152051 Message_creation_time:1778866542491
+Sensor id:12 Sensor_energy_value:775.3 Sensor_creation_timestamp:1765152052 Message_creation_time:1778866543496
+Sensor id:12 Sensor_energy_value:771.4 Sensor_creation_timestamp:1765152053 Message_creation_time:1778866544499
+Sensor id:12 Sensor_energy_value:771.5 Sensor_creation_timestamp:1765152054 Message_creation_time:1778866545503
+Sensor id:12 Sensor_energy_value:774.2 Sensor_creation_timestamp:1765152055 Message_creation_time:1778866546507
+Sensor id:12 Sensor_energy_value:773.3 Sensor_creation_timestamp:1765152056 Message_creation_time:1778866547516
+Sensor id:12 Sensor_energy_value:774.4 Sensor_creation_timestamp:1765152057 Message_creation_time:1778866548523
+Sensor id:12 Sensor_energy_value:773.7 Sensor_creation_timestamp:1765152058 Message_creation_time:1778866549527
+Sensor id:12 Sensor_energy_value:773.8 Sensor_creation_timestamp:1765152059 Message_creation_time:1778866550531
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1185.914286 Sensor_creation_timestamp:1765152060 Message_creation_time:1778866551535
+Sensor id:12 Sensor_energy_value:1185.914286 Sensor_creation_timestamp:1765152061 Message_creation_time:1778866552541
+Sensor id:12 Sensor_energy_value:1185.914286 Sensor_creation_timestamp:1765152062 Message_creation_time:1778866553545
+Sensor id:12 Sensor_energy_value:1185.914286 Sensor_creation_timestamp:1765152063 Message_creation_time:1778866554549
+Sensor id:12 Sensor_energy_value:776.0 Sensor_creation_timestamp:1765152064 Message_creation_time:1778866555553
+Sensor id:12 Sensor_energy_value:1001.4 Sensor_creation_timestamp:1765152065 Message_creation_time:1778866556556
+Sensor id:12 Sensor_energy_value:1156.0 Sensor_creation_timestamp:1765152066 Message_creation_time:1778866557559
+Sensor id:12 Sensor_energy_value:992.9 Sensor_creation_timestamp:1765152067 Message_creation_time:1778866558562
+Sensor id:12 Sensor_energy_value:973.6 Sensor_creation_timestamp:1765152068 Message_creation_time:1778866559567
+Sensor id:12 Sensor_energy_value:1051.1 Sensor_creation_timestamp:1765152069 Message_creation_time:1778866560574
+Sensor id:12 Sensor_energy_value:984.1 Sensor_creation_timestamp:1765152070 Message_creation_time:1778866561580
+Sensor id:12 Sensor_energy_value:1033.5 Sensor_creation_timestamp:1765152071 Message_creation_time:1778866562585
+Sensor id:12 Sensor_energy_value:1060.7 Sensor_creation_timestamp:1765152072 Message_creation_time:1778866563589
+Sensor id:12 Sensor_energy_value:1085.5 Sensor_creation_timestamp:1765152073 Message_creation_time:1778866564592
+Sensor id:12 Sensor_energy_value:1113.4 Sensor_creation_timestamp:1765152074 Message_creation_time:1778866565597
+Sensor id:12 Sensor_energy_value:1137.7 Sensor_creation_timestamp:1765152075 Message_creation_time:1778866566608
+Sensor id:12 Sensor_energy_value:1154.2 Sensor_creation_timestamp:1765152076 Message_creation_time:1778866567614
+Sensor id:12 Sensor_energy_value:1175.0 Sensor_creation_timestamp:1765152077 Message_creation_time:1778866568618
+Sensor id:12 Sensor_energy_value:1192.7 Sensor_creation_timestamp:1765152078 Message_creation_time:1778866569621
+Sensor id:12 Sensor_energy_value:1206.6 Sensor_creation_timestamp:1765152079 Message_creation_time:1778866570629
+Sensor id:12 Sensor_energy_value:1216.7 Sensor_creation_timestamp:1765152080 Message_creation_time:1778866571632
+Sensor id:12 Sensor_energy_value:1219.7 Sensor_creation_timestamp:1765152081 Message_creation_time:1778866572636
+Sensor id:12 Sensor_energy_value:1215.0 Sensor_creation_timestamp:1765152082 Message_creation_time:1778866573641
+Sensor id:12 Sensor_energy_value:1222.0 Sensor_creation_timestamp:1765152083 Message_creation_time:1778866574645
+Sensor id:12 Sensor_energy_value:1226.8 Sensor_creation_timestamp:1765152084 Message_creation_time:1778866575647
+Sensor id:12 Sensor_energy_value:1222.7 Sensor_creation_timestamp:1765152085 Message_creation_time:1778866576649
+Sensor id:12 Sensor_energy_value:1220.2 Sensor_creation_timestamp:1765152086 Message_creation_time:1778866577651
+Sensor id:12 Sensor_energy_value:1226.2 Sensor_creation_timestamp:1765152087 Message_creation_time:1778866578655
+Sensor id:12 Sensor_energy_value:1225.8 Sensor_creation_timestamp:1765152088 Message_creation_time:1778866579658
+Sensor id:12 Sensor_energy_value:1228.0 Sensor_creation_timestamp:1765152089 Message_creation_time:1778866580661
+Sensor id:12 Sensor_energy_value:1223.4 Sensor_creation_timestamp:1765152090 Message_creation_time:1778866581663
+Sensor id:12 Sensor_energy_value:1220.4 Sensor_creation_timestamp:1765152091 Message_creation_time:1778866582667
+Sensor id:12 Sensor_energy_value:1220.5 Sensor_creation_timestamp:1765152092 Message_creation_time:1778866583672
+Sensor id:12 Sensor_energy_value:1221.1 Sensor_creation_timestamp:1765152093 Message_creation_time:1778866584675
+Sensor id:12 Sensor_energy_value:1223.1 Sensor_creation_timestamp:1765152094 Message_creation_time:1778866585676
+Sensor id:12 Sensor_energy_value:1224.2 Sensor_creation_timestamp:1765152095 Message_creation_time:1778866586680
+Sensor id:12 Sensor_energy_value:1225.9 Sensor_creation_timestamp:1765152096 Message_creation_time:1778866587683
+Sensor id:12 Sensor_energy_value:1218.0 Sensor_creation_timestamp:1765152097 Message_creation_time:1778866588685
+Sensor id:12 Sensor_energy_value:1218.8 Sensor_creation_timestamp:1765152098 Message_creation_time:1778866589687
+Sensor id:12 Sensor_energy_value:1223.7 Sensor_creation_timestamp:1765152099 Message_creation_time:1778866590690
+Sensor id:12 Sensor_energy_value:1224.9 Sensor_creation_timestamp:1765152100 Message_creation_time:1778866591696
+Sensor id:12 Sensor_energy_value:1224.9 Sensor_creation_timestamp:1765152101 Message_creation_time:1778866592715
+Sensor id:12 Sensor_energy_value:1230.7 Sensor_creation_timestamp:1765152102 Message_creation_time:1778866593719
+Sensor id:12 Sensor_energy_value:1234.2 Sensor_creation_timestamp:1765152103 Message_creation_time:1778866594722
+Sensor id:12 Sensor_energy_value:1232.6 Sensor_creation_timestamp:1765152104 Message_creation_time:1778866595726
+Sensor id:12 Sensor_energy_value:1241.0 Sensor_creation_timestamp:1765152105 Message_creation_time:1778866596730
+Sensor id:12 Sensor_energy_value:1242.9 Sensor_creation_timestamp:1765152106 Message_creation_time:1778866597733
+Sensor id:12 Sensor_energy_value:1241.5 Sensor_creation_timestamp:1765152107 Message_creation_time:1778866598741
+Sensor id:12 Sensor_energy_value:1244.9 Sensor_creation_timestamp:1765152108 Message_creation_time:1778866599742
+Sensor id:12 Sensor_energy_value:1242.9 Sensor_creation_timestamp:1765152109 Message_creation_time:1778866600745
+Sensor id:12 Sensor_energy_value:1244.7 Sensor_creation_timestamp:1765152110 Message_creation_time:1778866601753
+Sensor id:12 Sensor_energy_value:1249.2 Sensor_creation_timestamp:1765152111 Message_creation_time:1778866602758
+Sensor id:12 Sensor_energy_value:1249.1 Sensor_creation_timestamp:1765152112 Message_creation_time:1778866603760
+Sensor id:12 Sensor_energy_value:1246.6 Sensor_creation_timestamp:1765152113 Message_creation_time:1778866604763
+Sensor id:12 Sensor_energy_value:1249.6 Sensor_creation_timestamp:1765152114 Message_creation_time:1778866605765
+Sensor id:12 Sensor_energy_value:1248.1 Sensor_creation_timestamp:1765152115 Message_creation_time:1778866606769
+Sensor id:12 Sensor_energy_value:1248.5 Sensor_creation_timestamp:1765152116 Message_creation_time:1778866607773
+Sensor id:12 Sensor_energy_value:1254.1 Sensor_creation_timestamp:1765152117 Message_creation_time:1778866608775
+Sensor id:12 Sensor_energy_value:1252.1 Sensor_creation_timestamp:1765152118 Message_creation_time:1778866609787
+Sensor id:12 Sensor_energy_value:1272.1 Sensor_creation_timestamp:1765152119 Message_creation_time:1778866610793
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1254.1 Sensor_creation_timestamp:1765152120 Message_creation_time:1778866611800
+Sensor id:12 Sensor_energy_value:1247.2 Sensor_creation_timestamp:1765152121 Message_creation_time:1778866612803
+Sensor id:12 Sensor_energy_value:1245.8 Sensor_creation_timestamp:1765152122 Message_creation_time:1778866613808
+Sensor id:12 Sensor_energy_value:1246.8 Sensor_creation_timestamp:1765152123 Message_creation_time:1778866614812
+Sensor id:12 Sensor_energy_value:1246.3 Sensor_creation_timestamp:1765152124 Message_creation_time:1778866615817
+Sensor id:12 Sensor_energy_value:1245.7 Sensor_creation_timestamp:1765152125 Message_creation_time:1778866616822
+Sensor id:12 Sensor_energy_value:1247.9 Sensor_creation_timestamp:1765152126 Message_creation_time:1778866617826
+Sensor id:12 Sensor_energy_value:1251.5 Sensor_creation_timestamp:1765152127 Message_creation_time:1778866618844
+Sensor id:12 Sensor_energy_value:1243.7 Sensor_creation_timestamp:1765152128 Message_creation_time:1778866619852
+Sensor id:12 Sensor_energy_value:1242.4 Sensor_creation_timestamp:1765152129 Message_creation_time:1778866620858
+Sensor id:12 Sensor_energy_value:1245.3 Sensor_creation_timestamp:1765152130 Message_creation_time:1778866621864
+Sensor id:12 Sensor_energy_value:1241.6 Sensor_creation_timestamp:1765152131 Message_creation_time:1778866622868
+Sensor id:12 Sensor_energy_value:1246.5 Sensor_creation_timestamp:1765152132 Message_creation_time:1778866623871
+Sensor id:12 Sensor_energy_value:1242.8 Sensor_creation_timestamp:1765152133 Message_creation_time:1778866624873
+Sensor id:12 Sensor_energy_value:1243.8 Sensor_creation_timestamp:1765152134 Message_creation_time:1778866625880
+Sensor id:12 Sensor_energy_value:1263.2 Sensor_creation_timestamp:1765152135 Message_creation_time:1778866626883
+Sensor id:12 Sensor_energy_value:1242.6 Sensor_creation_timestamp:1765152136 Message_creation_time:1778866627886
+Sensor id:12 Sensor_energy_value:1246.8 Sensor_creation_timestamp:1765152137 Message_creation_time:1778866629018
+Sensor id:12 Sensor_energy_value:1247.5 Sensor_creation_timestamp:1765152138 Message_creation_time:1778866630113
+Sensor id:12 Sensor_energy_value:1252.3 Sensor_creation_timestamp:1765152139 Message_creation_time:1778866631139
+Sensor id:12 Sensor_energy_value:1252.5 Sensor_creation_timestamp:1765152140 Message_creation_time:1778866632209
+Sensor id:12 Sensor_energy_value:1255.7 Sensor_creation_timestamp:1765152141 Message_creation_time:1778866633264
+Sensor id:12 Sensor_energy_value:1249.7 Sensor_creation_timestamp:1765152142 Message_creation_time:1778866634266
+Sensor id:12 Sensor_energy_value:1249.9 Sensor_creation_timestamp:1765152143 Message_creation_time:1778866635269
+Sensor id:12 Sensor_energy_value:1253.8 Sensor_creation_timestamp:1765152144 Message_creation_time:1778866636283
+Sensor id:12 Sensor_energy_value:1246.3 Sensor_creation_timestamp:1765152145 Message_creation_time:1778866637285
+Sensor id:12 Sensor_energy_value:1246.4 Sensor_creation_timestamp:1765152146 Message_creation_time:1778866638287
+Sensor id:12 Sensor_energy_value:1251.4 Sensor_creation_timestamp:1765152147 Message_creation_time:1778866639289
+Sensor id:12 Sensor_energy_value:1250.2 Sensor_creation_timestamp:1765152148 Message_creation_time:1778866640291
+Sensor id:12 Sensor_energy_value:1251.9 Sensor_creation_timestamp:1765152149 Message_creation_time:1778866641344
+Sensor id:12 Sensor_energy_value:1249.4 Sensor_creation_timestamp:1765152150 Message_creation_time:1778866642418
+Sensor id:12 Sensor_energy_value:1243.6 Sensor_creation_timestamp:1765152151 Message_creation_time:1778866643427
+Sensor id:12 Sensor_energy_value:1244.6 Sensor_creation_timestamp:1765152152 Message_creation_time:1778866644726
+Sensor id:12 Sensor_energy_value:1249.0 Sensor_creation_timestamp:1765152153 Message_creation_time:1778866645728
+Sensor id:12 Sensor_energy_value:1245.5 Sensor_creation_timestamp:1765152154 Message_creation_time:1778866646730
+Sensor id:12 Sensor_energy_value:1246.8 Sensor_creation_timestamp:1765152155 Message_creation_time:1778866647739
+Sensor id:12 Sensor_energy_value:1245.9 Sensor_creation_timestamp:1765152156 Message_creation_time:1778866648745
+Sensor id:12 Sensor_energy_value:1244.2 Sensor_creation_timestamp:1765152157 Message_creation_time:1778866649747
+Sensor id:12 Sensor_energy_value:1246.1 Sensor_creation_timestamp:1765152158 Message_creation_time:1778866650756
+Sensor id:12 Sensor_energy_value:1248.3 Sensor_creation_timestamp:1765152159 Message_creation_time:1778866651761
+Sensor id:12 Sensor_energy_value:1247.9 Sensor_creation_timestamp:1765152160 Message_creation_time:1778866652864
+Sensor id:12 Sensor_energy_value:1252.5 Sensor_creation_timestamp:1765152161 Message_creation_time:1778866653895
+Sensor id:12 Sensor_energy_value:1244.7 Sensor_creation_timestamp:1765152162 Message_creation_time:1778866654899
+Sensor id:12 Sensor_energy_value:1241.1 Sensor_creation_timestamp:1765152163 Message_creation_time:1778866655901
+Sensor id:12 Sensor_energy_value:1246.0 Sensor_creation_timestamp:1765152164 Message_creation_time:1778866656902
+Sensor id:12 Sensor_energy_value:1244.3 Sensor_creation_timestamp:1765152165 Message_creation_time:1778866657904
+Sensor id:12 Sensor_energy_value:1247.8 Sensor_creation_timestamp:1765152166 Message_creation_time:1778866658906
+Sensor id:12 Sensor_energy_value:1249.3 Sensor_creation_timestamp:1765152167 Message_creation_time:1778866659931
+Sensor id:12 Sensor_energy_value:1244.5 Sensor_creation_timestamp:1765152168 Message_creation_time:1778866660932
+Sensor id:12 Sensor_energy_value:1243.6 Sensor_creation_timestamp:1765152169 Message_creation_time:1778866661934
+Sensor id:12 Sensor_energy_value:1244.2 Sensor_creation_timestamp:1765152170 Message_creation_time:1778866662937
+Sensor id:12 Sensor_energy_value:1247.9 Sensor_creation_timestamp:1765152171 Message_creation_time:1778866663943
+Sensor id:12 Sensor_energy_value:1244.6 Sensor_creation_timestamp:1765152172 Message_creation_time:1778866664947
+Sensor id:12 Sensor_energy_value:1244.1 Sensor_creation_timestamp:1765152173 Message_creation_time:1778866665971
+Sensor id:12 Sensor_energy_value:1240.1 Sensor_creation_timestamp:1765152174 Message_creation_time:1778866666998
+Sensor id:12 Sensor_energy_value:1244.0 Sensor_creation_timestamp:1765152175 Message_creation_time:1778866668001
+Sensor id:12 Sensor_energy_value:1244.0 Sensor_creation_timestamp:1765152176 Message_creation_time:1778866669002
+Sensor id:12 Sensor_energy_value:1248.6 Sensor_creation_timestamp:1765152177 Message_creation_time:1778866670007
+Sensor id:12 Sensor_energy_value:1244.1 Sensor_creation_timestamp:1765152178 Message_creation_time:1778866671012
+Sensor id:12 Sensor_energy_value:1252.4 Sensor_creation_timestamp:1765152179 Message_creation_time:1778866672019
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1246.2 Sensor_creation_timestamp:1765152180 Message_creation_time:1778866673022
+Sensor id:12 Sensor_energy_value:1248.9 Sensor_creation_timestamp:1765152181 Message_creation_time:1778866674031
+Sensor id:12 Sensor_energy_value:1246.9 Sensor_creation_timestamp:1765152182 Message_creation_time:1778866675037
+Sensor id:12 Sensor_energy_value:1244.8 Sensor_creation_timestamp:1765152183 Message_creation_time:1778866676042
+Sensor id:12 Sensor_energy_value:1260.8 Sensor_creation_timestamp:1765152184 Message_creation_time:1778866677045
+Sensor id:12 Sensor_energy_value:1245.1 Sensor_creation_timestamp:1765152185 Message_creation_time:1778866678051
+Sensor id:12 Sensor_energy_value:1266.2 Sensor_creation_timestamp:1765152186 Message_creation_time:1778866679055
+Sensor id:12 Sensor_energy_value:1241.4 Sensor_creation_timestamp:1765152187 Message_creation_time:1778866680058
+Sensor id:12 Sensor_energy_value:1239.3 Sensor_creation_timestamp:1765152188 Message_creation_time:1778866681062
+Sensor id:12 Sensor_energy_value:1250.5 Sensor_creation_timestamp:1765152189 Message_creation_time:1778866682066
+Sensor id:12 Sensor_energy_value:1247.3 Sensor_creation_timestamp:1765152190 Message_creation_time:1778866683070
+Sensor id:12 Sensor_energy_value:1243.3 Sensor_creation_timestamp:1765152191 Message_creation_time:1778866684074
+Sensor id:12 Sensor_energy_value:1246.6 Sensor_creation_timestamp:1765152192 Message_creation_time:1778866685078
+Sensor id:12 Sensor_energy_value:1242.8 Sensor_creation_timestamp:1765152193 Message_creation_time:1778866686091
+Sensor id:12 Sensor_energy_value:1244.1 Sensor_creation_timestamp:1765152194 Message_creation_time:1778866687095
+Sensor id:12 Sensor_energy_value:1254.5 Sensor_creation_timestamp:1765152195 Message_creation_time:1778866688099
+Sensor id:12 Sensor_energy_value:1240.1 Sensor_creation_timestamp:1765152196 Message_creation_time:1778866689103
+Sensor id:12 Sensor_energy_value:1242.3 Sensor_creation_timestamp:1765152197 Message_creation_time:1778866690108
+Sensor id:12 Sensor_energy_value:1246.7 Sensor_creation_timestamp:1765152198 Message_creation_time:1778866691111
+Sensor id:12 Sensor_energy_value:1248.7 Sensor_creation_timestamp:1765152199 Message_creation_time:1778866692113
+Sensor id:12 Sensor_energy_value:1246.5 Sensor_creation_timestamp:1765152200 Message_creation_time:1778866693115
+Sensor id:12 Sensor_energy_value:1250.9 Sensor_creation_timestamp:1765152201 Message_creation_time:1778866694117
+Sensor id:12 Sensor_energy_value:1249.3 Sensor_creation_timestamp:1765152202 Message_creation_time:1778866695153
+Sensor id:12 Sensor_energy_value:1255.4 Sensor_creation_timestamp:1765152203 Message_creation_time:1778866696159
+Sensor id:12 Sensor_energy_value:1258.8 Sensor_creation_timestamp:1765152204 Message_creation_time:1778866697160
+Sensor id:12 Sensor_energy_value:1238.9 Sensor_creation_timestamp:1765152205 Message_creation_time:1778866698161
+Sensor id:12 Sensor_energy_value:1245.2 Sensor_creation_timestamp:1765152206 Message_creation_time:1778866699163
+Sensor id:12 Sensor_energy_value:1282.2 Sensor_creation_timestamp:1765152207 Message_creation_time:1778866700165
+Sensor id:12 Sensor_energy_value:1375.8 Sensor_creation_timestamp:1765152208 Message_creation_time:1778866701167
+Sensor id:12 Sensor_energy_value:1352.4 Sensor_creation_timestamp:1765152209 Message_creation_time:1778866702170
+Sensor id:12 Sensor_energy_value:1352.1 Sensor_creation_timestamp:1765152210 Message_creation_time:1778866703171
+Sensor id:12 Sensor_energy_value:1352.2 Sensor_creation_timestamp:1765152211 Message_creation_time:1778866704172
+Sensor id:12 Sensor_energy_value:1352.5 Sensor_creation_timestamp:1765152212 Message_creation_time:1778866705173
+Sensor id:12 Sensor_energy_value:1355.9 Sensor_creation_timestamp:1765152213 Message_creation_time:1778866706175
+Sensor id:12 Sensor_energy_value:1360.2 Sensor_creation_timestamp:1765152214 Message_creation_time:1778866707177
+Sensor id:12 Sensor_energy_value:1365.8 Sensor_creation_timestamp:1765152215 Message_creation_time:1778866708179
+Sensor id:12 Sensor_energy_value:1341.7 Sensor_creation_timestamp:1765152216 Message_creation_time:1778866709181
+Sensor id:12 Sensor_energy_value:1354.2 Sensor_creation_timestamp:1765152217 Message_creation_time:1778866710183
+Sensor id:12 Sensor_energy_value:1353.3 Sensor_creation_timestamp:1765152218 Message_creation_time:1778866711187
+Sensor id:12 Sensor_energy_value:1355.6 Sensor_creation_timestamp:1765152219 Message_creation_time:1778866712188
+Sensor id:12 Sensor_energy_value:1356.1 Sensor_creation_timestamp:1765152220 Message_creation_time:1778866713189
+Sensor id:12 Sensor_energy_value:1349.5 Sensor_creation_timestamp:1765152221 Message_creation_time:1778866714193
+Sensor id:12 Sensor_energy_value:1357.2 Sensor_creation_timestamp:1765152222 Message_creation_time:1778866715194
+Sensor id:12 Sensor_energy_value:1348.4 Sensor_creation_timestamp:1765152223 Message_creation_time:1778866716196
+Sensor id:12 Sensor_energy_value:1354.1 Sensor_creation_timestamp:1765152224 Message_creation_time:1778866717197
+Sensor id:12 Sensor_energy_value:1351.6 Sensor_creation_timestamp:1765152225 Message_creation_time:1778866718199
+Sensor id:12 Sensor_energy_value:1351.0 Sensor_creation_timestamp:1765152226 Message_creation_time:1778866719200
+Sensor id:12 Sensor_energy_value:1350.1 Sensor_creation_timestamp:1765152227 Message_creation_time:1778866720201
+Sensor id:12 Sensor_energy_value:1351.3 Sensor_creation_timestamp:1765152228 Message_creation_time:1778866721204
+Sensor id:12 Sensor_energy_value:1349.8 Sensor_creation_timestamp:1765152229 Message_creation_time:1778866722206
+Sensor id:12 Sensor_energy_value:1349.6 Sensor_creation_timestamp:1765152230 Message_creation_time:1778866723207
+Sensor id:12 Sensor_energy_value:1352.9 Sensor_creation_timestamp:1765152231 Message_creation_time:1778866724209
+Sensor id:12 Sensor_energy_value:1357.4 Sensor_creation_timestamp:1765152232 Message_creation_time:1778866725214
+Sensor id:12 Sensor_energy_value:1361.4 Sensor_creation_timestamp:1765152233 Message_creation_time:1778866726219
+Sensor id:12 Sensor_energy_value:1358.3 Sensor_creation_timestamp:1765152234 Message_creation_time:1778866727220
+Sensor id:12 Sensor_energy_value:1351.1 Sensor_creation_timestamp:1765152235 Message_creation_time:1778866728225
+Sensor id:12 Sensor_energy_value:1380.4 Sensor_creation_timestamp:1765152236 Message_creation_time:1778866729226
+Sensor id:12 Sensor_energy_value:1422.6 Sensor_creation_timestamp:1765152237 Message_creation_time:1778866730227
+Sensor id:12 Sensor_energy_value:1413.7 Sensor_creation_timestamp:1765152238 Message_creation_time:1778866731229
+Sensor id:12 Sensor_energy_value:1412.0 Sensor_creation_timestamp:1765152239 Message_creation_time:1778866732232
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1422.4 Sensor_creation_timestamp:1765152240 Message_creation_time:1778866733235
+Sensor id:12 Sensor_energy_value:1422.4 Sensor_creation_timestamp:1765152241 Message_creation_time:1778866734237
+Sensor id:12 Sensor_energy_value:1412.7 Sensor_creation_timestamp:1765152242 Message_creation_time:1778866735240
+Sensor id:12 Sensor_energy_value:1414.2 Sensor_creation_timestamp:1765152243 Message_creation_time:1778866736244
+Sensor id:12 Sensor_energy_value:1416.2 Sensor_creation_timestamp:1765152244 Message_creation_time:1778866737247
+Sensor id:12 Sensor_energy_value:1418.6 Sensor_creation_timestamp:1765152245 Message_creation_time:1778866738249
+Sensor id:12 Sensor_energy_value:1426.0 Sensor_creation_timestamp:1765152246 Message_creation_time:1778866739251
+Sensor id:12 Sensor_energy_value:1415.2 Sensor_creation_timestamp:1765152247 Message_creation_time:1778866740254
+Sensor id:12 Sensor_energy_value:1421.8 Sensor_creation_timestamp:1765152248 Message_creation_time:1778866741256
+Sensor id:12 Sensor_energy_value:1419.9 Sensor_creation_timestamp:1765152249 Message_creation_time:1778866742259
+Sensor id:12 Sensor_energy_value:1418.8 Sensor_creation_timestamp:1765152250 Message_creation_time:1778866743261
+Sensor id:12 Sensor_energy_value:1416.1 Sensor_creation_timestamp:1765152251 Message_creation_time:1778866744265
+Sensor id:12 Sensor_energy_value:1422.9 Sensor_creation_timestamp:1765152252 Message_creation_time:1778866745272
+Sensor id:12 Sensor_energy_value:1409.4 Sensor_creation_timestamp:1765152253 Message_creation_time:1778866746274
+Sensor id:12 Sensor_energy_value:1407.2 Sensor_creation_timestamp:1765152254 Message_creation_time:1778866747276
+Sensor id:12 Sensor_energy_value:1417.3 Sensor_creation_timestamp:1765152255 Message_creation_time:1778866748282
+Sensor id:12 Sensor_energy_value:1423.0 Sensor_creation_timestamp:1765152256 Message_creation_time:1778866749284
+Sensor id:12 Sensor_energy_value:1414.5 Sensor_creation_timestamp:1765152257 Message_creation_time:1778866750286
+Sensor id:12 Sensor_energy_value:1413.1 Sensor_creation_timestamp:1765152258 Message_creation_time:1778866751289
+Sensor id:12 Sensor_energy_value:1419.6 Sensor_creation_timestamp:1765152259 Message_creation_time:1778866752291
+Sensor id:12 Sensor_energy_value:1421.1 Sensor_creation_timestamp:1765152260 Message_creation_time:1778866753293
+Sensor id:12 Sensor_energy_value:1420.6 Sensor_creation_timestamp:1765152261 Message_creation_time:1778866754295
+Sensor id:12 Sensor_energy_value:1423.8 Sensor_creation_timestamp:1765152262 Message_creation_time:1778866755296
+Sensor id:12 Sensor_energy_value:1408.7 Sensor_creation_timestamp:1765152263 Message_creation_time:1778866756300
+Sensor id:12 Sensor_energy_value:1411.8 Sensor_creation_timestamp:1765152264 Message_creation_time:1778866757301
+Sensor id:12 Sensor_energy_value:1421.8 Sensor_creation_timestamp:1765152265 Message_creation_time:1778866758303
+Sensor id:12 Sensor_energy_value:1415.7 Sensor_creation_timestamp:1765152266 Message_creation_time:1778866759305
+Sensor id:12 Sensor_energy_value:1420.4 Sensor_creation_timestamp:1765152267 Message_creation_time:1778866760307
+Sensor id:12 Sensor_energy_value:1421.4 Sensor_creation_timestamp:1765152268 Message_creation_time:1778866761309
+Sensor id:12 Sensor_energy_value:1430.5 Sensor_creation_timestamp:1765152269 Message_creation_time:1778866762310
+Sensor id:12 Sensor_energy_value:1414.8 Sensor_creation_timestamp:1765152270 Message_creation_time:1778866763311
+Sensor id:12 Sensor_energy_value:1410.1 Sensor_creation_timestamp:1765152271 Message_creation_time:1778866764312
+Sensor id:12 Sensor_energy_value:1425.0 Sensor_creation_timestamp:1765152272 Message_creation_time:1778866765314
+Sensor id:12 Sensor_energy_value:1411.3 Sensor_creation_timestamp:1765152273 Message_creation_time:1778866766318
+Sensor id:12 Sensor_energy_value:1411.4 Sensor_creation_timestamp:1765152274 Message_creation_time:1778866767320
+Sensor id:12 Sensor_energy_value:1405.8 Sensor_creation_timestamp:1765152275 Message_creation_time:1778866768322
+Sensor id:12 Sensor_energy_value:1428.1 Sensor_creation_timestamp:1765152276 Message_creation_time:1778866769323
+Sensor id:12 Sensor_energy_value:1494.4 Sensor_creation_timestamp:1765152277 Message_creation_time:1778866770325
+Sensor id:12 Sensor_energy_value:1492.6 Sensor_creation_timestamp:1765152278 Message_creation_time:1778866771326
+Sensor id:12 Sensor_energy_value:1492.7 Sensor_creation_timestamp:1765152279 Message_creation_time:1778866772327
+Sensor id:12 Sensor_energy_value:1494.5 Sensor_creation_timestamp:1765152280 Message_creation_time:1778866773328
+Sensor id:12 Sensor_energy_value:1500.4 Sensor_creation_timestamp:1765152281 Message_creation_time:1778866774332
+Sensor id:12 Sensor_energy_value:1497.1 Sensor_creation_timestamp:1765152282 Message_creation_time:1778866775346
+Sensor id:12 Sensor_energy_value:1496.4 Sensor_creation_timestamp:1765152283 Message_creation_time:1778866776348
+Sensor id:12 Sensor_energy_value:1498.2 Sensor_creation_timestamp:1765152284 Message_creation_time:1778866777350
+Sensor id:12 Sensor_energy_value:1500.5 Sensor_creation_timestamp:1765152285 Message_creation_time:1778866778354
+Sensor id:12 Sensor_energy_value:1500.0 Sensor_creation_timestamp:1765152286 Message_creation_time:1778866779356
+Sensor id:12 Sensor_energy_value:1498.2 Sensor_creation_timestamp:1765152287 Message_creation_time:1778866780376
+Sensor id:12 Sensor_energy_value:1500.8 Sensor_creation_timestamp:1765152288 Message_creation_time:1778866781378
+Sensor id:12 Sensor_energy_value:1497.6 Sensor_creation_timestamp:1765152289 Message_creation_time:1778866782379
+Sensor id:12 Sensor_energy_value:1504.2 Sensor_creation_timestamp:1765152290 Message_creation_time:1778866783381
+Sensor id:12 Sensor_energy_value:1504.3 Sensor_creation_timestamp:1765152291 Message_creation_time:1778866784383
+Sensor id:12 Sensor_energy_value:1503.0 Sensor_creation_timestamp:1765152292 Message_creation_time:1778866785394
+Sensor id:12 Sensor_energy_value:1495.6 Sensor_creation_timestamp:1765152293 Message_creation_time:1778866786397
+Sensor id:12 Sensor_energy_value:1491.6 Sensor_creation_timestamp:1765152294 Message_creation_time:1778866787403
+Sensor id:12 Sensor_energy_value:1490.9 Sensor_creation_timestamp:1765152295 Message_creation_time:1778866788406
+Sensor id:12 Sensor_energy_value:1491.2 Sensor_creation_timestamp:1765152296 Message_creation_time:1778866789408
+Sensor id:12 Sensor_energy_value:1498.6 Sensor_creation_timestamp:1765152297 Message_creation_time:1778866790411
+Sensor id:12 Sensor_energy_value:1495.8 Sensor_creation_timestamp:1765152298 Message_creation_time:1778866791412
+Sensor id:12 Sensor_energy_value:1493.0 Sensor_creation_timestamp:1765152299 Message_creation_time:1778866792416
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1494.6 Sensor_creation_timestamp:1765152300 Message_creation_time:1778866793419
+Sensor id:12 Sensor_energy_value:1498.3 Sensor_creation_timestamp:1765152301 Message_creation_time:1778866794425
+Sensor id:12 Sensor_energy_value:1493.2 Sensor_creation_timestamp:1765152302 Message_creation_time:1778866795427
+Sensor id:12 Sensor_energy_value:1495.7 Sensor_creation_timestamp:1765152303 Message_creation_time:1778866796429
+Sensor id:12 Sensor_energy_value:1496.0 Sensor_creation_timestamp:1765152304 Message_creation_time:1778866797431
+Sensor id:12 Sensor_energy_value:1494.3 Sensor_creation_timestamp:1765152305 Message_creation_time:1778866798434
+Sensor id:12 Sensor_energy_value:1500.3 Sensor_creation_timestamp:1765152306 Message_creation_time:1778866799437
+Sensor id:12 Sensor_energy_value:1508.0 Sensor_creation_timestamp:1765152307 Message_creation_time:1778866800439
+Sensor id:12 Sensor_energy_value:1492.4 Sensor_creation_timestamp:1765152308 Message_creation_time:1778866801441
+Sensor id:12 Sensor_energy_value:1501.6 Sensor_creation_timestamp:1765152309 Message_creation_time:1778866802443
+Sensor id:12 Sensor_energy_value:1512.7 Sensor_creation_timestamp:1765152310 Message_creation_time:1778866803444
+Sensor id:12 Sensor_energy_value:1493.0 Sensor_creation_timestamp:1765152311 Message_creation_time:1778866804452
+Sensor id:12 Sensor_energy_value:1493.7 Sensor_creation_timestamp:1765152312 Message_creation_time:1778866805459
+Sensor id:12 Sensor_energy_value:1493.7 Sensor_creation_timestamp:1765152313 Message_creation_time:1778866806460
+Sensor id:12 Sensor_energy_value:1494.6 Sensor_creation_timestamp:1765152314 Message_creation_time:1778866807466
+Sensor id:12 Sensor_energy_value:1499.2 Sensor_creation_timestamp:1765152315 Message_creation_time:1778866808471
+Sensor id:12 Sensor_energy_value:1501.9 Sensor_creation_timestamp:1765152316 Message_creation_time:1778866809472
+Sensor id:12 Sensor_energy_value:1501.4 Sensor_creation_timestamp:1765152317 Message_creation_time:1778866810474
+Sensor id:12 Sensor_energy_value:1496.5 Sensor_creation_timestamp:1765152318 Message_creation_time:1778866811478
+Sensor id:12 Sensor_energy_value:1503.6 Sensor_creation_timestamp:1765152319 Message_creation_time:1778866812488
+Sensor id:12 Sensor_energy_value:1503.6 Sensor_creation_timestamp:1765152320 Message_creation_time:1778866813494
+Sensor id:12 Sensor_energy_value:1504.4 Sensor_creation_timestamp:1765152321 Message_creation_time:1778866814496
+Sensor id:12 Sensor_energy_value:1501.4 Sensor_creation_timestamp:1765152322 Message_creation_time:1778866815563
+Sensor id:12 Sensor_energy_value:1497.6 Sensor_creation_timestamp:1765152323 Message_creation_time:1778866816702
+Sensor id:12 Sensor_energy_value:1498.5 Sensor_creation_timestamp:1765152324 Message_creation_time:1778866817828
+Sensor id:12 Sensor_energy_value:1496.9 Sensor_creation_timestamp:1765152325 Message_creation_time:1778866818832
+Sensor id:12 Sensor_energy_value:1561.5 Sensor_creation_timestamp:1765152326 Message_creation_time:1778866819838
+Sensor id:12 Sensor_energy_value:1616.7 Sensor_creation_timestamp:1765152327 Message_creation_time:1778866820890
+Sensor id:12 Sensor_energy_value:1636.5 Sensor_creation_timestamp:1765152328 Message_creation_time:1778866821895
+Sensor id:12 Sensor_energy_value:1625.5 Sensor_creation_timestamp:1765152329 Message_creation_time:1778866822897
+Sensor id:12 Sensor_energy_value:1633.5 Sensor_creation_timestamp:1765152330 Message_creation_time:1778866823899
+Sensor id:12 Sensor_energy_value:1653.8 Sensor_creation_timestamp:1765152331 Message_creation_time:1778866824902
+Sensor id:12 Sensor_energy_value:1636.6 Sensor_creation_timestamp:1765152332 Message_creation_time:1778866825904
+Sensor id:12 Sensor_energy_value:1650.6 Sensor_creation_timestamp:1765152333 Message_creation_time:1778866826905
+Sensor id:12 Sensor_energy_value:1630.6 Sensor_creation_timestamp:1765152334 Message_creation_time:1778866827907
+Sensor id:12 Sensor_energy_value:1633.7 Sensor_creation_timestamp:1765152335 Message_creation_time:1778866828908
+Sensor id:12 Sensor_energy_value:1634.3 Sensor_creation_timestamp:1765152336 Message_creation_time:1778866830046
+Sensor id:12 Sensor_energy_value:1634.2 Sensor_creation_timestamp:1765152337 Message_creation_time:1778866831255
+Sensor id:12 Sensor_energy_value:1629.4 Sensor_creation_timestamp:1765152338 Message_creation_time:1778866832380
+Sensor id:12 Sensor_energy_value:1632.6 Sensor_creation_timestamp:1765152339 Message_creation_time:1778866833387
+Sensor id:12 Sensor_energy_value:1635.4 Sensor_creation_timestamp:1765152340 Message_creation_time:1778866834425
+Sensor id:12 Sensor_energy_value:1633.5 Sensor_creation_timestamp:1765152341 Message_creation_time:1778866835427
+Sensor id:12 Sensor_energy_value:1633.1 Sensor_creation_timestamp:1765152342 Message_creation_time:1778866836477
+Sensor id:12 Sensor_energy_value:1635.9 Sensor_creation_timestamp:1765152343 Message_creation_time:1778866837480
+Sensor id:12 Sensor_energy_value:1631.0 Sensor_creation_timestamp:1765152344 Message_creation_time:1778866838481
+Sensor id:12 Sensor_energy_value:1633.1 Sensor_creation_timestamp:1765152345 Message_creation_time:1778866839482
+Sensor id:12 Sensor_energy_value:1639.1 Sensor_creation_timestamp:1765152346 Message_creation_time:1778866840487
+Sensor id:12 Sensor_energy_value:1628.0 Sensor_creation_timestamp:1765152347 Message_creation_time:1778866841493
+Sensor id:12 Sensor_energy_value:1634.9 Sensor_creation_timestamp:1765152348 Message_creation_time:1778866842496
+Sensor id:12 Sensor_energy_value:1634.2 Sensor_creation_timestamp:1765152349 Message_creation_time:1778866843501
+Sensor id:12 Sensor_energy_value:1636.0 Sensor_creation_timestamp:1765152350 Message_creation_time:1778866844503
+Sensor id:12 Sensor_energy_value:1633.9 Sensor_creation_timestamp:1765152351 Message_creation_time:1778866845526
+Sensor id:12 Sensor_energy_value:1633.9 Sensor_creation_timestamp:1765152352 Message_creation_time:1778866846530
+Sensor id:12 Sensor_energy_value:1631.0 Sensor_creation_timestamp:1765152353 Message_creation_time:1778866847568
+Sensor id:12 Sensor_energy_value:1636.9 Sensor_creation_timestamp:1765152354 Message_creation_time:1778866848581
+Sensor id:12 Sensor_energy_value:1631.5 Sensor_creation_timestamp:1765152355 Message_creation_time:1778866849584
+Sensor id:12 Sensor_energy_value:1631.9 Sensor_creation_timestamp:1765152356 Message_creation_time:1778866850593
+Sensor id:12 Sensor_energy_value:1637.3 Sensor_creation_timestamp:1765152357 Message_creation_time:1778866851595
+Sensor id:12 Sensor_energy_value:1634.5 Sensor_creation_timestamp:1765152358 Message_creation_time:1778866852597
+Sensor id:12 Sensor_energy_value:1631.2 Sensor_creation_timestamp:1765152359 Message_creation_time:1778866853600
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1640.2 Sensor_creation_timestamp:1765152360 Message_creation_time:1778866854602
+Sensor id:12 Sensor_energy_value:1637.2 Sensor_creation_timestamp:1765152361 Message_creation_time:1778866855607
+Sensor id:12 Sensor_energy_value:1640.4 Sensor_creation_timestamp:1765152362 Message_creation_time:1778866856610
+Sensor id:12 Sensor_energy_value:1636.2 Sensor_creation_timestamp:1765152363 Message_creation_time:1778866857622
+Sensor id:12 Sensor_energy_value:1632.8 Sensor_creation_timestamp:1765152364 Message_creation_time:1778866858624
+Sensor id:12 Sensor_energy_value:1635.2 Sensor_creation_timestamp:1765152365 Message_creation_time:1778866859625
+Sensor id:12 Sensor_energy_value:1635.8 Sensor_creation_timestamp:1765152366 Message_creation_time:1778866860628
+Sensor id:12 Sensor_energy_value:1637.0 Sensor_creation_timestamp:1765152367 Message_creation_time:1778866861630
+Sensor id:12 Sensor_energy_value:1632.4 Sensor_creation_timestamp:1765152368 Message_creation_time:1778866862632
+Sensor id:12 Sensor_energy_value:1642.2 Sensor_creation_timestamp:1765152369 Message_creation_time:1778866863634
+Sensor id:12 Sensor_energy_value:1644.9 Sensor_creation_timestamp:1765152370 Message_creation_time:1778866864640
+Sensor id:12 Sensor_energy_value:1634.0 Sensor_creation_timestamp:1765152371 Message_creation_time:1778866865643
+Sensor id:12 Sensor_energy_value:1652.0 Sensor_creation_timestamp:1765152372 Message_creation_time:1778866866646
+Sensor id:12 Sensor_energy_value:1637.9 Sensor_creation_timestamp:1765152373 Message_creation_time:1778866867647
+Sensor id:12 Sensor_energy_value:1634.6 Sensor_creation_timestamp:1765152374 Message_creation_time:1778866868650
+Sensor id:12 Sensor_energy_value:1636.2 Sensor_creation_timestamp:1765152375 Message_creation_time:1778866869651
+Sensor id:12 Sensor_energy_value:1631.5 Sensor_creation_timestamp:1765152376 Message_creation_time:1778866870654
+Sensor id:12 Sensor_energy_value:1632.6 Sensor_creation_timestamp:1765152377 Message_creation_time:1778866871659
+Sensor id:12 Sensor_energy_value:1651.1 Sensor_creation_timestamp:1765152378 Message_creation_time:1778866872660
+Sensor id:12 Sensor_energy_value:1642.9 Sensor_creation_timestamp:1765152379 Message_creation_time:1778866873661
+Sensor id:12 Sensor_energy_value:1638.4 Sensor_creation_timestamp:1765152380 Message_creation_time:1778866874663
+Sensor id:12 Sensor_energy_value:1635.5 Sensor_creation_timestamp:1765152381 Message_creation_time:1778866875670
+Sensor id:12 Sensor_energy_value:1637.1 Sensor_creation_timestamp:1765152382 Message_creation_time:1778866876674
+Sensor id:12 Sensor_energy_value:1637.5 Sensor_creation_timestamp:1765152383 Message_creation_time:1778866877679
+Sensor id:12 Sensor_energy_value:1636.6 Sensor_creation_timestamp:1765152384 Message_creation_time:1778866878705
+Sensor id:12 Sensor_energy_value:1635.0 Sensor_creation_timestamp:1765152385 Message_creation_time:1778866879708
+Sensor id:12 Sensor_energy_value:1644.5 Sensor_creation_timestamp:1765152386 Message_creation_time:1778866880709
+Sensor id:12 Sensor_energy_value:1634.9 Sensor_creation_timestamp:1765152387 Message_creation_time:1778866881711
+Sensor id:12 Sensor_energy_value:1638.0 Sensor_creation_timestamp:1765152388 Message_creation_time:1778866882714
+Sensor id:12 Sensor_energy_value:1632.2 Sensor_creation_timestamp:1765152389 Message_creation_time:1778866883741
+Sensor id:12 Sensor_energy_value:1635.4 Sensor_creation_timestamp:1765152390 Message_creation_time:1778866884743
+Sensor id:12 Sensor_energy_value:1635.3 Sensor_creation_timestamp:1765152391 Message_creation_time:1778866885746
+Sensor id:12 Sensor_energy_value:1645.6 Sensor_creation_timestamp:1765152392 Message_creation_time:1778866886748
+Sensor id:12 Sensor_energy_value:1637.7 Sensor_creation_timestamp:1765152393 Message_creation_time:1778866887750
+Sensor id:12 Sensor_energy_value:1635.2 Sensor_creation_timestamp:1765152394 Message_creation_time:1778866888752
+Sensor id:12 Sensor_energy_value:1633.2 Sensor_creation_timestamp:1765152395 Message_creation_time:1778866889754
+Sensor id:12 Sensor_energy_value:1633.5 Sensor_creation_timestamp:1765152396 Message_creation_time:1778866890756
+Sensor id:12 Sensor_energy_value:1634.8 Sensor_creation_timestamp:1765152397 Message_creation_time:1778866891758
+Sensor id:12 Sensor_energy_value:1635.9 Sensor_creation_timestamp:1765152398 Message_creation_time:1778866892760
+Sensor id:12 Sensor_energy_value:1638.8 Sensor_creation_timestamp:1765152399 Message_creation_time:1778866893762
+Sensor id:12 Sensor_energy_value:1631.1 Sensor_creation_timestamp:1765152400 Message_creation_time:1778866894764
+Sensor id:12 Sensor_energy_value:1635.8 Sensor_creation_timestamp:1765152401 Message_creation_time:1778866895765
+Sensor id:12 Sensor_energy_value:1638.3 Sensor_creation_timestamp:1765152402 Message_creation_time:1778866896766
+Sensor id:12 Sensor_energy_value:1636.1 Sensor_creation_timestamp:1765152403 Message_creation_time:1778866897768
+Sensor id:12 Sensor_energy_value:1639.5 Sensor_creation_timestamp:1765152404 Message_creation_time:1778866898771
+Sensor id:12 Sensor_energy_value:1635.4 Sensor_creation_timestamp:1765152405 Message_creation_time:1778866899773
+Sensor id:12 Sensor_energy_value:1635.0 Sensor_creation_timestamp:1765152406 Message_creation_time:1778866900775
+Sensor id:12 Sensor_energy_value:1632.3 Sensor_creation_timestamp:1765152407 Message_creation_time:1778866901777
+Sensor id:12 Sensor_energy_value:1637.7 Sensor_creation_timestamp:1765152408 Message_creation_time:1778866902783
+Sensor id:12 Sensor_energy_value:1638.8 Sensor_creation_timestamp:1765152409 Message_creation_time:1778866903789
+Sensor id:12 Sensor_energy_value:1637.0 Sensor_creation_timestamp:1765152410 Message_creation_time:1778866904790
+Sensor id:12 Sensor_energy_value:1638.6 Sensor_creation_timestamp:1765152411 Message_creation_time:1778866905791
+Sensor id:12 Sensor_energy_value:1633.6 Sensor_creation_timestamp:1765152412 Message_creation_time:1778866906793
+Sensor id:12 Sensor_energy_value:1634.8 Sensor_creation_timestamp:1765152413 Message_creation_time:1778866907797
+Sensor id:12 Sensor_energy_value:1632.2 Sensor_creation_timestamp:1765152414 Message_creation_time:1778866908798
+Sensor id:12 Sensor_energy_value:1636.4 Sensor_creation_timestamp:1765152415 Message_creation_time:1778866909800
+Sensor id:12 Sensor_energy_value:1643.6 Sensor_creation_timestamp:1765152416 Message_creation_time:1778866910802
+Sensor id:12 Sensor_energy_value:1646.0 Sensor_creation_timestamp:1765152417 Message_creation_time:1778866911805
+Sensor id:12 Sensor_energy_value:1636.0 Sensor_creation_timestamp:1765152418 Message_creation_time:1778866912807
+Sensor id:12 Sensor_energy_value:1635.3 Sensor_creation_timestamp:1765152419 Message_creation_time:1778866913808
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1641.8 Sensor_creation_timestamp:1765152420 Message_creation_time:1778866914810
+Sensor id:12 Sensor_energy_value:1639.8 Sensor_creation_timestamp:1765152421 Message_creation_time:1778866915812
+Sensor id:12 Sensor_energy_value:1640.6 Sensor_creation_timestamp:1765152422 Message_creation_time:1778866916813
+Sensor id:12 Sensor_energy_value:1639.7 Sensor_creation_timestamp:1765152423 Message_creation_time:1778866917816
+Sensor id:12 Sensor_energy_value:1635.1 Sensor_creation_timestamp:1765152424 Message_creation_time:1778866918821
+Sensor id:12 Sensor_energy_value:1632.1 Sensor_creation_timestamp:1765152425 Message_creation_time:1778866919823
+Sensor id:12 Sensor_energy_value:1632.1 Sensor_creation_timestamp:1765152426 Message_creation_time:1778866920825
+Sensor id:12 Sensor_energy_value:1636.0 Sensor_creation_timestamp:1765152427 Message_creation_time:1778866921829
+Sensor id:12 Sensor_energy_value:1631.3 Sensor_creation_timestamp:1765152428 Message_creation_time:1778866922832
+Sensor id:12 Sensor_energy_value:1640.0 Sensor_creation_timestamp:1765152429 Message_creation_time:1778866923835
+Sensor id:12 Sensor_energy_value:1632.6 Sensor_creation_timestamp:1765152430 Message_creation_time:1778866924838
+Sensor id:12 Sensor_energy_value:1637.0 Sensor_creation_timestamp:1765152431 Message_creation_time:1778866925839
+Sensor id:12 Sensor_energy_value:1633.0 Sensor_creation_timestamp:1765152432 Message_creation_time:1778866926840
+Sensor id:12 Sensor_energy_value:1637.1 Sensor_creation_timestamp:1765152433 Message_creation_time:1778866927843
+Sensor id:12 Sensor_energy_value:1633.8 Sensor_creation_timestamp:1765152434 Message_creation_time:1778866928844
+Sensor id:12 Sensor_energy_value:1638.7 Sensor_creation_timestamp:1765152435 Message_creation_time:1778866929846
+Sensor id:12 Sensor_energy_value:1636.0 Sensor_creation_timestamp:1765152436 Message_creation_time:1778866930849
+Sensor id:12 Sensor_energy_value:1636.0 Sensor_creation_timestamp:1765152437 Message_creation_time:1778866931851
+Sensor id:12 Sensor_energy_value:1636.9 Sensor_creation_timestamp:1765152438 Message_creation_time:1778866932855
+Sensor id:12 Sensor_energy_value:1643.6 Sensor_creation_timestamp:1765152439 Message_creation_time:1778866933858
+Sensor id:12 Sensor_energy_value:1642.3 Sensor_creation_timestamp:1765152440 Message_creation_time:1778866934860
+Sensor id:12 Sensor_energy_value:1633.9 Sensor_creation_timestamp:1765152441 Message_creation_time:1778866935861
+Sensor id:12 Sensor_energy_value:1632.3 Sensor_creation_timestamp:1765152442 Message_creation_time:1778866936863
+Sensor id:12 Sensor_energy_value:1638.7 Sensor_creation_timestamp:1765152443 Message_creation_time:1778866937865
+Sensor id:12 Sensor_energy_value:1639.6 Sensor_creation_timestamp:1765152444 Message_creation_time:1778866938867
+Sensor id:12 Sensor_energy_value:1635.6 Sensor_creation_timestamp:1765152445 Message_creation_time:1778866939868
+Sensor id:12 Sensor_energy_value:1640.2 Sensor_creation_timestamp:1765152446 Message_creation_time:1778866940869
+Sensor id:12 Sensor_energy_value:1629.9 Sensor_creation_timestamp:1765152447 Message_creation_time:1778866941871
+Sensor id:12 Sensor_energy_value:1635.4 Sensor_creation_timestamp:1765152448 Message_creation_time:1778866942872
+Sensor id:12 Sensor_energy_value:1635.3 Sensor_creation_timestamp:1765152449 Message_creation_time:1778866943874
+Sensor id:12 Sensor_energy_value:1655.3 Sensor_creation_timestamp:1765152450 Message_creation_time:1778866944876
+Sensor id:12 Sensor_energy_value:1635.4 Sensor_creation_timestamp:1765152451 Message_creation_time:1778866945877
+Sensor id:12 Sensor_energy_value:1637.4 Sensor_creation_timestamp:1765152452 Message_creation_time:1778866946879
+Sensor id:12 Sensor_energy_value:1637.8 Sensor_creation_timestamp:1765152453 Message_creation_time:1778866947881
+Sensor id:12 Sensor_energy_value:1634.9 Sensor_creation_timestamp:1765152454 Message_creation_time:1778866948885
+Sensor id:12 Sensor_energy_value:1635.1 Sensor_creation_timestamp:1765152455 Message_creation_time:1778866949889
+Sensor id:12 Sensor_energy_value:1634.9 Sensor_creation_timestamp:1765152456 Message_creation_time:1778866950894
+Sensor id:12 Sensor_energy_value:1638.0 Sensor_creation_timestamp:1765152457 Message_creation_time:1778866951896
+Sensor id:12 Sensor_energy_value:1637.1 Sensor_creation_timestamp:1765152458 Message_creation_time:1778866952898
+Sensor id:12 Sensor_energy_value:1637.5 Sensor_creation_timestamp:1765152459 Message_creation_time:1778866953900
+Sensor id:12 Sensor_energy_value:1636.6 Sensor_creation_timestamp:1765152460 Message_creation_time:1778866954903
+Sensor id:12 Sensor_energy_value:1637.9 Sensor_creation_timestamp:1765152461 Message_creation_time:1778866955905
+Sensor id:12 Sensor_energy_value:1643.3 Sensor_creation_timestamp:1765152462 Message_creation_time:1778866956906
+Sensor id:12 Sensor_energy_value:1631.1 Sensor_creation_timestamp:1765152463 Message_creation_time:1778866957908
+Sensor id:12 Sensor_energy_value:1627.5 Sensor_creation_timestamp:1765152464 Message_creation_time:1778866958911
+Sensor id:12 Sensor_energy_value:1634.3 Sensor_creation_timestamp:1765152465 Message_creation_time:1778866959913
+Sensor id:12 Sensor_energy_value:1635.9 Sensor_creation_timestamp:1765152466 Message_creation_time:1778866960915
+Sensor id:12 Sensor_energy_value:1639.1 Sensor_creation_timestamp:1765152467 Message_creation_time:1778866961916
+Sensor id:12 Sensor_energy_value:1634.1 Sensor_creation_timestamp:1765152468 Message_creation_time:1778866962918
+Sensor id:12 Sensor_energy_value:1634.9 Sensor_creation_timestamp:1765152469 Message_creation_time:1778866963920
+Sensor id:12 Sensor_energy_value:1634.1 Sensor_creation_timestamp:1765152470 Message_creation_time:1778866964922
+Sensor id:12 Sensor_energy_value:1637.5 Sensor_creation_timestamp:1765152471 Message_creation_time:1778866965924
+Sensor id:12 Sensor_energy_value:1632.8 Sensor_creation_timestamp:1765152472 Message_creation_time:1778866966927
+Sensor id:12 Sensor_energy_value:1633.8 Sensor_creation_timestamp:1765152473 Message_creation_time:1778866967929
+Sensor id:12 Sensor_energy_value:1633.5 Sensor_creation_timestamp:1765152474 Message_creation_time:1778866968933
+Sensor id:12 Sensor_energy_value:1638.4 Sensor_creation_timestamp:1765152475 Message_creation_time:1778866969934
+Sensor id:12 Sensor_energy_value:1642.0 Sensor_creation_timestamp:1765152476 Message_creation_time:1778866970936
+Sensor id:12 Sensor_energy_value:1641.0 Sensor_creation_timestamp:1765152477 Message_creation_time:1778866971939
+Sensor id:12 Sensor_energy_value:1640.2 Sensor_creation_timestamp:1765152478 Message_creation_time:1778866972941
+Sensor id:12 Sensor_energy_value:1638.3 Sensor_creation_timestamp:1765152479 Message_creation_time:1778866973944
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1641.1 Sensor_creation_timestamp:1765152480 Message_creation_time:1778866974950
+Sensor id:12 Sensor_energy_value:1642.0 Sensor_creation_timestamp:1765152481 Message_creation_time:1778866975953
+Sensor id:12 Sensor_energy_value:1639.3 Sensor_creation_timestamp:1765152482 Message_creation_time:1778866976957
+Sensor id:12 Sensor_energy_value:1635.9 Sensor_creation_timestamp:1765152483 Message_creation_time:1778866977959
+Sensor id:12 Sensor_energy_value:1645.0 Sensor_creation_timestamp:1765152484 Message_creation_time:1778866978960
+Sensor id:12 Sensor_energy_value:1636.1 Sensor_creation_timestamp:1765152485 Message_creation_time:1778866979965
+Sensor id:12 Sensor_energy_value:1638.0 Sensor_creation_timestamp:1765152486 Message_creation_time:1778866980968
+Sensor id:12 Sensor_energy_value:1636.4 Sensor_creation_timestamp:1765152487 Message_creation_time:1778866981969
+Sensor id:12 Sensor_energy_value:1637.5 Sensor_creation_timestamp:1765152488 Message_creation_time:1778866982971
+Sensor id:12 Sensor_energy_value:1637.5 Sensor_creation_timestamp:1765152489 Message_creation_time:1778866983973
+Sensor id:12 Sensor_energy_value:1639.2 Sensor_creation_timestamp:1765152490 Message_creation_time:1778866984984
+Sensor id:12 Sensor_energy_value:1638.6 Sensor_creation_timestamp:1765152491 Message_creation_time:1778866985986
+Sensor id:12 Sensor_energy_value:1639.1 Sensor_creation_timestamp:1765152492 Message_creation_time:1778866986989
+Sensor id:12 Sensor_energy_value:1639.1 Sensor_creation_timestamp:1765152493 Message_creation_time:1778866987996
+Sensor id:12 Sensor_energy_value:1641.4 Sensor_creation_timestamp:1765152494 Message_creation_time:1778866988998
+Sensor id:12 Sensor_energy_value:1634.1 Sensor_creation_timestamp:1765152495 Message_creation_time:1778866990009
+Sensor id:12 Sensor_energy_value:1635.5 Sensor_creation_timestamp:1765152496 Message_creation_time:1778866991019
+Sensor id:12 Sensor_energy_value:1637.7 Sensor_creation_timestamp:1765152497 Message_creation_time:1778866992022
+Sensor id:12 Sensor_energy_value:1637.6 Sensor_creation_timestamp:1765152498 Message_creation_time:1778866993024
+Sensor id:12 Sensor_energy_value:1641.0 Sensor_creation_timestamp:1765152499 Message_creation_time:1778866994025
+Sensor id:12 Sensor_energy_value:1645.3 Sensor_creation_timestamp:1765152500 Message_creation_time:1778866995031
+Sensor id:12 Sensor_energy_value:1636.8 Sensor_creation_timestamp:1765152501 Message_creation_time:1778866996033
+Sensor id:12 Sensor_energy_value:1637.6 Sensor_creation_timestamp:1765152502 Message_creation_time:1778866997034
+Sensor id:12 Sensor_energy_value:1635.8 Sensor_creation_timestamp:1765152503 Message_creation_time:1778866998035
+Sensor id:12 Sensor_energy_value:1648.3 Sensor_creation_timestamp:1765152504 Message_creation_time:1778866999039
+Sensor id:12 Sensor_energy_value:1638.6 Sensor_creation_timestamp:1765152505 Message_creation_time:1778867000041
+Sensor id:12 Sensor_energy_value:1646.3 Sensor_creation_timestamp:1765152506 Message_creation_time:1778867001042
+Sensor id:12 Sensor_energy_value:1638.6 Sensor_creation_timestamp:1765152507 Message_creation_time:1778867002045
+Sensor id:12 Sensor_energy_value:1641.7 Sensor_creation_timestamp:1765152508 Message_creation_time:1778867003084
+Sensor id:12 Sensor_energy_value:1635.9 Sensor_creation_timestamp:1765152509 Message_creation_time:1778867004088
+Sensor id:12 Sensor_energy_value:1641.1 Sensor_creation_timestamp:1765152510 Message_creation_time:1778867005101
+Sensor id:12 Sensor_energy_value:1637.3 Sensor_creation_timestamp:1765152511 Message_creation_time:1778867006102
+Sensor id:12 Sensor_energy_value:1638.4 Sensor_creation_timestamp:1765152512 Message_creation_time:1778867007108
+Sensor id:12 Sensor_energy_value:1643.4 Sensor_creation_timestamp:1765152513 Message_creation_time:1778867008112
+Sensor id:12 Sensor_energy_value:1655.5 Sensor_creation_timestamp:1765152514 Message_creation_time:1778867009113
+Sensor id:12 Sensor_energy_value:1640.1 Sensor_creation_timestamp:1765152515 Message_creation_time:1778867010115
+Sensor id:12 Sensor_energy_value:1641.4 Sensor_creation_timestamp:1765152516 Message_creation_time:1778867011138
+Sensor id:12 Sensor_energy_value:1640.0 Sensor_creation_timestamp:1765152517 Message_creation_time:1778867012175
+Sensor id:12 Sensor_energy_value:1640.5 Sensor_creation_timestamp:1765152518 Message_creation_time:1778867013209
+Sensor id:12 Sensor_energy_value:1642.6 Sensor_creation_timestamp:1765152519 Message_creation_time:1778867014711
+Sensor id:12 Sensor_energy_value:1642.8 Sensor_creation_timestamp:1765152520 Message_creation_time:1778867015714
+Sensor id:12 Sensor_energy_value:1638.8 Sensor_creation_timestamp:1765152521 Message_creation_time:1778867016803
+Sensor id:12 Sensor_energy_value:1653.7 Sensor_creation_timestamp:1765152522 Message_creation_time:1778867017806
+Sensor id:12 Sensor_energy_value:1639.3 Sensor_creation_timestamp:1765152523 Message_creation_time:1778867018812
+Sensor id:12 Sensor_energy_value:1639.6 Sensor_creation_timestamp:1765152524 Message_creation_time:1778867019813
+Sensor id:12 Sensor_energy_value:1644.4 Sensor_creation_timestamp:1765152525 Message_creation_time:1778867020962
+Sensor id:12 Sensor_energy_value:1642.0 Sensor_creation_timestamp:1765152526 Message_creation_time:1778867022179
+Sensor id:12 Sensor_energy_value:1638.1 Sensor_creation_timestamp:1765152527 Message_creation_time:1778867023243
+Sensor id:12 Sensor_energy_value:1639.6 Sensor_creation_timestamp:1765152528 Message_creation_time:1778867024244
+Sensor id:12 Sensor_energy_value:1638.7 Sensor_creation_timestamp:1765152529 Message_creation_time:1778867025260
+Sensor id:12 Sensor_energy_value:1656.2 Sensor_creation_timestamp:1765152530 Message_creation_time:1778867026339
+Sensor id:12 Sensor_energy_value:1650.9 Sensor_creation_timestamp:1765152531 Message_creation_time:1778867027402
+Sensor id:12 Sensor_energy_value:1639.2 Sensor_creation_timestamp:1765152532 Message_creation_time:1778867028407
+Sensor id:12 Sensor_energy_value:1639.9 Sensor_creation_timestamp:1765152533 Message_creation_time:1778867029415
+Sensor id:12 Sensor_energy_value:1639.0 Sensor_creation_timestamp:1765152534 Message_creation_time:1778867030422
+Sensor id:12 Sensor_energy_value:1640.3 Sensor_creation_timestamp:1765152535 Message_creation_time:1778867031476
+Sensor id:12 Sensor_energy_value:1642.1 Sensor_creation_timestamp:1765152536 Message_creation_time:1778867032477
+Sensor id:12 Sensor_energy_value:1642.8 Sensor_creation_timestamp:1765152537 Message_creation_time:1778867033481
+Sensor id:12 Sensor_energy_value:1642.4 Sensor_creation_timestamp:1765152538 Message_creation_time:1778867034483
+Sensor id:12 Sensor_energy_value:1645.1 Sensor_creation_timestamp:1765152539 Message_creation_time:1778867035485
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1642.0 Sensor_creation_timestamp:1765152540 Message_creation_time:1778867036486
+Sensor id:12 Sensor_energy_value:1644.8 Sensor_creation_timestamp:1765152541 Message_creation_time:1778867037487
+Sensor id:12 Sensor_energy_value:1642.8 Sensor_creation_timestamp:1765152542 Message_creation_time:1778867038490
+Sensor id:12 Sensor_energy_value:1645.5 Sensor_creation_timestamp:1765152543 Message_creation_time:1778867039491
+Sensor id:12 Sensor_energy_value:1645.8 Sensor_creation_timestamp:1765152544 Message_creation_time:1778867040493
+Sensor id:12 Sensor_energy_value:1642.7 Sensor_creation_timestamp:1765152545 Message_creation_time:1778867041498
+Sensor id:12 Sensor_energy_value:1644.1 Sensor_creation_timestamp:1765152546 Message_creation_time:1778867042501
+Sensor id:12 Sensor_energy_value:1640.4 Sensor_creation_timestamp:1765152547 Message_creation_time:1778867043507
+Sensor id:12 Sensor_energy_value:1643.6 Sensor_creation_timestamp:1765152548 Message_creation_time:1778867044510
+Sensor id:12 Sensor_energy_value:1644.6 Sensor_creation_timestamp:1765152549 Message_creation_time:1778867045511
+Sensor id:12 Sensor_energy_value:1643.8 Sensor_creation_timestamp:1765152550 Message_creation_time:1778867046515
+Sensor id:12 Sensor_energy_value:1640.3 Sensor_creation_timestamp:1765152551 Message_creation_time:1778867047518
+Sensor id:12 Sensor_energy_value:1644.2 Sensor_creation_timestamp:1765152552 Message_creation_time:1778867048527
+Sensor id:12 Sensor_energy_value:1642.8 Sensor_creation_timestamp:1765152553 Message_creation_time:1778867049553
+Sensor id:12 Sensor_energy_value:1643.1 Sensor_creation_timestamp:1765152554 Message_creation_time:1778867050557
+Sensor id:12 Sensor_energy_value:1647.6 Sensor_creation_timestamp:1765152555 Message_creation_time:1778867051564
+Sensor id:12 Sensor_energy_value:1647.6 Sensor_creation_timestamp:1765152556 Message_creation_time:1778867052568
+Sensor id:12 Sensor_energy_value:1652.4 Sensor_creation_timestamp:1765152557 Message_creation_time:1778867053569
+Sensor id:12 Sensor_energy_value:1647.4 Sensor_creation_timestamp:1765152558 Message_creation_time:1778867054569
+Sensor id:12 Sensor_energy_value:1649.1 Sensor_creation_timestamp:1765152559 Message_creation_time:1778867055570
+Sensor id:12 Sensor_energy_value:1649.4 Sensor_creation_timestamp:1765152560 Message_creation_time:1778867056571
+Sensor id:12 Sensor_energy_value:1653.0 Sensor_creation_timestamp:1765152561 Message_creation_time:1778867057575
+Sensor id:12 Sensor_energy_value:1641.0 Sensor_creation_timestamp:1765152562 Message_creation_time:1778867058578
+Sensor id:12 Sensor_energy_value:1654.3 Sensor_creation_timestamp:1765152563 Message_creation_time:1778867059583
+Sensor id:12 Sensor_energy_value:1647.2 Sensor_creation_timestamp:1765152564 Message_creation_time:1778867060587
+Sensor id:12 Sensor_energy_value:1646.7 Sensor_creation_timestamp:1765152565 Message_creation_time:1778867061588
+Sensor id:12 Sensor_energy_value:1647.4 Sensor_creation_timestamp:1765152566 Message_creation_time:1778867062591
+Sensor id:12 Sensor_energy_value:1648.0 Sensor_creation_timestamp:1765152567 Message_creation_time:1778867063592
+Sensor id:12 Sensor_energy_value:1649.5 Sensor_creation_timestamp:1765152568 Message_creation_time:1778867064593
+Sensor id:12 Sensor_energy_value:1648.5 Sensor_creation_timestamp:1765152569 Message_creation_time:1778867065601
+Sensor id:12 Sensor_energy_value:1648.1 Sensor_creation_timestamp:1765152570 Message_creation_time:1778867066605
+Sensor id:12 Sensor_energy_value:1666.0 Sensor_creation_timestamp:1765152571 Message_creation_time:1778867067607
+Sensor id:12 Sensor_energy_value:1646.8 Sensor_creation_timestamp:1765152572 Message_creation_time:1778867068609
+Sensor id:12 Sensor_energy_value:1649.1 Sensor_creation_timestamp:1765152573 Message_creation_time:1778867069612
+Sensor id:12 Sensor_energy_value:1644.5 Sensor_creation_timestamp:1765152574 Message_creation_time:1778867070615
+Sensor id:12 Sensor_energy_value:1647.9 Sensor_creation_timestamp:1765152575 Message_creation_time:1778867071619
+Sensor id:12 Sensor_energy_value:1652.3 Sensor_creation_timestamp:1765152576 Message_creation_time:1778867072620
+Sensor id:12 Sensor_energy_value:1651.4 Sensor_creation_timestamp:1765152577 Message_creation_time:1778867073627
+Sensor id:12 Sensor_energy_value:1651.4 Sensor_creation_timestamp:1765152578 Message_creation_time:1778867074628
+Sensor id:12 Sensor_energy_value:1648.4 Sensor_creation_timestamp:1765152579 Message_creation_time:1778867075630
+Sensor id:12 Sensor_energy_value:1649.6 Sensor_creation_timestamp:1765152580 Message_creation_time:1778867076632
+Sensor id:12 Sensor_energy_value:1649.0 Sensor_creation_timestamp:1765152581 Message_creation_time:1778867077634
+Sensor id:12 Sensor_energy_value:1656.9 Sensor_creation_timestamp:1765152582 Message_creation_time:1778867078636
+Sensor id:12 Sensor_energy_value:1647.1 Sensor_creation_timestamp:1765152583 Message_creation_time:1778867079637
+Sensor id:12 Sensor_energy_value:1647.7 Sensor_creation_timestamp:1765152584 Message_creation_time:1778867080638
+Sensor id:12 Sensor_energy_value:1643.9 Sensor_creation_timestamp:1765152585 Message_creation_time:1778867081645
+Sensor id:12 Sensor_energy_value:1649.2 Sensor_creation_timestamp:1765152586 Message_creation_time:1778867082646
+Sensor id:12 Sensor_energy_value:1647.6 Sensor_creation_timestamp:1765152587 Message_creation_time:1778867083648
+Sensor id:12 Sensor_energy_value:1650.3 Sensor_creation_timestamp:1765152588 Message_creation_time:1778867084649
+Sensor id:12 Sensor_energy_value:1643.3 Sensor_creation_timestamp:1765152589 Message_creation_time:1778867085651
+Sensor id:12 Sensor_energy_value:1646.2 Sensor_creation_timestamp:1765152590 Message_creation_time:1778867086653
+Sensor id:12 Sensor_energy_value:1664.8 Sensor_creation_timestamp:1765152591 Message_creation_time:1778867087653
+Sensor id:12 Sensor_energy_value:1649.0 Sensor_creation_timestamp:1765152592 Message_creation_time:1778867088657
+Sensor id:12 Sensor_energy_value:1646.6 Sensor_creation_timestamp:1765152593 Message_creation_time:1778867089659
+Sensor id:12 Sensor_energy_value:1647.1 Sensor_creation_timestamp:1765152594 Message_creation_time:1778867090662
+Sensor id:12 Sensor_energy_value:1644.2 Sensor_creation_timestamp:1765152595 Message_creation_time:1778867091663
+Sensor id:12 Sensor_energy_value:1648.9 Sensor_creation_timestamp:1765152596 Message_creation_time:1778867092665
+Sensor id:12 Sensor_energy_value:1659.4 Sensor_creation_timestamp:1765152597 Message_creation_time:1778867093667
+Sensor id:12 Sensor_energy_value:1649.8 Sensor_creation_timestamp:1765152598 Message_creation_time:1778867094668
+Sensor id:12 Sensor_energy_value:1650.1 Sensor_creation_timestamp:1765152599 Message_creation_time:1778867095671
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1654.0 Sensor_creation_timestamp:1765152600 Message_creation_time:1778867096672
+Sensor id:12 Sensor_energy_value:1649.0 Sensor_creation_timestamp:1765152601 Message_creation_time:1778867097676
+Sensor id:12 Sensor_energy_value:1654.1 Sensor_creation_timestamp:1765152602 Message_creation_time:1778867098677
+Sensor id:12 Sensor_energy_value:1656.5 Sensor_creation_timestamp:1765152603 Message_creation_time:1778867099678
+Sensor id:12 Sensor_energy_value:1653.3 Sensor_creation_timestamp:1765152604 Message_creation_time:1778867100679
+Sensor id:12 Sensor_energy_value:1653.2 Sensor_creation_timestamp:1765152605 Message_creation_time:1778867101681
+Sensor id:12 Sensor_energy_value:1652.9 Sensor_creation_timestamp:1765152606 Message_creation_time:1778867102682
+Sensor id:12 Sensor_energy_value:1649.5 Sensor_creation_timestamp:1765152607 Message_creation_time:1778867103683
+Sensor id:12 Sensor_energy_value:1476.0 Sensor_creation_timestamp:1765152608 Message_creation_time:1778867104684
+Sensor id:12 Sensor_energy_value:1482.2 Sensor_creation_timestamp:1765152609 Message_creation_time:1778867105685
+Sensor id:12 Sensor_energy_value:1487.8 Sensor_creation_timestamp:1765152610 Message_creation_time:1778867106686
+Sensor id:12 Sensor_energy_value:1492.5 Sensor_creation_timestamp:1765152611 Message_creation_time:1778867107687
+Sensor id:12 Sensor_energy_value:1445.8 Sensor_creation_timestamp:1765152612 Message_creation_time:1778867108688
+Sensor id:12 Sensor_energy_value:628.1 Sensor_creation_timestamp:1765152613 Message_creation_time:1778867109690
+Sensor id:12 Sensor_energy_value:656.6 Sensor_creation_timestamp:1765152614 Message_creation_time:1778867110691
+Sensor id:12 Sensor_energy_value:662.0 Sensor_creation_timestamp:1765152615 Message_creation_time:1778867111692
+Sensor id:12 Sensor_energy_value:663.0 Sensor_creation_timestamp:1765152616 Message_creation_time:1778867112694
+Sensor id:12 Sensor_energy_value:695.3 Sensor_creation_timestamp:1765152617 Message_creation_time:1778867113695
+Sensor id:12 Sensor_energy_value:663.2 Sensor_creation_timestamp:1765152618 Message_creation_time:1778867114697
+Sensor id:12 Sensor_energy_value:673.7 Sensor_creation_timestamp:1765152619 Message_creation_time:1778867115698
+Sensor id:12 Sensor_energy_value:667.2 Sensor_creation_timestamp:1765152620 Message_creation_time:1778867116700
+Sensor id:12 Sensor_energy_value:664.8 Sensor_creation_timestamp:1765152621 Message_creation_time:1778867117703
+Sensor id:12 Sensor_energy_value:661.4 Sensor_creation_timestamp:1765152622 Message_creation_time:1778867118705
+Sensor id:12 Sensor_energy_value:661.7 Sensor_creation_timestamp:1765152623 Message_creation_time:1778867119706
+Sensor id:12 Sensor_energy_value:661.1 Sensor_creation_timestamp:1765152624 Message_creation_time:1778867120709
+Sensor id:12 Sensor_energy_value:659.0 Sensor_creation_timestamp:1765152625 Message_creation_time:1778867121713
+Sensor id:12 Sensor_energy_value:664.7 Sensor_creation_timestamp:1765152626 Message_creation_time:1778867122715
+Sensor id:12 Sensor_energy_value:661.8 Sensor_creation_timestamp:1765152627 Message_creation_time:1778867123717
+Sensor id:12 Sensor_energy_value:662.2 Sensor_creation_timestamp:1765152628 Message_creation_time:1778867124718
+Sensor id:12 Sensor_energy_value:661.0 Sensor_creation_timestamp:1765152629 Message_creation_time:1778867125720
+Sensor id:12 Sensor_energy_value:661.4 Sensor_creation_timestamp:1765152630 Message_creation_time:1778867126743
+Sensor id:12 Sensor_energy_value:667.2 Sensor_creation_timestamp:1765152631 Message_creation_time:1778867127747
+Sensor id:12 Sensor_energy_value:661.4 Sensor_creation_timestamp:1765152632 Message_creation_time:1778867128749
+Sensor id:12 Sensor_energy_value:665.0 Sensor_creation_timestamp:1765152633 Message_creation_time:1778867129756
+Sensor id:12 Sensor_energy_value:661.6 Sensor_creation_timestamp:1765152634 Message_creation_time:1778867130759
+Sensor id:12 Sensor_energy_value:663.5 Sensor_creation_timestamp:1765152635 Message_creation_time:1778867131761
+Sensor id:12 Sensor_energy_value:663.4 Sensor_creation_timestamp:1765152636 Message_creation_time:1778867132762
+Sensor id:12 Sensor_energy_value:664.3 Sensor_creation_timestamp:1765152637 Message_creation_time:1778867133765
+Sensor id:12 Sensor_energy_value:663.1 Sensor_creation_timestamp:1765152638 Message_creation_time:1778867134770
+Sensor id:12 Sensor_energy_value:664.0 Sensor_creation_timestamp:1765152639 Message_creation_time:1778867135772
+Sensor id:12 Sensor_energy_value:664.9 Sensor_creation_timestamp:1765152640 Message_creation_time:1778867136780
+Sensor id:12 Sensor_energy_value:662.9 Sensor_creation_timestamp:1765152641 Message_creation_time:1778867137783
+Sensor id:12 Sensor_energy_value:666.7 Sensor_creation_timestamp:1765152642 Message_creation_time:1778867138788
+Sensor id:12 Sensor_energy_value:656.2 Sensor_creation_timestamp:1765152643 Message_creation_time:1778867139790
+Sensor id:12 Sensor_energy_value:622.7 Sensor_creation_timestamp:1765152644 Message_creation_time:1778867140792
+Sensor id:12 Sensor_energy_value:516.2 Sensor_creation_timestamp:1765152645 Message_creation_time:1778867141793
+Sensor id:12 Sensor_energy_value:514.8 Sensor_creation_timestamp:1765152646 Message_creation_time:1778867142796
+Sensor id:12 Sensor_energy_value:515.2 Sensor_creation_timestamp:1765152647 Message_creation_time:1778867143802
+Sensor id:12 Sensor_energy_value:522.1 Sensor_creation_timestamp:1765152648 Message_creation_time:1778867144803
+Sensor id:12 Sensor_energy_value:512.5 Sensor_creation_timestamp:1765152649 Message_creation_time:1778867145805
+Sensor id:12 Sensor_energy_value:513.8 Sensor_creation_timestamp:1765152650 Message_creation_time:1778867146806
+Sensor id:12 Sensor_energy_value:517.9 Sensor_creation_timestamp:1765152651 Message_creation_time:1778867147808
+Sensor id:12 Sensor_energy_value:517.4 Sensor_creation_timestamp:1765152652 Message_creation_time:1778867148810
+Sensor id:12 Sensor_energy_value:514.4 Sensor_creation_timestamp:1765152653 Message_creation_time:1778867149815
+Sensor id:12 Sensor_energy_value:514.6 Sensor_creation_timestamp:1765152654 Message_creation_time:1778867150817
+Sensor id:12 Sensor_energy_value:516.2 Sensor_creation_timestamp:1765152655 Message_creation_time:1778867151819
+Sensor id:12 Sensor_energy_value:521.4 Sensor_creation_timestamp:1765152656 Message_creation_time:1778867152821
+Sensor id:12 Sensor_energy_value:580.7 Sensor_creation_timestamp:1765152657 Message_creation_time:1778867153824
+Sensor id:12 Sensor_energy_value:531.3 Sensor_creation_timestamp:1765152658 Message_creation_time:1778867154826
+Sensor id:12 Sensor_energy_value:531.6 Sensor_creation_timestamp:1765152659 Message_creation_time:1778867155833
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:530.8 Sensor_creation_timestamp:1765152660 Message_creation_time:1778867156836
+Sensor id:12 Sensor_energy_value:545.6 Sensor_creation_timestamp:1765152661 Message_creation_time:1778867157838
+Sensor id:12 Sensor_energy_value:533.3 Sensor_creation_timestamp:1765152662 Message_creation_time:1778867158843
+Sensor id:12 Sensor_energy_value:533.0 Sensor_creation_timestamp:1765152663 Message_creation_time:1778867159844
+Sensor id:12 Sensor_energy_value:532.3 Sensor_creation_timestamp:1765152664 Message_creation_time:1778867160845
+Sensor id:12 Sensor_energy_value:530.6 Sensor_creation_timestamp:1765152665 Message_creation_time:1778867161845
+Sensor id:12 Sensor_energy_value:533.9 Sensor_creation_timestamp:1765152666 Message_creation_time:1778867162846
+Sensor id:12 Sensor_energy_value:545.0 Sensor_creation_timestamp:1765152667 Message_creation_time:1778867163850
+Sensor id:12 Sensor_energy_value:536.6 Sensor_creation_timestamp:1765152668 Message_creation_time:1778867164860
+Sensor id:12 Sensor_energy_value:535.9 Sensor_creation_timestamp:1765152669 Message_creation_time:1778867165861
+Sensor id:12 Sensor_energy_value:535.9 Sensor_creation_timestamp:1765152670 Message_creation_time:1778867166865
+Sensor id:12 Sensor_energy_value:536.0 Sensor_creation_timestamp:1765152671 Message_creation_time:1778867167866
+Sensor id:12 Sensor_energy_value:535.8 Sensor_creation_timestamp:1765152672 Message_creation_time:1778867168868
+Sensor id:12 Sensor_energy_value:536.9 Sensor_creation_timestamp:1765152673 Message_creation_time:1778867169869
+Sensor id:12 Sensor_energy_value:612.6 Sensor_creation_timestamp:1765152674 Message_creation_time:1778867170870
+Sensor id:12 Sensor_energy_value:655.2 Sensor_creation_timestamp:1765152675 Message_creation_time:1778867171871
+Sensor id:12 Sensor_energy_value:661.7 Sensor_creation_timestamp:1765152676 Message_creation_time:1778867172876
+Sensor id:12 Sensor_energy_value:661.1 Sensor_creation_timestamp:1765152677 Message_creation_time:1778867173878
+Sensor id:12 Sensor_energy_value:662.9 Sensor_creation_timestamp:1765152678 Message_creation_time:1778867174879
+Sensor id:12 Sensor_energy_value:666.1 Sensor_creation_timestamp:1765152679 Message_creation_time:1778867175882
+Sensor id:12 Sensor_energy_value:665.0 Sensor_creation_timestamp:1765152680 Message_creation_time:1778867176887
+Sensor id:12 Sensor_energy_value:666.3 Sensor_creation_timestamp:1765152681 Message_creation_time:1778867177889
+Sensor id:12 Sensor_energy_value:658.7 Sensor_creation_timestamp:1765152682 Message_creation_time:1778867178891
+Sensor id:12 Sensor_energy_value:659.3 Sensor_creation_timestamp:1765152683 Message_creation_time:1778867179894
+Sensor id:12 Sensor_energy_value:662.5 Sensor_creation_timestamp:1765152684 Message_creation_time:1778867180902
+Sensor id:12 Sensor_energy_value:660.2 Sensor_creation_timestamp:1765152685 Message_creation_time:1778867181904
+Sensor id:12 Sensor_energy_value:657.6 Sensor_creation_timestamp:1765152686 Message_creation_time:1778867182909
+Sensor id:12 Sensor_energy_value:662.6 Sensor_creation_timestamp:1765152687 Message_creation_time:1778867183922
+Sensor id:12 Sensor_energy_value:664.7 Sensor_creation_timestamp:1765152688 Message_creation_time:1778867184983
+Sensor id:12 Sensor_energy_value:661.2 Sensor_creation_timestamp:1765152689 Message_creation_time:1778867185985
+Sensor id:12 Sensor_energy_value:660.2 Sensor_creation_timestamp:1765152690 Message_creation_time:1778867186988
+Sensor id:12 Sensor_energy_value:659.6 Sensor_creation_timestamp:1765152691 Message_creation_time:1778867187996
+Sensor id:12 Sensor_energy_value:661.9 Sensor_creation_timestamp:1765152692 Message_creation_time:1778867189008
+Sensor id:12 Sensor_energy_value:664.6 Sensor_creation_timestamp:1765152693 Message_creation_time:1778867190009
+Sensor id:12 Sensor_energy_value:662.8 Sensor_creation_timestamp:1765152694 Message_creation_time:1778867191010
+Sensor id:12 Sensor_energy_value:672.5 Sensor_creation_timestamp:1765152695 Message_creation_time:1778867192011
+Sensor id:12 Sensor_energy_value:669.7 Sensor_creation_timestamp:1765152696 Message_creation_time:1778867193013
+Sensor id:12 Sensor_energy_value:678.8 Sensor_creation_timestamp:1765152697 Message_creation_time:1778867194014
+Sensor id:12 Sensor_energy_value:672.8 Sensor_creation_timestamp:1765152698 Message_creation_time:1778867195017
+Sensor id:12 Sensor_energy_value:671.7 Sensor_creation_timestamp:1765152699 Message_creation_time:1778867196020
+Sensor id:12 Sensor_energy_value:672.2 Sensor_creation_timestamp:1765152700 Message_creation_time:1778867197022
+Sensor id:12 Sensor_energy_value:665.8 Sensor_creation_timestamp:1765152701 Message_creation_time:1778867198050
+Sensor id:12 Sensor_energy_value:666.2 Sensor_creation_timestamp:1765152702 Message_creation_time:1778867199054
+Sensor id:12 Sensor_energy_value:667.2 Sensor_creation_timestamp:1765152703 Message_creation_time:1778867200059
+Sensor id:12 Sensor_energy_value:667.0 Sensor_creation_timestamp:1765152704 Message_creation_time:1778867201062
+Sensor id:12 Sensor_energy_value:671.6 Sensor_creation_timestamp:1765152705 Message_creation_time:1778867202064
+Sensor id:12 Sensor_energy_value:666.0 Sensor_creation_timestamp:1765152706 Message_creation_time:1778867203069
+Sensor id:12 Sensor_energy_value:663.8 Sensor_creation_timestamp:1765152707 Message_creation_time:1778867204071
+Sensor id:12 Sensor_energy_value:662.3 Sensor_creation_timestamp:1765152708 Message_creation_time:1778867205080
+Sensor id:12 Sensor_energy_value:662.9 Sensor_creation_timestamp:1765152709 Message_creation_time:1778867206691
+Sensor id:12 Sensor_energy_value:662.7 Sensor_creation_timestamp:1765152710 Message_creation_time:1778867207799
+Sensor id:12 Sensor_energy_value:665.8 Sensor_creation_timestamp:1765152711 Message_creation_time:1778867208804
+Sensor id:12 Sensor_energy_value:663.0 Sensor_creation_timestamp:1765152712 Message_creation_time:1778867209956
+Sensor id:12 Sensor_energy_value:662.2 Sensor_creation_timestamp:1765152713 Message_creation_time:1778867210958
+Sensor id:12 Sensor_energy_value:662.1 Sensor_creation_timestamp:1765152714 Message_creation_time:1778867211982
+Sensor id:12 Sensor_energy_value:672.4 Sensor_creation_timestamp:1765152715 Message_creation_time:1778867212992
+Sensor id:12 Sensor_energy_value:666.7 Sensor_creation_timestamp:1765152716 Message_creation_time:1778867214025
+Sensor id:12 Sensor_energy_value:664.8 Sensor_creation_timestamp:1765152717 Message_creation_time:1778867215040
+Sensor id:12 Sensor_energy_value:663.0 Sensor_creation_timestamp:1765152718 Message_creation_time:1778867216053
+Sensor id:12 Sensor_energy_value:663.2 Sensor_creation_timestamp:1765152719 Message_creation_time:1778867217292
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:666.5 Sensor_creation_timestamp:1765152720 Message_creation_time:1778867218297
+Sensor id:12 Sensor_energy_value:677.6 Sensor_creation_timestamp:1765152721 Message_creation_time:1778867219768
+Sensor id:12 Sensor_energy_value:663.3 Sensor_creation_timestamp:1765152722 Message_creation_time:1778867220796
+Sensor id:12 Sensor_energy_value:665.4 Sensor_creation_timestamp:1765152723 Message_creation_time:1778867221797
+Sensor id:12 Sensor_energy_value:663.7 Sensor_creation_timestamp:1765152724 Message_creation_time:1778867222798
+Sensor id:12 Sensor_energy_value:663.4 Sensor_creation_timestamp:1765152725 Message_creation_time:1778867223873
+Sensor id:12 Sensor_energy_value:665.5 Sensor_creation_timestamp:1765152726 Message_creation_time:1778867224881
+Sensor id:12 Sensor_energy_value:664.2 Sensor_creation_timestamp:1765152727 Message_creation_time:1778867225993
+Sensor id:12 Sensor_energy_value:662.3 Sensor_creation_timestamp:1765152728 Message_creation_time:1778867227034
+Sensor id:12 Sensor_energy_value:662.1 Sensor_creation_timestamp:1765152729 Message_creation_time:1778867228036
+Sensor id:12 Sensor_energy_value:662.7 Sensor_creation_timestamp:1765152730 Message_creation_time:1778867229037
+Sensor id:12 Sensor_energy_value:660.2 Sensor_creation_timestamp:1765152731 Message_creation_time:1778867230042
+Sensor id:12 Sensor_energy_value:664.8 Sensor_creation_timestamp:1765152732 Message_creation_time:1778867231043
+Sensor id:12 Sensor_energy_value:663.5 Sensor_creation_timestamp:1765152733 Message_creation_time:1778867232044
+Sensor id:12 Sensor_energy_value:662.4 Sensor_creation_timestamp:1765152734 Message_creation_time:1778867233055
+Sensor id:12 Sensor_energy_value:662.7 Sensor_creation_timestamp:1765152735 Message_creation_time:1778867234058
+Sensor id:12 Sensor_energy_value:666.7 Sensor_creation_timestamp:1765152736 Message_creation_time:1778867235060
+Sensor id:12 Sensor_energy_value:664.0 Sensor_creation_timestamp:1765152737 Message_creation_time:1778867236062
+Sensor id:12 Sensor_energy_value:663.2 Sensor_creation_timestamp:1765152738 Message_creation_time:1778867237063
+Sensor id:12 Sensor_energy_value:668.6 Sensor_creation_timestamp:1765152739 Message_creation_time:1778867238065
+Sensor id:12 Sensor_energy_value:668.2 Sensor_creation_timestamp:1765152740 Message_creation_time:1778867239071
+Sensor id:12 Sensor_energy_value:662.8 Sensor_creation_timestamp:1765152741 Message_creation_time:1778867240078
+Sensor id:12 Sensor_energy_value:665.6 Sensor_creation_timestamp:1765152742 Message_creation_time:1778867241083
+Sensor id:12 Sensor_energy_value:662.3 Sensor_creation_timestamp:1765152743 Message_creation_time:1778867242087
+Sensor id:12 Sensor_energy_value:662.4 Sensor_creation_timestamp:1765152744 Message_creation_time:1778867243207
+Sensor id:12 Sensor_energy_value:661.2 Sensor_creation_timestamp:1765152745 Message_creation_time:1778867244221
+Sensor id:12 Sensor_energy_value:660.4 Sensor_creation_timestamp:1765152746 Message_creation_time:1778867245222
+Sensor id:12 Sensor_energy_value:661.9 Sensor_creation_timestamp:1765152747 Message_creation_time:1778867246230
+Sensor id:12 Sensor_energy_value:665.6 Sensor_creation_timestamp:1765152748 Message_creation_time:1778867247235
+Sensor id:12 Sensor_energy_value:666.3 Sensor_creation_timestamp:1765152749 Message_creation_time:1778867248248
+Sensor id:12 Sensor_energy_value:662.1 Sensor_creation_timestamp:1765152750 Message_creation_time:1778867249253
+Sensor id:12 Sensor_energy_value:662.0 Sensor_creation_timestamp:1765152751 Message_creation_time:1778867250256
+Sensor id:12 Sensor_energy_value:659.7 Sensor_creation_timestamp:1765152752 Message_creation_time:1778867251259
+Sensor id:12 Sensor_energy_value:664.7 Sensor_creation_timestamp:1765152753 Message_creation_time:1778867252260
+Sensor id:12 Sensor_energy_value:663.7 Sensor_creation_timestamp:1765152754 Message_creation_time:1778867253264
+Sensor id:12 Sensor_energy_value:662.4 Sensor_creation_timestamp:1765152755 Message_creation_time:1778867254265
+Sensor id:12 Sensor_energy_value:670.2 Sensor_creation_timestamp:1765152756 Message_creation_time:1778867255268
+Sensor id:12 Sensor_energy_value:660.8 Sensor_creation_timestamp:1765152757 Message_creation_time:1778867256270
+Sensor id:12 Sensor_energy_value:662.0 Sensor_creation_timestamp:1765152758 Message_creation_time:1778867257272
+Sensor id:12 Sensor_energy_value:659.5 Sensor_creation_timestamp:1765152759 Message_creation_time:1778867258279
+Sensor id:12 Sensor_energy_value:659.7 Sensor_creation_timestamp:1765152760 Message_creation_time:1778867259282
+Sensor id:12 Sensor_energy_value:659.7 Sensor_creation_timestamp:1765152761 Message_creation_time:1778867260302
+Sensor id:12 Sensor_energy_value:662.7 Sensor_creation_timestamp:1765152762 Message_creation_time:1778867261304
+Sensor id:12 Sensor_energy_value:665.4 Sensor_creation_timestamp:1765152763 Message_creation_time:1778867262305
+Sensor id:12 Sensor_energy_value:688.0 Sensor_creation_timestamp:1765152764 Message_creation_time:1778867263306
+Sensor id:12 Sensor_energy_value:669.8 Sensor_creation_timestamp:1765152765 Message_creation_time:1778867264309
+Sensor id:12 Sensor_energy_value:675.2 Sensor_creation_timestamp:1765152766 Message_creation_time:1778867265311
+Sensor id:12 Sensor_energy_value:667.9 Sensor_creation_timestamp:1765152767 Message_creation_time:1778867266313
+Sensor id:12 Sensor_energy_value:668.7 Sensor_creation_timestamp:1765152768 Message_creation_time:1778867267316
+Sensor id:12 Sensor_energy_value:668.7 Sensor_creation_timestamp:1765152769 Message_creation_time:1778867268318
+Sensor id:12 Sensor_energy_value:668.6 Sensor_creation_timestamp:1765152770 Message_creation_time:1778867269322
+Sensor id:12 Sensor_energy_value:670.6 Sensor_creation_timestamp:1765152771 Message_creation_time:1778867270333
+Sensor id:12 Sensor_energy_value:671.0 Sensor_creation_timestamp:1765152772 Message_creation_time:1778867271335
+Sensor id:12 Sensor_energy_value:668.1 Sensor_creation_timestamp:1765152773 Message_creation_time:1778867272336
+Sensor id:12 Sensor_energy_value:672.2 Sensor_creation_timestamp:1765152774 Message_creation_time:1778867273338
+Sensor id:12 Sensor_energy_value:666.7 Sensor_creation_timestamp:1765152775 Message_creation_time:1778867274350
+Sensor id:12 Sensor_energy_value:668.4 Sensor_creation_timestamp:1765152776 Message_creation_time:1778867275352
+Sensor id:12 Sensor_energy_value:669.6 Sensor_creation_timestamp:1765152777 Message_creation_time:1778867276353
+Sensor id:12 Sensor_energy_value:664.8 Sensor_creation_timestamp:1765152778 Message_creation_time:1778867277356
+Sensor id:12 Sensor_energy_value:658.8 Sensor_creation_timestamp:1765152779 Message_creation_time:1778867278359
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:663.6 Sensor_creation_timestamp:1765152780 Message_creation_time:1778867279361
+Sensor id:12 Sensor_energy_value:659.9 Sensor_creation_timestamp:1765152781 Message_creation_time:1778867280372
+Sensor id:12 Sensor_energy_value:663.1 Sensor_creation_timestamp:1765152782 Message_creation_time:1778867281373
+Sensor id:12 Sensor_energy_value:664.1 Sensor_creation_timestamp:1765152783 Message_creation_time:1778867282374
+Sensor id:12 Sensor_energy_value:661.7 Sensor_creation_timestamp:1765152784 Message_creation_time:1778867283375
+Sensor id:12 Sensor_energy_value:664.1 Sensor_creation_timestamp:1765152785 Message_creation_time:1778867284378
+Sensor id:12 Sensor_energy_value:670.1 Sensor_creation_timestamp:1765152786 Message_creation_time:1778867285379
+Sensor id:12 Sensor_energy_value:663.8 Sensor_creation_timestamp:1765152787 Message_creation_time:1778867286380
+Sensor id:12 Sensor_energy_value:670.9 Sensor_creation_timestamp:1765152788 Message_creation_time:1778867287380
+Sensor id:12 Sensor_energy_value:661.3 Sensor_creation_timestamp:1765152789 Message_creation_time:1778867288381
+Sensor id:12 Sensor_energy_value:660.1 Sensor_creation_timestamp:1765152790 Message_creation_time:1778867289382
+Sensor id:12 Sensor_energy_value:659.5 Sensor_creation_timestamp:1765152791 Message_creation_time:1778867290383
+Sensor id:12 Sensor_energy_value:663.2 Sensor_creation_timestamp:1765152792 Message_creation_time:1778867291392
+Sensor id:12 Sensor_energy_value:662.0 Sensor_creation_timestamp:1765152793 Message_creation_time:1778867292394
+Sensor id:12 Sensor_energy_value:664.0 Sensor_creation_timestamp:1765152794 Message_creation_time:1778867293396
+Sensor id:12 Sensor_energy_value:662.3 Sensor_creation_timestamp:1765152795 Message_creation_time:1778867294397
+Sensor id:12 Sensor_energy_value:659.8 Sensor_creation_timestamp:1765152796 Message_creation_time:1778867295397
+Sensor id:12 Sensor_energy_value:662.5 Sensor_creation_timestamp:1765152797 Message_creation_time:1778867296398
+Sensor id:12 Sensor_energy_value:663.8 Sensor_creation_timestamp:1765152798 Message_creation_time:1778867297403
+Sensor id:12 Sensor_energy_value:664.4 Sensor_creation_timestamp:1765152799 Message_creation_time:1778867298405
+Sensor id:12 Sensor_energy_value:665.8 Sensor_creation_timestamp:1765152800 Message_creation_time:1778867299408
+Sensor id:12 Sensor_energy_value:662.4 Sensor_creation_timestamp:1765152801 Message_creation_time:1778867300410
+Sensor id:12 Sensor_energy_value:660.1 Sensor_creation_timestamp:1765152802 Message_creation_time:1778867301413
+Sensor id:12 Sensor_energy_value:661.8 Sensor_creation_timestamp:1765152803 Message_creation_time:1778867302413
+Sensor id:12 Sensor_energy_value:666.3 Sensor_creation_timestamp:1765152804 Message_creation_time:1778867303415
+Sensor id:12 Sensor_energy_value:658.3 Sensor_creation_timestamp:1765152805 Message_creation_time:1778867304416
+Sensor id:12 Sensor_energy_value:661.5 Sensor_creation_timestamp:1765152806 Message_creation_time:1778867305418
+Sensor id:12 Sensor_energy_value:659.8 Sensor_creation_timestamp:1765152807 Message_creation_time:1778867306419
+Sensor id:12 Sensor_energy_value:658.7 Sensor_creation_timestamp:1765152808 Message_creation_time:1778867307421
+Sensor id:12 Sensor_energy_value:659.8 Sensor_creation_timestamp:1765152809 Message_creation_time:1778867308422
+Sensor id:12 Sensor_energy_value:659.1 Sensor_creation_timestamp:1765152810 Message_creation_time:1778867309425
+Sensor id:12 Sensor_energy_value:628.7 Sensor_creation_timestamp:1765152811 Message_creation_time:1778867310427
+Sensor id:12 Sensor_energy_value:631.2 Sensor_creation_timestamp:1765152812 Message_creation_time:1778867311428
+Sensor id:12 Sensor_energy_value:631.4 Sensor_creation_timestamp:1765152813 Message_creation_time:1778867312433
+Sensor id:12 Sensor_energy_value:631.9 Sensor_creation_timestamp:1765152814 Message_creation_time:1778867313435
+Sensor id:12 Sensor_energy_value:627.9 Sensor_creation_timestamp:1765152815 Message_creation_time:1778867314436
+Sensor id:12 Sensor_energy_value:629.3 Sensor_creation_timestamp:1765152816 Message_creation_time:1778867315437
+Sensor id:12 Sensor_energy_value:629.3 Sensor_creation_timestamp:1765152817 Message_creation_time:1778867316440
+Sensor id:12 Sensor_energy_value:630.0 Sensor_creation_timestamp:1765152818 Message_creation_time:1778867317441
+Sensor id:12 Sensor_energy_value:632.5 Sensor_creation_timestamp:1765152819 Message_creation_time:1778867318443
+Sensor id:12 Sensor_energy_value:628.5 Sensor_creation_timestamp:1765152820 Message_creation_time:1778867319448
+Sensor id:12 Sensor_energy_value:628.9 Sensor_creation_timestamp:1765152821 Message_creation_time:1778867320449
+Sensor id:12 Sensor_energy_value:631.9 Sensor_creation_timestamp:1765152822 Message_creation_time:1778867321450
+Sensor id:12 Sensor_energy_value:631.0 Sensor_creation_timestamp:1765152823 Message_creation_time:1778867322451
+Sensor id:12 Sensor_energy_value:633.0 Sensor_creation_timestamp:1765152824 Message_creation_time:1778867323452
+Sensor id:12 Sensor_energy_value:632.0 Sensor_creation_timestamp:1765152825 Message_creation_time:1778867324452
+Sensor id:12 Sensor_energy_value:626.6 Sensor_creation_timestamp:1765152826 Message_creation_time:1778867325456
+Sensor id:12 Sensor_energy_value:630.4 Sensor_creation_timestamp:1765152827 Message_creation_time:1778867326458
+Sensor id:12 Sensor_energy_value:630.8 Sensor_creation_timestamp:1765152828 Message_creation_time:1778867327460
+Sensor id:12 Sensor_energy_value:629.3 Sensor_creation_timestamp:1765152829 Message_creation_time:1778867328461
+Sensor id:12 Sensor_energy_value:634.0 Sensor_creation_timestamp:1765152830 Message_creation_time:1778867329467
+Sensor id:12 Sensor_energy_value:628.3 Sensor_creation_timestamp:1765152831 Message_creation_time:1778867330468
+Sensor id:12 Sensor_energy_value:630.4 Sensor_creation_timestamp:1765152832 Message_creation_time:1778867331469
+Sensor id:12 Sensor_energy_value:629.8 Sensor_creation_timestamp:1765152833 Message_creation_time:1778867332470
+Sensor id:12 Sensor_energy_value:633.2 Sensor_creation_timestamp:1765152834 Message_creation_time:1778867333470
+Sensor id:12 Sensor_energy_value:630.4 Sensor_creation_timestamp:1765152835 Message_creation_time:1778867334471
+Sensor id:12 Sensor_energy_value:629.4 Sensor_creation_timestamp:1765152836 Message_creation_time:1778867335472
+Sensor id:12 Sensor_energy_value:628.5 Sensor_creation_timestamp:1765152837 Message_creation_time:1778867336476
+Sensor id:12 Sensor_energy_value:630.7 Sensor_creation_timestamp:1765152838 Message_creation_time:1778867337480
+Sensor id:12 Sensor_energy_value:633.7 Sensor_creation_timestamp:1765152839 Message_creation_time:1778867338481
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:641.2 Sensor_creation_timestamp:1765152840 Message_creation_time:1778867339511
+Sensor id:12 Sensor_energy_value:635.5 Sensor_creation_timestamp:1765152841 Message_creation_time:1778867340513
+Sensor id:12 Sensor_energy_value:634.9 Sensor_creation_timestamp:1765152842 Message_creation_time:1778867341514
+Sensor id:12 Sensor_energy_value:634.3 Sensor_creation_timestamp:1765152843 Message_creation_time:1778867342517
+Sensor id:12 Sensor_energy_value:630.3 Sensor_creation_timestamp:1765152844 Message_creation_time:1778867343521
+Sensor id:12 Sensor_energy_value:648.0 Sensor_creation_timestamp:1765152845 Message_creation_time:1778867344524
+Sensor id:12 Sensor_energy_value:630.7 Sensor_creation_timestamp:1765152846 Message_creation_time:1778867345528
+Sensor id:12 Sensor_energy_value:632.3 Sensor_creation_timestamp:1765152847 Message_creation_time:1778867346530
+Sensor id:12 Sensor_energy_value:633.0 Sensor_creation_timestamp:1765152848 Message_creation_time:1778867347532
+Sensor id:12 Sensor_energy_value:633.9 Sensor_creation_timestamp:1765152849 Message_creation_time:1778867348533
+Sensor id:12 Sensor_energy_value:628.8 Sensor_creation_timestamp:1765152850 Message_creation_time:1778867349536
+Sensor id:12 Sensor_energy_value:627.6 Sensor_creation_timestamp:1765152851 Message_creation_time:1778867350537
+Sensor id:12 Sensor_energy_value:630.2 Sensor_creation_timestamp:1765152852 Message_creation_time:1778867351539
+Sensor id:12 Sensor_energy_value:628.4 Sensor_creation_timestamp:1765152853 Message_creation_time:1778867352541
+Sensor id:12 Sensor_energy_value:629.1 Sensor_creation_timestamp:1765152854 Message_creation_time:1778867353545
+Sensor id:12 Sensor_energy_value:626.8 Sensor_creation_timestamp:1765152855 Message_creation_time:1778867354548
+Sensor id:12 Sensor_energy_value:625.8 Sensor_creation_timestamp:1765152856 Message_creation_time:1778867355552
+Sensor id:12 Sensor_energy_value:629.9 Sensor_creation_timestamp:1765152857 Message_creation_time:1778867356553
+Sensor id:12 Sensor_energy_value:629.1 Sensor_creation_timestamp:1765152858 Message_creation_time:1778867357556
+Sensor id:12 Sensor_energy_value:635.6 Sensor_creation_timestamp:1765152859 Message_creation_time:1778867358561
+Sensor id:12 Sensor_energy_value:629.3 Sensor_creation_timestamp:1765152860 Message_creation_time:1778867359561
+Sensor id:12 Sensor_energy_value:626.1 Sensor_creation_timestamp:1765152861 Message_creation_time:1778867360563
+Sensor id:12 Sensor_energy_value:626.7 Sensor_creation_timestamp:1765152862 Message_creation_time:1778867361564
+Sensor id:12 Sensor_energy_value:626.7 Sensor_creation_timestamp:1765152863 Message_creation_time:1778867362610
+Sensor id:12 Sensor_energy_value:629.8 Sensor_creation_timestamp:1765152864 Message_creation_time:1778867363613
+Sensor id:12 Sensor_energy_value:627.7 Sensor_creation_timestamp:1765152865 Message_creation_time:1778867364615
+Sensor id:12 Sensor_energy_value:628.7 Sensor_creation_timestamp:1765152866 Message_creation_time:1778867365617
+Sensor id:12 Sensor_energy_value:628.1 Sensor_creation_timestamp:1765152867 Message_creation_time:1778867366620
+Sensor id:12 Sensor_energy_value:627.6 Sensor_creation_timestamp:1765152868 Message_creation_time:1778867367622
+Sensor id:12 Sensor_energy_value:627.4 Sensor_creation_timestamp:1765152869 Message_creation_time:1778867368624
+Sensor id:12 Sensor_energy_value:629.9 Sensor_creation_timestamp:1765152870 Message_creation_time:1778867369626
+Sensor id:12 Sensor_energy_value:627.3 Sensor_creation_timestamp:1765152871 Message_creation_time:1778867370627
+Sensor id:12 Sensor_energy_value:627.6 Sensor_creation_timestamp:1765152872 Message_creation_time:1778867371628
+Sensor id:12 Sensor_energy_value:626.8 Sensor_creation_timestamp:1765152873 Message_creation_time:1778867372630
+Sensor id:12 Sensor_energy_value:625.3 Sensor_creation_timestamp:1765152874 Message_creation_time:1778867373632
+Sensor id:12 Sensor_energy_value:628.3 Sensor_creation_timestamp:1765152875 Message_creation_time:1778867374635
+Sensor id:12 Sensor_energy_value:622.4 Sensor_creation_timestamp:1765152876 Message_creation_time:1778867375636
+Sensor id:12 Sensor_energy_value:632.1 Sensor_creation_timestamp:1765152877 Message_creation_time:1778867376638
+Sensor id:12 Sensor_energy_value:629.3 Sensor_creation_timestamp:1765152878 Message_creation_time:1778867377639
+Sensor id:12 Sensor_energy_value:630.4 Sensor_creation_timestamp:1765152879 Message_creation_time:1778867378644
+Sensor id:12 Sensor_energy_value:629.4 Sensor_creation_timestamp:1765152880 Message_creation_time:1778867379645
+Sensor id:12 Sensor_energy_value:627.2 Sensor_creation_timestamp:1765152881 Message_creation_time:1778867380646
+Sensor id:12 Sensor_energy_value:629.8 Sensor_creation_timestamp:1765152882 Message_creation_time:1778867381649
+Sensor id:12 Sensor_energy_value:628.1 Sensor_creation_timestamp:1765152883 Message_creation_time:1778867382652
+Sensor id:12 Sensor_energy_value:629.7 Sensor_creation_timestamp:1765152884 Message_creation_time:1778867383653
+Sensor id:12 Sensor_energy_value:628.1 Sensor_creation_timestamp:1765152885 Message_creation_time:1778867384654
+Sensor id:12 Sensor_energy_value:625.4 Sensor_creation_timestamp:1765152886 Message_creation_time:1778867385654
+Sensor id:12 Sensor_energy_value:627.4 Sensor_creation_timestamp:1765152887 Message_creation_time:1778867386656
+Sensor id:12 Sensor_energy_value:626.7 Sensor_creation_timestamp:1765152888 Message_creation_time:1778867387696
+Sensor id:12 Sensor_energy_value:626.3 Sensor_creation_timestamp:1765152889 Message_creation_time:1778867388886
+Sensor id:12 Sensor_energy_value:628.5 Sensor_creation_timestamp:1765152890 Message_creation_time:1778867390113
+Sensor id:12 Sensor_energy_value:632.3 Sensor_creation_timestamp:1765152891 Message_creation_time:1778867391245
+Sensor id:12 Sensor_energy_value:625.1 Sensor_creation_timestamp:1765152892 Message_creation_time:1778867392247
+Sensor id:12 Sensor_energy_value:628.6 Sensor_creation_timestamp:1765152893 Message_creation_time:1778867393257
+Sensor id:12 Sensor_energy_value:628.0 Sensor_creation_timestamp:1765152894 Message_creation_time:1778867394259
+Sensor id:12 Sensor_energy_value:624.9 Sensor_creation_timestamp:1765152895 Message_creation_time:1778867395262
+Sensor id:12 Sensor_energy_value:628.7 Sensor_creation_timestamp:1765152896 Message_creation_time:1778867396267
+Sensor id:12 Sensor_energy_value:628.2 Sensor_creation_timestamp:1765152897 Message_creation_time:1778867397268
+Sensor id:12 Sensor_energy_value:625.8 Sensor_creation_timestamp:1765152898 Message_creation_time:1778867398355
+Sensor id:12 Sensor_energy_value:628.0 Sensor_creation_timestamp:1765152899 Message_creation_time:1778867399371
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:629.0 Sensor_creation_timestamp:1765152900 Message_creation_time:1778867400397
+Sensor id:12 Sensor_energy_value:631.4 Sensor_creation_timestamp:1765152901 Message_creation_time:1778867401538
+Sensor id:12 Sensor_energy_value:629.8 Sensor_creation_timestamp:1765152902 Message_creation_time:1778867402547
+Sensor id:12 Sensor_energy_value:628.6 Sensor_creation_timestamp:1765152903 Message_creation_time:1778867403657
+Sensor id:12 Sensor_energy_value:627.0 Sensor_creation_timestamp:1765152904 Message_creation_time:1778867404966
+Sensor id:12 Sensor_energy_value:629.8 Sensor_creation_timestamp:1765152905 Message_creation_time:1778867405974
+Sensor id:12 Sensor_energy_value:630.2 Sensor_creation_timestamp:1765152906 Message_creation_time:1778867407032
+Sensor id:12 Sensor_energy_value:760.1 Sensor_creation_timestamp:1765152907 Message_creation_time:1778867408034
+Sensor id:12 Sensor_energy_value:730.4 Sensor_creation_timestamp:1765152908 Message_creation_time:1778867409038
+Sensor id:12 Sensor_energy_value:728.1 Sensor_creation_timestamp:1765152909 Message_creation_time:1778867410042
+Sensor id:12 Sensor_energy_value:727.3 Sensor_creation_timestamp:1765152910 Message_creation_time:1778867411045
+Sensor id:12 Sensor_energy_value:634.7 Sensor_creation_timestamp:1765152911 Message_creation_time:1778867412072
+Sensor id:12 Sensor_energy_value:729.7 Sensor_creation_timestamp:1765152912 Message_creation_time:1778867413101
+Sensor id:12 Sensor_energy_value:725.5 Sensor_creation_timestamp:1765152913 Message_creation_time:1778867414111
+Sensor id:12 Sensor_energy_value:781.2 Sensor_creation_timestamp:1765152914 Message_creation_time:1778867415160
+Sensor id:12 Sensor_energy_value:744.2 Sensor_creation_timestamp:1765152915 Message_creation_time:1778867416163
+Sensor id:12 Sensor_energy_value:737.5 Sensor_creation_timestamp:1765152916 Message_creation_time:1778867417165
+Sensor id:12 Sensor_energy_value:738.7 Sensor_creation_timestamp:1765152917 Message_creation_time:1778867418167
+Sensor id:12 Sensor_energy_value:730.4 Sensor_creation_timestamp:1765152918 Message_creation_time:1778867419168
+Sensor id:12 Sensor_energy_value:733.0 Sensor_creation_timestamp:1765152919 Message_creation_time:1778867420168
+Sensor id:12 Sensor_energy_value:733.4 Sensor_creation_timestamp:1765152920 Message_creation_time:1778867421170
+Sensor id:12 Sensor_energy_value:736.6 Sensor_creation_timestamp:1765152921 Message_creation_time:1778867422260
+Sensor id:12 Sensor_energy_value:734.7 Sensor_creation_timestamp:1765152922 Message_creation_time:1778867423264
+Sensor id:12 Sensor_energy_value:733.5 Sensor_creation_timestamp:1765152923 Message_creation_time:1778867424270
+Sensor id:12 Sensor_energy_value:735.1 Sensor_creation_timestamp:1765152924 Message_creation_time:1778867425344
+Sensor id:12 Sensor_energy_value:731.9 Sensor_creation_timestamp:1765152925 Message_creation_time:1778867426346
+Sensor id:12 Sensor_energy_value:733.9 Sensor_creation_timestamp:1765152926 Message_creation_time:1778867427355
+Sensor id:12 Sensor_energy_value:737.2 Sensor_creation_timestamp:1765152927 Message_creation_time:1778867428362
+Sensor id:12 Sensor_energy_value:734.7 Sensor_creation_timestamp:1765152928 Message_creation_time:1778867429367
+Sensor id:12 Sensor_energy_value:735.5 Sensor_creation_timestamp:1765152929 Message_creation_time:1778867430400
+Sensor id:12 Sensor_energy_value:733.1 Sensor_creation_timestamp:1765152930 Message_creation_time:1778867431404
+Sensor id:12 Sensor_energy_value:731.9 Sensor_creation_timestamp:1765152931 Message_creation_time:1778867432405
+Sensor id:12 Sensor_energy_value:736.4 Sensor_creation_timestamp:1765152932 Message_creation_time:1778867433407
+Sensor id:12 Sensor_energy_value:737.3 Sensor_creation_timestamp:1765152933 Message_creation_time:1778867434410
+Sensor id:12 Sensor_energy_value:736.3 Sensor_creation_timestamp:1765152934 Message_creation_time:1778867435411
+Sensor id:12 Sensor_energy_value:735.0 Sensor_creation_timestamp:1765152935 Message_creation_time:1778867436414
+Sensor id:12 Sensor_energy_value:732.6 Sensor_creation_timestamp:1765152936 Message_creation_time:1778867437415
+Sensor id:12 Sensor_energy_value:743.0 Sensor_creation_timestamp:1765152937 Message_creation_time:1778867438419
+Sensor id:12 Sensor_energy_value:732.0 Sensor_creation_timestamp:1765152938 Message_creation_time:1778867439422
+Sensor id:12 Sensor_energy_value:733.9 Sensor_creation_timestamp:1765152939 Message_creation_time:1778867440442
+Sensor id:12 Sensor_energy_value:750.6 Sensor_creation_timestamp:1765152940 Message_creation_time:1778867441450
+Sensor id:12 Sensor_energy_value:740.9 Sensor_creation_timestamp:1765152941 Message_creation_time:1778867442452
+Sensor id:12 Sensor_energy_value:750.3 Sensor_creation_timestamp:1765152942 Message_creation_time:1778867443469
+Sensor id:12 Sensor_energy_value:735.5 Sensor_creation_timestamp:1765152943 Message_creation_time:1778867444481
+Sensor id:12 Sensor_energy_value:733.7 Sensor_creation_timestamp:1765152944 Message_creation_time:1778867445487
+Sensor id:12 Sensor_energy_value:734.7 Sensor_creation_timestamp:1765152945 Message_creation_time:1778867446493
+Sensor id:12 Sensor_energy_value:1031.1 Sensor_creation_timestamp:1765152946 Message_creation_time:1778867447501
+Sensor id:12 Sensor_energy_value:1030.4 Sensor_creation_timestamp:1765152947 Message_creation_time:1778867448509
+Sensor id:12 Sensor_energy_value:923.7 Sensor_creation_timestamp:1765152948 Message_creation_time:1778867449512
+Sensor id:12 Sensor_energy_value:941.7 Sensor_creation_timestamp:1765152949 Message_creation_time:1778867450520
+Sensor id:12 Sensor_energy_value:1038.0 Sensor_creation_timestamp:1765152950 Message_creation_time:1778867451528
+Sensor id:12 Sensor_energy_value:943.2 Sensor_creation_timestamp:1765152951 Message_creation_time:1778867452529
+Sensor id:12 Sensor_energy_value:989.7 Sensor_creation_timestamp:1765152952 Message_creation_time:1778867453537
+Sensor id:12 Sensor_energy_value:1017.8 Sensor_creation_timestamp:1765152953 Message_creation_time:1778867454541
+Sensor id:12 Sensor_energy_value:1043.5 Sensor_creation_timestamp:1765152954 Message_creation_time:1778867455543
+Sensor id:12 Sensor_energy_value:1066.4 Sensor_creation_timestamp:1765152955 Message_creation_time:1778867456544
+Sensor id:12 Sensor_energy_value:1087.9 Sensor_creation_timestamp:1765152956 Message_creation_time:1778867457546
+Sensor id:12 Sensor_energy_value:1109.1 Sensor_creation_timestamp:1765152957 Message_creation_time:1778867458548
+Sensor id:12 Sensor_energy_value:1127.1 Sensor_creation_timestamp:1765152958 Message_creation_time:1778867459555
+Sensor id:12 Sensor_energy_value:1142.1 Sensor_creation_timestamp:1765152959 Message_creation_time:1778867460564
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1153.8 Sensor_creation_timestamp:1765152960 Message_creation_time:1778867461565
+Sensor id:12 Sensor_energy_value:1159.0 Sensor_creation_timestamp:1765152961 Message_creation_time:1778867462571
+Sensor id:12 Sensor_energy_value:1162.3 Sensor_creation_timestamp:1765152962 Message_creation_time:1778867463572
+Sensor id:12 Sensor_energy_value:1168.4 Sensor_creation_timestamp:1765152963 Message_creation_time:1778867464575
+Sensor id:12 Sensor_energy_value:1175.4 Sensor_creation_timestamp:1765152964 Message_creation_time:1778867465578
+Sensor id:12 Sensor_energy_value:1174.6 Sensor_creation_timestamp:1765152965 Message_creation_time:1778867466580
+Sensor id:12 Sensor_energy_value:1174.7 Sensor_creation_timestamp:1765152966 Message_creation_time:1778867467585
+Sensor id:12 Sensor_energy_value:1173.5 Sensor_creation_timestamp:1765152967 Message_creation_time:1778867468586
+Sensor id:12 Sensor_energy_value:1173.9 Sensor_creation_timestamp:1765152968 Message_creation_time:1778867469590
+Sensor id:12 Sensor_energy_value:1173.8 Sensor_creation_timestamp:1765152969 Message_creation_time:1778867470593
+Sensor id:12 Sensor_energy_value:1174.1 Sensor_creation_timestamp:1765152970 Message_creation_time:1778867471595
+Sensor id:12 Sensor_energy_value:1173.0 Sensor_creation_timestamp:1765152971 Message_creation_time:1778867472598
+Sensor id:12 Sensor_energy_value:1172.6 Sensor_creation_timestamp:1765152972 Message_creation_time:1778867473610
+Sensor id:12 Sensor_energy_value:1171.1 Sensor_creation_timestamp:1765152973 Message_creation_time:1778867474615
+Sensor id:12 Sensor_energy_value:1166.7 Sensor_creation_timestamp:1765152974 Message_creation_time:1778867475618
+Sensor id:12 Sensor_energy_value:1169.8 Sensor_creation_timestamp:1765152975 Message_creation_time:1778867476624
+Sensor id:12 Sensor_energy_value:1168.1 Sensor_creation_timestamp:1765152976 Message_creation_time:1778867477628
+Sensor id:12 Sensor_energy_value:1171.3 Sensor_creation_timestamp:1765152977 Message_creation_time:1778867478630
+Sensor id:12 Sensor_energy_value:1168.5 Sensor_creation_timestamp:1765152978 Message_creation_time:1778867479631
+Sensor id:12 Sensor_energy_value:1172.7 Sensor_creation_timestamp:1765152979 Message_creation_time:1778867480633
+Sensor id:12 Sensor_energy_value:1175.0 Sensor_creation_timestamp:1765152980 Message_creation_time:1778867481636
+Sensor id:12 Sensor_energy_value:1171.6 Sensor_creation_timestamp:1765152981 Message_creation_time:1778867482638
+Sensor id:12 Sensor_energy_value:1173.6 Sensor_creation_timestamp:1765152982 Message_creation_time:1778867483643
+Sensor id:12 Sensor_energy_value:1176.7 Sensor_creation_timestamp:1765152983 Message_creation_time:1778867484648
+Sensor id:12 Sensor_energy_value:1182.1 Sensor_creation_timestamp:1765152984 Message_creation_time:1778867485650
+Sensor id:12 Sensor_energy_value:1176.5 Sensor_creation_timestamp:1765152985 Message_creation_time:1778867486655
+Sensor id:12 Sensor_energy_value:1183.4 Sensor_creation_timestamp:1765152986 Message_creation_time:1778867487688
+Sensor id:12 Sensor_energy_value:1187.6 Sensor_creation_timestamp:1765152987 Message_creation_time:1778867488691
+Sensor id:12 Sensor_energy_value:1190.5 Sensor_creation_timestamp:1765152988 Message_creation_time:1778867489693
+Sensor id:12 Sensor_energy_value:1190.5 Sensor_creation_timestamp:1765152989 Message_creation_time:1778867490694
+Sensor id:12 Sensor_energy_value:1192.1 Sensor_creation_timestamp:1765152990 Message_creation_time:1778867491695
+Sensor id:12 Sensor_energy_value:1190.3 Sensor_creation_timestamp:1765152991 Message_creation_time:1778867492695
+Sensor id:12 Sensor_energy_value:1193.6 Sensor_creation_timestamp:1765152992 Message_creation_time:1778867493696
+Sensor id:12 Sensor_energy_value:1197.1 Sensor_creation_timestamp:1765152993 Message_creation_time:1778867494697
+Sensor id:12 Sensor_energy_value:1202.1 Sensor_creation_timestamp:1765152994 Message_creation_time:1778867495698
+Sensor id:12 Sensor_energy_value:1194.9 Sensor_creation_timestamp:1765152995 Message_creation_time:1778867496716
+Sensor id:12 Sensor_energy_value:1194.9 Sensor_creation_timestamp:1765152996 Message_creation_time:1778867497717
+Sensor id:12 Sensor_energy_value:1197.3 Sensor_creation_timestamp:1765152997 Message_creation_time:1778867498722
+Sensor id:12 Sensor_energy_value:1197.1 Sensor_creation_timestamp:1765152998 Message_creation_time:1778867499735
+Sensor id:12 Sensor_energy_value:1197.0 Sensor_creation_timestamp:1765152999 Message_creation_time:1778867500746
+Sensor id:12 Sensor_energy_value:1195.9 Sensor_creation_timestamp:1765153000 Message_creation_time:1778867501754
+Sensor id:12 Sensor_energy_value:1196.8 Sensor_creation_timestamp:1765153001 Message_creation_time:1778867502755
+Sensor id:12 Sensor_energy_value:1198.5 Sensor_creation_timestamp:1765153002 Message_creation_time:1778867503757
+Sensor id:12 Sensor_energy_value:1203.2 Sensor_creation_timestamp:1765153003 Message_creation_time:1778867504758
+Sensor id:12 Sensor_energy_value:1198.1 Sensor_creation_timestamp:1765153004 Message_creation_time:1778867505761
+Sensor id:12 Sensor_energy_value:1198.7 Sensor_creation_timestamp:1765153005 Message_creation_time:1778867506764
+Sensor id:12 Sensor_energy_value:1192.6 Sensor_creation_timestamp:1765153006 Message_creation_time:1778867507767
+Sensor id:12 Sensor_energy_value:1192.3 Sensor_creation_timestamp:1765153007 Message_creation_time:1778867508768
+Sensor id:12 Sensor_energy_value:1194.2 Sensor_creation_timestamp:1765153008 Message_creation_time:1778867509770
+Sensor id:12 Sensor_energy_value:1190.0 Sensor_creation_timestamp:1765153009 Message_creation_time:1778867510771
+Sensor id:12 Sensor_energy_value:1192.1 Sensor_creation_timestamp:1765153010 Message_creation_time:1778867511772
+Sensor id:12 Sensor_energy_value:1192.6 Sensor_creation_timestamp:1765153011 Message_creation_time:1778867512786
+Sensor id:12 Sensor_energy_value:1194.0 Sensor_creation_timestamp:1765153012 Message_creation_time:1778867513792
+Sensor id:12 Sensor_energy_value:1191.6 Sensor_creation_timestamp:1765153013 Message_creation_time:1778867514798
+Sensor id:12 Sensor_energy_value:1192.0 Sensor_creation_timestamp:1765153014 Message_creation_time:1778867515799
+Sensor id:12 Sensor_energy_value:1194.0 Sensor_creation_timestamp:1765153015 Message_creation_time:1778867516801
+Sensor id:12 Sensor_energy_value:1196.1 Sensor_creation_timestamp:1765153016 Message_creation_time:1778867517802
+Sensor id:12 Sensor_energy_value:1199.6 Sensor_creation_timestamp:1765153017 Message_creation_time:1778867518803
+Sensor id:12 Sensor_energy_value:1192.7 Sensor_creation_timestamp:1765153018 Message_creation_time:1778867519804
+Sensor id:12 Sensor_energy_value:1207.6 Sensor_creation_timestamp:1765153019 Message_creation_time:1778867520804
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1200.4 Sensor_creation_timestamp:1765153020 Message_creation_time:1778867521806
+Sensor id:12 Sensor_energy_value:1195.7 Sensor_creation_timestamp:1765153021 Message_creation_time:1778867522807
+Sensor id:12 Sensor_energy_value:1199.0 Sensor_creation_timestamp:1765153022 Message_creation_time:1778867523809
+Sensor id:12 Sensor_energy_value:1200.4 Sensor_creation_timestamp:1765153023 Message_creation_time:1778867524814
+Sensor id:12 Sensor_energy_value:1196.3 Sensor_creation_timestamp:1765153024 Message_creation_time:1778867525815
+Sensor id:12 Sensor_energy_value:1196.8 Sensor_creation_timestamp:1765153025 Message_creation_time:1778867526816
+Sensor id:12 Sensor_energy_value:1196.3 Sensor_creation_timestamp:1765153026 Message_creation_time:1778867527817
+Sensor id:12 Sensor_energy_value:1199.8 Sensor_creation_timestamp:1765153027 Message_creation_time:1778867528818
+Sensor id:12 Sensor_energy_value:1197.7 Sensor_creation_timestamp:1765153028 Message_creation_time:1778867529819
+Sensor id:12 Sensor_energy_value:1196.6 Sensor_creation_timestamp:1765153029 Message_creation_time:1778867530820
+Sensor id:12 Sensor_energy_value:1193.0 Sensor_creation_timestamp:1765153030 Message_creation_time:1778867531829
+Sensor id:12 Sensor_energy_value:1197.8 Sensor_creation_timestamp:1765153031 Message_creation_time:1778867532830
+Sensor id:12 Sensor_energy_value:1194.7 Sensor_creation_timestamp:1765153032 Message_creation_time:1778867533831
+Sensor id:12 Sensor_energy_value:1194.9 Sensor_creation_timestamp:1765153033 Message_creation_time:1778867534835
+Sensor id:12 Sensor_energy_value:1192.8 Sensor_creation_timestamp:1765153034 Message_creation_time:1778867535837
+Sensor id:12 Sensor_energy_value:1196.7 Sensor_creation_timestamp:1765153035 Message_creation_time:1778867536837
+Sensor id:12 Sensor_energy_value:1190.5 Sensor_creation_timestamp:1765153036 Message_creation_time:1778867537840
+Sensor id:12 Sensor_energy_value:1194.2 Sensor_creation_timestamp:1765153037 Message_creation_time:1778867538841
+Sensor id:12 Sensor_energy_value:1196.0 Sensor_creation_timestamp:1765153038 Message_creation_time:1778867539842
+Sensor id:12 Sensor_energy_value:1200.6 Sensor_creation_timestamp:1765153039 Message_creation_time:1778867540842
+Sensor id:12 Sensor_energy_value:1198.8 Sensor_creation_timestamp:1765153040 Message_creation_time:1778867541844
+Sensor id:12 Sensor_energy_value:1196.9 Sensor_creation_timestamp:1765153041 Message_creation_time:1778867542845
+Sensor id:12 Sensor_energy_value:1186.0 Sensor_creation_timestamp:1765153042 Message_creation_time:1778867543846
+Sensor id:12 Sensor_energy_value:1191.8 Sensor_creation_timestamp:1765153043 Message_creation_time:1778867544847
+Sensor id:12 Sensor_energy_value:1194.8 Sensor_creation_timestamp:1765153044 Message_creation_time:1778867545849
+Sensor id:12 Sensor_energy_value:1188.8 Sensor_creation_timestamp:1765153045 Message_creation_time:1778867546853
+Sensor id:12 Sensor_energy_value:1188.6 Sensor_creation_timestamp:1765153046 Message_creation_time:1778867547854
+Sensor id:12 Sensor_energy_value:1193.1 Sensor_creation_timestamp:1765153047 Message_creation_time:1778867548858
+Sensor id:12 Sensor_energy_value:1193.1 Sensor_creation_timestamp:1765153048 Message_creation_time:1778867549860
+Sensor id:12 Sensor_energy_value:1197.9 Sensor_creation_timestamp:1765153049 Message_creation_time:1778867550861
+Sensor id:12 Sensor_energy_value:1193.3 Sensor_creation_timestamp:1765153050 Message_creation_time:1778867551864
+Sensor id:12 Sensor_energy_value:1189.6 Sensor_creation_timestamp:1765153051 Message_creation_time:1778867552867
+Sensor id:12 Sensor_energy_value:1192.0 Sensor_creation_timestamp:1765153052 Message_creation_time:1778867553869
+Sensor id:12 Sensor_energy_value:1193.8 Sensor_creation_timestamp:1765153053 Message_creation_time:1778867554875
+Sensor id:12 Sensor_energy_value:1194.4 Sensor_creation_timestamp:1765153054 Message_creation_time:1778867555878
+Sensor id:12 Sensor_energy_value:1189.6 Sensor_creation_timestamp:1765153055 Message_creation_time:1778867556884
+Sensor id:12 Sensor_energy_value:1197.3 Sensor_creation_timestamp:1765153056 Message_creation_time:1778867557884
+Sensor id:12 Sensor_energy_value:1194.4 Sensor_creation_timestamp:1765153057 Message_creation_time:1778867558886
+Sensor id:12 Sensor_energy_value:1194.8 Sensor_creation_timestamp:1765153058 Message_creation_time:1778867559887
+Sensor id:12 Sensor_energy_value:1194.9 Sensor_creation_timestamp:1765153059 Message_creation_time:1778867560899
+Sensor id:12 Sensor_energy_value:1195.9 Sensor_creation_timestamp:1765153060 Message_creation_time:1778867561901
+Sensor id:12 Sensor_energy_value:1203.5 Sensor_creation_timestamp:1765153061 Message_creation_time:1778867562902
+Sensor id:12 Sensor_energy_value:1194.8 Sensor_creation_timestamp:1765153062 Message_creation_time:1778867563906
+Sensor id:12 Sensor_energy_value:1190.3 Sensor_creation_timestamp:1765153063 Message_creation_time:1778867564910
+Sensor id:12 Sensor_energy_value:1201.7 Sensor_creation_timestamp:1765153064 Message_creation_time:1778867565912
+Sensor id:12 Sensor_energy_value:1203.4 Sensor_creation_timestamp:1765153065 Message_creation_time:1778867566915
+Sensor id:12 Sensor_energy_value:1199.6 Sensor_creation_timestamp:1765153066 Message_creation_time:1778867567916
+Sensor id:12 Sensor_energy_value:1199.2 Sensor_creation_timestamp:1765153067 Message_creation_time:1778867568917
+Sensor id:12 Sensor_energy_value:1194.3 Sensor_creation_timestamp:1765153068 Message_creation_time:1778867569919
+Sensor id:12 Sensor_energy_value:1193.6 Sensor_creation_timestamp:1765153069 Message_creation_time:1778867570924
+Sensor id:12 Sensor_energy_value:1192.9 Sensor_creation_timestamp:1765153070 Message_creation_time:1778867571925
+Sensor id:12 Sensor_energy_value:1196.7 Sensor_creation_timestamp:1765153071 Message_creation_time:1778867572927
+Sensor id:12 Sensor_energy_value:1192.3 Sensor_creation_timestamp:1765153072 Message_creation_time:1778867573931
+Sensor id:12 Sensor_energy_value:1191.0 Sensor_creation_timestamp:1765153073 Message_creation_time:1778867574979
+Sensor id:12 Sensor_energy_value:1192.3 Sensor_creation_timestamp:1765153074 Message_creation_time:1778867575983
+Sensor id:12 Sensor_energy_value:1190.9 Sensor_creation_timestamp:1765153075 Message_creation_time:1778867577005
+Sensor id:12 Sensor_energy_value:1192.0 Sensor_creation_timestamp:1765153076 Message_creation_time:1778867578011
+Sensor id:12 Sensor_energy_value:1194.2 Sensor_creation_timestamp:1765153077 Message_creation_time:1778867579026
+Sensor id:12 Sensor_energy_value:1191.1 Sensor_creation_timestamp:1765153078 Message_creation_time:1778867580050
+Sensor id:12 Sensor_energy_value:1191.8 Sensor_creation_timestamp:1765153079 Message_creation_time:1778867581131
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1265.571186 Sensor_creation_timestamp:1765153080 Message_creation_time:1778867582132
+Sensor id:12 Sensor_energy_value:1193.6 Sensor_creation_timestamp:1765153081 Message_creation_time:1778867583453
+Sensor id:12 Sensor_energy_value:1201.1 Sensor_creation_timestamp:1765153082 Message_creation_time:1778867584491
+Sensor id:12 Sensor_energy_value:1194.9 Sensor_creation_timestamp:1765153083 Message_creation_time:1778867585493
+Sensor id:12 Sensor_energy_value:1197.9 Sensor_creation_timestamp:1765153084 Message_creation_time:1778867586496
+Sensor id:12 Sensor_energy_value:1197.7 Sensor_creation_timestamp:1765153085 Message_creation_time:1778867587508
+Sensor id:12 Sensor_energy_value:1194.6 Sensor_creation_timestamp:1765153086 Message_creation_time:1778867588586
+Sensor id:12 Sensor_energy_value:1192.6 Sensor_creation_timestamp:1765153087 Message_creation_time:1778867589589
+Sensor id:12 Sensor_energy_value:1194.5 Sensor_creation_timestamp:1765153088 Message_creation_time:1778867590596
+Sensor id:12 Sensor_energy_value:1193.0 Sensor_creation_timestamp:1765153089 Message_creation_time:1778867591713
+Sensor id:12 Sensor_energy_value:1194.5 Sensor_creation_timestamp:1765153090 Message_creation_time:1778867593039
+Sensor id:12 Sensor_energy_value:1196.6 Sensor_creation_timestamp:1765153091 Message_creation_time:1778867594586
+Sensor id:12 Sensor_energy_value:1194.1 Sensor_creation_timestamp:1765153092 Message_creation_time:1778867595591
+Sensor id:12 Sensor_energy_value:1192.7 Sensor_creation_timestamp:1765153093 Message_creation_time:1778867596919
+Sensor id:12 Sensor_energy_value:1193.0 Sensor_creation_timestamp:1765153094 Message_creation_time:1778867598202
+Sensor id:12 Sensor_energy_value:1229.1 Sensor_creation_timestamp:1765153095 Message_creation_time:1778867599652
+Sensor id:12 Sensor_energy_value:1300.9 Sensor_creation_timestamp:1765153096 Message_creation_time:1778867600656
+Sensor id:12 Sensor_energy_value:1293.2 Sensor_creation_timestamp:1765153097 Message_creation_time:1778867601684
+Sensor id:12 Sensor_energy_value:1291.3 Sensor_creation_timestamp:1765153098 Message_creation_time:1778867602768
+Sensor id:12 Sensor_energy_value:1300.4 Sensor_creation_timestamp:1765153099 Message_creation_time:1778867603770
+Sensor id:12 Sensor_energy_value:1302.3 Sensor_creation_timestamp:1765153100 Message_creation_time:1778867604778
+Sensor id:12 Sensor_energy_value:1293.2 Sensor_creation_timestamp:1765153101 Message_creation_time:1778867605779
+Sensor id:12 Sensor_energy_value:1295.1 Sensor_creation_timestamp:1765153102 Message_creation_time:1778867606783
+Sensor id:12 Sensor_energy_value:1307.2 Sensor_creation_timestamp:1765153103 Message_creation_time:1778867607786
+Sensor id:12 Sensor_energy_value:1295.5 Sensor_creation_timestamp:1765153104 Message_creation_time:1778867608791
+Sensor id:12 Sensor_energy_value:1291.8 Sensor_creation_timestamp:1765153105 Message_creation_time:1778867609794
+Sensor id:12 Sensor_energy_value:1293.0 Sensor_creation_timestamp:1765153106 Message_creation_time:1778867610800
+Sensor id:12 Sensor_energy_value:1297.0 Sensor_creation_timestamp:1765153107 Message_creation_time:1778867611801
+Sensor id:12 Sensor_energy_value:1297.3 Sensor_creation_timestamp:1765153108 Message_creation_time:1778867612806
+Sensor id:12 Sensor_energy_value:1297.3 Sensor_creation_timestamp:1765153109 Message_creation_time:1778867613824
+Sensor id:12 Sensor_energy_value:1292.7 Sensor_creation_timestamp:1765153110 Message_creation_time:1778867614832
+Sensor id:12 Sensor_energy_value:1301.4 Sensor_creation_timestamp:1765153111 Message_creation_time:1778867615840
+Sensor id:12 Sensor_energy_value:1297.1 Sensor_creation_timestamp:1765153112 Message_creation_time:1778867616841
+Sensor id:12 Sensor_energy_value:1295.3 Sensor_creation_timestamp:1765153113 Message_creation_time:1778867617849
+Sensor id:12 Sensor_energy_value:1302.1 Sensor_creation_timestamp:1765153114 Message_creation_time:1778867618854
+Sensor id:12 Sensor_energy_value:1284.0 Sensor_creation_timestamp:1765153115 Message_creation_time:1778867619855
+Sensor id:12 Sensor_energy_value:1288.8 Sensor_creation_timestamp:1765153116 Message_creation_time:1778867620863
+Sensor id:12 Sensor_energy_value:1283.7 Sensor_creation_timestamp:1765153117 Message_creation_time:1778867621865
+Sensor id:12 Sensor_energy_value:1287.2 Sensor_creation_timestamp:1765153118 Message_creation_time:1778867622866
+Sensor id:12 Sensor_energy_value:1285.3 Sensor_creation_timestamp:1765153119 Message_creation_time:1778867623958
+Sensor id:12 Sensor_energy_value:1282.1 Sensor_creation_timestamp:1765153120 Message_creation_time:1778867624984
+Sensor id:12 Sensor_energy_value:1284.1 Sensor_creation_timestamp:1765153121 Message_creation_time:1778867626006
+Sensor id:12 Sensor_energy_value:1284.7 Sensor_creation_timestamp:1765153122 Message_creation_time:1778867627007
+Sensor id:12 Sensor_energy_value:1283.7 Sensor_creation_timestamp:1765153123 Message_creation_time:1778867628009
+Sensor id:12 Sensor_energy_value:1284.4 Sensor_creation_timestamp:1765153124 Message_creation_time:1778867629018
+Sensor id:12 Sensor_energy_value:1279.5 Sensor_creation_timestamp:1765153125 Message_creation_time:1778867630031
+Sensor id:12 Sensor_energy_value:1278.1 Sensor_creation_timestamp:1765153126 Message_creation_time:1778867631032
+Sensor id:12 Sensor_energy_value:1281.1 Sensor_creation_timestamp:1765153127 Message_creation_time:1778867632036
+Sensor id:12 Sensor_energy_value:1282.5 Sensor_creation_timestamp:1765153128 Message_creation_time:1778867633038
+Sensor id:12 Sensor_energy_value:1281.1 Sensor_creation_timestamp:1765153129 Message_creation_time:1778867634044
+Sensor id:12 Sensor_energy_value:1279.0 Sensor_creation_timestamp:1765153130 Message_creation_time:1778867635052
+Sensor id:12 Sensor_energy_value:1283.9 Sensor_creation_timestamp:1765153131 Message_creation_time:1778867636076
+Sensor id:12 Sensor_energy_value:1282.6 Sensor_creation_timestamp:1765153132 Message_creation_time:1778867637080
+Sensor id:12 Sensor_energy_value:1281.3 Sensor_creation_timestamp:1765153133 Message_creation_time:1778867638082
+Sensor id:12 Sensor_energy_value:1281.5 Sensor_creation_timestamp:1765153134 Message_creation_time:1778867639086
+Sensor id:12 Sensor_energy_value:1281.4 Sensor_creation_timestamp:1765153135 Message_creation_time:1778867640090
+Sensor id:12 Sensor_energy_value:1281.1 Sensor_creation_timestamp:1765153136 Message_creation_time:1778867641091
+Sensor id:12 Sensor_energy_value:1283.0 Sensor_creation_timestamp:1765153137 Message_creation_time:1778867642095
+Sensor id:12 Sensor_energy_value:1279.7 Sensor_creation_timestamp:1765153138 Message_creation_time:1778867643102
+Sensor id:12 Sensor_energy_value:1280.9 Sensor_creation_timestamp:1765153139 Message_creation_time:1778867644103
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1278.9 Sensor_creation_timestamp:1765153140 Message_creation_time:1778867645106
+Sensor id:12 Sensor_energy_value:1282.4 Sensor_creation_timestamp:1765153141 Message_creation_time:1778867646107
+Sensor id:12 Sensor_energy_value:1283.9 Sensor_creation_timestamp:1765153142 Message_creation_time:1778867647115
+Sensor id:12 Sensor_energy_value:1280.9 Sensor_creation_timestamp:1765153143 Message_creation_time:1778867648118
+Sensor id:12 Sensor_energy_value:1282.9 Sensor_creation_timestamp:1765153144 Message_creation_time:1778867649120
+Sensor id:12 Sensor_energy_value:1281.4 Sensor_creation_timestamp:1765153145 Message_creation_time:1778867650121
+Sensor id:12 Sensor_energy_value:1282.3 Sensor_creation_timestamp:1765153146 Message_creation_time:1778867651122
+Sensor id:12 Sensor_energy_value:1280.6 Sensor_creation_timestamp:1765153147 Message_creation_time:1778867652123
+Sensor id:12 Sensor_energy_value:1284.4 Sensor_creation_timestamp:1765153148 Message_creation_time:1778867653124
+Sensor id:12 Sensor_energy_value:1284.9 Sensor_creation_timestamp:1765153149 Message_creation_time:1778867654126
+Sensor id:12 Sensor_energy_value:1287.1 Sensor_creation_timestamp:1765153150 Message_creation_time:1778867655127
+Sensor id:12 Sensor_energy_value:1305.2 Sensor_creation_timestamp:1765153151 Message_creation_time:1778867656129
+Sensor id:12 Sensor_energy_value:1355.9 Sensor_creation_timestamp:1765153152 Message_creation_time:1778867657132
+Sensor id:12 Sensor_energy_value:1354.9 Sensor_creation_timestamp:1765153153 Message_creation_time:1778867658134
+Sensor id:12 Sensor_energy_value:1358.5 Sensor_creation_timestamp:1765153154 Message_creation_time:1778867659137
+Sensor id:12 Sensor_energy_value:1361.4 Sensor_creation_timestamp:1765153155 Message_creation_time:1778867660139
+Sensor id:12 Sensor_energy_value:1355.8 Sensor_creation_timestamp:1765153156 Message_creation_time:1778867661140
+Sensor id:12 Sensor_energy_value:1359.6 Sensor_creation_timestamp:1765153157 Message_creation_time:1778867662142
+Sensor id:12 Sensor_energy_value:1359.0 Sensor_creation_timestamp:1765153158 Message_creation_time:1778867663146
+Sensor id:12 Sensor_energy_value:1364.2 Sensor_creation_timestamp:1765153159 Message_creation_time:1778867664154
+Sensor id:12 Sensor_energy_value:1364.5 Sensor_creation_timestamp:1765153160 Message_creation_time:1778867665155
+Sensor id:12 Sensor_energy_value:1364.3 Sensor_creation_timestamp:1765153161 Message_creation_time:1778867666161
+Sensor id:12 Sensor_energy_value:1357.7 Sensor_creation_timestamp:1765153162 Message_creation_time:1778867667167
+Sensor id:12 Sensor_energy_value:1384.4 Sensor_creation_timestamp:1765153163 Message_creation_time:1778867668170
+Sensor id:12 Sensor_energy_value:1364.1 Sensor_creation_timestamp:1765153164 Message_creation_time:1778867669173
+Sensor id:12 Sensor_energy_value:1365.4 Sensor_creation_timestamp:1765153165 Message_creation_time:1778867670176
+Sensor id:12 Sensor_energy_value:1363.3 Sensor_creation_timestamp:1765153166 Message_creation_time:1778867671186
+Sensor id:12 Sensor_energy_value:1362.9 Sensor_creation_timestamp:1765153167 Message_creation_time:1778867672193
+Sensor id:12 Sensor_energy_value:1362.5 Sensor_creation_timestamp:1765153168 Message_creation_time:1778867673196
+Sensor id:12 Sensor_energy_value:1366.2 Sensor_creation_timestamp:1765153169 Message_creation_time:1778867674198
+Sensor id:12 Sensor_energy_value:1367.8 Sensor_creation_timestamp:1765153170 Message_creation_time:1778867675199
+Sensor id:12 Sensor_energy_value:1372.3 Sensor_creation_timestamp:1765153171 Message_creation_time:1778867676200
+Sensor id:12 Sensor_energy_value:1361.3 Sensor_creation_timestamp:1765153172 Message_creation_time:1778867677201
+Sensor id:12 Sensor_energy_value:1359.5 Sensor_creation_timestamp:1765153173 Message_creation_time:1778867678203
+Sensor id:12 Sensor_energy_value:1358.3 Sensor_creation_timestamp:1765153174 Message_creation_time:1778867679209
+Sensor id:12 Sensor_energy_value:1359.3 Sensor_creation_timestamp:1765153175 Message_creation_time:1778867680213
+Sensor id:12 Sensor_energy_value:1363.3 Sensor_creation_timestamp:1765153176 Message_creation_time:1778867681215
+Sensor id:12 Sensor_energy_value:1357.5 Sensor_creation_timestamp:1765153177 Message_creation_time:1778867682217
+Sensor id:12 Sensor_energy_value:1363.2 Sensor_creation_timestamp:1765153178 Message_creation_time:1778867683221
+Sensor id:12 Sensor_energy_value:1362.2 Sensor_creation_timestamp:1765153179 Message_creation_time:1778867684223
+Sensor id:12 Sensor_energy_value:1365.4 Sensor_creation_timestamp:1765153180 Message_creation_time:1778867685225
+Sensor id:12 Sensor_energy_value:1363.0 Sensor_creation_timestamp:1765153181 Message_creation_time:1778867686228
+Sensor id:12 Sensor_energy_value:1373.6 Sensor_creation_timestamp:1765153182 Message_creation_time:1778867687232
+Sensor id:12 Sensor_energy_value:1364.9 Sensor_creation_timestamp:1765153183 Message_creation_time:1778867688233
+Sensor id:12 Sensor_energy_value:1366.8 Sensor_creation_timestamp:1765153184 Message_creation_time:1778867689236
+Sensor id:12 Sensor_energy_value:1365.1 Sensor_creation_timestamp:1765153185 Message_creation_time:1778867690238
+Sensor id:12 Sensor_energy_value:1362.0 Sensor_creation_timestamp:1765153186 Message_creation_time:1778867691240
+Sensor id:12 Sensor_energy_value:1365.2 Sensor_creation_timestamp:1765153187 Message_creation_time:1778867692245
+Sensor id:12 Sensor_energy_value:1363.1 Sensor_creation_timestamp:1765153188 Message_creation_time:1778867693246
+Sensor id:12 Sensor_energy_value:1363.4 Sensor_creation_timestamp:1765153189 Message_creation_time:1778867694250
+Sensor id:12 Sensor_energy_value:1365.9 Sensor_creation_timestamp:1765153190 Message_creation_time:1778867695252
+Sensor id:12 Sensor_energy_value:1372.5 Sensor_creation_timestamp:1765153191 Message_creation_time:1778867696253
+Sensor id:12 Sensor_energy_value:1365.6 Sensor_creation_timestamp:1765153192 Message_creation_time:1778867697254
+Sensor id:12 Sensor_energy_value:1366.6 Sensor_creation_timestamp:1765153193 Message_creation_time:1778867698255
+Sensor id:12 Sensor_energy_value:1365.5 Sensor_creation_timestamp:1765153194 Message_creation_time:1778867699257
+Sensor id:12 Sensor_energy_value:1362.3 Sensor_creation_timestamp:1765153195 Message_creation_time:1778867700260
+Sensor id:12 Sensor_energy_value:1364.5 Sensor_creation_timestamp:1765153196 Message_creation_time:1778867701263
+Sensor id:12 Sensor_energy_value:1369.0 Sensor_creation_timestamp:1765153197 Message_creation_time:1778867702274
+Sensor id:12 Sensor_energy_value:1362.7 Sensor_creation_timestamp:1765153198 Message_creation_time:1778867703276
+Sensor id:12 Sensor_energy_value:1365.3 Sensor_creation_timestamp:1765153199 Message_creation_time:1778867704278
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1366.4 Sensor_creation_timestamp:1765153200 Message_creation_time:1778867705279
+Sensor id:12 Sensor_energy_value:1364.0 Sensor_creation_timestamp:1765153201 Message_creation_time:1778867706280
+Sensor id:12 Sensor_energy_value:1367.0 Sensor_creation_timestamp:1765153202 Message_creation_time:1778867707283
+Sensor id:12 Sensor_energy_value:1367.5 Sensor_creation_timestamp:1765153203 Message_creation_time:1778867708289
+Sensor id:12 Sensor_energy_value:1368.0 Sensor_creation_timestamp:1765153204 Message_creation_time:1778867709290
+Sensor id:12 Sensor_energy_value:1364.9 Sensor_creation_timestamp:1765153205 Message_creation_time:1778867710294
+Sensor id:12 Sensor_energy_value:1364.5 Sensor_creation_timestamp:1765153206 Message_creation_time:1778867711296
+Sensor id:12 Sensor_energy_value:1366.8 Sensor_creation_timestamp:1765153207 Message_creation_time:1778867712297
+Sensor id:12 Sensor_energy_value:1367.3 Sensor_creation_timestamp:1765153208 Message_creation_time:1778867713299
+Sensor id:12 Sensor_energy_value:1369.0 Sensor_creation_timestamp:1765153209 Message_creation_time:1778867714300
+Sensor id:12 Sensor_energy_value:1360.8 Sensor_creation_timestamp:1765153210 Message_creation_time:1778867715302
+Sensor id:12 Sensor_energy_value:1366.5 Sensor_creation_timestamp:1765153211 Message_creation_time:1778867716304
+Sensor id:12 Sensor_energy_value:1366.2 Sensor_creation_timestamp:1765153212 Message_creation_time:1778867717306
+Sensor id:12 Sensor_energy_value:1379.7 Sensor_creation_timestamp:1765153213 Message_creation_time:1778867718308
+Sensor id:12 Sensor_energy_value:1402.9 Sensor_creation_timestamp:1765153214 Message_creation_time:1778867719310
+Sensor id:12 Sensor_energy_value:1463.7 Sensor_creation_timestamp:1765153215 Message_creation_time:1778867720313
+Sensor id:12 Sensor_energy_value:1452.5 Sensor_creation_timestamp:1765153216 Message_creation_time:1778867721315
+Sensor id:12 Sensor_energy_value:1469.6 Sensor_creation_timestamp:1765153217 Message_creation_time:1778867722321
+Sensor id:12 Sensor_energy_value:1463.1 Sensor_creation_timestamp:1765153218 Message_creation_time:1778867723323
+Sensor id:12 Sensor_energy_value:1468.0 Sensor_creation_timestamp:1765153219 Message_creation_time:1778867724325
+Sensor id:12 Sensor_energy_value:1471.4 Sensor_creation_timestamp:1765153220 Message_creation_time:1778867725327
+Sensor id:12 Sensor_energy_value:1468.0 Sensor_creation_timestamp:1765153221 Message_creation_time:1778867726328
+Sensor id:12 Sensor_energy_value:1462.7 Sensor_creation_timestamp:1765153222 Message_creation_time:1778867727331
+Sensor id:12 Sensor_energy_value:1465.3 Sensor_creation_timestamp:1765153223 Message_creation_time:1778867728332
+Sensor id:12 Sensor_energy_value:1466.6 Sensor_creation_timestamp:1765153224 Message_creation_time:1778867729339
+Sensor id:12 Sensor_energy_value:1464.1 Sensor_creation_timestamp:1765153225 Message_creation_time:1778867730340
+Sensor id:12 Sensor_energy_value:1463.6 Sensor_creation_timestamp:1765153226 Message_creation_time:1778867731342
+Sensor id:12 Sensor_energy_value:1463.7 Sensor_creation_timestamp:1765153227 Message_creation_time:1778867732344
+Sensor id:12 Sensor_energy_value:1462.8 Sensor_creation_timestamp:1765153228 Message_creation_time:1778867733350
+Sensor id:12 Sensor_energy_value:1466.6 Sensor_creation_timestamp:1765153229 Message_creation_time:1778867734351
+Sensor id:12 Sensor_energy_value:1469.6 Sensor_creation_timestamp:1765153230 Message_creation_time:1778867735368
+Sensor id:12 Sensor_energy_value:1466.5 Sensor_creation_timestamp:1765153231 Message_creation_time:1778867736374
+Sensor id:12 Sensor_energy_value:1467.6 Sensor_creation_timestamp:1765153232 Message_creation_time:1778867737377
+Sensor id:12 Sensor_energy_value:1468.1 Sensor_creation_timestamp:1765153233 Message_creation_time:1778867738382
+Sensor id:12 Sensor_energy_value:1469.7 Sensor_creation_timestamp:1765153234 Message_creation_time:1778867739386
+Sensor id:12 Sensor_energy_value:1473.4 Sensor_creation_timestamp:1765153235 Message_creation_time:1778867740387
+Sensor id:12 Sensor_energy_value:1466.7 Sensor_creation_timestamp:1765153236 Message_creation_time:1778867741395
+Sensor id:12 Sensor_energy_value:1468.7 Sensor_creation_timestamp:1765153237 Message_creation_time:1778867742402
+Sensor id:12 Sensor_energy_value:1472.1 Sensor_creation_timestamp:1765153238 Message_creation_time:1778867743404
+Sensor id:12 Sensor_energy_value:1469.8 Sensor_creation_timestamp:1765153239 Message_creation_time:1778867744406
+Sensor id:12 Sensor_energy_value:1468.6 Sensor_creation_timestamp:1765153240 Message_creation_time:1778867745416
+Sensor id:12 Sensor_energy_value:1471.7 Sensor_creation_timestamp:1765153241 Message_creation_time:1778867746422
+Sensor id:12 Sensor_energy_value:1470.7 Sensor_creation_timestamp:1765153242 Message_creation_time:1778867747426
+Sensor id:12 Sensor_energy_value:1471.6 Sensor_creation_timestamp:1765153243 Message_creation_time:1778867748430
+Sensor id:12 Sensor_energy_value:1473.3 Sensor_creation_timestamp:1765153244 Message_creation_time:1778867749436
+Sensor id:12 Sensor_energy_value:1477.4 Sensor_creation_timestamp:1765153245 Message_creation_time:1778867750440
+Sensor id:12 Sensor_energy_value:1472.2 Sensor_creation_timestamp:1765153246 Message_creation_time:1778867751441
+Sensor id:12 Sensor_energy_value:1470.7 Sensor_creation_timestamp:1765153247 Message_creation_time:1778867752446
+Sensor id:12 Sensor_energy_value:1470.7 Sensor_creation_timestamp:1765153248 Message_creation_time:1778867753453
+Sensor id:12 Sensor_energy_value:1471.7 Sensor_creation_timestamp:1765153249 Message_creation_time:1778867754456
+Sensor id:12 Sensor_energy_value:1474.1 Sensor_creation_timestamp:1765153250 Message_creation_time:1778867755464
+Sensor id:12 Sensor_energy_value:1472.6 Sensor_creation_timestamp:1765153251 Message_creation_time:1778867756469
+Sensor id:12 Sensor_energy_value:1470.4 Sensor_creation_timestamp:1765153252 Message_creation_time:1778867757471
+Sensor id:12 Sensor_energy_value:1470.3 Sensor_creation_timestamp:1765153253 Message_creation_time:1778867758472
+Sensor id:12 Sensor_energy_value:1471.5 Sensor_creation_timestamp:1765153254 Message_creation_time:1778867759474
+Sensor id:12 Sensor_energy_value:1483.0 Sensor_creation_timestamp:1765153255 Message_creation_time:1778867760475
+Sensor id:12 Sensor_energy_value:1472.7 Sensor_creation_timestamp:1765153256 Message_creation_time:1778867761484
+Sensor id:12 Sensor_energy_value:1474.1 Sensor_creation_timestamp:1765153257 Message_creation_time:1778867762485
+Sensor id:12 Sensor_energy_value:1474.9 Sensor_creation_timestamp:1765153258 Message_creation_time:1778867763487
+Sensor id:12 Sensor_energy_value:1475.7 Sensor_creation_timestamp:1765153259 Message_creation_time:1778867764489
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1476.5 Sensor_creation_timestamp:1765153260 Message_creation_time:1778867765490
+Sensor id:12 Sensor_energy_value:1474.8 Sensor_creation_timestamp:1765153261 Message_creation_time:1778867766494
+Sensor id:12 Sensor_energy_value:1477.2 Sensor_creation_timestamp:1765153262 Message_creation_time:1778867767496
+Sensor id:12 Sensor_energy_value:1471.8 Sensor_creation_timestamp:1765153263 Message_creation_time:1778867768497
+Sensor id:12 Sensor_energy_value:1475.0 Sensor_creation_timestamp:1765153264 Message_creation_time:1778867769507
+Sensor id:12 Sensor_energy_value:1475.7 Sensor_creation_timestamp:1765153265 Message_creation_time:1778867770509
+Sensor id:12 Sensor_energy_value:1474.3 Sensor_creation_timestamp:1765153266 Message_creation_time:1778867771510
+Sensor id:12 Sensor_energy_value:1470.7 Sensor_creation_timestamp:1765153267 Message_creation_time:1778867772511
+Sensor id:12 Sensor_energy_value:1489.4 Sensor_creation_timestamp:1765153268 Message_creation_time:1778867773512
+Sensor id:12 Sensor_energy_value:1472.3 Sensor_creation_timestamp:1765153269 Message_creation_time:1778867774537
+Sensor id:12 Sensor_energy_value:1474.5 Sensor_creation_timestamp:1765153270 Message_creation_time:1778867775573
+Sensor id:12 Sensor_energy_value:1477.8 Sensor_creation_timestamp:1765153271 Message_creation_time:1778867776705
+Sensor id:12 Sensor_energy_value:1473.6 Sensor_creation_timestamp:1765153272 Message_creation_time:1778867777765
+Sensor id:12 Sensor_energy_value:1472.7 Sensor_creation_timestamp:1765153273 Message_creation_time:1778867778797
+Sensor id:12 Sensor_energy_value:1474.6 Sensor_creation_timestamp:1765153274 Message_creation_time:1778867779798
+Sensor id:12 Sensor_energy_value:1480.6 Sensor_creation_timestamp:1765153275 Message_creation_time:1778867780807
+Sensor id:12 Sensor_energy_value:1473.9 Sensor_creation_timestamp:1765153276 Message_creation_time:1778867781808
+Sensor id:12 Sensor_energy_value:1481.9 Sensor_creation_timestamp:1765153277 Message_creation_time:1778867783312
+Sensor id:12 Sensor_energy_value:1475.0 Sensor_creation_timestamp:1765153278 Message_creation_time:1778867784422
+Sensor id:12 Sensor_energy_value:1477.8 Sensor_creation_timestamp:1765153279 Message_creation_time:1778867785632
+Sensor id:12 Sensor_energy_value:1481.1 Sensor_creation_timestamp:1765153280 Message_creation_time:1778867786915
+Sensor id:12 Sensor_energy_value:1470.0 Sensor_creation_timestamp:1765153281 Message_creation_time:1778867788093
+Sensor id:12 Sensor_energy_value:1471.6 Sensor_creation_timestamp:1765153282 Message_creation_time:1778867789225
+Sensor id:12 Sensor_energy_value:1471.8 Sensor_creation_timestamp:1765153283 Message_creation_time:1778867790691
+Sensor id:12 Sensor_energy_value:1475.1 Sensor_creation_timestamp:1765153284 Message_creation_time:1778867792217
+Sensor id:12 Sensor_energy_value:1470.0 Sensor_creation_timestamp:1765153285 Message_creation_time:1778867793220
+Sensor id:12 Sensor_energy_value:1474.5 Sensor_creation_timestamp:1765153286 Message_creation_time:1778867794376
+Sensor id:12 Sensor_energy_value:1475.2 Sensor_creation_timestamp:1765153287 Message_creation_time:1778867795443
+Sensor id:12 Sensor_energy_value:1475.3 Sensor_creation_timestamp:1765153288 Message_creation_time:1778867796471
+Sensor id:12 Sensor_energy_value:1474.0 Sensor_creation_timestamp:1765153289 Message_creation_time:1778867797473
+Sensor id:12 Sensor_energy_value:1469.8 Sensor_creation_timestamp:1765153290 Message_creation_time:1778867798475
+Sensor id:12 Sensor_energy_value:1471.1 Sensor_creation_timestamp:1765153291 Message_creation_time:1778867799650
+Sensor id:12 Sensor_energy_value:1475.7 Sensor_creation_timestamp:1765153292 Message_creation_time:1778867800655
+Sensor id:12 Sensor_energy_value:1470.7 Sensor_creation_timestamp:1765153293 Message_creation_time:1778867801657
+Sensor id:12 Sensor_energy_value:1475.3 Sensor_creation_timestamp:1765153294 Message_creation_time:1778867802669
+Sensor id:12 Sensor_energy_value:1472.5 Sensor_creation_timestamp:1765153295 Message_creation_time:1778867803682
+Sensor id:12 Sensor_energy_value:1470.1 Sensor_creation_timestamp:1765153296 Message_creation_time:1778867804698
+Sensor id:12 Sensor_energy_value:1473.4 Sensor_creation_timestamp:1765153297 Message_creation_time:1778867805708
+Sensor id:12 Sensor_energy_value:1472.1 Sensor_creation_timestamp:1765153298 Message_creation_time:1778867806711
+Sensor id:12 Sensor_energy_value:1473.6 Sensor_creation_timestamp:1765153299 Message_creation_time:1778867807744
+Sensor id:12 Sensor_energy_value:1475.5 Sensor_creation_timestamp:1765153300 Message_creation_time:1778867808780
+Sensor id:12 Sensor_energy_value:1476.3 Sensor_creation_timestamp:1765153301 Message_creation_time:1778867809788
+Sensor id:12 Sensor_energy_value:1477.4 Sensor_creation_timestamp:1765153302 Message_creation_time:1778867810792
+Sensor id:12 Sensor_energy_value:1477.3 Sensor_creation_timestamp:1765153303 Message_creation_time:1778867811796
+Sensor id:12 Sensor_energy_value:1488.3 Sensor_creation_timestamp:1765153304 Message_creation_time:1778867812803
+Sensor id:12 Sensor_energy_value:1478.2 Sensor_creation_timestamp:1765153305 Message_creation_time:1778867813808
+Sensor id:12 Sensor_energy_value:1476.5 Sensor_creation_timestamp:1765153306 Message_creation_time:1778867814810
+Sensor id:12 Sensor_energy_value:1478.7 Sensor_creation_timestamp:1765153307 Message_creation_time:1778867815812
+Sensor id:12 Sensor_energy_value:1480.8 Sensor_creation_timestamp:1765153308 Message_creation_time:1778867816817
+Sensor id:12 Sensor_energy_value:1478.6 Sensor_creation_timestamp:1765153309 Message_creation_time:1778867817822
+Sensor id:12 Sensor_energy_value:1479.5 Sensor_creation_timestamp:1765153310 Message_creation_time:1778867818823
+Sensor id:12 Sensor_energy_value:1479.7 Sensor_creation_timestamp:1765153311 Message_creation_time:1778867819825
+Sensor id:12 Sensor_energy_value:1477.1 Sensor_creation_timestamp:1765153312 Message_creation_time:1778867820828
+Sensor id:12 Sensor_energy_value:1477.5 Sensor_creation_timestamp:1765153313 Message_creation_time:1778867821837
+Sensor id:12 Sensor_energy_value:1475.6 Sensor_creation_timestamp:1765153314 Message_creation_time:1778867822841
+Sensor id:12 Sensor_energy_value:1474.9 Sensor_creation_timestamp:1765153315 Message_creation_time:1778867823847
+Sensor id:12 Sensor_energy_value:1474.3 Sensor_creation_timestamp:1765153316 Message_creation_time:1778867824853
+Sensor id:12 Sensor_energy_value:1472.1 Sensor_creation_timestamp:1765153317 Message_creation_time:1778867825860
+Sensor id:12 Sensor_energy_value:1476.2 Sensor_creation_timestamp:1765153318 Message_creation_time:1778867826862
+Sensor id:12 Sensor_energy_value:1476.4 Sensor_creation_timestamp:1765153319 Message_creation_time:1778867827864
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1483.6 Sensor_creation_timestamp:1765153320 Message_creation_time:1778867828866
+Sensor id:12 Sensor_energy_value:1480.2 Sensor_creation_timestamp:1765153321 Message_creation_time:1778867829871
+Sensor id:12 Sensor_energy_value:1479.8 Sensor_creation_timestamp:1765153322 Message_creation_time:1778867830873
+Sensor id:12 Sensor_energy_value:1478.4 Sensor_creation_timestamp:1765153323 Message_creation_time:1778867831879
+Sensor id:12 Sensor_energy_value:1477.9 Sensor_creation_timestamp:1765153324 Message_creation_time:1778867832890
+Sensor id:12 Sensor_energy_value:1480.1 Sensor_creation_timestamp:1765153325 Message_creation_time:1778867833892
+Sensor id:12 Sensor_energy_value:1477.4 Sensor_creation_timestamp:1765153326 Message_creation_time:1778867834893
+Sensor id:12 Sensor_energy_value:1479.7 Sensor_creation_timestamp:1765153327 Message_creation_time:1778867835933
+Sensor id:12 Sensor_energy_value:1478.1 Sensor_creation_timestamp:1765153328 Message_creation_time:1778867836937
+Sensor id:12 Sensor_energy_value:1474.8 Sensor_creation_timestamp:1765153329 Message_creation_time:1778867837946
+Sensor id:12 Sensor_energy_value:1474.9 Sensor_creation_timestamp:1765153330 Message_creation_time:1778867838951
+Sensor id:12 Sensor_energy_value:1476.8 Sensor_creation_timestamp:1765153331 Message_creation_time:1778867839964
+Sensor id:12 Sensor_energy_value:1476.4 Sensor_creation_timestamp:1765153332 Message_creation_time:1778867840966
+Sensor id:12 Sensor_energy_value:1480.6 Sensor_creation_timestamp:1765153333 Message_creation_time:1778867841968
+Sensor id:12 Sensor_energy_value:1477.7 Sensor_creation_timestamp:1765153334 Message_creation_time:1778867842972
+Sensor id:12 Sensor_energy_value:1472.0 Sensor_creation_timestamp:1765153335 Message_creation_time:1778867843984
+Sensor id:12 Sensor_energy_value:1475.3 Sensor_creation_timestamp:1765153336 Message_creation_time:1778867844996
+Sensor id:12 Sensor_energy_value:1479.1 Sensor_creation_timestamp:1765153337 Message_creation_time:1778867845998
+Sensor id:12 Sensor_energy_value:1478.7 Sensor_creation_timestamp:1765153338 Message_creation_time:1778867847003
+Sensor id:12 Sensor_energy_value:1483.4 Sensor_creation_timestamp:1765153339 Message_creation_time:1778867848015
+Sensor id:12 Sensor_energy_value:1484.2 Sensor_creation_timestamp:1765153340 Message_creation_time:1778867849017
+Sensor id:12 Sensor_energy_value:1475.9 Sensor_creation_timestamp:1765153341 Message_creation_time:1778867850018
+Sensor id:12 Sensor_energy_value:1477.2 Sensor_creation_timestamp:1765153342 Message_creation_time:1778867851020
+Sensor id:12 Sensor_energy_value:1477.4 Sensor_creation_timestamp:1765153343 Message_creation_time:1778867852022
+Sensor id:12 Sensor_energy_value:1477.1 Sensor_creation_timestamp:1765153344 Message_creation_time:1778867853027
+Sensor id:12 Sensor_energy_value:1477.2 Sensor_creation_timestamp:1765153345 Message_creation_time:1778867854031
+Sensor id:12 Sensor_energy_value:1476.1 Sensor_creation_timestamp:1765153346 Message_creation_time:1778867855034
+Sensor id:12 Sensor_energy_value:1476.6 Sensor_creation_timestamp:1765153347 Message_creation_time:1778867856047
+Sensor id:12 Sensor_energy_value:1477.1 Sensor_creation_timestamp:1765153348 Message_creation_time:1778867857049
+Sensor id:12 Sensor_energy_value:1476.9 Sensor_creation_timestamp:1765153349 Message_creation_time:1778867858050
+Sensor id:12 Sensor_energy_value:1478.9 Sensor_creation_timestamp:1765153350 Message_creation_time:1778867859051
+Sensor id:12 Sensor_energy_value:1473.7 Sensor_creation_timestamp:1765153351 Message_creation_time:1778867860051
+Sensor id:12 Sensor_energy_value:1479.9 Sensor_creation_timestamp:1765153352 Message_creation_time:1778867861054
+Sensor id:12 Sensor_energy_value:1476.8 Sensor_creation_timestamp:1765153353 Message_creation_time:1778867862057
+Sensor id:12 Sensor_energy_value:1481.2 Sensor_creation_timestamp:1765153354 Message_creation_time:1778867863058
+Sensor id:12 Sensor_energy_value:1482.3 Sensor_creation_timestamp:1765153355 Message_creation_time:1778867864060
+Sensor id:12 Sensor_energy_value:1480.9 Sensor_creation_timestamp:1765153356 Message_creation_time:1778867865061
+Sensor id:12 Sensor_energy_value:1483.0 Sensor_creation_timestamp:1765153357 Message_creation_time:1778867866068
+Sensor id:12 Sensor_energy_value:1484.8 Sensor_creation_timestamp:1765153358 Message_creation_time:1778867867077
+Sensor id:12 Sensor_energy_value:1479.9 Sensor_creation_timestamp:1765153359 Message_creation_time:1778867868090
+Sensor id:12 Sensor_energy_value:1480.3 Sensor_creation_timestamp:1765153360 Message_creation_time:1778867869098
+Sensor id:12 Sensor_energy_value:1482.3 Sensor_creation_timestamp:1765153361 Message_creation_time:1778867870099
+Sensor id:12 Sensor_energy_value:1475.5 Sensor_creation_timestamp:1765153362 Message_creation_time:1778867871100
+Sensor id:12 Sensor_energy_value:1478.1 Sensor_creation_timestamp:1765153363 Message_creation_time:1778867872101
+Sensor id:12 Sensor_energy_value:1477.7 Sensor_creation_timestamp:1765153364 Message_creation_time:1778867873106
+Sensor id:12 Sensor_energy_value:1489.3 Sensor_creation_timestamp:1765153365 Message_creation_time:1778867874108
+Sensor id:12 Sensor_energy_value:1487.9 Sensor_creation_timestamp:1765153366 Message_creation_time:1778867875183
+Sensor id:12 Sensor_energy_value:1483.1 Sensor_creation_timestamp:1765153367 Message_creation_time:1778867876188
+Sensor id:12 Sensor_energy_value:1479.8 Sensor_creation_timestamp:1765153368 Message_creation_time:1778867877189
+Sensor id:12 Sensor_energy_value:1494.5 Sensor_creation_timestamp:1765153369 Message_creation_time:1778867878197
+Sensor id:12 Sensor_energy_value:1481.4 Sensor_creation_timestamp:1765153370 Message_creation_time:1778867879201
+Sensor id:12 Sensor_energy_value:1481.4 Sensor_creation_timestamp:1765153371 Message_creation_time:1778867880257
+Sensor id:12 Sensor_energy_value:1482.0 Sensor_creation_timestamp:1765153372 Message_creation_time:1778867881259
+Sensor id:12 Sensor_energy_value:1482.8 Sensor_creation_timestamp:1765153373 Message_creation_time:1778867882267
+Sensor id:12 Sensor_energy_value:1480.2 Sensor_creation_timestamp:1765153374 Message_creation_time:1778867883270
+Sensor id:12 Sensor_energy_value:1483.9 Sensor_creation_timestamp:1765153375 Message_creation_time:1778867884276
+Sensor id:12 Sensor_energy_value:1481.2 Sensor_creation_timestamp:1765153376 Message_creation_time:1778867885278
+Sensor id:12 Sensor_energy_value:1483.5 Sensor_creation_timestamp:1765153377 Message_creation_time:1778867886281
+Sensor id:12 Sensor_energy_value:1482.1 Sensor_creation_timestamp:1765153378 Message_creation_time:1778867887286
+Sensor id:12 Sensor_energy_value:1495.8 Sensor_creation_timestamp:1765153379 Message_creation_time:1778867888288
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+Sensor id:12 Sensor_energy_value:1483.0 Sensor_creation_timestamp:1765153380 Message_creation_time:1778867889290
+Sensor id:12 Sensor_energy_value:1485.8 Sensor_creation_timestamp:1765153381 Message_creation_time:1778867890292
+Sensor id:12 Sensor_energy_value:1490.1 Sensor_creation_timestamp:1765153382 Message_creation_time:1778867891294
+Sensor id:12 Sensor_energy_value:1487.9 Sensor_creation_timestamp:1765153383 Message_creation_time:1778867892301
+Sensor id:12 Sensor_energy_value:1489.8 Sensor_creation_timestamp:1765153384 Message_creation_time:1778867893306
+Sensor id:12 Sensor_energy_value:1485.9 Sensor_creation_timestamp:1765153385 Message_creation_time:1778867894307
+Sensor id:12 Sensor_energy_value:1485.2 Sensor_creation_timestamp:1765153386 Message_creation_time:1778867895329
+Sensor id:12 Sensor_energy_value:1486.5 Sensor_creation_timestamp:1765153387 Message_creation_time:1778867896330
+Sensor id:12 Sensor_energy_value:1483.1 Sensor_creation_timestamp:1765153388 Message_creation_time:1778867897331
+Sensor id:12 Sensor_energy_value:1484.8 Sensor_creation_timestamp:1765153389 Message_creation_time:1778867898332
+Sensor id:12 Sensor_energy_value:1487.0 Sensor_creation_timestamp:1765153390 Message_creation_time:1778867899334
+Sensor id:12 Sensor_energy_value:1485.9 Sensor_creation_timestamp:1765153391 Message_creation_time:1778867900335
+Sensor id:12 Sensor_energy_value:1506.3 Sensor_creation_timestamp:1765153392 Message_creation_time:1778867901337
+Sensor id:12 Sensor_energy_value:1483.3 Sensor_creation_timestamp:1765153393 Message_creation_time:1778867902338
+Sensor id:12 Sensor_energy_value:1485.6 Sensor_creation_timestamp:1765153394 Message_creation_time:1778867903343
+Sensor id:12 Sensor_energy_value:1487.3 Sensor_creation_timestamp:1765153395 Message_creation_time:1778867904347
+Sensor id:12 Sensor_energy_value:1484.5 Sensor_creation_timestamp:1765153396 Message_creation_time:1778867905348
+Sensor id:12 Sensor_energy_value:1488.7 Sensor_creation_timestamp:1765153397 Message_creation_time:1778867906350
+Sensor id:12 Sensor_energy_value:1484.6 Sensor_creation_timestamp:1765153398 Message_creation_time:1778867907352
+Sensor id:12 Sensor_energy_value:1493.0 Sensor_creation_timestamp:1765153399 Message_creation_time:1778867908354
+Sensor id:12 Sensor_energy_value:1493.5 Sensor_creation_timestamp:1765153400 Message_creation_time:1778867909362
+Sensor id:12 Sensor_energy_value:1493.1 Sensor_creation_timestamp:1765153401 Message_creation_time:1778867910364
+Sensor id:12 Sensor_energy_value:1484.1 Sensor_creation_timestamp:1765153402 Message_creation_time:1778867911365
+Sensor id:12 Sensor_energy_value:1489.0 Sensor_creation_timestamp:1765153403 Message_creation_time:1778867912367
+Sensor id:12 Sensor_energy_value:1486.4 Sensor_creation_timestamp:1765153404 Message_creation_time:1778867913368
+Sensor id:12 Sensor_energy_value:1486.9 Sensor_creation_timestamp:1765153405 Message_creation_time:1778867914369
+Sensor id:12 Sensor_energy_value:1487.8 Sensor_creation_timestamp:1765153406 Message_creation_time:1778867915371
+Sensor id:12 Sensor_energy_value:1492.2 Sensor_creation_timestamp:1765153407 Message_creation_time:1778867916374
+Sensor id:12 Sensor_energy_value:1492.6 Sensor_creation_timestamp:1765153408 Message_creation_time:1778867917377
+Sensor id:12 Sensor_energy_value:1494.2 Sensor_creation_timestamp:1765153409 Message_creation_time:1778867918378
+Sensor id:12 Sensor_energy_value:1503.3 Sensor_creation_timestamp:1765153410 Message_creation_time:1778867919378
+Sensor id:12 Sensor_energy_value:1489.3 Sensor_creation_timestamp:1765153411 Message_creation_time:1778867920379
+Sensor id:12 Sensor_energy_value:1494.8 Sensor_creation_timestamp:1765153412 Message_creation_time:1778867921380
+Sensor id:12 Sensor_energy_value:1496.0 Sensor_creation_timestamp:1765153413 Message_creation_time:1778867922384
+Sensor id:12 Sensor_energy_value:1494.5 Sensor_creation_timestamp:1765153414 Message_creation_time:1778867923386
+Sensor id:12 Sensor_energy_value:1494.9 Sensor_creation_timestamp:1765153415 Message_creation_time:1778867924386
+Sensor id:12 Sensor_energy_value:1493.9 Sensor_creation_timestamp:1765153416 Message_creation_time:1778867925388
+Sensor id:12 Sensor_energy_value:1495.1 Sensor_creation_timestamp:1765153417 Message_creation_time:1778867926390
+Sensor id:12 Sensor_energy_value:1497.2 Sensor_creation_timestamp:1765153418 Message_creation_time:1778867927391
+Sensor id:12 Sensor_energy_value:1499.9 Sensor_creation_timestamp:1765153419 Message_creation_time:1778867928398
+Sensor id:12 Sensor_energy_value:1496.5 Sensor_creation_timestamp:1765153420 Message_creation_time:1778867929401
+Sensor id:12 Sensor_energy_value:1499.2 Sensor_creation_timestamp:1765153421 Message_creation_time:1778867930411
+Sensor id:12 Sensor_energy_value:1496.0 Sensor_creation_timestamp:1765153422 Message_creation_time:1778867931416
+Sensor id:12 Sensor_energy_value:1497.9 Sensor_creation_timestamp:1765153423 Message_creation_time:1778867932420
+Sensor id:12 Sensor_energy_value:1510.5 Sensor_creation_timestamp:1765153424 Message_creation_time:1778867933421
+Sensor id:12 Sensor_energy_value:1495.8 Sensor_creation_timestamp:1765153425 Message_creation_time:1778867934422
+Sensor id:12 Sensor_energy_value:1496.3 Sensor_creation_timestamp:1765153426 Message_creation_time:1778867935425
+Sensor id:12 Sensor_energy_value:1500.6 Sensor_creation_timestamp:1765153427 Message_creation_time:1778867936429
+Sensor id:12 Sensor_energy_value:1497.0 Sensor_creation_timestamp:1765153428 Message_creation_time:1778867937433
+Sensor id:12 Sensor_energy_value:1498.2 Sensor_creation_timestamp:1765153429 Message_creation_time:1778867938436
+Sensor id:12 Sensor_energy_value:1501.7 Sensor_creation_timestamp:1765153430 Message_creation_time:1778867939438
+Sensor id:12 Sensor_energy_value:1500.3 Sensor_creation_timestamp:1765153431 Message_creation_time:1778867940447
+Sensor id:12 Sensor_energy_value:1498.3 Sensor_creation_timestamp:1765153432 Message_creation_time:1778867941449
+Sensor id:12 Sensor_energy_value:1499.1 Sensor_creation_timestamp:1765153433 Message_creation_time:1778867942458
+Sensor id:12 Sensor_energy_value:1502.4 Sensor_creation_timestamp:1765153434 Message_creation_time:1778867943460
+Sensor id:12 Sensor_energy_value:1498.1 Sensor_creation_timestamp:1765153435 Message_creation_time:1778867944465
+Sensor id:12 Sensor_energy_value:1501.8 Sensor_creation_timestamp:1765153436 Message_creation_time:1778867945467
+Sensor id:12 Sensor_energy_value:1500.8 Sensor_creation_timestamp:1765153437 Message_creation_time:1778867946469
+Sensor id:12 Sensor_energy_value:1498.9 Sensor_creation_timestamp:1765153438 Message_creation_time:1778867947471
+Sensor id:12 Sensor_energy_value:1501.7 Sensor_creation_timestamp:1765153439 Message_creation_time:1778867948472
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.
+No messages received
+Trying again.

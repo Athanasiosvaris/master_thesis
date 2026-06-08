@@ -1,0 +1,2707 @@
+2026-06-01 10:33:52.143 INFO  [129423734124672] Client:86 | Subscribing on Topic :device3_model_consume
+2026-06-01 10:33:52.143 INFO  [129423734124672] ClientConnection:196 | [<none> -> pulsar://localhost:6650] Create ClientConnection, timeout=10000
+2026-06-01 10:33:52.143 INFO  [129423734124672] ConnectionPool:125 | Created connection for pulsar://localhost:6650-pulsar://localhost:6650-0
+2026-06-01 10:33:52.144 INFO  [129423206512320] ClientConnection:416 | [127.0.0.1:57278 -> 127.0.0.1:6650] Connected to broker
+2026-06-01 10:33:52.146 INFO  [129423206512320] HandlerBase:112 | [persistent://public/default/device3_model_consume, pythonSubscription, 0] Getting connection from pool
+2026-06-01 10:33:52.147 INFO  [129423206512320] BinaryProtoLookupService:85 | Lookup response for persistent://public/default/device3_model_consume, lookup-broker-url pulsar://localhost:6650, from [127.0.0.1:57278 -> 127.0.0.1:6650] 
+2026-06-01 10:33:52.167 INFO  [129423206512320] ConsumerImpl:337 | [persistent://public/default/device3_model_consume, pythonSubscription, 0] Created consumer on broker [127.0.0.1:57278 -> 127.0.0.1:6650] 
+2026-06-01 10:33:52.167 INFO  [129423206512320] HandlerBase:134 | Finished connecting to broker after 21 ms
+Coordinator service started
+
+Database connection established
+Dropped table device3_actualvalues
+Table device3_actualvalues created successfully
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Dropped table device3_forecastedvalues
+Table device3_forecastedvalues created successfully
+
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3                731.1 2025-12-08 00:00:00       25036.00   NO
+1           3                734.9 2025-12-08 00:00:01       24035.00   NO
+2           3                753.0 2025-12-08 00:00:02       23033.00   NO
+3           3                736.6 2025-12-08 00:00:03       22032.00   NO
+4           3                717.7 2025-12-08 00:00:04       21031.00   NO
+5           3                750.0 2025-12-08 00:00:05       20030.00   NO
+6           3                722.2 2025-12-08 00:00:06       19029.00   NO
+7           3                742.4 2025-12-08 00:00:07       18028.00   NO
+8           3                719.2 2025-12-08 00:00:08       17026.00   NO
+9           3                738.7 2025-12-08 00:00:09       16025.00   NO
+10          3                781.6 2025-12-08 00:00:10       29545.96  YES
+11          3                734.2 2025-12-08 00:00:11       15024.00   NO
+12          3                758.7 2025-12-08 00:00:12       14023.00   NO
+13          3                720.5 2025-12-08 00:00:13       13021.00   NO
+14          3                727.0 2025-12-08 00:00:14       12020.00   NO
+15          3                748.9 2025-12-08 00:00:15       11019.00   NO
+16          3                750.2 2025-12-08 00:00:16       10018.00   NO
+17          3                737.8 2025-12-08 00:00:17        9017.00   NO
+18          3                730.7 2025-12-08 00:00:18        8016.00   NO
+19          3                744.4 2025-12-08 00:00:19        7015.00   NO
+20          3                720.2 2025-12-08 00:00:20        6014.00   NO
+21          3                755.2 2025-12-08 00:00:21        5013.00   NO
+22          3                734.8 2025-12-08 00:00:22       54084.00   NO
+23          3                751.1 2025-12-08 00:00:23       53083.00   NO
+24          3                746.9 2025-12-08 00:00:24       52081.00   NO
+25          3                737.6 2025-12-08 00:00:25       51080.00   NO
+26          3                736.4 2025-12-08 00:00:26       50078.00   NO
+27          3                781.6 2025-12-08 00:00:27       29545.96  YES
+28          3                737.6 2025-12-08 00:00:28       49076.00   NO
+29          3                734.5 2025-12-08 00:00:29       48074.00   NO
+30          3                738.8 2025-12-08 00:00:30       47072.00   NO
+31          3                724.4 2025-12-08 00:00:31       46071.00   NO
+32          3                781.6 2025-12-08 00:00:32       29545.96  YES
+33          3                895.1 2025-12-08 00:00:33       45070.00   NO
+34          3                781.6 2025-12-08 00:00:34       29545.96  YES
+35          3                868.2 2025-12-08 00:00:35       44067.00   NO
+36          3                781.6 2025-12-08 00:00:36       29545.96  YES
+37          3                750.4 2025-12-08 00:00:37       43066.00   NO
+38          3                854.4 2025-12-08 00:00:38       42064.00   NO
+39          3                917.3 2025-12-08 00:00:39       41063.00   NO
+40          3                781.6 2025-12-08 00:00:40       29545.96  YES
+41          3                858.8 2025-12-08 00:00:41       40061.00   NO
+42          3                849.8 2025-12-08 00:00:42       39060.00   NO
+43          3                858.3 2025-12-08 00:00:43       38058.00   NO
+44          3                829.4 2025-12-08 00:00:44       37056.00   NO
+45          3                781.6 2025-12-08 00:00:45       29545.96  YES
+46          3                781.6 2025-12-08 00:00:46       29545.96  YES
+47          3                854.3 2025-12-08 00:00:47       36055.00   NO
+48          3                781.6 2025-12-08 00:00:48       29545.96  YES
+49          3                849.2 2025-12-08 00:00:49       35054.00   NO
+50          3                837.0 2025-12-08 00:00:50       34053.00   NO
+51          3                823.3 2025-12-08 00:00:51       33052.00   NO
+52          3                852.6 2025-12-08 00:00:52       32051.00   NO
+53          3                852.3 2025-12-08 00:00:53       31051.00   NO
+54          3                849.1 2025-12-08 00:00:54       30049.00   NO
+55          3                816.8 2025-12-08 00:00:55       29048.00   NO
+56          3                781.6 2025-12-08 00:00:56       29545.96  YES
+57          3                851.7 2025-12-08 00:00:57       28040.00   NO
+58          3                849.5 2025-12-08 00:00:58       27039.00   NO
+59          3                846.8 2025-12-08 00:00:59       26037.00   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                      926.570557 2025-12-08 00:01:00
+1           3                      946.958496 2025-12-08 00:01:01
+2           3                      968.314575 2025-12-08 00:01:02
+3           3                      990.077637 2025-12-08 00:01:03
+4           3                     1011.791992 2025-12-08 00:01:04
+5           3                     1033.149902 2025-12-08 00:01:05
+6           3                     1053.951294 2025-12-08 00:01:06
+7           3                     1074.073486 2025-12-08 00:01:07
+8           3                     1093.448853 2025-12-08 00:01:08
+9           3                     1112.047852 2025-12-08 00:01:09
+10          3                     1129.868042 2025-12-08 00:01:10
+11          3                     1146.925293 2025-12-08 00:01:11
+12          3                     1163.247192 2025-12-08 00:01:12
+13          3                     1178.868652 2025-12-08 00:01:13
+14          3                     1193.828735 2025-12-08 00:01:14
+15          3                     1208.168457 2025-12-08 00:01:15
+16          3                     1221.928833 2025-12-08 00:01:16
+17          3                     1235.150024 2025-12-08 00:01:17
+18          3                     1247.870605 2025-12-08 00:01:18
+19          3                     1260.126831 2025-12-08 00:01:19
+20          3                     1271.953491 2025-12-08 00:01:20
+21          3                     1283.381348 2025-12-08 00:01:21
+22          3                     1294.440308 2025-12-08 00:01:22
+23          3                     1305.157104 2025-12-08 00:01:23
+24          3                     1315.556641 2025-12-08 00:01:24
+25          3                     1325.661133 2025-12-08 00:01:25
+26          3                     1335.491699 2025-12-08 00:01:26
+27          3                     1345.067017 2025-12-08 00:01:27
+28          3                     1354.404419 2025-12-08 00:01:28
+29          3                     1363.519653 2025-12-08 00:01:29
+30          3                     1372.427246 2025-12-08 00:01:30
+31          3                     1381.140625 2025-12-08 00:01:31
+32          3                     1389.671997 2025-12-08 00:01:32
+33          3                     1398.032593 2025-12-08 00:01:33
+34          3                     1406.233154 2025-12-08 00:01:34
+35          3                     1414.283081 2025-12-08 00:01:35
+36          3                     1422.191650 2025-12-08 00:01:36
+37          3                     1429.967285 2025-12-08 00:01:37
+38          3                     1437.617676 2025-12-08 00:01:38
+39          3                     1445.150757 2025-12-08 00:01:39
+40          3                     1452.572998 2025-12-08 00:01:40
+41          3                     1459.891235 2025-12-08 00:01:41
+42          3                     1467.111694 2025-12-08 00:01:42
+43          3                     1474.240479 2025-12-08 00:01:43
+44          3                     1481.283081 2025-12-08 00:01:44
+45          3                     1488.244873 2025-12-08 00:01:45
+46          3                     1495.130737 2025-12-08 00:01:46
+47          3                     1501.946289 2025-12-08 00:01:47
+48          3                     1508.695435 2025-12-08 00:01:48
+49          3                     1515.383057 2025-12-08 00:01:49
+50          3                     1522.013550 2025-12-08 00:01:50
+51          3                     1528.591187 2025-12-08 00:01:51
+52          3                     1535.119629 2025-12-08 00:01:52
+53          3                     1541.602905 2025-12-08 00:01:53
+54          3                     1548.045044 2025-12-08 00:01:54
+55          3                     1554.449341 2025-12-08 00:01:55
+56          3                     1560.819702 2025-12-08 00:01:56
+57          3                     1567.159424 2025-12-08 00:01:57
+58          3                     1573.472046 2025-12-08 00:01:58
+59          3                     1579.760498 2025-12-08 00:01:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1276.659091 2025-12-08 00:01:00   32278.590909  YES
+1           3          1276.659091 2025-12-08 00:01:01   32278.590909  YES
+2           3          1276.659091 2025-12-08 00:01:02   32278.590909  YES
+3           3          1276.659091 2025-12-08 00:01:03   32278.590909  YES
+4           3           851.600000 2025-12-08 00:01:04   16763.000000   NO
+5           3          1075.300000 2025-12-08 00:01:05   15762.000000   NO
+6           3          1262.100000 2025-12-08 00:01:06   14761.000000   NO
+7           3          1095.000000 2025-12-08 00:01:07   13760.000000   NO
+8           3          1067.700000 2025-12-08 00:01:08   12759.000000   NO
+9           3          1141.000000 2025-12-08 00:01:09   11757.000000   NO
+10          3          1276.659091 2025-12-08 00:01:10   32278.590909  YES
+11          3          1109.000000 2025-12-08 00:01:11   10756.000000   NO
+12          3          1174.200000 2025-12-08 00:01:12   47796.000000   NO
+13          3          1181.400000 2025-12-08 00:01:13   46795.000000   NO
+14          3          1198.800000 2025-12-08 00:01:14   45794.000000   NO
+15          3          1220.300000 2025-12-08 00:01:15   44793.000000   NO
+16          3          1247.500000 2025-12-08 00:01:16   43792.000000   NO
+17          3          1281.900000 2025-12-08 00:01:17   42791.000000   NO
+18          3          1297.600000 2025-12-08 00:01:18   41789.000000   NO
+19          3          1320.800000 2025-12-08 00:01:19   40787.000000   NO
+20          3          1343.700000 2025-12-08 00:01:20   39786.000000   NO
+21          3          1328.300000 2025-12-08 00:01:21   38784.000000   NO
+22          3          1276.659091 2025-12-08 00:01:22   32278.590909  YES
+23          3          1335.200000 2025-12-08 00:01:23   37783.000000   NO
+24          3          1337.000000 2025-12-08 00:01:24   36782.000000   NO
+25          3          1312.500000 2025-12-08 00:01:25   35780.000000   NO
+26          3          1314.700000 2025-12-08 00:01:26   34779.000000   NO
+27          3          1324.000000 2025-12-08 00:01:27   33778.000000   NO
+28          3          1338.500000 2025-12-08 00:01:28   32777.000000   NO
+29          3          1312.900000 2025-12-08 00:01:29   31776.000000   NO
+30          3          1351.400000 2025-12-08 00:01:30   30775.000000   NO
+31          3          1311.200000 2025-12-08 00:01:31   29774.000000   NO
+32          3          1308.800000 2025-12-08 00:01:32   28773.000000   NO
+33          3          1313.600000 2025-12-08 00:01:33   27772.000000   NO
+34          3          1311.000000 2025-12-08 00:01:34   26771.000000   NO
+35          3          1325.700000 2025-12-08 00:01:35   25771.000000   NO
+36          3          1328.000000 2025-12-08 00:01:36   24770.000000   NO
+37          3          1340.300000 2025-12-08 00:01:37   23769.000000   NO
+38          3          1314.100000 2025-12-08 00:01:38   22768.000000   NO
+39          3          1337.200000 2025-12-08 00:01:39   21767.000000   NO
+40          3          1276.659091 2025-12-08 00:01:40   32278.590909  YES
+41          3          1334.200000 2025-12-08 00:01:41   20766.000000   NO
+42          3          1276.659091 2025-12-08 00:01:42   32278.590909  YES
+43          3          1340.300000 2025-12-08 00:01:43   19766.000000   NO
+44          3          1276.659091 2025-12-08 00:01:44   32278.590909  YES
+45          3          1317.100000 2025-12-08 00:01:45   18765.000000   NO
+46          3          1349.800000 2025-12-08 00:01:46   17764.000000   NO
+47          3          1350.700000 2025-12-08 00:01:47   53804.000000   NO
+48          3          1276.659091 2025-12-08 00:01:48   32278.590909  YES
+49          3          1354.300000 2025-12-08 00:01:49   52803.000000   NO
+50          3          1356.000000 2025-12-08 00:01:50   51802.000000   NO
+51          3          1276.659091 2025-12-08 00:01:51   32278.590909  YES
+52          3          1276.659091 2025-12-08 00:01:52   32278.590909  YES
+53          3          1354.000000 2025-12-08 00:01:53   50801.000000   NO
+54          3          1276.659091 2025-12-08 00:01:54   32278.590909  YES
+55          3          1361.700000 2025-12-08 00:01:55   49800.000000   NO
+56          3          1276.659091 2025-12-08 00:01:56   32278.590909  YES
+57          3          1276.659091 2025-12-08 00:01:57   32278.590909  YES
+58          3          1342.600000 2025-12-08 00:01:58   48797.000000   NO
+59          3          1276.659091 2025-12-08 00:01:59   32278.590909  YES
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1327.322632 2025-12-08 00:02:00
+1           3                     1334.336914 2025-12-08 00:02:01
+2           3                     1341.965576 2025-12-08 00:02:02
+3           3                     1350.233765 2025-12-08 00:02:03
+4           3                     1358.892578 2025-12-08 00:02:04
+5           3                     1367.748169 2025-12-08 00:02:05
+6           3                     1376.661987 2025-12-08 00:02:06
+7           3                     1385.537354 2025-12-08 00:02:07
+8           3                     1394.310303 2025-12-08 00:02:08
+9           3                     1402.939941 2025-12-08 00:02:09
+10          3                     1411.403076 2025-12-08 00:02:10
+11          3                     1419.688721 2025-12-08 00:02:11
+12          3                     1427.794800 2025-12-08 00:02:12
+13          3                     1435.725586 2025-12-08 00:02:13
+14          3                     1443.488892 2025-12-08 00:02:14
+15          3                     1451.094727 2025-12-08 00:02:15
+16          3                     1458.554565 2025-12-08 00:02:16
+17          3                     1465.880371 2025-12-08 00:02:17
+18          3                     1473.083740 2025-12-08 00:02:18
+19          3                     1480.176025 2025-12-08 00:02:19
+20          3                     1487.167480 2025-12-08 00:02:20
+21          3                     1494.067993 2025-12-08 00:02:21
+22          3                     1500.885986 2025-12-08 00:02:22
+23          3                     1507.630127 2025-12-08 00:02:23
+24          3                     1514.307373 2025-12-08 00:02:24
+25          3                     1520.923950 2025-12-08 00:02:25
+26          3                     1527.485962 2025-12-08 00:02:26
+27          3                     1533.998901 2025-12-08 00:02:27
+28          3                     1540.467163 2025-12-08 00:02:28
+29          3                     1546.895386 2025-12-08 00:02:29
+30          3                     1553.287476 2025-12-08 00:02:30
+31          3                     1559.647095 2025-12-08 00:02:31
+32          3                     1565.977783 2025-12-08 00:02:32
+33          3                     1572.282837 2025-12-08 00:02:33
+34          3                     1578.565552 2025-12-08 00:02:34
+35          3                     1584.828613 2025-12-08 00:02:35
+36          3                     1591.075195 2025-12-08 00:02:36
+37          3                     1597.308350 2025-12-08 00:02:37
+38          3                     1603.530640 2025-12-08 00:02:38
+39          3                     1609.744995 2025-12-08 00:02:39
+40          3                     1615.954102 2025-12-08 00:02:40
+41          3                     1622.160767 2025-12-08 00:02:41
+42          3                     1628.367554 2025-12-08 00:02:42
+43          3                     1634.577515 2025-12-08 00:02:43
+44          3                     1640.793091 2025-12-08 00:02:44
+45          3                     1647.017212 2025-12-08 00:02:45
+46          3                     1653.252563 2025-12-08 00:02:46
+47          3                     1659.501709 2025-12-08 00:02:47
+48          3                     1665.767578 2025-12-08 00:02:48
+49          3                     1672.052856 2025-12-08 00:02:49
+50          3                     1678.360474 2025-12-08 00:02:50
+51          3                     1684.693115 2025-12-08 00:02:51
+52          3                     1691.053467 2025-12-08 00:02:52
+53          3                     1697.444824 2025-12-08 00:02:53
+54          3                     1703.869263 2025-12-08 00:02:54
+55          3                     1710.330566 2025-12-08 00:02:55
+56          3                     1716.831177 2025-12-08 00:02:56
+57          3                     1723.374023 2025-12-08 00:02:57
+58          3                     1729.962402 2025-12-08 00:02:58
+59          3                     1736.599243 2025-12-08 00:02:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1360.200000 2025-12-08 00:02:00   10739.000000   NO
+1           3          1346.900000 2025-12-08 00:02:01    9738.000000   NO
+2           3          1342.400000 2025-12-08 00:02:02    8736.000000   NO
+3           3          1336.900000 2025-12-08 00:02:03    7735.000000   NO
+4           3          1347.659259 2025-12-08 00:02:04   33268.592593  YES
+5           3          1343.000000 2025-12-08 00:02:05    6734.000000   NO
+6           3          1356.200000 2025-12-08 00:02:06   59804.000000   NO
+7           3          1343.400000 2025-12-08 00:02:07   58803.000000   NO
+8           3          1350.700000 2025-12-08 00:02:08   57801.000000   NO
+9           3          1333.200000 2025-12-08 00:02:09   56799.000000   NO
+10          3          1337.000000 2025-12-08 00:02:10   55798.000000   NO
+11          3          1349.300000 2025-12-08 00:02:11   54796.000000   NO
+12          3          1341.600000 2025-12-08 00:02:12   53795.000000   NO
+13          3          1319.800000 2025-12-08 00:02:13   52794.000000   NO
+14          3          1359.300000 2025-12-08 00:02:14   51794.000000   NO
+15          3          1372.500000 2025-12-08 00:02:15   50793.000000   NO
+16          3          1353.100000 2025-12-08 00:02:16   49791.000000   NO
+17          3          1332.300000 2025-12-08 00:02:17   48790.000000   NO
+18          3          1350.000000 2025-12-08 00:02:18   47789.000000   NO
+19          3          1365.300000 2025-12-08 00:02:19   46789.000000   NO
+20          3          1360.500000 2025-12-08 00:02:20   45787.000000   NO
+21          3          1352.100000 2025-12-08 00:02:21   44786.000000   NO
+22          3          1362.700000 2025-12-08 00:02:22   43785.000000   NO
+23          3          1348.000000 2025-12-08 00:02:23   42784.000000   NO
+24          3          1336.800000 2025-12-08 00:02:24   41782.000000   NO
+25          3          1345.200000 2025-12-08 00:02:25   40781.000000   NO
+26          3          1341.000000 2025-12-08 00:02:26   39779.000000   NO
+27          3          1347.659259 2025-12-08 00:02:27   33268.592593  YES
+28          3          1337.200000 2025-12-08 00:02:28   38778.000000   NO
+29          3          1347.659259 2025-12-08 00:02:29   33268.592593  YES
+30          3          1362.400000 2025-12-08 00:02:30   37776.000000   NO
+31          3          1332.000000 2025-12-08 00:02:31   36774.000000   NO
+32          3          1360.800000 2025-12-08 00:02:32   35773.000000   NO
+33          3          1347.659259 2025-12-08 00:02:33   33268.592593  YES
+34          3          1338.000000 2025-12-08 00:02:34   34771.000000   NO
+35          3          1344.600000 2025-12-08 00:02:35   33770.000000   NO
+36          3          1345.000000 2025-12-08 00:02:36   32768.000000   NO
+37          3          1352.600000 2025-12-08 00:02:37   31767.000000   NO
+38          3          1347.659259 2025-12-08 00:02:38   33268.592593  YES
+39          3          1345.000000 2025-12-08 00:02:39   30765.000000   NO
+40          3          1349.900000 2025-12-08 00:02:40   29763.000000   NO
+41          3          1357.900000 2025-12-08 00:02:41   28759.000000   NO
+42          3          1337.500000 2025-12-08 00:02:42   27758.000000   NO
+43          3          1334.100000 2025-12-08 00:02:43   26757.000000   NO
+44          3          1334.600000 2025-12-08 00:02:44   25757.000000   NO
+45          3          1327.500000 2025-12-08 00:02:45   24756.000000   NO
+46          3          1369.400000 2025-12-08 00:02:46   23754.000000   NO
+47          3          1343.000000 2025-12-08 00:02:47   22753.000000   NO
+48          3          1351.900000 2025-12-08 00:02:48   21751.000000   NO
+49          3          1334.700000 2025-12-08 00:02:49   20750.000000   NO
+50          3          1364.800000 2025-12-08 00:02:50   19748.000000   NO
+51          3          1356.000000 2025-12-08 00:02:51   18748.000000   NO
+52          3          1359.100000 2025-12-08 00:02:52   17747.000000   NO
+53          3          1344.800000 2025-12-08 00:02:53   16746.000000   NO
+54          3          1347.659259 2025-12-08 00:02:54   33268.592593  YES
+55          3          1357.600000 2025-12-08 00:02:55   15745.000000   NO
+56          3          1336.000000 2025-12-08 00:02:56   14744.000000   NO
+57          3          1333.000000 2025-12-08 00:02:57   13743.000000   NO
+58          3          1360.200000 2025-12-08 00:02:58   12741.000000   NO
+59          3          1364.600000 2025-12-08 00:02:59   11740.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1376.152832 2025-12-08 00:03:00
+1           3                     1383.345459 2025-12-08 00:03:01
+2           3                     1391.005981 2025-12-08 00:03:02
+3           3                     1398.972900 2025-12-08 00:03:03
+4           3                     1407.094604 2025-12-08 00:03:04
+5           3                     1415.261475 2025-12-08 00:03:05
+6           3                     1423.396973 2025-12-08 00:03:06
+7           3                     1431.450439 2025-12-08 00:03:07
+8           3                     1439.390015 2025-12-08 00:03:08
+9           3                     1447.197510 2025-12-08 00:03:09
+10          3                     1454.865234 2025-12-08 00:03:10
+11          3                     1462.391724 2025-12-08 00:03:11
+12          3                     1469.780762 2025-12-08 00:03:12
+13          3                     1477.039307 2025-12-08 00:03:13
+14          3                     1484.175781 2025-12-08 00:03:14
+15          3                     1491.199951 2025-12-08 00:03:15
+16          3                     1498.121338 2025-12-08 00:03:16
+17          3                     1504.950195 2025-12-08 00:03:17
+18          3                     1511.695068 2025-12-08 00:03:18
+19          3                     1518.365356 2025-12-08 00:03:19
+20          3                     1524.968750 2025-12-08 00:03:20
+21          3                     1531.512695 2025-12-08 00:03:21
+22          3                     1538.003784 2025-12-08 00:03:22
+23          3                     1544.448486 2025-12-08 00:03:23
+24          3                     1550.851685 2025-12-08 00:03:24
+25          3                     1557.218384 2025-12-08 00:03:25
+26          3                     1563.553467 2025-12-08 00:03:26
+27          3                     1569.860596 2025-12-08 00:03:27
+28          3                     1576.143799 2025-12-08 00:03:28
+29          3                     1582.406372 2025-12-08 00:03:29
+30          3                     1588.651733 2025-12-08 00:03:30
+31          3                     1594.882812 2025-12-08 00:03:31
+32          3                     1601.102783 2025-12-08 00:03:32
+33          3                     1607.314453 2025-12-08 00:03:33
+34          3                     1613.520508 2025-12-08 00:03:34
+35          3                     1619.723755 2025-12-08 00:03:35
+36          3                     1625.926758 2025-12-08 00:03:36
+37          3                     1632.132446 2025-12-08 00:03:37
+38          3                     1638.343506 2025-12-08 00:03:38
+39          3                     1644.562012 2025-12-08 00:03:39
+40          3                     1650.791260 2025-12-08 00:03:40
+41          3                     1657.033691 2025-12-08 00:03:41
+42          3                     1663.291992 2025-12-08 00:03:42
+43          3                     1669.568848 2025-12-08 00:03:43
+44          3                     1675.866943 2025-12-08 00:03:44
+45          3                     1682.189331 2025-12-08 00:03:45
+46          3                     1688.538452 2025-12-08 00:03:46
+47          3                     1694.917236 2025-12-08 00:03:47
+48          3                     1701.328491 2025-12-08 00:03:48
+49          3                     1707.775146 2025-12-08 00:03:49
+50          3                     1714.259766 2025-12-08 00:03:50
+51          3                     1720.786255 2025-12-08 00:03:51
+52          3                     1727.356323 2025-12-08 00:03:52
+53          3                     1733.973755 2025-12-08 00:03:53
+54          3                     1740.641724 2025-12-08 00:03:54
+55          3                     1747.363037 2025-12-08 00:03:55
+56          3                     1754.140991 2025-12-08 00:03:56
+57          3                     1760.978882 2025-12-08 00:03:57
+58          3                     1767.880249 2025-12-08 00:03:58
+59          3                     1774.847900 2025-12-08 00:03:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1441.922222 2025-12-08 00:03:00   28001.111111  YES
+1           3          1441.922222 2025-12-08 00:03:01   28001.111111  YES
+2           3          1441.922222 2025-12-08 00:03:02   28001.111111  YES
+3           3          1441.922222 2025-12-08 00:03:03   28001.111111  YES
+4           3          1441.922222 2025-12-08 00:03:04   28001.111111  YES
+5           3          1441.922222 2025-12-08 00:03:05   28001.111111  YES
+6           3          1441.922222 2025-12-08 00:03:06   28001.111111  YES
+7           3          1441.922222 2025-12-08 00:03:07   28001.111111  YES
+8           3          1441.922222 2025-12-08 00:03:08   28001.111111  YES
+9           3          1441.922222 2025-12-08 00:03:09   28001.111111  YES
+10          3          1441.922222 2025-12-08 00:03:10   28001.111111  YES
+11          3          1441.922222 2025-12-08 00:03:11   28001.111111  YES
+12          3          1441.922222 2025-12-08 00:03:12   28001.111111  YES
+13          3          1441.922222 2025-12-08 00:03:13   28001.111111  YES
+14          3          1441.922222 2025-12-08 00:03:14   28001.111111  YES
+15          3          1441.922222 2025-12-08 00:03:15   28001.111111  YES
+16          3          1441.922222 2025-12-08 00:03:16   28001.111111  YES
+17          3          1319.200000 2025-12-08 00:03:17   21492.000000   NO
+18          3          1335.400000 2025-12-08 00:03:18   20491.000000   NO
+19          3          1348.400000 2025-12-08 00:03:19   19490.000000   NO
+20          3          1349.400000 2025-12-08 00:03:20   18488.000000   NO
+21          3          1441.922222 2025-12-08 00:03:21   28001.111111  YES
+22          3          1361.500000 2025-12-08 00:03:22   17488.000000   NO
+23          3          1367.600000 2025-12-08 00:03:23   16487.000000   NO
+24          3          1441.922222 2025-12-08 00:03:24   28001.111111  YES
+25          3          1441.922222 2025-12-08 00:03:25   28001.111111  YES
+26          3          1348.500000 2025-12-08 00:03:26   15485.000000   NO
+27          3          1441.922222 2025-12-08 00:03:27   28001.111111  YES
+28          3          1481.700000 2025-12-08 00:03:28   14485.000000   NO
+29          3          1450.800000 2025-12-08 00:03:29   13484.000000   NO
+30          3          1465.500000 2025-12-08 00:03:30   12483.000000   NO
+31          3          1444.100000 2025-12-08 00:03:31   11482.000000   NO
+32          3          1466.200000 2025-12-08 00:03:32   10481.000000   NO
+33          3          1458.300000 2025-12-08 00:03:33   31506.000000   NO
+34          3          1436.200000 2025-12-08 00:03:34   30505.000000   NO
+35          3          1468.800000 2025-12-08 00:03:35   29504.000000   NO
+36          3          1440.700000 2025-12-08 00:03:36   28502.000000   NO
+37          3          1473.900000 2025-12-08 00:03:37   27500.000000   NO
+38          3          1447.700000 2025-12-08 00:03:38   26499.000000   NO
+39          3          1441.922222 2025-12-08 00:03:39   28001.111111  YES
+40          3          1459.300000 2025-12-08 00:03:40   25497.000000   NO
+41          3          1452.100000 2025-12-08 00:03:41   24496.000000   NO
+42          3          1455.100000 2025-12-08 00:03:42   23495.000000   NO
+43          3          1451.500000 2025-12-08 00:03:43   22494.000000   NO
+44          3          1464.100000 2025-12-08 00:03:44   45522.000000   NO
+45          3          1471.200000 2025-12-08 00:03:45   44521.000000   NO
+46          3          1441.922222 2025-12-08 00:03:46   28001.111111  YES
+47          3          1456.900000 2025-12-08 00:03:47   43519.000000   NO
+48          3          1441.000000 2025-12-08 00:03:48   42518.000000   NO
+49          3          1439.900000 2025-12-08 00:03:49   41517.000000   NO
+50          3          1445.800000 2025-12-08 00:03:50   40515.000000   NO
+51          3          1447.300000 2025-12-08 00:03:51   39515.000000   NO
+52          3          1473.900000 2025-12-08 00:03:52   38514.000000   NO
+53          3          1483.900000 2025-12-08 00:03:53   37513.000000   NO
+54          3          1476.600000 2025-12-08 00:03:54   36512.000000   NO
+55          3          1441.922222 2025-12-08 00:03:55   28001.111111  YES
+56          3          1481.400000 2025-12-08 00:03:56   35511.000000   NO
+57          3          1519.800000 2025-12-08 00:03:57   34511.000000   NO
+58          3          1535.400000 2025-12-08 00:03:58   33510.000000   NO
+59          3          1490.100000 2025-12-08 00:03:59   32508.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1519.084595 2025-12-08 00:04:00
+1           3                     1526.266479 2025-12-08 00:04:01
+2           3                     1533.129639 2025-12-08 00:04:02
+3           3                     1539.889526 2025-12-08 00:04:03
+4           3                     1546.560425 2025-12-08 00:04:04
+5           3                     1553.147949 2025-12-08 00:04:05
+6           3                     1559.658936 2025-12-08 00:04:06
+7           3                     1566.102295 2025-12-08 00:04:07
+8           3                     1572.485840 2025-12-08 00:04:08
+9           3                     1578.818604 2025-12-08 00:04:09
+10          3                     1585.109253 2025-12-08 00:04:10
+11          3                     1591.365112 2025-12-08 00:04:11
+12          3                     1597.593872 2025-12-08 00:04:12
+13          3                     1603.801636 2025-12-08 00:04:13
+14          3                     1609.994995 2025-12-08 00:04:14
+15          3                     1616.178833 2025-12-08 00:04:15
+16          3                     1622.358398 2025-12-08 00:04:16
+17          3                     1628.537720 2025-12-08 00:04:17
+18          3                     1634.720825 2025-12-08 00:04:18
+19          3                     1640.911011 2025-12-08 00:04:19
+20          3                     1647.112061 2025-12-08 00:04:20
+21          3                     1653.326538 2025-12-08 00:04:21
+22          3                     1659.557617 2025-12-08 00:04:22
+23          3                     1665.807861 2025-12-08 00:04:23
+24          3                     1672.079956 2025-12-08 00:04:24
+25          3                     1678.376709 2025-12-08 00:04:25
+26          3                     1684.700439 2025-12-08 00:04:26
+27          3                     1691.054077 2025-12-08 00:04:27
+28          3                     1697.439697 2025-12-08 00:04:28
+29          3                     1703.860474 2025-12-08 00:04:29
+30          3                     1710.318604 2025-12-08 00:04:30
+31          3                     1716.817383 2025-12-08 00:04:31
+32          3                     1723.359131 2025-12-08 00:04:32
+33          3                     1729.946777 2025-12-08 00:04:33
+34          3                     1736.583374 2025-12-08 00:04:34
+35          3                     1743.271851 2025-12-08 00:04:35
+36          3                     1750.015381 2025-12-08 00:04:36
+37          3                     1756.817017 2025-12-08 00:04:37
+38          3                     1763.679810 2025-12-08 00:04:38
+39          3                     1770.607300 2025-12-08 00:04:39
+40          3                     1777.602783 2025-12-08 00:04:40
+41          3                     1784.669800 2025-12-08 00:04:41
+42          3                     1791.811890 2025-12-08 00:04:42
+43          3                     1799.032715 2025-12-08 00:04:43
+44          3                     1806.335815 2025-12-08 00:04:44
+45          3                     1813.725342 2025-12-08 00:04:45
+46          3                     1821.204956 2025-12-08 00:04:46
+47          3                     1828.779053 2025-12-08 00:04:47
+48          3                     1836.451538 2025-12-08 00:04:48
+49          3                     1844.226807 2025-12-08 00:04:49
+50          3                     1852.109253 2025-12-08 00:04:50
+51          3                     1860.103516 2025-12-08 00:04:51
+52          3                     1868.214233 2025-12-08 00:04:52
+53          3                     1876.446167 2025-12-08 00:04:53
+54          3                     1884.804199 2025-12-08 00:04:54
+55          3                     1893.293701 2025-12-08 00:04:55
+56          3                     1901.919678 2025-12-08 00:04:56
+57          3                     1910.687866 2025-12-08 00:04:57
+58          3                     1919.603760 2025-12-08 00:04:58
+59          3                     1928.673096 2025-12-08 00:04:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1524.500000 2025-12-08 00:04:00   30519.000000   NO
+1           3          1514.200000 2025-12-08 00:04:01   29518.000000   NO
+2           3          1561.103636 2025-12-08 00:04:02   52541.363636  YES
+3           3          1501.900000 2025-12-08 00:04:03   28517.000000   NO
+4           3          1528.200000 2025-12-08 00:04:04   27516.000000   NO
+5           3          1513.800000 2025-12-08 00:04:05   26515.000000   NO
+6           3          1529.300000 2025-12-08 00:04:06   25513.000000   NO
+7           3          1561.103636 2025-12-08 00:04:07   52541.363636  YES
+8           3          1539.600000 2025-12-08 00:04:08   57545.000000   NO
+9           3          1528.800000 2025-12-08 00:04:09   56544.000000   NO
+10          3          1557.500000 2025-12-08 00:04:10   55543.000000   NO
+11          3          1552.800000 2025-12-08 00:04:11   54542.000000   NO
+12          3          1561.103636 2025-12-08 00:04:12   52541.363636  YES
+13          3          1503.600000 2025-12-08 00:04:13   53542.000000   NO
+14          3          1515.600000 2025-12-08 00:04:14   52541.000000   NO
+15          3          1524.600000 2025-12-08 00:04:15   51540.000000   NO
+16          3          1523.200000 2025-12-08 00:04:16   50539.000000   NO
+17          3          1506.700000 2025-12-08 00:04:17   49537.000000   NO
+18          3          1539.300000 2025-12-08 00:04:18   48536.000000   NO
+19          3          1529.400000 2025-12-08 00:04:19   47536.000000   NO
+20          3          1531.100000 2025-12-08 00:04:20   46534.000000   NO
+21          3          1554.600000 2025-12-08 00:04:21   45533.000000   NO
+22          3          1541.200000 2025-12-08 00:04:22   44532.000000   NO
+23          3          1503.200000 2025-12-08 00:04:23   43531.000000   NO
+24          3          1512.000000 2025-12-08 00:04:24   42531.000000   NO
+25          3          1561.103636 2025-12-08 00:04:25   52541.363636  YES
+26          3          1508.200000 2025-12-08 00:04:26   41530.000000   NO
+27          3          1532.200000 2025-12-08 00:04:27   40529.000000   NO
+28          3          1526.600000 2025-12-08 00:04:28   39528.000000   NO
+29          3          1552.200000 2025-12-08 00:04:29   38526.000000   NO
+30          3          1520.700000 2025-12-08 00:04:30   37525.000000   NO
+31          3          1529.600000 2025-12-08 00:04:31   36525.000000   NO
+32          3          1560.300000 2025-12-08 00:04:32   35523.000000   NO
+33          3          1514.700000 2025-12-08 00:04:33   34522.000000   NO
+34          3          1519.200000 2025-12-08 00:04:34   33521.000000   NO
+35          3          1515.700000 2025-12-08 00:04:35   32521.000000   NO
+36          3          1559.800000 2025-12-08 00:04:36   31520.000000   NO
+37          3          1601.000000 2025-12-08 00:04:37   79572.000000   NO
+38          3          1561.103636 2025-12-08 00:04:38   52541.363636  YES
+39          3          1608.600000 2025-12-08 00:04:39   78570.000000   NO
+40          3          1625.600000 2025-12-08 00:04:40   77569.000000   NO
+41          3          1600.900000 2025-12-08 00:04:41   76568.000000   NO
+42          3          1618.400000 2025-12-08 00:04:42   75567.000000   NO
+43          3          1608.900000 2025-12-08 00:04:43   74567.000000   NO
+44          3          1606.000000 2025-12-08 00:04:44   73565.000000   NO
+45          3          1615.100000 2025-12-08 00:04:45   72563.000000   NO
+46          3          1639.100000 2025-12-08 00:04:46   71562.000000   NO
+47          3          1630.300000 2025-12-08 00:04:47   70561.000000   NO
+48          3          1610.200000 2025-12-08 00:04:48   69559.000000   NO
+49          3          1602.800000 2025-12-08 00:04:49   68558.000000   NO
+50          3          1623.300000 2025-12-08 00:04:50   67557.000000   NO
+51          3          1597.900000 2025-12-08 00:04:51   66556.000000   NO
+52          3          1614.100000 2025-12-08 00:04:52   65556.000000   NO
+53          3          1613.100000 2025-12-08 00:04:53   64555.000000   NO
+54          3          1619.200000 2025-12-08 00:04:54   63553.000000   NO
+55          3          1598.600000 2025-12-08 00:04:55   62552.000000   NO
+56          3          1600.300000 2025-12-08 00:04:56   61550.000000   NO
+57          3          1618.900000 2025-12-08 00:04:57   60548.000000   NO
+58          3          1588.100000 2025-12-08 00:04:58   59547.000000   NO
+59          3          1606.000000 2025-12-08 00:04:59   58546.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1619.021484 2025-12-08 00:05:00
+1           3                     1623.722656 2025-12-08 00:05:01
+2           3                     1629.036377 2025-12-08 00:05:02
+3           3                     1634.861572 2025-12-08 00:05:03
+4           3                     1641.039062 2025-12-08 00:05:04
+5           3                     1647.446045 2025-12-08 00:05:05
+6           3                     1653.993286 2025-12-08 00:05:06
+7           3                     1660.617554 2025-12-08 00:05:07
+8           3                     1667.276611 2025-12-08 00:05:08
+9           3                     1673.942993 2025-12-08 00:05:09
+10          3                     1680.601074 2025-12-08 00:05:10
+11          3                     1687.243408 2025-12-08 00:05:11
+12          3                     1693.868408 2025-12-08 00:05:12
+13          3                     1700.479126 2025-12-08 00:05:13
+14          3                     1707.080444 2025-12-08 00:05:14
+15          3                     1713.680054 2025-12-08 00:05:15
+16          3                     1720.285400 2025-12-08 00:05:16
+17          3                     1726.905396 2025-12-08 00:05:17
+18          3                     1733.548340 2025-12-08 00:05:18
+19          3                     1740.221802 2025-12-08 00:05:19
+20          3                     1746.933594 2025-12-08 00:05:20
+21          3                     1753.691040 2025-12-08 00:05:21
+22          3                     1760.500732 2025-12-08 00:05:22
+23          3                     1767.368530 2025-12-08 00:05:23
+24          3                     1774.300171 2025-12-08 00:05:24
+25          3                     1781.300659 2025-12-08 00:05:25
+26          3                     1788.375000 2025-12-08 00:05:26
+27          3                     1795.527710 2025-12-08 00:05:27
+28          3                     1802.763062 2025-12-08 00:05:28
+29          3                     1810.085327 2025-12-08 00:05:29
+30          3                     1817.498657 2025-12-08 00:05:30
+31          3                     1825.006836 2025-12-08 00:05:31
+32          3                     1832.614136 2025-12-08 00:05:32
+33          3                     1840.324707 2025-12-08 00:05:33
+34          3                     1848.142090 2025-12-08 00:05:34
+35          3                     1856.071289 2025-12-08 00:05:35
+36          3                     1864.116089 2025-12-08 00:05:36
+37          3                     1872.281494 2025-12-08 00:05:37
+38          3                     1880.572021 2025-12-08 00:05:38
+39          3                     1888.992065 2025-12-08 00:05:39
+40          3                     1897.546875 2025-12-08 00:05:40
+41          3                     1906.241821 2025-12-08 00:05:41
+42          3                     1915.082031 2025-12-08 00:05:42
+43          3                     1924.073364 2025-12-08 00:05:43
+44          3                     1933.221313 2025-12-08 00:05:44
+45          3                     1942.531982 2025-12-08 00:05:45
+46          3                     1952.011353 2025-12-08 00:05:46
+47          3                     1961.666260 2025-12-08 00:05:47
+48          3                     1971.503052 2025-12-08 00:05:48
+49          3                     1981.528687 2025-12-08 00:05:49
+50          3                     1991.749878 2025-12-08 00:05:50
+51          3                     2002.174561 2025-12-08 00:05:51
+52          3                     2012.810059 2025-12-08 00:05:52
+53          3                     2023.663940 2025-12-08 00:05:53
+54          3                     2034.744629 2025-12-08 00:05:54
+55          3                     2046.060181 2025-12-08 00:05:55
+56          3                     2057.619141 2025-12-08 00:05:56
+57          3                     2069.430908 2025-12-08 00:05:57
+58          3                     2081.503418 2025-12-08 00:05:58
+59          3                     2093.847168 2025-12-08 00:05:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1616.200000 2025-12-08 00:05:00   64547.000000   NO
+1           3          1626.200000 2025-12-08 00:05:01   63546.000000   NO
+2           3          1589.000000 2025-12-08 00:05:02   62545.000000   NO
+3           3          1598.100000 2025-12-08 00:05:03   61544.000000   NO
+4           3          1627.200000 2025-12-08 00:05:04   60542.000000   NO
+5           3          1698.984906 2025-12-08 00:05:05   38518.075472  YES
+6           3          1628.900000 2025-12-08 00:05:06   59542.000000   NO
+7           3          1620.100000 2025-12-08 00:05:07   58540.000000   NO
+8           3          1698.984906 2025-12-08 00:05:08   38518.075472  YES
+9           3          1602.600000 2025-12-08 00:05:09   57539.000000   NO
+10          3          1635.800000 2025-12-08 00:05:10   56538.000000   NO
+11          3          1619.600000 2025-12-08 00:05:11   55537.000000   NO
+12          3          1594.400000 2025-12-08 00:05:12   54536.000000   NO
+13          3          1698.984906 2025-12-08 00:05:13   38518.075472  YES
+14          3          1617.400000 2025-12-08 00:05:14   53535.000000   NO
+15          3          1615.100000 2025-12-08 00:05:15   52533.000000   NO
+16          3          1623.500000 2025-12-08 00:05:16   51532.000000   NO
+17          3          1621.400000 2025-12-08 00:05:17   50530.000000   NO
+18          3          1622.200000 2025-12-08 00:05:18   49529.000000   NO
+19          3          1616.600000 2025-12-08 00:05:19   48528.000000   NO
+20          3          1698.984906 2025-12-08 00:05:20   38518.075472  YES
+21          3          1627.300000 2025-12-08 00:05:21   47527.000000   NO
+22          3          1621.000000 2025-12-08 00:05:22   46527.000000   NO
+23          3          1628.600000 2025-12-08 00:05:23   45526.000000   NO
+24          3          1617.000000 2025-12-08 00:05:24   44525.000000   NO
+25          3          1606.700000 2025-12-08 00:05:25   43524.000000   NO
+26          3          1674.300000 2025-12-08 00:05:26   42523.000000   NO
+27          3          1743.500000 2025-12-08 00:05:27   41522.000000   NO
+28          3          1761.600000 2025-12-08 00:05:28   40521.000000   NO
+29          3          1749.300000 2025-12-08 00:05:29   39520.000000   NO
+30          3          1757.500000 2025-12-08 00:05:30   38519.000000   NO
+31          3          1780.500000 2025-12-08 00:05:31   37518.000000   NO
+32          3          1774.400000 2025-12-08 00:05:32   36517.000000   NO
+33          3          1752.500000 2025-12-08 00:05:33   35516.000000   NO
+34          3          1769.700000 2025-12-08 00:05:34   34515.000000   NO
+35          3          1771.100000 2025-12-08 00:05:35   33514.000000   NO
+36          3          1753.000000 2025-12-08 00:05:36   32512.000000   NO
+37          3          1750.300000 2025-12-08 00:05:37   31511.000000   NO
+38          3          1698.984906 2025-12-08 00:05:38   38518.075472  YES
+39          3          1749.600000 2025-12-08 00:05:39   30510.000000   NO
+40          3          1757.500000 2025-12-08 00:05:40   29508.000000   NO
+41          3          1754.800000 2025-12-08 00:05:41   28507.000000   NO
+42          3          1766.100000 2025-12-08 00:05:42   27505.000000   NO
+43          3          1781.300000 2025-12-08 00:05:43   26504.000000   NO
+44          3          1741.800000 2025-12-08 00:05:44   25503.000000   NO
+45          3          1698.984906 2025-12-08 00:05:45   38518.075472  YES
+46          3          1767.600000 2025-12-08 00:05:46   24502.000000   NO
+47          3          1760.800000 2025-12-08 00:05:47   23501.000000   NO
+48          3          1744.300000 2025-12-08 00:05:48   22499.000000   NO
+49          3          1765.200000 2025-12-08 00:05:49   21498.000000   NO
+50          3          1772.500000 2025-12-08 00:05:50   20497.000000   NO
+51          3          1765.300000 2025-12-08 00:05:51   19496.000000   NO
+52          3          1749.600000 2025-12-08 00:05:52   18495.000000   NO
+53          3          1762.900000 2025-12-08 00:05:53   17494.000000   NO
+54          3          1759.300000 2025-12-08 00:05:54   16493.000000   NO
+55          3          1749.700000 2025-12-08 00:05:55   15493.000000   NO
+56          3          1761.100000 2025-12-08 00:05:56   14492.000000   NO
+57          3          1760.300000 2025-12-08 00:05:57   13491.000000   NO
+58          3          1698.984906 2025-12-08 00:05:58   38518.075472  YES
+59          3          1763.900000 2025-12-08 00:05:59   12490.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1763.026489 2025-12-08 00:06:00
+1           3                     1767.869141 2025-12-08 00:06:01
+2           3                     1773.705933 2025-12-08 00:06:02
+3           3                     1780.250977 2025-12-08 00:06:03
+4           3                     1787.299927 2025-12-08 00:06:04
+5           3                     1794.702026 2025-12-08 00:06:05
+6           3                     1802.347412 2025-12-08 00:06:06
+7           3                     1810.158813 2025-12-08 00:06:07
+8           3                     1818.083130 2025-12-08 00:06:08
+9           3                     1826.087769 2025-12-08 00:06:09
+10          3                     1834.152466 2025-12-08 00:06:10
+11          3                     1842.268799 2025-12-08 00:06:11
+12          3                     1850.435669 2025-12-08 00:06:12
+13          3                     1858.656250 2025-12-08 00:06:13
+14          3                     1866.938599 2025-12-08 00:06:14
+15          3                     1875.292480 2025-12-08 00:06:15
+16          3                     1883.728638 2025-12-08 00:06:16
+17          3                     1892.258667 2025-12-08 00:06:17
+18          3                     1900.894653 2025-12-08 00:06:18
+19          3                     1909.647827 2025-12-08 00:06:19
+20          3                     1918.529297 2025-12-08 00:06:20
+21          3                     1927.549927 2025-12-08 00:06:21
+22          3                     1936.719604 2025-12-08 00:06:22
+23          3                     1946.048218 2025-12-08 00:06:23
+24          3                     1955.544800 2025-12-08 00:06:24
+25          3                     1965.217896 2025-12-08 00:06:25
+26          3                     1975.076416 2025-12-08 00:06:26
+27          3                     1985.128174 2025-12-08 00:06:27
+28          3                     1995.381104 2025-12-08 00:06:28
+29          3                     2005.843140 2025-12-08 00:06:29
+30          3                     2016.522705 2025-12-08 00:06:30
+31          3                     2027.427002 2025-12-08 00:06:31
+32          3                     2038.564331 2025-12-08 00:06:32
+33          3                     2049.942871 2025-12-08 00:06:33
+34          3                     2061.571045 2025-12-08 00:06:34
+35          3                     2073.457031 2025-12-08 00:06:35
+36          3                     2085.610107 2025-12-08 00:06:36
+37          3                     2098.039307 2025-12-08 00:06:37
+38          3                     2110.753906 2025-12-08 00:06:38
+39          3                     2123.763184 2025-12-08 00:06:39
+40          3                     2137.077637 2025-12-08 00:06:40
+41          3                     2150.707275 2025-12-08 00:06:41
+42          3                     2164.662354 2025-12-08 00:06:42
+43          3                     2178.953613 2025-12-08 00:06:43
+44          3                     2193.592529 2025-12-08 00:06:44
+45          3                     2208.589600 2025-12-08 00:06:45
+46          3                     2223.956543 2025-12-08 00:06:46
+47          3                     2239.705566 2025-12-08 00:06:47
+48          3                     2255.847900 2025-12-08 00:06:48
+49          3                     2272.395264 2025-12-08 00:06:49
+50          3                     2289.360840 2025-12-08 00:06:50
+51          3                     2306.755371 2025-12-08 00:06:51
+52          3                     2324.592041 2025-12-08 00:06:52
+53          3                     2342.883301 2025-12-08 00:06:53
+54          3                     2361.640137 2025-12-08 00:06:54
+55          3                     2380.875977 2025-12-08 00:06:55
+56          3                     2400.602051 2025-12-08 00:06:56
+57          3                     2420.829834 2025-12-08 00:06:57
+58          3                     2441.571777 2025-12-08 00:06:58
+59          3                     2462.838135 2025-12-08 00:06:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1753.600000 2025-12-08 00:06:00   61694.000000   NO
+1           3          1745.600000 2025-12-08 00:06:01   60693.000000   NO
+2           3          1770.000000 2025-12-08 00:06:02   59693.000000   NO
+3           3          1756.300000 2025-12-08 00:06:03   58692.000000   NO
+4           3          1775.600000 2025-12-08 00:06:04   57691.000000   NO
+5           3          1759.300000 2025-12-08 00:06:05   56690.000000   NO
+6           3          1758.200000 2025-12-08 00:06:06   55689.000000   NO
+7           3          1779.500000 2025-12-08 00:06:07   54689.000000   NO
+8           3          1748.400000 2025-12-08 00:06:08   53688.000000   NO
+9           3          1759.900000 2025-12-08 00:06:09   52687.000000   NO
+10          3          1761.756604 2025-12-08 00:06:10   35668.981132  YES
+11          3          1757.800000 2025-12-08 00:06:11   51686.000000   NO
+12          3          1782.600000 2025-12-08 00:06:12   50686.000000   NO
+13          3          1767.700000 2025-12-08 00:06:13   49685.000000   NO
+14          3          1782.300000 2025-12-08 00:06:14   48684.000000   NO
+15          3          1748.700000 2025-12-08 00:06:15   47684.000000   NO
+16          3          1768.400000 2025-12-08 00:06:16   46683.000000   NO
+17          3          1748.700000 2025-12-08 00:06:17   45682.000000   NO
+18          3          1779.500000 2025-12-08 00:06:18   44681.000000   NO
+19          3          1761.756604 2025-12-08 00:06:19   35668.981132  YES
+20          3          1755.400000 2025-12-08 00:06:20   43681.000000   NO
+21          3          1761.756604 2025-12-08 00:06:21   35668.981132  YES
+22          3          1761.756604 2025-12-08 00:06:22   35668.981132  YES
+23          3          1765.800000 2025-12-08 00:06:23   42679.000000   NO
+24          3          1754.200000 2025-12-08 00:06:24   41673.000000   NO
+25          3          1763.000000 2025-12-08 00:06:25   40672.000000   NO
+26          3          1784.300000 2025-12-08 00:06:26   39671.000000   NO
+27          3          1775.100000 2025-12-08 00:06:27   38670.000000   NO
+28          3          1755.900000 2025-12-08 00:06:28   37669.000000   NO
+29          3          1773.500000 2025-12-08 00:06:29   36669.000000   NO
+30          3          1783.900000 2025-12-08 00:06:30   35668.000000   NO
+31          3          1748.000000 2025-12-08 00:06:31   34667.000000   NO
+32          3          1778.000000 2025-12-08 00:06:32   33666.000000   NO
+33          3          1750.300000 2025-12-08 00:06:33   32665.000000   NO
+34          3          1757.600000 2025-12-08 00:06:34   31664.000000   NO
+35          3          1757.500000 2025-12-08 00:06:35   30663.000000   NO
+36          3          1761.756604 2025-12-08 00:06:36   35668.981132  YES
+37          3          1753.000000 2025-12-08 00:06:37   29663.000000   NO
+38          3          1747.900000 2025-12-08 00:06:38   28661.000000   NO
+39          3          1750.800000 2025-12-08 00:06:39   27660.000000   NO
+40          3          1775.200000 2025-12-08 00:06:40   26659.000000   NO
+41          3          1760.700000 2025-12-08 00:06:41   25658.000000   NO
+42          3          1742.000000 2025-12-08 00:06:42   24657.000000   NO
+43          3          1753.000000 2025-12-08 00:06:43   23657.000000   NO
+44          3          1776.400000 2025-12-08 00:06:44   22655.000000   NO
+45          3          1764.500000 2025-12-08 00:06:45   21655.000000   NO
+46          3          1733.800000 2025-12-08 00:06:46   20654.000000   NO
+47          3          1737.700000 2025-12-08 00:06:47   19653.000000   NO
+48          3          1764.000000 2025-12-08 00:06:48   18652.000000   NO
+49          3          1755.700000 2025-12-08 00:06:49   17651.000000   NO
+50          3          1758.300000 2025-12-08 00:06:50   16650.000000   NO
+51          3          1773.800000 2025-12-08 00:06:51   15649.000000   NO
+52          3          1747.400000 2025-12-08 00:06:52   14648.000000   NO
+53          3          1766.700000 2025-12-08 00:06:53   13646.000000   NO
+54          3          1770.700000 2025-12-08 00:06:54   12645.000000   NO
+55          3          1761.756604 2025-12-08 00:06:55   35668.981132  YES
+56          3          1773.200000 2025-12-08 00:06:56   11644.000000   NO
+57          3          1761.756604 2025-12-08 00:06:57   35668.981132  YES
+58          3          1755.200000 2025-12-08 00:06:58   10643.000000   NO
+59          3          1768.500000 2025-12-08 00:06:59    9642.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1782.228271 2025-12-08 00:07:00
+1           3                     1787.989014 2025-12-08 00:07:01
+2           3                     1794.359741 2025-12-08 00:07:02
+3           3                     1801.266479 2025-12-08 00:07:03
+4           3                     1808.568237 2025-12-08 00:07:04
+5           3                     1816.155518 2025-12-08 00:07:05
+6           3                     1823.949219 2025-12-08 00:07:06
+7           3                     1831.894531 2025-12-08 00:07:07
+8           3                     1839.954346 2025-12-08 00:07:08
+9           3                     1848.106934 2025-12-08 00:07:09
+10          3                     1856.340088 2025-12-08 00:07:10
+11          3                     1864.649536 2025-12-08 00:07:11
+12          3                     1873.036499 2025-12-08 00:07:12
+13          3                     1881.506470 2025-12-08 00:07:13
+14          3                     1890.066406 2025-12-08 00:07:14
+15          3                     1898.726196 2025-12-08 00:07:15
+16          3                     1907.495239 2025-12-08 00:07:16
+17          3                     1916.384521 2025-12-08 00:07:17
+18          3                     1925.404419 2025-12-08 00:07:18
+19          3                     1934.565186 2025-12-08 00:07:19
+20          3                     1943.877075 2025-12-08 00:07:20
+21          3                     1953.349976 2025-12-08 00:07:21
+22          3                     1962.993164 2025-12-08 00:07:22
+23          3                     1972.816162 2025-12-08 00:07:23
+24          3                     1982.827026 2025-12-08 00:07:24
+25          3                     1993.035278 2025-12-08 00:07:25
+26          3                     2003.448853 2025-12-08 00:07:26
+27          3                     2014.076172 2025-12-08 00:07:27
+28          3                     2024.925659 2025-12-08 00:07:28
+29          3                     2036.005615 2025-12-08 00:07:29
+30          3                     2047.324341 2025-12-08 00:07:30
+31          3                     2058.890625 2025-12-08 00:07:31
+32          3                     2070.712891 2025-12-08 00:07:32
+33          3                     2082.800293 2025-12-08 00:07:33
+34          3                     2095.161865 2025-12-08 00:07:34
+35          3                     2107.806641 2025-12-08 00:07:35
+36          3                     2120.744385 2025-12-08 00:07:36
+37          3                     2133.985596 2025-12-08 00:07:37
+38          3                     2147.538818 2025-12-08 00:07:38
+39          3                     2161.416504 2025-12-08 00:07:39
+40          3                     2175.628174 2025-12-08 00:07:40
+41          3                     2190.184326 2025-12-08 00:07:41
+42          3                     2205.096924 2025-12-08 00:07:42
+43          3                     2220.376709 2025-12-08 00:07:43
+44          3                     2236.035645 2025-12-08 00:07:44
+45          3                     2252.085693 2025-12-08 00:07:45
+46          3                     2268.538086 2025-12-08 00:07:46
+47          3                     2285.406006 2025-12-08 00:07:47
+48          3                     2302.700195 2025-12-08 00:07:48
+49          3                     2320.433594 2025-12-08 00:07:49
+50          3                     2338.618652 2025-12-08 00:07:50
+51          3                     2357.267090 2025-12-08 00:07:51
+52          3                     2376.391113 2025-12-08 00:07:52
+53          3                     2396.002686 2025-12-08 00:07:53
+54          3                     2416.114258 2025-12-08 00:07:54
+55          3                     2436.736328 2025-12-08 00:07:55
+56          3                     2457.880615 2025-12-08 00:07:56
+57          3                     2479.557861 2025-12-08 00:07:57
+58          3                     2501.778809 2025-12-08 00:07:58
+59          3                     2524.552734 2025-12-08 00:07:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1781.500000 2025-12-08 00:07:00   58338.000000   NO
+1           3          1777.900000 2025-12-08 00:07:01   57337.000000   NO
+2           3          1781.000000 2025-12-08 00:07:02   56336.000000   NO
+3           3          1754.000000 2025-12-08 00:07:03   55335.000000   NO
+4           3          1751.100000 2025-12-08 00:07:04   54335.000000   NO
+5           3          1725.500000 2025-12-08 00:07:05   53334.000000   NO
+6           3          1766.000000 2025-12-08 00:07:06   52333.000000   NO
+7           3          1755.500000 2025-12-08 00:07:07   51331.000000   NO
+8           3          1760.184906 2025-12-08 00:07:08   32279.283019  YES
+9           3          1779.500000 2025-12-08 00:07:09   50330.000000   NO
+10          3          1729.500000 2025-12-08 00:07:10   49328.000000   NO
+11          3          1774.200000 2025-12-08 00:07:11   48302.000000   NO
+12          3          1756.700000 2025-12-08 00:07:12   47300.000000   NO
+13          3          1762.600000 2025-12-08 00:07:13   46299.000000   NO
+14          3          1744.200000 2025-12-08 00:07:14   45294.000000   NO
+15          3          1768.700000 2025-12-08 00:07:15   44292.000000   NO
+16          3          1760.400000 2025-12-08 00:07:16   43285.000000   NO
+17          3          1743.600000 2025-12-08 00:07:17   42285.000000   NO
+18          3          1768.400000 2025-12-08 00:07:18   41283.000000   NO
+19          3          1762.900000 2025-12-08 00:07:19   40282.000000   NO
+20          3          1752.100000 2025-12-08 00:07:20   39282.000000   NO
+21          3          1741.600000 2025-12-08 00:07:21   38280.000000   NO
+22          3          1760.184906 2025-12-08 00:07:22   32279.283019  YES
+23          3          1780.100000 2025-12-08 00:07:23   37276.000000   NO
+24          3          1750.500000 2025-12-08 00:07:24   36275.000000   NO
+25          3          1753.500000 2025-12-08 00:07:25   35274.000000   NO
+26          3          1760.184906 2025-12-08 00:07:26   32279.283019  YES
+27          3          1743.600000 2025-12-08 00:07:27   34273.000000   NO
+28          3          1777.500000 2025-12-08 00:07:28   33273.000000   NO
+29          3          1750.700000 2025-12-08 00:07:29   32271.000000   NO
+30          3          1760.184906 2025-12-08 00:07:30   32279.283019  YES
+31          3          1734.100000 2025-12-08 00:07:31   31269.000000   NO
+32          3          1774.000000 2025-12-08 00:07:32   30268.000000   NO
+33          3          1760.184906 2025-12-08 00:07:33   32279.283019  YES
+34          3          1782.900000 2025-12-08 00:07:34   29267.000000   NO
+35          3          1738.200000 2025-12-08 00:07:35   28266.000000   NO
+36          3          1787.100000 2025-12-08 00:07:36   27264.000000   NO
+37          3          1760.184906 2025-12-08 00:07:37   32279.283019  YES
+38          3          1752.700000 2025-12-08 00:07:38   26263.000000   NO
+39          3          1751.700000 2025-12-08 00:07:39   25262.000000   NO
+40          3          1760.184906 2025-12-08 00:07:40   32279.283019  YES
+41          3          1768.800000 2025-12-08 00:07:41   24261.000000   NO
+42          3          1771.200000 2025-12-08 00:07:42   23260.000000   NO
+43          3          1755.000000 2025-12-08 00:07:43   22258.000000   NO
+44          3          1772.800000 2025-12-08 00:07:44   21257.000000   NO
+45          3          1751.500000 2025-12-08 00:07:45   20257.000000   NO
+46          3          1774.200000 2025-12-08 00:07:46   16253.000000   NO
+47          3          1781.400000 2025-12-08 00:07:47   15252.000000   NO
+48          3          1748.700000 2025-12-08 00:07:48   14251.000000   NO
+49          3          1764.800000 2025-12-08 00:07:49   13250.000000   NO
+50          3          1750.400000 2025-12-08 00:07:50   12248.000000   NO
+51          3          1748.700000 2025-12-08 00:07:51   11247.000000   NO
+52          3          1757.200000 2025-12-08 00:07:52   10246.000000   NO
+53          3          1766.100000 2025-12-08 00:07:53    9245.000000   NO
+54          3          1754.900000 2025-12-08 00:07:54    8244.000000   NO
+55          3          1759.800000 2025-12-08 00:07:55    7244.000000   NO
+56          3          1749.200000 2025-12-08 00:07:56    6242.000000   NO
+57          3          1772.200000 2025-12-08 00:07:57   19256.000000   NO
+58          3          1780.800000 2025-12-08 00:07:58   18255.000000   NO
+59          3          1748.600000 2025-12-08 00:07:59   17254.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1780.143677 2025-12-08 00:08:00
+1           3                     1786.278198 2025-12-08 00:08:01
+2           3                     1792.777710 2025-12-08 00:08:02
+3           3                     1799.770996 2025-12-08 00:08:03
+4           3                     1807.134644 2025-12-08 00:08:04
+5           3                     1814.763550 2025-12-08 00:08:05
+6           3                     1822.582764 2025-12-08 00:08:06
+7           3                     1830.539307 2025-12-08 00:08:07
+8           3                     1838.599731 2025-12-08 00:08:08
+9           3                     1846.743774 2025-12-08 00:08:09
+10          3                     1854.961060 2025-12-08 00:08:10
+11          3                     1863.249023 2025-12-08 00:08:11
+12          3                     1871.610718 2025-12-08 00:08:12
+13          3                     1880.051514 2025-12-08 00:08:13
+14          3                     1888.580444 2025-12-08 00:08:14
+15          3                     1897.207031 2025-12-08 00:08:15
+16          3                     1905.942017 2025-12-08 00:08:16
+17          3                     1914.796143 2025-12-08 00:08:17
+18          3                     1923.780151 2025-12-08 00:08:18
+19          3                     1932.904907 2025-12-08 00:08:19
+20          3                     1942.180298 2025-12-08 00:08:20
+21          3                     1951.616211 2025-12-08 00:08:21
+22          3                     1961.222168 2025-12-08 00:08:22
+23          3                     1971.007080 2025-12-08 00:08:23
+24          3                     1980.979736 2025-12-08 00:08:24
+25          3                     1991.148682 2025-12-08 00:08:25
+26          3                     2001.522217 2025-12-08 00:08:26
+27          3                     2012.108887 2025-12-08 00:08:27
+28          3                     2022.916260 2025-12-08 00:08:28
+29          3                     2033.953247 2025-12-08 00:08:29
+30          3                     2045.227417 2025-12-08 00:08:30
+31          3                     2056.748047 2025-12-08 00:08:31
+32          3                     2068.523193 2025-12-08 00:08:32
+33          3                     2080.561768 2025-12-08 00:08:33
+34          3                     2092.873047 2025-12-08 00:08:34
+35          3                     2105.465820 2025-12-08 00:08:35
+36          3                     2118.349854 2025-12-08 00:08:36
+37          3                     2131.535156 2025-12-08 00:08:37
+38          3                     2145.031250 2025-12-08 00:08:38
+39          3                     2158.848877 2025-12-08 00:08:39
+40          3                     2172.998779 2025-12-08 00:08:40
+41          3                     2187.491455 2025-12-08 00:08:41
+42          3                     2202.337891 2025-12-08 00:08:42
+43          3                     2217.550293 2025-12-08 00:08:43
+44          3                     2233.139648 2025-12-08 00:08:44
+45          3                     2249.117188 2025-12-08 00:08:45
+46          3                     2265.495117 2025-12-08 00:08:46
+47          3                     2282.285889 2025-12-08 00:08:47
+48          3                     2299.500977 2025-12-08 00:08:48
+49          3                     2317.153320 2025-12-08 00:08:49
+50          3                     2335.255127 2025-12-08 00:08:50
+51          3                     2353.817383 2025-12-08 00:08:51
+52          3                     2372.853760 2025-12-08 00:08:52
+53          3                     2392.375244 2025-12-08 00:08:53
+54          3                     2412.394043 2025-12-08 00:08:54
+55          3                     2432.921631 2025-12-08 00:08:55
+56          3                     2453.969482 2025-12-08 00:08:56
+57          3                     2475.548584 2025-12-08 00:08:57
+58          3                     2497.668701 2025-12-08 00:08:58
+59          3                     2520.341064 2025-12-08 00:08:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1764.789583 2025-12-08 00:08:00   31760.583333  YES
+1           3          1750.600000 2025-12-08 00:08:01   55286.000000   NO
+2           3          1786.900000 2025-12-08 00:08:02   54285.000000   NO
+3           3          1768.100000 2025-12-08 00:08:03   53283.000000   NO
+4           3          1764.789583 2025-12-08 00:08:04   31760.583333  YES
+5           3          1755.400000 2025-12-08 00:08:05   52283.000000   NO
+6           3          1755.100000 2025-12-08 00:08:06   51282.000000   NO
+7           3          1776.400000 2025-12-08 00:08:07   50281.000000   NO
+8           3          1769.000000 2025-12-08 00:08:08   49279.000000   NO
+9           3          1769.400000 2025-12-08 00:08:09   48278.000000   NO
+10          3          1764.789583 2025-12-08 00:08:10   31760.583333  YES
+11          3          1764.789583 2025-12-08 00:08:11   31760.583333  YES
+12          3          1778.000000 2025-12-08 00:08:12   47277.000000   NO
+13          3          1776.500000 2025-12-08 00:08:13   46276.000000   NO
+14          3          1760.900000 2025-12-08 00:08:14   45275.000000   NO
+15          3          1759.000000 2025-12-08 00:08:15   44275.000000   NO
+16          3          1768.000000 2025-12-08 00:08:16   43274.000000   NO
+17          3          1749.700000 2025-12-08 00:08:17   42273.000000   NO
+18          3          1757.400000 2025-12-08 00:08:18   41273.000000   NO
+19          3          1764.789583 2025-12-08 00:08:19   31760.583333  YES
+20          3          1763.100000 2025-12-08 00:08:20   40272.000000   NO
+21          3          1756.900000 2025-12-08 00:08:21   39270.000000   NO
+22          3          1764.789583 2025-12-08 00:08:22   31760.583333  YES
+23          3          1750.600000 2025-12-08 00:08:23   38269.000000   NO
+24          3          1778.100000 2025-12-08 00:08:24   37267.000000   NO
+25          3          1764.789583 2025-12-08 00:08:25   31760.583333  YES
+26          3          1771.000000 2025-12-08 00:08:26   36265.000000   NO
+27          3          1774.800000 2025-12-08 00:08:27   35265.000000   NO
+28          3          1770.200000 2025-12-08 00:08:28   34264.000000   NO
+29          3          1764.900000 2025-12-08 00:08:29   33262.000000   NO
+30          3          1770.900000 2025-12-08 00:08:30   32261.000000   NO
+31          3          1762.700000 2025-12-08 00:08:31   31259.000000   NO
+32          3          1748.100000 2025-12-08 00:08:32   30258.000000   NO
+33          3          1766.000000 2025-12-08 00:08:33   29257.000000   NO
+34          3          1774.300000 2025-12-08 00:08:34   28255.000000   NO
+35          3          1752.000000 2025-12-08 00:08:35   27254.000000   NO
+36          3          1764.789583 2025-12-08 00:08:36   31760.583333  YES
+37          3          1749.000000 2025-12-08 00:08:37   26253.000000   NO
+38          3          1771.800000 2025-12-08 00:08:38   25252.000000   NO
+39          3          1771.500000 2025-12-08 00:08:39   24252.000000   NO
+40          3          1757.600000 2025-12-08 00:08:40   23251.000000   NO
+41          3          1766.400000 2025-12-08 00:08:41   22250.000000   NO
+42          3          1764.789583 2025-12-08 00:08:42   31760.583333  YES
+43          3          1772.900000 2025-12-08 00:08:43   21249.000000   NO
+44          3          1751.800000 2025-12-08 00:08:44   20248.000000   NO
+45          3          1757.900000 2025-12-08 00:08:45   19247.000000   NO
+46          3          1769.300000 2025-12-08 00:08:46   18246.000000   NO
+47          3          1766.700000 2025-12-08 00:08:47   17245.000000   NO
+48          3          1771.200000 2025-12-08 00:08:48   16244.000000   NO
+49          3          1763.200000 2025-12-08 00:08:49   15243.000000   NO
+50          3          1764.789583 2025-12-08 00:08:50   31760.583333  YES
+51          3          1764.789583 2025-12-08 00:08:51   31760.583333  YES
+52          3          1765.900000 2025-12-08 00:08:52   14242.000000   NO
+53          3          1772.900000 2025-12-08 00:08:53   13241.000000   NO
+54          3          1764.789583 2025-12-08 00:08:54   31760.583333  YES
+55          3          1779.000000 2025-12-08 00:08:55   12240.000000   NO
+56          3          1753.100000 2025-12-08 00:08:56   11239.000000   NO
+57          3          1767.400000 2025-12-08 00:08:57   10237.000000   NO
+58          3          1752.300000 2025-12-08 00:08:58    9236.000000   NO
+59          3          1766.000000 2025-12-08 00:08:59    8235.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1780.192627 2025-12-08 00:09:00
+1           3                     1785.728638 2025-12-08 00:09:01
+2           3                     1791.969727 2025-12-08 00:09:02
+3           3                     1798.820190 2025-12-08 00:09:03
+4           3                     1806.114990 2025-12-08 00:09:04
+5           3                     1813.725464 2025-12-08 00:09:05
+6           3                     1821.559204 2025-12-08 00:09:06
+7           3                     1829.550903 2025-12-08 00:09:07
+8           3                     1837.657593 2025-12-08 00:09:08
+9           3                     1845.851929 2025-12-08 00:09:09
+10          3                     1854.119385 2025-12-08 00:09:10
+11          3                     1862.454224 2025-12-08 00:09:11
+12          3                     1870.856934 2025-12-08 00:09:12
+13          3                     1879.332764 2025-12-08 00:09:13
+14          3                     1887.889282 2025-12-08 00:09:14
+15          3                     1896.537109 2025-12-08 00:09:15
+16          3                     1905.286377 2025-12-08 00:09:16
+17          3                     1914.149170 2025-12-08 00:09:17
+18          3                     1923.136475 2025-12-08 00:09:18
+19          3                     1932.259644 2025-12-08 00:09:19
+20          3                     1941.529541 2025-12-08 00:09:20
+21          3                     1950.956543 2025-12-08 00:09:21
+22          3                     1960.550903 2025-12-08 00:09:22
+23          3                     1970.322021 2025-12-08 00:09:23
+24          3                     1980.279053 2025-12-08 00:09:24
+25          3                     1990.431030 2025-12-08 00:09:25
+26          3                     2000.786499 2025-12-08 00:09:26
+27          3                     2011.354126 2025-12-08 00:09:27
+28          3                     2022.142090 2025-12-08 00:09:28
+29          3                     2033.158813 2025-12-08 00:09:29
+30          3                     2044.412598 2025-12-08 00:09:30
+31          3                     2055.912354 2025-12-08 00:09:31
+32          3                     2067.666260 2025-12-08 00:09:32
+33          3                     2079.682861 2025-12-08 00:09:33
+34          3                     2091.971924 2025-12-08 00:09:34
+35          3                     2104.542236 2025-12-08 00:09:35
+36          3                     2117.403564 2025-12-08 00:09:36
+37          3                     2130.565186 2025-12-08 00:09:37
+38          3                     2144.037354 2025-12-08 00:09:38
+39          3                     2157.830811 2025-12-08 00:09:39
+40          3                     2171.955322 2025-12-08 00:09:40
+41          3                     2186.422119 2025-12-08 00:09:41
+42          3                     2201.242432 2025-12-08 00:09:42
+43          3                     2216.427002 2025-12-08 00:09:43
+44          3                     2231.988037 2025-12-08 00:09:44
+45          3                     2247.937012 2025-12-08 00:09:45
+46          3                     2264.285400 2025-12-08 00:09:46
+47          3                     2281.045654 2025-12-08 00:09:47
+48          3                     2298.229492 2025-12-08 00:09:48
+49          3                     2315.849365 2025-12-08 00:09:49
+50          3                     2333.917725 2025-12-08 00:09:50
+51          3                     2352.446289 2025-12-08 00:09:51
+52          3                     2371.447754 2025-12-08 00:09:52
+53          3                     2390.933594 2025-12-08 00:09:53
+54          3                     2410.915771 2025-12-08 00:09:54
+55          3                     2431.406250 2025-12-08 00:09:55
+56          3                     2452.415771 2025-12-08 00:09:56
+57          3                     2473.955322 2025-12-08 00:09:57
+58          3                     2496.036133 2025-12-08 00:09:58
+59          3                     2518.667480 2025-12-08 00:09:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+Triggering retrain for window beetween 00:00:00 and 00:09:59
+lasttimestamp is  2025-12-08 00:09:59
+retrain.py completed successfully:
+Database connection established
+Retraining model for device device3 with data from table device3_actualvalues between timestamps 2025-12-08-00-00-00 and 2025-12-08-00-09-59...
+Epoch 1/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m4s[0m 697ms/step - loss: 0.5667
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 7ms/step - loss: 0.4646  
+Epoch 2/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.2452
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.1533 
+Epoch 3/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 23ms/step - loss: 0.0389
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0195 
+Epoch 4/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0437
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0308 
+Epoch 5/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0139
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0116 
+Epoch 6/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0128
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0134 
+Epoch 7/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0119
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0102 
+Epoch 8/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0150
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0101 
+Epoch 9/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0159
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0115 
+Epoch 10/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 23ms/step - loss: 0.0073
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0080 
+Epoch 11/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0086
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0109 
+Epoch 12/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 23ms/step - loss: 0.0101
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0091 
+Epoch 13/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0067
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0083 
+Epoch 14/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0062
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0084 
+Epoch 15/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0107
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0084 
+Epoch 16/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0086
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0091 
+Epoch 17/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0073
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0098 
+Epoch 18/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0049
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0089 
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0092
+Epoch 19/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 28ms/step - loss: 0.0072
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0089 
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0085
+Epoch 20/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0127
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0077 
+Epoch 21/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0125
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0093 
+Epoch 22/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0092
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0080 
+Epoch 23/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0068
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0082 
+Epoch 24/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0166
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0086 
+Epoch 25/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 23ms/step - loss: 0.0084
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0076 
+Epoch 26/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0099
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0086 
+Epoch 27/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0065
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0083 
+Epoch 28/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0065
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0081 
+Epoch 29/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0081
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0083 
+Epoch 30/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0109
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0080 
+Epoch 31/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0065
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0072 
+Epoch 32/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0067
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0090 
+Epoch 33/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0066
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0079 
+Epoch 34/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0122
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0091 
+Epoch 35/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0065
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0076 
+Epoch 36/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0116
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0081 
+Epoch 37/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0096
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0089 
+Epoch 38/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0100
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0080 
+Epoch 39/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0077
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0076 
+Epoch 40/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0072
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0067 
+Epoch 41/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0087
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0085 
+Epoch 42/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0084
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0081 
+Epoch 43/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 15ms/step - loss: 0.0122
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0071 
+Epoch 44/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 35ms/step - loss: 0.0108
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0072 
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0064
+Epoch 45/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0054
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0075 
+Epoch 46/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0046
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0074 
+Epoch 47/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0064
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0077 
+Epoch 48/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0143
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0076 
+Epoch 49/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0077
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0066 
+Epoch 50/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 15ms/step - loss: 0.0071
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0069 
+Epoch 51/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0101
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0065 
+Epoch 52/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0053
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0060 
+Epoch 53/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0075
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0070 
+Epoch 54/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0031
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0078 
+Epoch 55/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0052
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0058 
+Epoch 56/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0049
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 6ms/step - loss: 0.0066 
+Epoch 57/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0099
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0063 
+Epoch 58/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 15ms/step - loss: 0.0039
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0068 
+Epoch 59/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0079
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0073 
+Epoch 60/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0056
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0082 
+Epoch 61/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0053
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0070 
+Epoch 62/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0047
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0064 
+Epoch 63/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0080
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 6ms/step - loss: 0.0072 
+Epoch 64/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0041
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0077 
+Epoch 65/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0064
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0064 
+Epoch 66/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0087
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0072 
+Epoch 67/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0079
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0070 
+Epoch 68/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0072
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0075 
+Epoch 69/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0077
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0069 
+Epoch 70/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0044
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0060 
+Epoch 71/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0101
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0069 
+Epoch 72/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0045
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0064 
+Epoch 73/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0071
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0071 
+Epoch 74/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0076
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0070 
+Epoch 75/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0071
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0067 
+Epoch 76/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0034
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0067 
+Epoch 77/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0078
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0080 
+Epoch 78/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0069
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0064 
+Epoch 79/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0070
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0068 
+Epoch 80/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0090
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0070 
+Epoch 81/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0040
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0063 
+Epoch 82/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0046
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0069 
+Epoch 83/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 24ms/step - loss: 0.0081
+[1m7/8[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 9ms/step - loss: 0.0071 
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 10ms/step - loss: 0.0064
+Epoch 84/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0030
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0063 
+Epoch 85/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0044
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0061 
+Epoch 86/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0100
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0065 
+Epoch 87/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 24ms/step - loss: 0.0060
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0076 
+Epoch 88/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0065
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0056 
+Epoch 89/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0096
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0068 
+Epoch 90/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0062
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0059 
+Epoch 91/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0087
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0061 
+Epoch 92/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0095
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0064 
+Epoch 93/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0045
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0063 
+Epoch 94/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0080
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0067 
+Epoch 95/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0050
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0060 
+Epoch 96/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0048
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0072 
+Epoch 97/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0073
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0060 
+Epoch 98/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0054
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0060 
+Epoch 99/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0046
+[1m5/8[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m0s[0m 13ms/step - loss: 0.0057
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 12ms/step - loss: 0.0058
+Epoch 100/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0037
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0066 
+Epoch 101/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0055
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0062 
+Epoch 102/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0035
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0055 
+Epoch 103/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0038
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0061 
+Epoch 104/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0071
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0056 
+Epoch 105/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0061
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0063 
+Epoch 106/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 23ms/step - loss: 0.0026
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0063 
+Epoch 107/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0036
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0060 
+Epoch 108/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0039
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0057 
+Epoch 109/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0058
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0055 
+Epoch 110/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0090
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0052 
+Epoch 111/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0054
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0063 
+Epoch 112/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0039
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0057 
+Epoch 113/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0063
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0058 
+Epoch 114/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0053
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0056 
+Epoch 115/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0077
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0061 
+Epoch 116/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0049
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0061 
+Epoch 117/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0071
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0056 
+Epoch 118/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0057
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0054 
+Epoch 119/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0054
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0058 
+Epoch 120/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0067
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 10ms/step - loss: 0.0056
+Epoch 121/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 49ms/step - loss: 0.0048
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0058 
+Epoch 122/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0075
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0051 
+Epoch 123/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0059
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0053 
+Epoch 124/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0029
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0052 
+Epoch 125/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0029
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0049 
+Epoch 126/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 28ms/step - loss: 0.0069
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0052 
+Epoch 127/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0033
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0053 
+Epoch 128/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0082
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0057 
+Epoch 129/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0072
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0050 
+Epoch 130/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0064
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0053 
+Epoch 131/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0035
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0056 
+Epoch 132/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0037
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0056 
+Epoch 133/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0081
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0053 
+Epoch 134/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0064
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0055 
+Epoch 135/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0045
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0051 
+Epoch 136/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 26ms/step - loss: 0.0042
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0053 
+Epoch 137/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0037
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0049 
+Epoch 138/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0051
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0052 
+Epoch 139/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0056
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0053 
+Epoch 140/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0084
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0056 
+Epoch 141/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0054
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0054 
+Epoch 142/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0084
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0059 
+Epoch 143/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0039
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0054 
+Epoch 144/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0055
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0052 
+Epoch 145/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0048
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0061 
+Epoch 146/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0044
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0059 
+Epoch 147/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0055
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0059 
+Epoch 148/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0068
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0056 
+Epoch 149/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0030
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0051 
+Epoch 150/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0049
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0049 
+Epoch 151/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0051
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0055 
+Epoch 152/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0065
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0054 
+Epoch 153/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0081
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0054 
+Epoch 154/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0060
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0050 
+Epoch 155/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0043
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0054 
+Epoch 156/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0060
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0054 
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0051
+Epoch 157/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0030
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0052 
+Epoch 158/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0045
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0051 
+Epoch 159/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 23ms/step - loss: 0.0043
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0057 
+Epoch 160/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0081
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 10ms/step - loss: 0.0064
+Epoch 161/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 26ms/step - loss: 0.0075
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0053 
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step - loss: 0.0048
+Epoch 162/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0035
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0050 
+Epoch 163/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0055
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0047 
+Epoch 164/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0045
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0052 
+Epoch 165/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0039
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0051 
+Epoch 166/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0081
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0053 
+Epoch 167/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0034
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0050 
+Epoch 168/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0059
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0054 
+Epoch 169/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0050
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0048 
+Epoch 170/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 22ms/step - loss: 0.0081
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0048 
+Epoch 171/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0038
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0057 
+Epoch 172/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0054
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0050 
+Epoch 173/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0074
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0050 
+Epoch 174/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0025
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0043 
+Epoch 175/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 15ms/step - loss: 0.0082
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0048 
+Epoch 176/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0064
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0052 
+Epoch 177/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0059
+[1m7/8[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 10ms/step - loss: 0.0053
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 11ms/step - loss: 0.0046
+Epoch 178/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0038
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0045 
+Epoch 179/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - loss: 0.0036
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0045 
+Epoch 180/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0029
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0049 
+Epoch 181/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0040
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0053 
+Epoch 182/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0041
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0047 
+Epoch 183/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0080
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0049 
+Epoch 184/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0061
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0043 
+Epoch 185/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0037
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0051 
+Epoch 186/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0039
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0047 
+Epoch 187/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0037
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0048 
+Epoch 188/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0043
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0053 
+Epoch 189/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0052
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0052 
+Epoch 190/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0041
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0053 
+Epoch 191/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - loss: 0.0063
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0049 
+Epoch 192/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0077
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0054 
+Epoch 193/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0095
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0054 
+Epoch 194/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0094
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0049 
+Epoch 195/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 21ms/step - loss: 0.0022
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0047 
+Epoch 196/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0035
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0045 
+Epoch 197/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0022
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0043 
+Epoch 198/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 20ms/step - loss: 0.0039
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0049 
+Epoch 199/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - loss: 0.0061
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step - loss: 0.0052 
+Epoch 200/200
+
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 17ms/step - loss: 0.0042
+[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7ms/step - loss: 0.0047 
+Using bucket name: missingtimestamp
+Bucket missingtimestamp created.
+Uploading device3.keras to bucket missingtimestamp...
+device3.keras uploaded to bucket missingtimestamp.
+Uploading scaler to bucket missingtimestamp...
+scaler.save uploaded to bucket missingtimestamp.
+
+Model path is:  2025-12-08-00-00-00-2025-12-08-00-09-59-model
+Triggering forecasting with retrained model
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: True
+
+Forecasting for retrained model using device3/2025-12-08-00-00-00-2025-12-08-00-09-59-model/device3.keras and device3/2025-12-08-00-00-00-2025-12-08-00-09-59-model/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1765.700000 2025-12-08 00:09:00   18218.000000   NO
+1           3          1761.900000 2025-12-08 00:09:01   17216.000000   NO
+2           3          1783.800000 2025-12-08 00:09:02   16215.000000   NO
+3           3          1790.300000 2025-12-08 00:09:03   15213.000000   NO
+4           3          1782.400000 2025-12-08 00:09:04   14212.000000   NO
+5           3          1761.000000 2025-12-08 00:09:05   13211.000000   NO
+6           3          1752.600000 2025-12-08 00:09:06   12210.000000   NO
+7           3          1762.800000 2025-12-08 00:09:07   11209.000000   NO
+8           3          1773.900000 2025-12-08 00:09:08   10208.000000   NO
+9           3          1752.300000 2025-12-08 00:09:09    9207.000000   NO
+10          3          1765.300000 2025-12-08 00:09:10    8206.000000   NO
+11          3          1773.366038 2025-12-08 00:09:11   31229.830189  YES
+12          3          1773.366038 2025-12-08 00:09:12   31229.830189  YES
+13          3          1784.400000 2025-12-08 00:09:13    7205.000000   NO
+14          3          1762.200000 2025-12-08 00:09:14    6204.000000   NO
+15          3          1772.700000 2025-12-08 00:09:15    5202.000000   NO
+16          3          1773.366038 2025-12-08 00:09:16   31229.830189  YES
+17          3          1783.100000 2025-12-08 00:09:17   53253.000000   NO
+18          3          1758.800000 2025-12-08 00:09:18   52252.000000   NO
+19          3          1793.700000 2025-12-08 00:09:19   51250.000000   NO
+20          3          1773.366038 2025-12-08 00:09:20   31229.830189  YES
+21          3          1755.300000 2025-12-08 00:09:21   50249.000000   NO
+22          3          1774.200000 2025-12-08 00:09:22   49247.000000   NO
+23          3          1804.000000 2025-12-08 00:09:23   48247.000000   NO
+24          3          1755.600000 2025-12-08 00:09:24   47246.000000   NO
+25          3          1753.000000 2025-12-08 00:09:25   46245.000000   NO
+26          3          1794.700000 2025-12-08 00:09:26   45244.000000   NO
+27          3          1780.100000 2025-12-08 00:09:27   44243.000000   NO
+28          3          1774.400000 2025-12-08 00:09:28   43243.000000   NO
+29          3          1750.300000 2025-12-08 00:09:29   42241.000000   NO
+30          3          1771.300000 2025-12-08 00:09:30   41240.000000   NO
+31          3          1802.900000 2025-12-08 00:09:31   40238.000000   NO
+32          3          1765.600000 2025-12-08 00:09:32   39237.000000   NO
+33          3          1765.400000 2025-12-08 00:09:33   38236.000000   NO
+34          3          1747.900000 2025-12-08 00:09:34   37235.000000   NO
+35          3          1766.700000 2025-12-08 00:09:35   36234.000000   NO
+36          3          1750.000000 2025-12-08 00:09:36   35233.000000   NO
+37          3          1804.200000 2025-12-08 00:09:37   34233.000000   NO
+38          3          1792.100000 2025-12-08 00:09:38   33232.000000   NO
+39          3          1761.400000 2025-12-08 00:09:39   32231.000000   NO
+40          3          1776.500000 2025-12-08 00:09:40   31230.000000   NO
+41          3          1772.700000 2025-12-08 00:09:41   30229.000000   NO
+42          3          1764.100000 2025-12-08 00:09:42   29228.000000   NO
+43          3          1754.200000 2025-12-08 00:09:43   28227.000000   NO
+44          3          1764.200000 2025-12-08 00:09:44   27226.000000   NO
+45          3          1782.800000 2025-12-08 00:09:45   26225.000000   NO
+46          3          1791.200000 2025-12-08 00:09:46   25224.000000   NO
+47          3          1784.600000 2025-12-08 00:09:47   24224.000000   NO
+48          3          1782.000000 2025-12-08 00:09:48   23222.000000   NO
+49          3          1773.366038 2025-12-08 00:09:49   31229.830189  YES
+50          3          1804.800000 2025-12-08 00:09:50   22222.000000   NO
+51          3          1788.200000 2025-12-08 00:09:51   21220.000000   NO
+52          3          1773.366038 2025-12-08 00:09:52   31229.830189  YES
+53          3          1769.400000 2025-12-08 00:09:53   20220.000000   NO
+54          3          1766.300000 2025-12-08 00:09:54   19219.000000   NO
+55          3          1783.900000 2025-12-08 00:09:55   57257.000000   NO
+56          3          1773.366038 2025-12-08 00:09:56   31229.830189  YES
+57          3          1785.400000 2025-12-08 00:09:57   56255.000000   NO
+58          3          1776.600000 2025-12-08 00:09:58   55254.000000   NO
+59          3          1765.500000 2025-12-08 00:09:59   54254.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1887.496094 2025-12-08 00:10:00
+1           3                     1903.569458 2025-12-08 00:10:01
+2           3                     1917.946045 2025-12-08 00:10:02
+3           3                     1933.642944 2025-12-08 00:10:03
+4           3                     1950.457886 2025-12-08 00:10:04
+5           3                     1968.144043 2025-12-08 00:10:05
+6           3                     1986.509399 2025-12-08 00:10:06
+7           3                     2005.417114 2025-12-08 00:10:07
+8           3                     2024.770264 2025-12-08 00:10:08
+9           3                     2044.497681 2025-12-08 00:10:09
+10          3                     2064.547119 2025-12-08 00:10:10
+11          3                     2084.867188 2025-12-08 00:10:11
+12          3                     2105.413086 2025-12-08 00:10:12
+13          3                     2126.143311 2025-12-08 00:10:13
+14          3                     2147.012695 2025-12-08 00:10:14
+15          3                     2167.978760 2025-12-08 00:10:15
+16          3                     2188.992432 2025-12-08 00:10:16
+17          3                     2210.005127 2025-12-08 00:10:17
+18          3                     2230.967529 2025-12-08 00:10:18
+19          3                     2251.831787 2025-12-08 00:10:19
+20          3                     2272.541992 2025-12-08 00:10:20
+21          3                     2293.053223 2025-12-08 00:10:21
+22          3                     2313.316162 2025-12-08 00:10:22
+23          3                     2333.281494 2025-12-08 00:10:23
+24          3                     2352.904297 2025-12-08 00:10:24
+25          3                     2372.149170 2025-12-08 00:10:25
+26          3                     2390.975342 2025-12-08 00:10:26
+27          3                     2409.347412 2025-12-08 00:10:27
+28          3                     2427.239990 2025-12-08 00:10:28
+29          3                     2444.627197 2025-12-08 00:10:29
+30          3                     2461.490234 2025-12-08 00:10:30
+31          3                     2477.810791 2025-12-08 00:10:31
+32          3                     2493.577148 2025-12-08 00:10:32
+33          3                     2508.784912 2025-12-08 00:10:33
+34          3                     2523.428223 2025-12-08 00:10:34
+35          3                     2537.507324 2025-12-08 00:10:35
+36          3                     2551.023438 2025-12-08 00:10:36
+37          3                     2563.983154 2025-12-08 00:10:37
+38          3                     2576.392090 2025-12-08 00:10:38
+39          3                     2588.262695 2025-12-08 00:10:39
+40          3                     2599.606201 2025-12-08 00:10:40
+41          3                     2610.435059 2025-12-08 00:10:41
+42          3                     2620.763428 2025-12-08 00:10:42
+43          3                     2630.606689 2025-12-08 00:10:43
+44          3                     2639.980957 2025-12-08 00:10:44
+45          3                     2648.901367 2025-12-08 00:10:45
+46          3                     2657.384277 2025-12-08 00:10:46
+47          3                     2665.447510 2025-12-08 00:10:47
+48          3                     2673.107910 2025-12-08 00:10:48
+49          3                     2680.381836 2025-12-08 00:10:49
+50          3                     2687.285400 2025-12-08 00:10:50
+51          3                     2693.834961 2025-12-08 00:10:51
+52          3                     2700.046875 2025-12-08 00:10:52
+53          3                     2705.935791 2025-12-08 00:10:53
+54          3                     2711.517578 2025-12-08 00:10:54
+55          3                     2716.806152 2025-12-08 00:10:55
+56          3                     2721.814941 2025-12-08 00:10:56
+57          3                     2726.558838 2025-12-08 00:10:57
+58          3                     2731.049805 2025-12-08 00:10:58
+59          3                     2735.301025 2025-12-08 00:10:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...

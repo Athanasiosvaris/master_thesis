@@ -1,0 +1,125 @@
+====================================================================================================
+HOST-RESIDENT PROCESS COST PER DEVICE  (architecture 2, no-Flink scaling experiment)
+====================================================================================================
+This file documents the cost of host-side processes that run OUTSIDE Docker for every device added
+to the pipeline.  cAdvisor / Prometheus / Grafana only see container-level metrics, so these
+processes are absent from the resources_a2_scaling.{csv,log} report.  They are however the
+dominant memory cost of the experiment and explain the saturation curve observed at high device
+counts.
+
+----------------------------------------------------------------------------------------------------
+Per-device, steady-state (mature, warmed-up JVMs / Python coordinator)
+----------------------------------------------------------------------------------------------------
+  Process                                              | RSS   | Role
+  ---------------------------------------------------- | ------| --------------------------------------
+  mvn exec:java MqttProducerBatches                    | ~460 MiB | Reads CSV, publishes 1 msg/sec to Mosquitto (:1884)
+  mvn exec:java MqttConsumerBatches                    | ~460 MiB | Bridges Mosquitto -> Pulsar (${device} bytes topic)
+  mvn exec:java MqttHelperClientBatches                | ~460 MiB | Pulsar bytes -> Avro Sensor -> ${device}_model_consume
+  python3 pulsarConsumer60Batches.py                   | ~ 92 MiB | Subscribes Avro, batches 60 msgs, writes Postgres,
+                                                        |          spawns Forecasting.py subprocess every ~60 s
+  ---------------------------------------------------- | ------| --------------------------------------
+  TOTAL STEADY-STATE per device                        | ~1.47 GiB
+
+----------------------------------------------------------------------------------------------------
+Decomposition of each ~460 MiB mvn JVM
+----------------------------------------------------------------------------------------------------
+  Component                                       | Approx
+  ----------------------------------------------- | -------
+  Maven launcher (Plexus classloader chain)       |  80-100 MiB
+  exec:java plugin + dependency resolution        |  30- 50 MiB
+  JVM base (committed heap, stacks, GC, code cache, native)
+                                                  | 100-150 MiB
+  Metaspace (class metadata)                      |  70-100 MiB
+  Application heap (Pulsar / Jackson / Avro / MQTT clients,
+                    in-flight messages, buffers)  |  80-130 MiB
+  ----------------------------------------------- | -------
+  TOTAL                                           | 360-530 MiB
+
+  Note: roughly ~70 % of each JVM's RSS is Maven + JVM tax, not application logic.
+
+----------------------------------------------------------------------------------------------------
+Decomposition of the 92 MiB Python coordinator
+----------------------------------------------------------------------------------------------------
+  Component                                       | Approx
+  ----------------------------------------------- | -------
+  CPython interpreter base                        |  10 MiB
+  pulsar-client (with C++ binding)                |  30 MiB
+  pandas + numpy (loaded on first DataFrame)      |  30 MiB
+  psycopg2 + joblib + standard library imports    |  15 MiB
+  Working memory (60-row DataFrame, accumulators) |   5 MiB
+  ----------------------------------------------- | -------
+  TOTAL                                           |  90 MiB
+
+----------------------------------------------------------------------------------------------------
+Transient cost: Forecasting.py subprocess
+----------------------------------------------------------------------------------------------------
+Every ~60 seconds, the Python coordinator spawns:
+    python3 Forecasting.py --device_name deviceN --bucket_name missingtimestamp
+
+The subprocess imports TensorFlow + Keras (~500-800 MiB transient), runs LSTM inference on 60
+samples, writes 60 forecasted rows to Postgres, then exits and frees its memory.
+
+  - Single-device:   one TensorFlow process at a time, ~10 s lifetime.
+  - 20-device case:  if the per-device flush schedule aligns near minute boundaries,
+                     5-15 simultaneous TensorFlow subprocesses may briefly coexist,
+                     adding 3-12 GiB of transient memory pressure on top of the steady-state.
+
+This is the spikiest part of host-memory usage during the scaling run.  Because it is
+transient and aperiodic, it is not directly visible in 15-s Grafana sampling — but it
+correlates strongly with the "low-coverage" tail devices in the delay report (every late-phase
+device's first forecast triggers right when system pressure is highest).
+
+----------------------------------------------------------------------------------------------------
+Total host-process load vs concurrent device count
+----------------------------------------------------------------------------------------------------
+  #devices  | host-process RSS    (rough)    | running on a 30 GiB host
+  --------- | ------------------------------ | ------------------------
+       1    |   1.5 GiB                      |   5 % of RAM
+       5    |   7.4 GiB                      |  25 %
+      10    |  14.7 GiB                      |  49 %
+      15    |  22.1 GiB                      |  74 %
+      19    |  27.9 GiB                      |  93 %
+      20    |  29.4 GiB  ( + transient ~5 GiB peak from forecasting subprocesses )
+                                                 -> swap territory, OOM risk
+
+This is the structural reason both architectures (1 = with Flink, 2 = no Flink) saturate near
+20 concurrent devices on a 30 GiB host: the deployment style (one full Maven-launched JVM per
+producer/bridge/sink and a per-device Python coordinator) dominates host memory, regardless of
+the streaming runtime.  The Flink containers in architecture 1 add ~2 GiB on top, which is why
+that architecture saturates slightly earlier than architecture 2 in practice.
+
+----------------------------------------------------------------------------------------------------
+What to do differently next time (sized for impact)
+----------------------------------------------------------------------------------------------------
+  Change                                                                | Per-JVM saving | At 20 devices
+  ----------------------------------------------------------------------|----------------|--------------
+  MAVEN_OPTS="-Xmx128m -XX:MaxMetaspaceSize=96m"                        | ~150-200 MiB   | ~ 9-12 GiB
+  Replace mvn exec:java with `java -cp target/*.jar <main-class>`       | ~100-150 MiB   | ~ 6- 9 GiB
+  Merge MqttProducerBatches + MqttConsumerBatches + MqttHelperClientBatches into one JVM
+                                                                        | (3 -> 1 JVMs)  | ~12-15 GiB
+
+  Any one of the three buys enough headroom for 20 devices to fit comfortably in 30 GiB
+  with no swap. The middle option is the smallest code change (build one fat JAR, update
+  start_app_no_flink.sh's invocation) and saves both Maven and the launcher overhead.
+
+----------------------------------------------------------------------------------------------------
+Why this isn't in the Grafana CSV exports
+----------------------------------------------------------------------------------------------------
+cAdvisor (the scraper feeding Prometheus, which feeds Grafana) only observes the cgroups of
+Docker-managed containers.  Host-resident processes — anything started by `mvn exec:java` or
+`python3` from the launcher script — live in the host's own cgroup hierarchy outside Docker's
+view.  Without process-exporter (per-process Linux /proc scraping) or node-exporter, these
+processes contribute zero data points to resources_a2_scaling.{csv,log}.
+
+To capture them in a future run, add to docker-compose.yml:
+    process-exporter:
+      image: ncabatoff/process-exporter
+      command: --procnames "java,python3"  --procfs /host/proc
+      volumes:
+        - /proc:/host/proc:ro
+      pid: host
+    Then add a scrape_config in prometheus.yml.
+
+Until that's in place, this log file is the (manual) record of host-process cost for the
+architecture-2 scaling experiment.
+====================================================================================================

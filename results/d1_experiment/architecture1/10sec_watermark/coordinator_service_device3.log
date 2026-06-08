@@ -1,0 +1,1688 @@
+2026-06-01 10:59:25.084 INFO  [124915652792448] Client:86 | Subscribing on Topic :device3_model_consume
+2026-06-01 10:59:25.085 INFO  [124915652792448] ClientConnection:196 | [<none> -> pulsar://localhost:6650] Create ClientConnection, timeout=10000
+2026-06-01 10:59:25.085 INFO  [124915652792448] ConnectionPool:125 | Created connection for pulsar://localhost:6650-pulsar://localhost:6650-0
+2026-06-01 10:59:25.086 INFO  [124915124532928] ClientConnection:416 | [127.0.0.1:55060 -> 127.0.0.1:6650] Connected to broker
+2026-06-01 10:59:25.092 INFO  [124915124532928] HandlerBase:112 | [persistent://public/default/device3_model_consume, pythonSubscription, 0] Getting connection from pool
+2026-06-01 10:59:25.094 INFO  [124915124532928] BinaryProtoLookupService:85 | Lookup response for persistent://public/default/device3_model_consume, lookup-broker-url pulsar://localhost:6650, from [127.0.0.1:55060 -> 127.0.0.1:6650] 
+2026-06-01 10:59:25.121 INFO  [124915124532928] ConsumerImpl:337 | [persistent://public/default/device3_model_consume, pythonSubscription, 0] Created consumer on broker [127.0.0.1:55060 -> 127.0.0.1:6650] 
+2026-06-01 10:59:25.121 INFO  [124915124532928] HandlerBase:134 | Finished connecting to broker after 28 ms
+Coordinator service started
+
+Database connection established
+Dropped table device3_actualvalues
+Table device3_actualvalues created successfully
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Dropped table device3_forecastedvalues
+Table device3_forecastedvalues created successfully
+
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3                731.1 2025-12-08 00:00:00        22578.0   NO
+1           3                734.9 2025-12-08 00:00:01        21576.0   NO
+2           3                753.0 2025-12-08 00:00:02        20574.0   NO
+3           3                736.6 2025-12-08 00:00:03        19572.0   NO
+4           3                717.7 2025-12-08 00:00:04        18570.0   NO
+5           3                750.0 2025-12-08 00:00:05        17567.0   NO
+6           3                722.2 2025-12-08 00:00:06        16565.0   NO
+7           3                742.4 2025-12-08 00:00:07        15564.0   NO
+8           3                719.2 2025-12-08 00:00:08        14562.0   NO
+9           3                738.7 2025-12-08 00:00:09        13560.0   NO
+10          3                781.6 2025-12-08 00:00:10        27090.2  YES
+11          3                734.2 2025-12-08 00:00:11        12558.0   NO
+12          3                758.7 2025-12-08 00:00:12        11555.0   NO
+13          3                720.5 2025-12-08 00:00:13        10549.0   NO
+14          3                727.0 2025-12-08 00:00:14         9547.0   NO
+15          3                748.9 2025-12-08 00:00:15         8545.0   NO
+16          3                750.2 2025-12-08 00:00:16         7543.0   NO
+17          3                737.8 2025-12-08 00:00:17         6541.0   NO
+18          3                730.7 2025-12-08 00:00:18         5540.0   NO
+19          3                744.4 2025-12-08 00:00:19         4538.0   NO
+20          3                720.2 2025-12-08 00:00:20         3537.0   NO
+21          3                755.2 2025-12-08 00:00:21         2535.0   NO
+22          3                734.8 2025-12-08 00:00:22        51650.0   NO
+23          3                751.1 2025-12-08 00:00:23        50646.0   NO
+24          3                746.9 2025-12-08 00:00:24        49644.0   NO
+25          3                737.6 2025-12-08 00:00:25        48641.0   NO
+26          3                736.4 2025-12-08 00:00:26        47638.0   NO
+27          3                781.6 2025-12-08 00:00:27        27090.2  YES
+28          3                737.6 2025-12-08 00:00:28        46636.0   NO
+29          3                734.5 2025-12-08 00:00:29        45634.0   NO
+30          3                738.8 2025-12-08 00:00:30        44632.0   NO
+31          3                724.4 2025-12-08 00:00:31        43629.0   NO
+32          3                781.6 2025-12-08 00:00:32        27090.2  YES
+33          3                895.1 2025-12-08 00:00:33        42627.0   NO
+34          3                781.6 2025-12-08 00:00:34        27090.2  YES
+35          3                868.2 2025-12-08 00:00:35        41625.0   NO
+36          3                781.6 2025-12-08 00:00:36        27090.2  YES
+37          3                750.4 2025-12-08 00:00:37        40623.0   NO
+38          3                854.4 2025-12-08 00:00:38        39621.0   NO
+39          3                917.3 2025-12-08 00:00:39        38618.0   NO
+40          3                781.6 2025-12-08 00:00:40        27090.2  YES
+41          3                858.8 2025-12-08 00:00:41        37616.0   NO
+42          3                849.8 2025-12-08 00:00:42        36613.0   NO
+43          3                858.3 2025-12-08 00:00:43        35611.0   NO
+44          3                829.4 2025-12-08 00:00:44        34608.0   NO
+45          3                781.6 2025-12-08 00:00:45        27090.2  YES
+46          3                781.6 2025-12-08 00:00:46        27090.2  YES
+47          3                854.3 2025-12-08 00:00:47        33606.0   NO
+48          3                781.6 2025-12-08 00:00:48        27090.2  YES
+49          3                849.2 2025-12-08 00:00:49        32603.0   NO
+50          3                837.0 2025-12-08 00:00:50        31600.0   NO
+51          3                823.3 2025-12-08 00:00:51        30598.0   NO
+52          3                852.6 2025-12-08 00:00:52        29596.0   NO
+53          3                852.3 2025-12-08 00:00:53        28593.0   NO
+54          3                849.1 2025-12-08 00:00:54        27590.0   NO
+55          3                816.8 2025-12-08 00:00:55        26588.0   NO
+56          3                781.6 2025-12-08 00:00:56        27090.2  YES
+57          3                851.7 2025-12-08 00:00:57        25585.0   NO
+58          3                849.5 2025-12-08 00:00:58        24583.0   NO
+59          3                846.8 2025-12-08 00:00:59        23580.0   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                      926.570557 2025-12-08 00:01:00
+1           3                      946.958496 2025-12-08 00:01:01
+2           3                      968.314575 2025-12-08 00:01:02
+3           3                      990.077637 2025-12-08 00:01:03
+4           3                     1011.791992 2025-12-08 00:01:04
+5           3                     1033.149902 2025-12-08 00:01:05
+6           3                     1053.951294 2025-12-08 00:01:06
+7           3                     1074.073486 2025-12-08 00:01:07
+8           3                     1093.448853 2025-12-08 00:01:08
+9           3                     1112.047852 2025-12-08 00:01:09
+10          3                     1129.868042 2025-12-08 00:01:10
+11          3                     1146.925293 2025-12-08 00:01:11
+12          3                     1163.247192 2025-12-08 00:01:12
+13          3                     1178.868652 2025-12-08 00:01:13
+14          3                     1193.828735 2025-12-08 00:01:14
+15          3                     1208.168457 2025-12-08 00:01:15
+16          3                     1221.928833 2025-12-08 00:01:16
+17          3                     1235.150024 2025-12-08 00:01:17
+18          3                     1247.870605 2025-12-08 00:01:18
+19          3                     1260.126831 2025-12-08 00:01:19
+20          3                     1271.953491 2025-12-08 00:01:20
+21          3                     1283.381348 2025-12-08 00:01:21
+22          3                     1294.440308 2025-12-08 00:01:22
+23          3                     1305.157104 2025-12-08 00:01:23
+24          3                     1315.556641 2025-12-08 00:01:24
+25          3                     1325.661133 2025-12-08 00:01:25
+26          3                     1335.491699 2025-12-08 00:01:26
+27          3                     1345.067017 2025-12-08 00:01:27
+28          3                     1354.404419 2025-12-08 00:01:28
+29          3                     1363.519653 2025-12-08 00:01:29
+30          3                     1372.427246 2025-12-08 00:01:30
+31          3                     1381.140625 2025-12-08 00:01:31
+32          3                     1389.671997 2025-12-08 00:01:32
+33          3                     1398.032593 2025-12-08 00:01:33
+34          3                     1406.233154 2025-12-08 00:01:34
+35          3                     1414.283081 2025-12-08 00:01:35
+36          3                     1422.191650 2025-12-08 00:01:36
+37          3                     1429.967285 2025-12-08 00:01:37
+38          3                     1437.617676 2025-12-08 00:01:38
+39          3                     1445.150757 2025-12-08 00:01:39
+40          3                     1452.572998 2025-12-08 00:01:40
+41          3                     1459.891235 2025-12-08 00:01:41
+42          3                     1467.111694 2025-12-08 00:01:42
+43          3                     1474.240479 2025-12-08 00:01:43
+44          3                     1481.283081 2025-12-08 00:01:44
+45          3                     1488.244873 2025-12-08 00:01:45
+46          3                     1495.130737 2025-12-08 00:01:46
+47          3                     1501.946289 2025-12-08 00:01:47
+48          3                     1508.695435 2025-12-08 00:01:48
+49          3                     1515.383057 2025-12-08 00:01:49
+50          3                     1522.013550 2025-12-08 00:01:50
+51          3                     1528.591187 2025-12-08 00:01:51
+52          3                     1535.119629 2025-12-08 00:01:52
+53          3                     1541.602905 2025-12-08 00:01:53
+54          3                     1548.045044 2025-12-08 00:01:54
+55          3                     1554.449341 2025-12-08 00:01:55
+56          3                     1560.819702 2025-12-08 00:01:56
+57          3                     1567.159424 2025-12-08 00:01:57
+58          3                     1573.472046 2025-12-08 00:01:58
+59          3                     1579.760498 2025-12-08 00:01:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1276.659091 2025-12-08 00:01:00   29845.818182  YES
+1           3          1276.659091 2025-12-08 00:01:01   29845.818182  YES
+2           3          1276.659091 2025-12-08 00:01:02   29845.818182  YES
+3           3          1276.659091 2025-12-08 00:01:03   29845.818182  YES
+4           3           851.600000 2025-12-08 00:01:04   14309.000000   NO
+5           3          1075.300000 2025-12-08 00:01:05   13306.000000   NO
+6           3          1262.100000 2025-12-08 00:01:06   12304.000000   NO
+7           3          1095.000000 2025-12-08 00:01:07   11301.000000   NO
+8           3          1067.700000 2025-12-08 00:01:08   10299.000000   NO
+9           3          1141.000000 2025-12-08 00:01:09    9297.000000   NO
+10          3          1276.659091 2025-12-08 00:01:10   29845.818182  YES
+11          3          1109.000000 2025-12-08 00:01:11    8294.000000   NO
+12          3          1174.200000 2025-12-08 00:01:12   45380.000000   NO
+13          3          1181.400000 2025-12-08 00:01:13   44379.000000   NO
+14          3          1198.800000 2025-12-08 00:01:14   43377.000000   NO
+15          3          1220.300000 2025-12-08 00:01:15   42375.000000   NO
+16          3          1247.500000 2025-12-08 00:01:16   41373.000000   NO
+17          3          1281.900000 2025-12-08 00:01:17   40371.000000   NO
+18          3          1297.600000 2025-12-08 00:01:18   39369.000000   NO
+19          3          1320.800000 2025-12-08 00:01:19   38366.000000   NO
+20          3          1343.700000 2025-12-08 00:01:20   37364.000000   NO
+21          3          1328.300000 2025-12-08 00:01:21   36362.000000   NO
+22          3          1276.659091 2025-12-08 00:01:22   29845.818182  YES
+23          3          1335.200000 2025-12-08 00:01:23   35360.000000   NO
+24          3          1337.000000 2025-12-08 00:01:24   34358.000000   NO
+25          3          1312.500000 2025-12-08 00:01:25   33356.000000   NO
+26          3          1314.700000 2025-12-08 00:01:26   32353.000000   NO
+27          3          1324.000000 2025-12-08 00:01:27   31351.000000   NO
+28          3          1338.500000 2025-12-08 00:01:28   30350.000000   NO
+29          3          1312.900000 2025-12-08 00:01:29   29348.000000   NO
+30          3          1351.400000 2025-12-08 00:01:30   28345.000000   NO
+31          3          1311.200000 2025-12-08 00:01:31   27342.000000   NO
+32          3          1308.800000 2025-12-08 00:01:32   26340.000000   NO
+33          3          1313.600000 2025-12-08 00:01:33   25336.000000   NO
+34          3          1311.000000 2025-12-08 00:01:34   24334.000000   NO
+35          3          1325.700000 2025-12-08 00:01:35   23332.000000   NO
+36          3          1328.000000 2025-12-08 00:01:36   22330.000000   NO
+37          3          1340.300000 2025-12-08 00:01:37   21328.000000   NO
+38          3          1314.100000 2025-12-08 00:01:38   20324.000000   NO
+39          3          1337.200000 2025-12-08 00:01:39   19322.000000   NO
+40          3          1276.659091 2025-12-08 00:01:40   29845.818182  YES
+41          3          1334.200000 2025-12-08 00:01:41   18319.000000   NO
+42          3          1276.659091 2025-12-08 00:01:42   29845.818182  YES
+43          3          1340.300000 2025-12-08 00:01:43   17316.000000   NO
+44          3          1276.659091 2025-12-08 00:01:44   29845.818182  YES
+45          3          1317.100000 2025-12-08 00:01:45   16314.000000   NO
+46          3          1349.800000 2025-12-08 00:01:46   15311.000000   NO
+47          3          1350.700000 2025-12-08 00:01:47   51391.000000   NO
+48          3          1276.659091 2025-12-08 00:01:48   29845.818182  YES
+49          3          1354.300000 2025-12-08 00:01:49   50390.000000   NO
+50          3          1356.000000 2025-12-08 00:01:50   49388.000000   NO
+51          3          1276.659091 2025-12-08 00:01:51   29845.818182  YES
+52          3          1276.659091 2025-12-08 00:01:52   29845.818182  YES
+53          3          1354.000000 2025-12-08 00:01:53   48386.000000   NO
+54          3          1276.659091 2025-12-08 00:01:54   29845.818182  YES
+55          3          1361.700000 2025-12-08 00:01:55   47384.000000   NO
+56          3          1276.659091 2025-12-08 00:01:56   29845.818182  YES
+57          3          1276.659091 2025-12-08 00:01:57   29845.818182  YES
+58          3          1342.600000 2025-12-08 00:01:58   46382.000000   NO
+59          3          1276.659091 2025-12-08 00:01:59   29845.818182  YES
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1327.322632 2025-12-08 00:02:00
+1           3                     1334.336914 2025-12-08 00:02:01
+2           3                     1341.965576 2025-12-08 00:02:02
+3           3                     1350.233765 2025-12-08 00:02:03
+4           3                     1358.892578 2025-12-08 00:02:04
+5           3                     1367.748169 2025-12-08 00:02:05
+6           3                     1376.661987 2025-12-08 00:02:06
+7           3                     1385.537354 2025-12-08 00:02:07
+8           3                     1394.310303 2025-12-08 00:02:08
+9           3                     1402.939941 2025-12-08 00:02:09
+10          3                     1411.403076 2025-12-08 00:02:10
+11          3                     1419.688721 2025-12-08 00:02:11
+12          3                     1427.794800 2025-12-08 00:02:12
+13          3                     1435.725586 2025-12-08 00:02:13
+14          3                     1443.488892 2025-12-08 00:02:14
+15          3                     1451.094727 2025-12-08 00:02:15
+16          3                     1458.554565 2025-12-08 00:02:16
+17          3                     1465.880371 2025-12-08 00:02:17
+18          3                     1473.083740 2025-12-08 00:02:18
+19          3                     1480.176025 2025-12-08 00:02:19
+20          3                     1487.167480 2025-12-08 00:02:20
+21          3                     1494.067993 2025-12-08 00:02:21
+22          3                     1500.885986 2025-12-08 00:02:22
+23          3                     1507.630127 2025-12-08 00:02:23
+24          3                     1514.307373 2025-12-08 00:02:24
+25          3                     1520.923950 2025-12-08 00:02:25
+26          3                     1527.485962 2025-12-08 00:02:26
+27          3                     1533.998901 2025-12-08 00:02:27
+28          3                     1540.467163 2025-12-08 00:02:28
+29          3                     1546.895386 2025-12-08 00:02:29
+30          3                     1553.287476 2025-12-08 00:02:30
+31          3                     1559.647095 2025-12-08 00:02:31
+32          3                     1565.977783 2025-12-08 00:02:32
+33          3                     1572.282837 2025-12-08 00:02:33
+34          3                     1578.565552 2025-12-08 00:02:34
+35          3                     1584.828613 2025-12-08 00:02:35
+36          3                     1591.075195 2025-12-08 00:02:36
+37          3                     1597.308350 2025-12-08 00:02:37
+38          3                     1603.530640 2025-12-08 00:02:38
+39          3                     1609.744995 2025-12-08 00:02:39
+40          3                     1615.954102 2025-12-08 00:02:40
+41          3                     1622.160767 2025-12-08 00:02:41
+42          3                     1628.367554 2025-12-08 00:02:42
+43          3                     1634.577515 2025-12-08 00:02:43
+44          3                     1640.793091 2025-12-08 00:02:44
+45          3                     1647.017212 2025-12-08 00:02:45
+46          3                     1653.252563 2025-12-08 00:02:46
+47          3                     1659.501709 2025-12-08 00:02:47
+48          3                     1665.767578 2025-12-08 00:02:48
+49          3                     1672.052856 2025-12-08 00:02:49
+50          3                     1678.360474 2025-12-08 00:02:50
+51          3                     1684.693115 2025-12-08 00:02:51
+52          3                     1691.053467 2025-12-08 00:02:52
+53          3                     1697.444824 2025-12-08 00:02:53
+54          3                     1703.869263 2025-12-08 00:02:54
+55          3                     1710.330566 2025-12-08 00:02:55
+56          3                     1716.831177 2025-12-08 00:02:56
+57          3                     1723.374023 2025-12-08 00:02:57
+58          3                     1729.962402 2025-12-08 00:02:58
+59          3                     1736.599243 2025-12-08 00:02:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1360.200000 2025-12-08 00:02:00    8251.000000   NO
+1           3          1346.900000 2025-12-08 00:02:01    7249.000000   NO
+2           3          1342.400000 2025-12-08 00:02:02    6247.000000   NO
+3           3          1336.900000 2025-12-08 00:02:03    5245.000000   NO
+4           3          1347.659259 2025-12-08 00:02:04   30795.796296  YES
+5           3          1343.000000 2025-12-08 00:02:05    4243.000000   NO
+6           3          1356.200000 2025-12-08 00:02:06   57351.000000   NO
+7           3          1343.400000 2025-12-08 00:02:07   56349.000000   NO
+8           3          1350.700000 2025-12-08 00:02:08   55347.000000   NO
+9           3          1333.200000 2025-12-08 00:02:09   54345.000000   NO
+10          3          1337.000000 2025-12-08 00:02:10   53343.000000   NO
+11          3          1349.300000 2025-12-08 00:02:11   52340.000000   NO
+12          3          1341.600000 2025-12-08 00:02:12   51337.000000   NO
+13          3          1319.800000 2025-12-08 00:02:13   50335.000000   NO
+14          3          1359.300000 2025-12-08 00:02:14   49333.000000   NO
+15          3          1372.500000 2025-12-08 00:02:15   48332.000000   NO
+16          3          1353.100000 2025-12-08 00:02:16   47330.000000   NO
+17          3          1332.300000 2025-12-08 00:02:17   46328.000000   NO
+18          3          1350.000000 2025-12-08 00:02:18   45325.000000   NO
+19          3          1365.300000 2025-12-08 00:02:19   44324.000000   NO
+20          3          1360.500000 2025-12-08 00:02:20   43322.000000   NO
+21          3          1352.100000 2025-12-08 00:02:21   42320.000000   NO
+22          3          1362.700000 2025-12-08 00:02:22   41318.000000   NO
+23          3          1348.000000 2025-12-08 00:02:23   40315.000000   NO
+24          3          1336.800000 2025-12-08 00:02:24   39313.000000   NO
+25          3          1345.200000 2025-12-08 00:02:25   38312.000000   NO
+26          3          1341.000000 2025-12-08 00:02:26   37310.000000   NO
+27          3          1347.659259 2025-12-08 00:02:27   30795.796296  YES
+28          3          1337.200000 2025-12-08 00:02:28   36308.000000   NO
+29          3          1347.659259 2025-12-08 00:02:29   30795.796296  YES
+30          3          1362.400000 2025-12-08 00:02:30   35306.000000   NO
+31          3          1332.000000 2025-12-08 00:02:31   34304.000000   NO
+32          3          1360.800000 2025-12-08 00:02:32   33302.000000   NO
+33          3          1347.659259 2025-12-08 00:02:33   30795.796296  YES
+34          3          1338.000000 2025-12-08 00:02:34   32299.000000   NO
+35          3          1344.600000 2025-12-08 00:02:35   31297.000000   NO
+36          3          1345.000000 2025-12-08 00:02:36   30295.000000   NO
+37          3          1352.600000 2025-12-08 00:02:37   29292.000000   NO
+38          3          1347.659259 2025-12-08 00:02:38   30795.796296  YES
+39          3          1345.000000 2025-12-08 00:02:39   28291.000000   NO
+40          3          1349.900000 2025-12-08 00:02:40   27288.000000   NO
+41          3          1357.900000 2025-12-08 00:02:41   26285.000000   NO
+42          3          1337.500000 2025-12-08 00:02:42   25283.000000   NO
+43          3          1334.100000 2025-12-08 00:02:43   24281.000000   NO
+44          3          1334.600000 2025-12-08 00:02:44   23279.000000   NO
+45          3          1327.500000 2025-12-08 00:02:45   22277.000000   NO
+46          3          1369.400000 2025-12-08 00:02:46   21274.000000   NO
+47          3          1343.000000 2025-12-08 00:02:47   20272.000000   NO
+48          3          1351.900000 2025-12-08 00:02:48   19270.000000   NO
+49          3          1334.700000 2025-12-08 00:02:49   18268.000000   NO
+50          3          1364.800000 2025-12-08 00:02:50   17267.000000   NO
+51          3          1356.000000 2025-12-08 00:02:51   16265.000000   NO
+52          3          1359.100000 2025-12-08 00:02:52   15263.000000   NO
+53          3          1344.800000 2025-12-08 00:02:53   14262.000000   NO
+54          3          1347.659259 2025-12-08 00:02:54   30795.796296  YES
+55          3          1357.600000 2025-12-08 00:02:55   13260.000000   NO
+56          3          1336.000000 2025-12-08 00:02:56   12258.000000   NO
+57          3          1333.000000 2025-12-08 00:02:57   11256.000000   NO
+58          3          1360.200000 2025-12-08 00:02:58   10255.000000   NO
+59          3          1364.600000 2025-12-08 00:02:59    9252.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1376.152832 2025-12-08 00:03:00
+1           3                     1383.345459 2025-12-08 00:03:01
+2           3                     1391.005981 2025-12-08 00:03:02
+3           3                     1398.972900 2025-12-08 00:03:03
+4           3                     1407.094604 2025-12-08 00:03:04
+5           3                     1415.261475 2025-12-08 00:03:05
+6           3                     1423.396973 2025-12-08 00:03:06
+7           3                     1431.450439 2025-12-08 00:03:07
+8           3                     1439.390015 2025-12-08 00:03:08
+9           3                     1447.197510 2025-12-08 00:03:09
+10          3                     1454.865234 2025-12-08 00:03:10
+11          3                     1462.391724 2025-12-08 00:03:11
+12          3                     1469.780762 2025-12-08 00:03:12
+13          3                     1477.039307 2025-12-08 00:03:13
+14          3                     1484.175781 2025-12-08 00:03:14
+15          3                     1491.199951 2025-12-08 00:03:15
+16          3                     1498.121338 2025-12-08 00:03:16
+17          3                     1504.950195 2025-12-08 00:03:17
+18          3                     1511.695068 2025-12-08 00:03:18
+19          3                     1518.365356 2025-12-08 00:03:19
+20          3                     1524.968750 2025-12-08 00:03:20
+21          3                     1531.512695 2025-12-08 00:03:21
+22          3                     1538.003784 2025-12-08 00:03:22
+23          3                     1544.448486 2025-12-08 00:03:23
+24          3                     1550.851685 2025-12-08 00:03:24
+25          3                     1557.218384 2025-12-08 00:03:25
+26          3                     1563.553467 2025-12-08 00:03:26
+27          3                     1569.860596 2025-12-08 00:03:27
+28          3                     1576.143799 2025-12-08 00:03:28
+29          3                     1582.406372 2025-12-08 00:03:29
+30          3                     1588.651733 2025-12-08 00:03:30
+31          3                     1594.882812 2025-12-08 00:03:31
+32          3                     1601.102783 2025-12-08 00:03:32
+33          3                     1607.314453 2025-12-08 00:03:33
+34          3                     1613.520508 2025-12-08 00:03:34
+35          3                     1619.723755 2025-12-08 00:03:35
+36          3                     1625.926758 2025-12-08 00:03:36
+37          3                     1632.132446 2025-12-08 00:03:37
+38          3                     1638.343506 2025-12-08 00:03:38
+39          3                     1644.562012 2025-12-08 00:03:39
+40          3                     1650.791260 2025-12-08 00:03:40
+41          3                     1657.033691 2025-12-08 00:03:41
+42          3                     1663.291992 2025-12-08 00:03:42
+43          3                     1669.568848 2025-12-08 00:03:43
+44          3                     1675.866943 2025-12-08 00:03:44
+45          3                     1682.189331 2025-12-08 00:03:45
+46          3                     1688.538452 2025-12-08 00:03:46
+47          3                     1694.917236 2025-12-08 00:03:47
+48          3                     1701.328491 2025-12-08 00:03:48
+49          3                     1707.775146 2025-12-08 00:03:49
+50          3                     1714.259766 2025-12-08 00:03:50
+51          3                     1720.786255 2025-12-08 00:03:51
+52          3                     1727.356323 2025-12-08 00:03:52
+53          3                     1733.973755 2025-12-08 00:03:53
+54          3                     1740.641724 2025-12-08 00:03:54
+55          3                     1747.363037 2025-12-08 00:03:55
+56          3                     1754.140991 2025-12-08 00:03:56
+57          3                     1760.978882 2025-12-08 00:03:57
+58          3                     1767.880249 2025-12-08 00:03:58
+59          3                     1774.847900 2025-12-08 00:03:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1441.922222 2025-12-08 00:03:00   25698.944444  YES
+1           3          1441.922222 2025-12-08 00:03:01   25698.944444  YES
+2           3          1441.922222 2025-12-08 00:03:02   25698.944444  YES
+3           3          1441.922222 2025-12-08 00:03:03   25698.944444  YES
+4           3          1441.922222 2025-12-08 00:03:04   25698.944444  YES
+5           3          1441.922222 2025-12-08 00:03:05   25698.944444  YES
+6           3          1441.922222 2025-12-08 00:03:06   25698.944444  YES
+7           3          1441.922222 2025-12-08 00:03:07   25698.944444  YES
+8           3          1441.922222 2025-12-08 00:03:08   25698.944444  YES
+9           3          1441.922222 2025-12-08 00:03:09   25698.944444  YES
+10          3          1441.922222 2025-12-08 00:03:10   25698.944444  YES
+11          3          1441.922222 2025-12-08 00:03:11   25698.944444  YES
+12          3          1441.922222 2025-12-08 00:03:12   25698.944444  YES
+13          3          1441.922222 2025-12-08 00:03:13   25698.944444  YES
+14          3          1441.922222 2025-12-08 00:03:14   25698.944444  YES
+15          3          1441.922222 2025-12-08 00:03:15   25698.944444  YES
+16          3          1441.922222 2025-12-08 00:03:16   25698.944444  YES
+17          3          1319.200000 2025-12-08 00:03:17   19173.000000   NO
+18          3          1335.400000 2025-12-08 00:03:18   18172.000000   NO
+19          3          1348.400000 2025-12-08 00:03:19   17170.000000   NO
+20          3          1349.400000 2025-12-08 00:03:20   16168.000000   NO
+21          3          1441.922222 2025-12-08 00:03:21   25698.944444  YES
+22          3          1361.500000 2025-12-08 00:03:22   15167.000000   NO
+23          3          1367.600000 2025-12-08 00:03:23   14165.000000   NO
+24          3          1441.922222 2025-12-08 00:03:24   25698.944444  YES
+25          3          1441.922222 2025-12-08 00:03:25   25698.944444  YES
+26          3          1348.500000 2025-12-08 00:03:26   13164.000000   NO
+27          3          1441.922222 2025-12-08 00:03:27   25698.944444  YES
+28          3          1481.700000 2025-12-08 00:03:28   12162.000000   NO
+29          3          1450.800000 2025-12-08 00:03:29   11160.000000   NO
+30          3          1465.500000 2025-12-08 00:03:30   10158.000000   NO
+31          3          1444.100000 2025-12-08 00:03:31    9155.000000   NO
+32          3          1466.200000 2025-12-08 00:03:32    8153.000000   NO
+33          3          1458.300000 2025-12-08 00:03:33   29214.000000   NO
+34          3          1436.200000 2025-12-08 00:03:34   28210.000000   NO
+35          3          1468.800000 2025-12-08 00:03:35   27208.000000   NO
+36          3          1440.700000 2025-12-08 00:03:36   26188.000000   NO
+37          3          1473.900000 2025-12-08 00:03:37   25187.000000   NO
+38          3          1447.700000 2025-12-08 00:03:38   24185.000000   NO
+39          3          1441.922222 2025-12-08 00:03:39   25698.944444  YES
+40          3          1459.300000 2025-12-08 00:03:40   23182.000000   NO
+41          3          1452.100000 2025-12-08 00:03:41   22180.000000   NO
+42          3          1455.100000 2025-12-08 00:03:42   21178.000000   NO
+43          3          1451.500000 2025-12-08 00:03:43   20175.000000   NO
+44          3          1464.100000 2025-12-08 00:03:44   43248.000000   NO
+45          3          1471.200000 2025-12-08 00:03:45   42246.000000   NO
+46          3          1441.922222 2025-12-08 00:03:46   25698.944444  YES
+47          3          1456.900000 2025-12-08 00:03:47   41244.000000   NO
+48          3          1441.000000 2025-12-08 00:03:48   40243.000000   NO
+49          3          1439.900000 2025-12-08 00:03:49   39241.000000   NO
+50          3          1445.800000 2025-12-08 00:03:50   38240.000000   NO
+51          3          1447.300000 2025-12-08 00:03:51   37238.000000   NO
+52          3          1473.900000 2025-12-08 00:03:52   36236.000000   NO
+53          3          1483.900000 2025-12-08 00:03:53   35234.000000   NO
+54          3          1476.600000 2025-12-08 00:03:54   34233.000000   NO
+55          3          1441.922222 2025-12-08 00:03:55   25698.944444  YES
+56          3          1481.400000 2025-12-08 00:03:56   33225.000000   NO
+57          3          1519.800000 2025-12-08 00:03:57   32223.000000   NO
+58          3          1535.400000 2025-12-08 00:03:58   31220.000000   NO
+59          3          1490.100000 2025-12-08 00:03:59   30217.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1519.084595 2025-12-08 00:04:00
+1           3                     1526.266479 2025-12-08 00:04:01
+2           3                     1533.129639 2025-12-08 00:04:02
+3           3                     1539.889526 2025-12-08 00:04:03
+4           3                     1546.560425 2025-12-08 00:04:04
+5           3                     1553.147949 2025-12-08 00:04:05
+6           3                     1559.658936 2025-12-08 00:04:06
+7           3                     1566.102295 2025-12-08 00:04:07
+8           3                     1572.485840 2025-12-08 00:04:08
+9           3                     1578.818604 2025-12-08 00:04:09
+10          3                     1585.109253 2025-12-08 00:04:10
+11          3                     1591.365112 2025-12-08 00:04:11
+12          3                     1597.593872 2025-12-08 00:04:12
+13          3                     1603.801636 2025-12-08 00:04:13
+14          3                     1609.994995 2025-12-08 00:04:14
+15          3                     1616.178833 2025-12-08 00:04:15
+16          3                     1622.358398 2025-12-08 00:04:16
+17          3                     1628.537720 2025-12-08 00:04:17
+18          3                     1634.720825 2025-12-08 00:04:18
+19          3                     1640.911011 2025-12-08 00:04:19
+20          3                     1647.112061 2025-12-08 00:04:20
+21          3                     1653.326538 2025-12-08 00:04:21
+22          3                     1659.557617 2025-12-08 00:04:22
+23          3                     1665.807861 2025-12-08 00:04:23
+24          3                     1672.079956 2025-12-08 00:04:24
+25          3                     1678.376709 2025-12-08 00:04:25
+26          3                     1684.700439 2025-12-08 00:04:26
+27          3                     1691.054077 2025-12-08 00:04:27
+28          3                     1697.439697 2025-12-08 00:04:28
+29          3                     1703.860474 2025-12-08 00:04:29
+30          3                     1710.318604 2025-12-08 00:04:30
+31          3                     1716.817383 2025-12-08 00:04:31
+32          3                     1723.359131 2025-12-08 00:04:32
+33          3                     1729.946777 2025-12-08 00:04:33
+34          3                     1736.583374 2025-12-08 00:04:34
+35          3                     1743.271851 2025-12-08 00:04:35
+36          3                     1750.015381 2025-12-08 00:04:36
+37          3                     1756.817017 2025-12-08 00:04:37
+38          3                     1763.679810 2025-12-08 00:04:38
+39          3                     1770.607300 2025-12-08 00:04:39
+40          3                     1777.602783 2025-12-08 00:04:40
+41          3                     1784.669800 2025-12-08 00:04:41
+42          3                     1791.811890 2025-12-08 00:04:42
+43          3                     1799.032715 2025-12-08 00:04:43
+44          3                     1806.335815 2025-12-08 00:04:44
+45          3                     1813.725342 2025-12-08 00:04:45
+46          3                     1821.204956 2025-12-08 00:04:46
+47          3                     1828.779053 2025-12-08 00:04:47
+48          3                     1836.451538 2025-12-08 00:04:48
+49          3                     1844.226807 2025-12-08 00:04:49
+50          3                     1852.109253 2025-12-08 00:04:50
+51          3                     1860.103516 2025-12-08 00:04:51
+52          3                     1868.214233 2025-12-08 00:04:52
+53          3                     1876.446167 2025-12-08 00:04:53
+54          3                     1884.804199 2025-12-08 00:04:54
+55          3                     1893.293701 2025-12-08 00:04:55
+56          3                     1901.919678 2025-12-08 00:04:56
+57          3                     1910.687866 2025-12-08 00:04:57
+58          3                     1919.603760 2025-12-08 00:04:58
+59          3                     1928.673096 2025-12-08 00:04:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1524.500000 2025-12-08 00:04:00        28056.0   NO
+1           3          1514.200000 2025-12-08 00:04:01        27055.0   NO
+2           3          1561.103636 2025-12-08 00:04:02        50094.8  YES
+3           3          1501.900000 2025-12-08 00:04:03        26053.0   NO
+4           3          1528.200000 2025-12-08 00:04:04        25051.0   NO
+5           3          1513.800000 2025-12-08 00:04:05        24045.0   NO
+6           3          1529.300000 2025-12-08 00:04:06        23043.0   NO
+7           3          1561.103636 2025-12-08 00:04:07        50094.8  YES
+8           3          1539.600000 2025-12-08 00:04:08        55101.0   NO
+9           3          1528.800000 2025-12-08 00:04:09        54099.0   NO
+10          3          1557.500000 2025-12-08 00:04:10        53097.0   NO
+11          3          1552.800000 2025-12-08 00:04:11        52095.0   NO
+12          3          1561.103636 2025-12-08 00:04:12        50094.8  YES
+13          3          1503.600000 2025-12-08 00:04:13        51094.0   NO
+14          3          1515.600000 2025-12-08 00:04:14        50092.0   NO
+15          3          1524.600000 2025-12-08 00:04:15        49091.0   NO
+16          3          1523.200000 2025-12-08 00:04:16        48089.0   NO
+17          3          1506.700000 2025-12-08 00:04:17        47088.0   NO
+18          3          1539.300000 2025-12-08 00:04:18        46086.0   NO
+19          3          1529.400000 2025-12-08 00:04:19        45084.0   NO
+20          3          1531.100000 2025-12-08 00:04:20        44083.0   NO
+21          3          1554.600000 2025-12-08 00:04:21        43082.0   NO
+22          3          1541.200000 2025-12-08 00:04:22        42080.0   NO
+23          3          1503.200000 2025-12-08 00:04:23        41078.0   NO
+24          3          1512.000000 2025-12-08 00:04:24        40076.0   NO
+25          3          1561.103636 2025-12-08 00:04:25        50094.8  YES
+26          3          1508.200000 2025-12-08 00:04:26        39075.0   NO
+27          3          1532.200000 2025-12-08 00:04:27        38072.0   NO
+28          3          1526.600000 2025-12-08 00:04:28        37071.0   NO
+29          3          1552.200000 2025-12-08 00:04:29        36070.0   NO
+30          3          1520.700000 2025-12-08 00:04:30        35068.0   NO
+31          3          1529.600000 2025-12-08 00:04:31        34066.0   NO
+32          3          1560.300000 2025-12-08 00:04:32        33065.0   NO
+33          3          1514.700000 2025-12-08 00:04:33        32063.0   NO
+34          3          1519.200000 2025-12-08 00:04:34        31061.0   NO
+35          3          1515.700000 2025-12-08 00:04:35        30060.0   NO
+36          3          1559.800000 2025-12-08 00:04:36        29058.0   NO
+37          3          1601.000000 2025-12-08 00:04:37        77155.0   NO
+38          3          1561.103636 2025-12-08 00:04:38        50094.8  YES
+39          3          1608.600000 2025-12-08 00:04:39        76154.0   NO
+40          3          1625.600000 2025-12-08 00:04:40        75151.0   NO
+41          3          1600.900000 2025-12-08 00:04:41        74142.0   NO
+42          3          1618.400000 2025-12-08 00:04:42        73140.0   NO
+43          3          1608.900000 2025-12-08 00:04:43        72139.0   NO
+44          3          1606.000000 2025-12-08 00:04:44        71136.0   NO
+45          3          1615.100000 2025-12-08 00:04:45        70130.0   NO
+46          3          1639.100000 2025-12-08 00:04:46        69127.0   NO
+47          3          1630.300000 2025-12-08 00:04:47        68126.0   NO
+48          3          1610.200000 2025-12-08 00:04:48        67124.0   NO
+49          3          1602.800000 2025-12-08 00:04:49        66123.0   NO
+50          3          1623.300000 2025-12-08 00:04:50        65121.0   NO
+51          3          1597.900000 2025-12-08 00:04:51        64119.0   NO
+52          3          1614.100000 2025-12-08 00:04:52        63117.0   NO
+53          3          1613.100000 2025-12-08 00:04:53        62116.0   NO
+54          3          1619.200000 2025-12-08 00:04:54        61114.0   NO
+55          3          1598.600000 2025-12-08 00:04:55        60111.0   NO
+56          3          1600.300000 2025-12-08 00:04:56        59109.0   NO
+57          3          1618.900000 2025-12-08 00:04:57        58106.0   NO
+58          3          1588.100000 2025-12-08 00:04:58        57104.0   NO
+59          3          1606.000000 2025-12-08 00:04:59        56103.0   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1619.021484 2025-12-08 00:05:00
+1           3                     1623.722656 2025-12-08 00:05:01
+2           3                     1629.036377 2025-12-08 00:05:02
+3           3                     1634.861572 2025-12-08 00:05:03
+4           3                     1641.039062 2025-12-08 00:05:04
+5           3                     1647.446045 2025-12-08 00:05:05
+6           3                     1653.993286 2025-12-08 00:05:06
+7           3                     1660.617554 2025-12-08 00:05:07
+8           3                     1667.276611 2025-12-08 00:05:08
+9           3                     1673.942993 2025-12-08 00:05:09
+10          3                     1680.601074 2025-12-08 00:05:10
+11          3                     1687.243408 2025-12-08 00:05:11
+12          3                     1693.868408 2025-12-08 00:05:12
+13          3                     1700.479126 2025-12-08 00:05:13
+14          3                     1707.080444 2025-12-08 00:05:14
+15          3                     1713.680054 2025-12-08 00:05:15
+16          3                     1720.285400 2025-12-08 00:05:16
+17          3                     1726.905396 2025-12-08 00:05:17
+18          3                     1733.548340 2025-12-08 00:05:18
+19          3                     1740.221802 2025-12-08 00:05:19
+20          3                     1746.933594 2025-12-08 00:05:20
+21          3                     1753.691040 2025-12-08 00:05:21
+22          3                     1760.500732 2025-12-08 00:05:22
+23          3                     1767.368530 2025-12-08 00:05:23
+24          3                     1774.300171 2025-12-08 00:05:24
+25          3                     1781.300659 2025-12-08 00:05:25
+26          3                     1788.375000 2025-12-08 00:05:26
+27          3                     1795.527710 2025-12-08 00:05:27
+28          3                     1802.763062 2025-12-08 00:05:28
+29          3                     1810.085327 2025-12-08 00:05:29
+30          3                     1817.498657 2025-12-08 00:05:30
+31          3                     1825.006836 2025-12-08 00:05:31
+32          3                     1832.614136 2025-12-08 00:05:32
+33          3                     1840.324707 2025-12-08 00:05:33
+34          3                     1848.142090 2025-12-08 00:05:34
+35          3                     1856.071289 2025-12-08 00:05:35
+36          3                     1864.116089 2025-12-08 00:05:36
+37          3                     1872.281494 2025-12-08 00:05:37
+38          3                     1880.572021 2025-12-08 00:05:38
+39          3                     1888.992065 2025-12-08 00:05:39
+40          3                     1897.546875 2025-12-08 00:05:40
+41          3                     1906.241821 2025-12-08 00:05:41
+42          3                     1915.082031 2025-12-08 00:05:42
+43          3                     1924.073364 2025-12-08 00:05:43
+44          3                     1933.221313 2025-12-08 00:05:44
+45          3                     1942.531982 2025-12-08 00:05:45
+46          3                     1952.011353 2025-12-08 00:05:46
+47          3                     1961.666260 2025-12-08 00:05:47
+48          3                     1971.503052 2025-12-08 00:05:48
+49          3                     1981.528687 2025-12-08 00:05:49
+50          3                     1991.749878 2025-12-08 00:05:50
+51          3                     2002.174561 2025-12-08 00:05:51
+52          3                     2012.810059 2025-12-08 00:05:52
+53          3                     2023.663940 2025-12-08 00:05:53
+54          3                     2034.744629 2025-12-08 00:05:54
+55          3                     2046.060181 2025-12-08 00:05:55
+56          3                     2057.619141 2025-12-08 00:05:56
+57          3                     2069.430908 2025-12-08 00:05:57
+58          3                     2081.503418 2025-12-08 00:05:58
+59          3                     2093.847168 2025-12-08 00:05:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1616.200000 2025-12-08 00:05:00   71859.000000   NO
+1           3          1626.200000 2025-12-08 00:05:01   70858.000000   NO
+2           3          1589.000000 2025-12-08 00:05:02   69856.000000   NO
+3           3          1598.100000 2025-12-08 00:05:03   68855.000000   NO
+4           3          1627.200000 2025-12-08 00:05:04   67853.000000   NO
+5           3          1698.984906 2025-12-08 00:05:05   45818.528302  YES
+6           3          1628.900000 2025-12-08 00:05:06   66852.000000   NO
+7           3          1620.100000 2025-12-08 00:05:07   65850.000000   NO
+8           3          1698.984906 2025-12-08 00:05:08   45818.528302  YES
+9           3          1602.600000 2025-12-08 00:05:09   64848.000000   NO
+10          3          1635.800000 2025-12-08 00:05:10   63847.000000   NO
+11          3          1619.600000 2025-12-08 00:05:11   62846.000000   NO
+12          3          1594.400000 2025-12-08 00:05:12   61844.000000   NO
+13          3          1698.984906 2025-12-08 00:05:13   45818.528302  YES
+14          3          1617.400000 2025-12-08 00:05:14   60843.000000   NO
+15          3          1615.100000 2025-12-08 00:05:15   59842.000000   NO
+16          3          1623.500000 2025-12-08 00:05:16   58841.000000   NO
+17          3          1621.400000 2025-12-08 00:05:17   57840.000000   NO
+18          3          1622.200000 2025-12-08 00:05:18   56838.000000   NO
+19          3          1616.600000 2025-12-08 00:05:19   55836.000000   NO
+20          3          1698.984906 2025-12-08 00:05:20   45818.528302  YES
+21          3          1627.300000 2025-12-08 00:05:21   54835.000000   NO
+22          3          1621.000000 2025-12-08 00:05:22   53834.000000   NO
+23          3          1628.600000 2025-12-08 00:05:23   52833.000000   NO
+24          3          1617.000000 2025-12-08 00:05:24   51831.000000   NO
+25          3          1606.700000 2025-12-08 00:05:25   50830.000000   NO
+26          3          1674.300000 2025-12-08 00:05:26   49829.000000   NO
+27          3          1743.500000 2025-12-08 00:05:27   48827.000000   NO
+28          3          1761.600000 2025-12-08 00:05:28   47826.000000   NO
+29          3          1749.300000 2025-12-08 00:05:29   46824.000000   NO
+30          3          1757.500000 2025-12-08 00:05:30   45822.000000   NO
+31          3          1780.500000 2025-12-08 00:05:31   44821.000000   NO
+32          3          1774.400000 2025-12-08 00:05:32   43819.000000   NO
+33          3          1752.500000 2025-12-08 00:05:33   42817.000000   NO
+34          3          1769.700000 2025-12-08 00:05:34   41815.000000   NO
+35          3          1771.100000 2025-12-08 00:05:35   40813.000000   NO
+36          3          1753.000000 2025-12-08 00:05:36   39812.000000   NO
+37          3          1750.300000 2025-12-08 00:05:37   38804.000000   NO
+38          3          1698.984906 2025-12-08 00:05:38   45818.528302  YES
+39          3          1749.600000 2025-12-08 00:05:39   37802.000000   NO
+40          3          1757.500000 2025-12-08 00:05:40   36800.000000   NO
+41          3          1754.800000 2025-12-08 00:05:41   35799.000000   NO
+42          3          1766.100000 2025-12-08 00:05:42   34798.000000   NO
+43          3          1781.300000 2025-12-08 00:05:43   33796.000000   NO
+44          3          1741.800000 2025-12-08 00:05:44   32795.000000   NO
+45          3          1698.984906 2025-12-08 00:05:45   45818.528302  YES
+46          3          1767.600000 2025-12-08 00:05:46   31793.000000   NO
+47          3          1760.800000 2025-12-08 00:05:47   30792.000000   NO
+48          3          1744.300000 2025-12-08 00:05:48   29791.000000   NO
+49          3          1765.200000 2025-12-08 00:05:49   28789.000000   NO
+50          3          1772.500000 2025-12-08 00:05:50   27787.000000   NO
+51          3          1765.300000 2025-12-08 00:05:51   26785.000000   NO
+52          3          1749.600000 2025-12-08 00:05:52   25784.000000   NO
+53          3          1762.900000 2025-12-08 00:05:53   24782.000000   NO
+54          3          1759.300000 2025-12-08 00:05:54   23780.000000   NO
+55          3          1749.700000 2025-12-08 00:05:55   22779.000000   NO
+56          3          1761.100000 2025-12-08 00:05:56   21778.000000   NO
+57          3          1760.300000 2025-12-08 00:05:57   20777.000000   NO
+58          3          1698.984906 2025-12-08 00:05:58   45818.528302  YES
+59          3          1763.900000 2025-12-08 00:05:59   19775.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1763.026489 2025-12-08 00:06:00
+1           3                     1767.869141 2025-12-08 00:06:01
+2           3                     1773.705933 2025-12-08 00:06:02
+3           3                     1780.250977 2025-12-08 00:06:03
+4           3                     1787.299927 2025-12-08 00:06:04
+5           3                     1794.702026 2025-12-08 00:06:05
+6           3                     1802.347412 2025-12-08 00:06:06
+7           3                     1810.158813 2025-12-08 00:06:07
+8           3                     1818.083130 2025-12-08 00:06:08
+9           3                     1826.087769 2025-12-08 00:06:09
+10          3                     1834.152466 2025-12-08 00:06:10
+11          3                     1842.268799 2025-12-08 00:06:11
+12          3                     1850.435669 2025-12-08 00:06:12
+13          3                     1858.656250 2025-12-08 00:06:13
+14          3                     1866.938599 2025-12-08 00:06:14
+15          3                     1875.292480 2025-12-08 00:06:15
+16          3                     1883.728638 2025-12-08 00:06:16
+17          3                     1892.258667 2025-12-08 00:06:17
+18          3                     1900.894653 2025-12-08 00:06:18
+19          3                     1909.647827 2025-12-08 00:06:19
+20          3                     1918.529297 2025-12-08 00:06:20
+21          3                     1927.549927 2025-12-08 00:06:21
+22          3                     1936.719604 2025-12-08 00:06:22
+23          3                     1946.048218 2025-12-08 00:06:23
+24          3                     1955.544800 2025-12-08 00:06:24
+25          3                     1965.217896 2025-12-08 00:06:25
+26          3                     1975.076416 2025-12-08 00:06:26
+27          3                     1985.128174 2025-12-08 00:06:27
+28          3                     1995.381104 2025-12-08 00:06:28
+29          3                     2005.843140 2025-12-08 00:06:29
+30          3                     2016.522705 2025-12-08 00:06:30
+31          3                     2027.427002 2025-12-08 00:06:31
+32          3                     2038.564331 2025-12-08 00:06:32
+33          3                     2049.942871 2025-12-08 00:06:33
+34          3                     2061.571045 2025-12-08 00:06:34
+35          3                     2073.457031 2025-12-08 00:06:35
+36          3                     2085.610107 2025-12-08 00:06:36
+37          3                     2098.039307 2025-12-08 00:06:37
+38          3                     2110.753906 2025-12-08 00:06:38
+39          3                     2123.763184 2025-12-08 00:06:39
+40          3                     2137.077637 2025-12-08 00:06:40
+41          3                     2150.707275 2025-12-08 00:06:41
+42          3                     2164.662354 2025-12-08 00:06:42
+43          3                     2178.953613 2025-12-08 00:06:43
+44          3                     2193.592529 2025-12-08 00:06:44
+45          3                     2208.589600 2025-12-08 00:06:45
+46          3                     2223.956543 2025-12-08 00:06:46
+47          3                     2239.705566 2025-12-08 00:06:47
+48          3                     2255.847900 2025-12-08 00:06:48
+49          3                     2272.395264 2025-12-08 00:06:49
+50          3                     2289.360840 2025-12-08 00:06:50
+51          3                     2306.755371 2025-12-08 00:06:51
+52          3                     2324.592041 2025-12-08 00:06:52
+53          3                     2342.883301 2025-12-08 00:06:53
+54          3                     2361.640137 2025-12-08 00:06:54
+55          3                     2380.875977 2025-12-08 00:06:55
+56          3                     2400.602051 2025-12-08 00:06:56
+57          3                     2420.829834 2025-12-08 00:06:57
+58          3                     2441.571777 2025-12-08 00:06:58
+59          3                     2462.838135 2025-12-08 00:06:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1753.600000 2025-12-08 00:06:00   68954.000000   NO
+1           3          1745.600000 2025-12-08 00:06:01   67953.000000   NO
+2           3          1770.000000 2025-12-08 00:06:02   66951.000000   NO
+3           3          1756.300000 2025-12-08 00:06:03   65950.000000   NO
+4           3          1775.600000 2025-12-08 00:06:04   64949.000000   NO
+5           3          1759.300000 2025-12-08 00:06:05   63947.000000   NO
+6           3          1758.200000 2025-12-08 00:06:06   62944.000000   NO
+7           3          1779.500000 2025-12-08 00:06:07   61942.000000   NO
+8           3          1748.400000 2025-12-08 00:06:08   60940.000000   NO
+9           3          1759.900000 2025-12-08 00:06:09   59939.000000   NO
+10          3          1761.756604 2025-12-08 00:06:10   42904.226415  YES
+11          3          1757.800000 2025-12-08 00:06:11   58935.000000   NO
+12          3          1782.600000 2025-12-08 00:06:12   57931.000000   NO
+13          3          1767.700000 2025-12-08 00:06:13   56930.000000   NO
+14          3          1782.300000 2025-12-08 00:06:14   55928.000000   NO
+15          3          1748.700000 2025-12-08 00:06:15   54927.000000   NO
+16          3          1768.400000 2025-12-08 00:06:16   53925.000000   NO
+17          3          1748.700000 2025-12-08 00:06:17   52924.000000   NO
+18          3          1779.500000 2025-12-08 00:06:18   51922.000000   NO
+19          3          1761.756604 2025-12-08 00:06:19   42904.226415  YES
+20          3          1755.400000 2025-12-08 00:06:20   50920.000000   NO
+21          3          1761.756604 2025-12-08 00:06:21   42904.226415  YES
+22          3          1761.756604 2025-12-08 00:06:22   42904.226415  YES
+23          3          1765.800000 2025-12-08 00:06:23   49919.000000   NO
+24          3          1754.200000 2025-12-08 00:06:24   48917.000000   NO
+25          3          1763.000000 2025-12-08 00:06:25   47915.000000   NO
+26          3          1784.300000 2025-12-08 00:06:26   46914.000000   NO
+27          3          1775.100000 2025-12-08 00:06:27   45912.000000   NO
+28          3          1755.900000 2025-12-08 00:06:28   44911.000000   NO
+29          3          1773.500000 2025-12-08 00:06:29   43909.000000   NO
+30          3          1783.900000 2025-12-08 00:06:30   42908.000000   NO
+31          3          1748.000000 2025-12-08 00:06:31   41907.000000   NO
+32          3          1778.000000 2025-12-08 00:06:32   40905.000000   NO
+33          3          1750.300000 2025-12-08 00:06:33   39904.000000   NO
+34          3          1757.600000 2025-12-08 00:06:34   38902.000000   NO
+35          3          1757.500000 2025-12-08 00:06:35   37901.000000   NO
+36          3          1761.756604 2025-12-08 00:06:36   42904.226415  YES
+37          3          1753.000000 2025-12-08 00:06:37   36899.000000   NO
+38          3          1747.900000 2025-12-08 00:06:38   35898.000000   NO
+39          3          1750.800000 2025-12-08 00:06:39   34896.000000   NO
+40          3          1775.200000 2025-12-08 00:06:40   33894.000000   NO
+41          3          1760.700000 2025-12-08 00:06:41   32892.000000   NO
+42          3          1742.000000 2025-12-08 00:06:42   31890.000000   NO
+43          3          1753.000000 2025-12-08 00:06:43   30889.000000   NO
+44          3          1776.400000 2025-12-08 00:06:44   29888.000000   NO
+45          3          1764.500000 2025-12-08 00:06:45   28887.000000   NO
+46          3          1733.800000 2025-12-08 00:06:46   27885.000000   NO
+47          3          1737.700000 2025-12-08 00:06:47   26881.000000   NO
+48          3          1764.000000 2025-12-08 00:06:48   25879.000000   NO
+49          3          1755.700000 2025-12-08 00:06:49   24877.000000   NO
+50          3          1758.300000 2025-12-08 00:06:50   23871.000000   NO
+51          3          1773.800000 2025-12-08 00:06:51   22869.000000   NO
+52          3          1747.400000 2025-12-08 00:06:52   21864.000000   NO
+53          3          1766.700000 2025-12-08 00:06:53   20830.000000   NO
+54          3          1770.700000 2025-12-08 00:06:54   19828.000000   NO
+55          3          1761.756604 2025-12-08 00:06:55   42904.226415  YES
+56          3          1773.200000 2025-12-08 00:06:56   18825.000000   NO
+57          3          1761.756604 2025-12-08 00:06:57   42904.226415  YES
+58          3          1755.200000 2025-12-08 00:06:58   17824.000000   NO
+59          3          1768.500000 2025-12-08 00:06:59   16823.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1782.228271 2025-12-08 00:07:00
+1           3                     1787.989014 2025-12-08 00:07:01
+2           3                     1794.359741 2025-12-08 00:07:02
+3           3                     1801.266479 2025-12-08 00:07:03
+4           3                     1808.568237 2025-12-08 00:07:04
+5           3                     1816.155518 2025-12-08 00:07:05
+6           3                     1823.949219 2025-12-08 00:07:06
+7           3                     1831.894531 2025-12-08 00:07:07
+8           3                     1839.954346 2025-12-08 00:07:08
+9           3                     1848.106934 2025-12-08 00:07:09
+10          3                     1856.340088 2025-12-08 00:07:10
+11          3                     1864.649536 2025-12-08 00:07:11
+12          3                     1873.036499 2025-12-08 00:07:12
+13          3                     1881.506470 2025-12-08 00:07:13
+14          3                     1890.066406 2025-12-08 00:07:14
+15          3                     1898.726196 2025-12-08 00:07:15
+16          3                     1907.495239 2025-12-08 00:07:16
+17          3                     1916.384521 2025-12-08 00:07:17
+18          3                     1925.404419 2025-12-08 00:07:18
+19          3                     1934.565186 2025-12-08 00:07:19
+20          3                     1943.877075 2025-12-08 00:07:20
+21          3                     1953.349976 2025-12-08 00:07:21
+22          3                     1962.993164 2025-12-08 00:07:22
+23          3                     1972.816162 2025-12-08 00:07:23
+24          3                     1982.827026 2025-12-08 00:07:24
+25          3                     1993.035278 2025-12-08 00:07:25
+26          3                     2003.448853 2025-12-08 00:07:26
+27          3                     2014.076172 2025-12-08 00:07:27
+28          3                     2024.925659 2025-12-08 00:07:28
+29          3                     2036.005615 2025-12-08 00:07:29
+30          3                     2047.324341 2025-12-08 00:07:30
+31          3                     2058.890625 2025-12-08 00:07:31
+32          3                     2070.712891 2025-12-08 00:07:32
+33          3                     2082.800293 2025-12-08 00:07:33
+34          3                     2095.161865 2025-12-08 00:07:34
+35          3                     2107.806641 2025-12-08 00:07:35
+36          3                     2120.744385 2025-12-08 00:07:36
+37          3                     2133.985596 2025-12-08 00:07:37
+38          3                     2147.538818 2025-12-08 00:07:38
+39          3                     2161.416504 2025-12-08 00:07:39
+40          3                     2175.628174 2025-12-08 00:07:40
+41          3                     2190.184326 2025-12-08 00:07:41
+42          3                     2205.096924 2025-12-08 00:07:42
+43          3                     2220.376709 2025-12-08 00:07:43
+44          3                     2236.035645 2025-12-08 00:07:44
+45          3                     2252.085693 2025-12-08 00:07:45
+46          3                     2268.538086 2025-12-08 00:07:46
+47          3                     2285.406006 2025-12-08 00:07:47
+48          3                     2302.700195 2025-12-08 00:07:48
+49          3                     2320.433594 2025-12-08 00:07:49
+50          3                     2338.618652 2025-12-08 00:07:50
+51          3                     2357.267090 2025-12-08 00:07:51
+52          3                     2376.391113 2025-12-08 00:07:52
+53          3                     2396.002686 2025-12-08 00:07:53
+54          3                     2416.114258 2025-12-08 00:07:54
+55          3                     2436.736328 2025-12-08 00:07:55
+56          3                     2457.880615 2025-12-08 00:07:56
+57          3                     2479.557861 2025-12-08 00:07:57
+58          3                     2501.778809 2025-12-08 00:07:58
+59          3                     2524.552734 2025-12-08 00:07:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1781.500000 2025-12-08 00:07:00   65889.000000   NO
+1           3          1777.900000 2025-12-08 00:07:01   64888.000000   NO
+2           3          1781.000000 2025-12-08 00:07:02   63886.000000   NO
+3           3          1754.000000 2025-12-08 00:07:03   62883.000000   NO
+4           3          1751.100000 2025-12-08 00:07:04   61881.000000   NO
+5           3          1725.500000 2025-12-08 00:07:05   60879.000000   NO
+6           3          1766.000000 2025-12-08 00:07:06   59878.000000   NO
+7           3          1755.500000 2025-12-08 00:07:07   58808.000000   NO
+8           3          1760.184906 2025-12-08 00:07:08   39771.433962  YES
+9           3          1779.500000 2025-12-08 00:07:09   57806.000000   NO
+10          3          1729.500000 2025-12-08 00:07:10   56805.000000   NO
+11          3          1774.200000 2025-12-08 00:07:11   55804.000000   NO
+12          3          1756.700000 2025-12-08 00:07:12   54802.000000   NO
+13          3          1762.600000 2025-12-08 00:07:13   53801.000000   NO
+14          3          1744.200000 2025-12-08 00:07:14   52799.000000   NO
+15          3          1768.700000 2025-12-08 00:07:15   51797.000000   NO
+16          3          1760.400000 2025-12-08 00:07:16   50795.000000   NO
+17          3          1743.600000 2025-12-08 00:07:17   49794.000000   NO
+18          3          1768.400000 2025-12-08 00:07:18   48790.000000   NO
+19          3          1762.900000 2025-12-08 00:07:19   47778.000000   NO
+20          3          1752.100000 2025-12-08 00:07:20   46777.000000   NO
+21          3          1741.600000 2025-12-08 00:07:21   45776.000000   NO
+22          3          1760.184906 2025-12-08 00:07:22   39771.433962  YES
+23          3          1780.100000 2025-12-08 00:07:23   44773.000000   NO
+24          3          1750.500000 2025-12-08 00:07:24   43771.000000   NO
+25          3          1753.500000 2025-12-08 00:07:25   42770.000000   NO
+26          3          1760.184906 2025-12-08 00:07:26   39771.433962  YES
+27          3          1743.600000 2025-12-08 00:07:27   41768.000000   NO
+28          3          1777.500000 2025-12-08 00:07:28   40765.000000   NO
+29          3          1750.700000 2025-12-08 00:07:29   39762.000000   NO
+30          3          1760.184906 2025-12-08 00:07:30   39771.433962  YES
+31          3          1734.100000 2025-12-08 00:07:31   38761.000000   NO
+32          3          1774.000000 2025-12-08 00:07:32   37755.000000   NO
+33          3          1760.184906 2025-12-08 00:07:33   39771.433962  YES
+34          3          1782.900000 2025-12-08 00:07:34   36749.000000   NO
+35          3          1738.200000 2025-12-08 00:07:35   35742.000000   NO
+36          3          1787.100000 2025-12-08 00:07:36   34741.000000   NO
+37          3          1760.184906 2025-12-08 00:07:37   39771.433962  YES
+38          3          1752.700000 2025-12-08 00:07:38   33740.000000   NO
+39          3          1751.700000 2025-12-08 00:07:39   32739.000000   NO
+40          3          1760.184906 2025-12-08 00:07:40   39771.433962  YES
+41          3          1768.800000 2025-12-08 00:07:41   31737.000000   NO
+42          3          1771.200000 2025-12-08 00:07:42   30736.000000   NO
+43          3          1755.000000 2025-12-08 00:07:43   29734.000000   NO
+44          3          1772.800000 2025-12-08 00:07:44   28733.000000   NO
+45          3          1751.500000 2025-12-08 00:07:45   27731.000000   NO
+46          3          1774.200000 2025-12-08 00:07:46   23724.000000   NO
+47          3          1781.400000 2025-12-08 00:07:47   22722.000000   NO
+48          3          1748.700000 2025-12-08 00:07:48   21721.000000   NO
+49          3          1764.800000 2025-12-08 00:07:49   20719.000000   NO
+50          3          1750.400000 2025-12-08 00:07:50   19718.000000   NO
+51          3          1748.700000 2025-12-08 00:07:51   18717.000000   NO
+52          3          1757.200000 2025-12-08 00:07:52   17715.000000   NO
+53          3          1766.100000 2025-12-08 00:07:53   16713.000000   NO
+54          3          1754.900000 2025-12-08 00:07:54   15712.000000   NO
+55          3          1759.800000 2025-12-08 00:07:55   14710.000000   NO
+56          3          1749.200000 2025-12-08 00:07:56   13709.000000   NO
+57          3          1772.200000 2025-12-08 00:07:57   26729.000000   NO
+58          3          1780.800000 2025-12-08 00:07:58   25728.000000   NO
+59          3          1748.600000 2025-12-08 00:07:59   24726.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1780.143677 2025-12-08 00:08:00
+1           3                     1786.278198 2025-12-08 00:08:01
+2           3                     1792.777710 2025-12-08 00:08:02
+3           3                     1799.770996 2025-12-08 00:08:03
+4           3                     1807.134644 2025-12-08 00:08:04
+5           3                     1814.763550 2025-12-08 00:08:05
+6           3                     1822.582764 2025-12-08 00:08:06
+7           3                     1830.539307 2025-12-08 00:08:07
+8           3                     1838.599731 2025-12-08 00:08:08
+9           3                     1846.743774 2025-12-08 00:08:09
+10          3                     1854.961060 2025-12-08 00:08:10
+11          3                     1863.249023 2025-12-08 00:08:11
+12          3                     1871.610718 2025-12-08 00:08:12
+13          3                     1880.051514 2025-12-08 00:08:13
+14          3                     1888.580444 2025-12-08 00:08:14
+15          3                     1897.207031 2025-12-08 00:08:15
+16          3                     1905.942017 2025-12-08 00:08:16
+17          3                     1914.796143 2025-12-08 00:08:17
+18          3                     1923.780151 2025-12-08 00:08:18
+19          3                     1932.904907 2025-12-08 00:08:19
+20          3                     1942.180298 2025-12-08 00:08:20
+21          3                     1951.616211 2025-12-08 00:08:21
+22          3                     1961.222168 2025-12-08 00:08:22
+23          3                     1971.007080 2025-12-08 00:08:23
+24          3                     1980.979736 2025-12-08 00:08:24
+25          3                     1991.148682 2025-12-08 00:08:25
+26          3                     2001.522217 2025-12-08 00:08:26
+27          3                     2012.108887 2025-12-08 00:08:27
+28          3                     2022.916260 2025-12-08 00:08:28
+29          3                     2033.953247 2025-12-08 00:08:29
+30          3                     2045.227417 2025-12-08 00:08:30
+31          3                     2056.748047 2025-12-08 00:08:31
+32          3                     2068.523193 2025-12-08 00:08:32
+33          3                     2080.561768 2025-12-08 00:08:33
+34          3                     2092.873047 2025-12-08 00:08:34
+35          3                     2105.465820 2025-12-08 00:08:35
+36          3                     2118.349854 2025-12-08 00:08:36
+37          3                     2131.535156 2025-12-08 00:08:37
+38          3                     2145.031250 2025-12-08 00:08:38
+39          3                     2158.848877 2025-12-08 00:08:39
+40          3                     2172.998779 2025-12-08 00:08:40
+41          3                     2187.491455 2025-12-08 00:08:41
+42          3                     2202.337891 2025-12-08 00:08:42
+43          3                     2217.550293 2025-12-08 00:08:43
+44          3                     2233.139648 2025-12-08 00:08:44
+45          3                     2249.117188 2025-12-08 00:08:45
+46          3                     2265.495117 2025-12-08 00:08:46
+47          3                     2282.285889 2025-12-08 00:08:47
+48          3                     2299.500977 2025-12-08 00:08:48
+49          3                     2317.153320 2025-12-08 00:08:49
+50          3                     2335.255127 2025-12-08 00:08:50
+51          3                     2353.817383 2025-12-08 00:08:51
+52          3                     2372.853760 2025-12-08 00:08:52
+53          3                     2392.375244 2025-12-08 00:08:53
+54          3                     2412.394043 2025-12-08 00:08:54
+55          3                     2432.921631 2025-12-08 00:08:55
+56          3                     2453.969482 2025-12-08 00:08:56
+57          3                     2475.548584 2025-12-08 00:08:57
+58          3                     2497.668701 2025-12-08 00:08:58
+59          3                     2520.341064 2025-12-08 00:08:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device3/initial/device3.keras and device3/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay  computed_value
+0           3          1764.789583 2025-12-08 00:08:00   28928.979167  YES
+1           3          1750.600000 2025-12-08 00:08:01   52469.000000   NO
+2           3          1786.900000 2025-12-08 00:08:02   51467.000000   NO
+3           3          1768.100000 2025-12-08 00:08:03   50466.000000   NO
+4           3          1764.789583 2025-12-08 00:08:04   28928.979167  YES
+5           3          1755.400000 2025-12-08 00:08:05   49464.000000   NO
+6           3          1755.100000 2025-12-08 00:08:06   48463.000000   NO
+7           3          1776.400000 2025-12-08 00:08:07   47455.000000   NO
+8           3          1769.000000 2025-12-08 00:08:08   46454.000000   NO
+9           3          1769.400000 2025-12-08 00:08:09   45452.000000   NO
+10          3          1764.789583 2025-12-08 00:08:10   28928.979167  YES
+11          3          1764.789583 2025-12-08 00:08:11   28928.979167  YES
+12          3          1778.000000 2025-12-08 00:08:12   44451.000000   NO
+13          3          1776.500000 2025-12-08 00:08:13   43450.000000   NO
+14          3          1760.900000 2025-12-08 00:08:14   42448.000000   NO
+15          3          1759.000000 2025-12-08 00:08:15   41447.000000   NO
+16          3          1768.000000 2025-12-08 00:08:16   40445.000000   NO
+17          3          1749.700000 2025-12-08 00:08:17   39444.000000   NO
+18          3          1757.400000 2025-12-08 00:08:18   38443.000000   NO
+19          3          1764.789583 2025-12-08 00:08:19   28928.979167  YES
+20          3          1763.100000 2025-12-08 00:08:20   37442.000000   NO
+21          3          1756.900000 2025-12-08 00:08:21   36441.000000   NO
+22          3          1764.789583 2025-12-08 00:08:22   28928.979167  YES
+23          3          1750.600000 2025-12-08 00:08:23   35439.000000   NO
+24          3          1778.100000 2025-12-08 00:08:24   34438.000000   NO
+25          3          1764.789583 2025-12-08 00:08:25   28928.979167  YES
+26          3          1771.000000 2025-12-08 00:08:26   33436.000000   NO
+27          3          1774.800000 2025-12-08 00:08:27   32434.000000   NO
+28          3          1770.200000 2025-12-08 00:08:28   31433.000000   NO
+29          3          1764.900000 2025-12-08 00:08:29   30432.000000   NO
+30          3          1770.900000 2025-12-08 00:08:30   29430.000000   NO
+31          3          1762.700000 2025-12-08 00:08:31   28428.000000   NO
+32          3          1748.100000 2025-12-08 00:08:32   27427.000000   NO
+33          3          1766.000000 2025-12-08 00:08:33   26425.000000   NO
+34          3          1774.300000 2025-12-08 00:08:34   25424.000000   NO
+35          3          1752.000000 2025-12-08 00:08:35   24422.000000   NO
+36          3          1764.789583 2025-12-08 00:08:36   28928.979167  YES
+37          3          1749.000000 2025-12-08 00:08:37   23421.000000   NO
+38          3          1771.800000 2025-12-08 00:08:38   22419.000000   NO
+39          3          1771.500000 2025-12-08 00:08:39   21417.000000   NO
+40          3          1757.600000 2025-12-08 00:08:40   20416.000000   NO
+41          3          1766.400000 2025-12-08 00:08:41   19415.000000   NO
+42          3          1764.789583 2025-12-08 00:08:42   28928.979167  YES
+43          3          1772.900000 2025-12-08 00:08:43   18413.000000   NO
+44          3          1751.800000 2025-12-08 00:08:44   17412.000000   NO
+45          3          1757.900000 2025-12-08 00:08:45   16410.000000   NO
+46          3          1769.300000 2025-12-08 00:08:46   15408.000000   NO
+47          3          1766.700000 2025-12-08 00:08:47   14405.000000   NO
+48          3          1771.200000 2025-12-08 00:08:48   13405.000000   NO
+49          3          1763.200000 2025-12-08 00:08:49   12404.000000   NO
+50          3          1764.789583 2025-12-08 00:08:50   28928.979167  YES
+51          3          1764.789583 2025-12-08 00:08:51   28928.979167  YES
+52          3          1765.900000 2025-12-08 00:08:52   11402.000000   NO
+53          3          1772.900000 2025-12-08 00:08:53   10399.000000   NO
+54          3          1764.789583 2025-12-08 00:08:54   28928.979167  YES
+55          3          1779.000000 2025-12-08 00:08:55    9398.000000   NO
+56          3          1753.100000 2025-12-08 00:08:56    8397.000000   NO
+57          3          1767.400000 2025-12-08 00:08:57    7395.000000   NO
+58          3          1752.300000 2025-12-08 00:08:58    6394.000000   NO
+59          3          1766.000000 2025-12-08 00:08:59    5392.000000   NO
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           3                     1780.192627 2025-12-08 00:09:00
+1           3                     1785.728638 2025-12-08 00:09:01
+2           3                     1791.969727 2025-12-08 00:09:02
+3           3                     1798.820190 2025-12-08 00:09:03
+4           3                     1806.114990 2025-12-08 00:09:04
+5           3                     1813.725464 2025-12-08 00:09:05
+6           3                     1821.559204 2025-12-08 00:09:06
+7           3                     1829.550903 2025-12-08 00:09:07
+8           3                     1837.657593 2025-12-08 00:09:08
+9           3                     1845.851929 2025-12-08 00:09:09
+10          3                     1854.119385 2025-12-08 00:09:10
+11          3                     1862.454224 2025-12-08 00:09:11
+12          3                     1870.856934 2025-12-08 00:09:12
+13          3                     1879.332764 2025-12-08 00:09:13
+14          3                     1887.889282 2025-12-08 00:09:14
+15          3                     1896.537109 2025-12-08 00:09:15
+16          3                     1905.286377 2025-12-08 00:09:16
+17          3                     1914.149170 2025-12-08 00:09:17
+18          3                     1923.136475 2025-12-08 00:09:18
+19          3                     1932.259644 2025-12-08 00:09:19
+20          3                     1941.529541 2025-12-08 00:09:20
+21          3                     1950.956543 2025-12-08 00:09:21
+22          3                     1960.550903 2025-12-08 00:09:22
+23          3                     1970.322021 2025-12-08 00:09:23
+24          3                     1980.279053 2025-12-08 00:09:24
+25          3                     1990.431030 2025-12-08 00:09:25
+26          3                     2000.786499 2025-12-08 00:09:26
+27          3                     2011.354126 2025-12-08 00:09:27
+28          3                     2022.142090 2025-12-08 00:09:28
+29          3                     2033.158813 2025-12-08 00:09:29
+30          3                     2044.412598 2025-12-08 00:09:30
+31          3                     2055.912354 2025-12-08 00:09:31
+32          3                     2067.666260 2025-12-08 00:09:32
+33          3                     2079.682861 2025-12-08 00:09:33
+34          3                     2091.971924 2025-12-08 00:09:34
+35          3                     2104.542236 2025-12-08 00:09:35
+36          3                     2117.403564 2025-12-08 00:09:36
+37          3                     2130.565186 2025-12-08 00:09:37
+38          3                     2144.037354 2025-12-08 00:09:38
+39          3                     2157.830811 2025-12-08 00:09:39
+40          3                     2171.955322 2025-12-08 00:09:40
+41          3                     2186.422119 2025-12-08 00:09:41
+42          3                     2201.242432 2025-12-08 00:09:42
+43          3                     2216.427002 2025-12-08 00:09:43
+44          3                     2231.988037 2025-12-08 00:09:44
+45          3                     2247.937012 2025-12-08 00:09:45
+46          3                     2264.285400 2025-12-08 00:09:46
+47          3                     2281.045654 2025-12-08 00:09:47
+48          3                     2298.229492 2025-12-08 00:09:48
+49          3                     2315.849365 2025-12-08 00:09:49
+50          3                     2333.917725 2025-12-08 00:09:50
+51          3                     2352.446289 2025-12-08 00:09:51
+52          3                     2371.447754 2025-12-08 00:09:52
+53          3                     2390.933594 2025-12-08 00:09:53
+54          3                     2410.915771 2025-12-08 00:09:54
+55          3                     2431.406250 2025-12-08 00:09:55
+56          3                     2452.415771 2025-12-08 00:09:56
+57          3                     2473.955322 2025-12-08 00:09:57
+58          3                     2496.036133 2025-12-08 00:09:58
+59          3                     2518.667480 2025-12-08 00:09:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+Triggering retrain for window beetween 00:00:00 and 00:09:59
+lasttimestamp is  2025-12-08 00:09:59

@@ -1,0 +1,165 @@
+============================================================================================
+B1 EXPERIMENT - ARCHITECTURE WITH APACHE FLINK - DELAY METRICS
+Generated: 2026-05-14T12:24:05Z
+Input data: ordered 15-min stream (device_1_15min_streaming_data_2025-12-08.csv)
+Source logs: architecture1_1st_run_logs.log, architecture1_2nd_run_logs.log, architecture1_3d_run_logs.log, architecture1_4th_run_logs.log
+============================================================================================
+
+Definitions
+-----------
+  message_delay_ms        = db_insert_time - message_creation_time (per message)
+  position_in_window      = row index 0..59 within a 1-min Flink tumbling window
+  analytic_window_wait_ms = (59 - position_in_window) * 1000
+                            i.e. the deterministic floor imposed by a 60-s window
+                            with forBoundedOutOfOrderness = 0 s
+  processing_overhead_ms  = message_delay_ms - analytic_window_wait_ms
+                            i.e. infrastructure overhead above the window floor
+
+============================================================================================
+1. PER-RUN SUMMARY
+============================================================================================
+run                                       blocks   msgs      p50      p90      p95      p99      max     min
+architecture1_1st_run_logs.log                14    840    36222    60253    63256    65720    66911    6013
+architecture1_2nd_run_logs.log                14    840    35987    60013    63018    65384    66681    5802
+architecture1_3d_run_logs.log                 10    600    35097    59164    62744    65753    67302    6044
+architecture1_4th_run_logs.log                14    840    34898    58875    61870    64237    65420    4675
+All values in ms.  blocks = number of windows; msgs = number of messages.
+
+============================================================================================
+2. AGGREGATE ACROSS ALL 4 RUNS  (n = 3120 messages, 52 windows)
+============================================================================================
+  p50   message_delay :   35559.5 ms
+  p90   message_delay :   59682.4 ms
+  p95   message_delay :   62805.9 ms
+  p99   message_delay :   65386.5 ms
+  max   message_delay :   67302.0 ms
+  min   message_delay :    4675.0 ms
+  mean  message_delay :   35724.7 ms
+  std   message_delay :   17283.4 ms
+  CV    (std/mean)    :     0.484
+
+============================================================================================
+3. RUN-TO-RUN STABILITY  (mean +/- std of run-level percentile, n=4 runs)
+============================================================================================
+  p50  across runs : 35551 +/- 564 ms  (min 34898, max 36222)
+  p90  across runs : 59576 +/- 573 ms  (min 58875, max 60253)
+  p99  across runs : 65273 +/- 615 ms  (min 64237, max 65753)
+  mean across runs : 35719 +/- 537 ms
+  Run-level std is ~1.6% of the mean for every percentile -> system is stable.
+
+============================================================================================
+4. PER-POSITION-IN-WINDOW  (averaged across all windows in all runs)
+============================================================================================
+   pos    n      mean     std       p50       p90
+     0   52     64636    4696     65370     66511
+     1   52     63246    5943     64370     65509
+     2   52     62690    4404     63368     64507
+     3   52     61299    5654     62366     63505
+     4   52     60316    5557     61364     62504
+     5   52     59780    3958     60362     61501
+     6   52     59308    1085     59361     60499
+     7   52     57899    3707     58360     59496
+     8   52     56897    3707     57359     58495
+     9   52     56342     931     56358     57493
+    10   52     55341     931     55356     56491
+    11   52     53931    3440     54354     55489
+    12   52     52929    3439     53352     54487
+    13   52     52374     841     52352     53485
+    14   52     50945    3306     51350     52483
+    15   52     50390     827     50349     51481
+    16   52     48960    3173     49348     50478
+    17   52     48405     836     48372     49476
+    18   52     46976    3040     47345     48474
+    19   52     46420     867     46369     47526
+    20   52     44991    2908     45342     46470
+    21   52     44435     918     44364     45522
+    22   52     43434     918     43364     44520
+    23   52     42024    2645     42336     43461
+    24   52     41449     985     41360     42516
+    25   52     40039    2515     40333     41456
+    26   52     39464    1066     39356     40511
+    27   52     38055    2385     38330     39452
+    28   52     37480    1158     37352     38506
+    29   52     36070    2256     36326     37447
+    30   52     35495    1259     35348     36502
+    31   52     34086    2128     34322     35442
+    32   52     33511    1365     33345     34498
+    33   52     32101    2002     32318     33437
+    34   52     31099    2002     31315     32436
+    35   52     30544    1593     30339     31491
+    36   52     29115    1878     29310     30432
+    37   52     28559    1712     28336     29487
+    38   52     27130    1755     27306     28428
+    39   52     26574    1834     26332     27482
+    40   52     25572    1834     25330     26480
+    41   52     24163    1517     24301     25422
+    42   52     23161    1517     23299     24420
+    43   52     22605    2083     22326     23476
+    44   52     21603    2083     21324     22474
+    45   52     20194    1294     20294     21414
+    46   52     19192    1294     19292     20411
+    47   52     18636    2338     18318     19470
+    48   52     17207    1191     17288     18406
+    49   52     16652    2467     16314     17465
+    50   52     15650    2467     15312     16462
+    51   52     14240    1009     14280     15400
+    52   52     13238    1009     13278     14397
+    53   52     12683    2728     12304     13456
+    54   52     11254     935     11274     12393
+    55   52     10698    2859     10302     11452
+    56   52      9696    2859      9300     10450
+    57   52      8286     838      8269      9386
+    58   52      7711    2991      7297      8444
+    59   52      6302     820      6264      7381
+  Slope is approximately -1000 ms per position, matching the windowing model.
+
+============================================================================================
+5. DECOMPOSED: processing_overhead_ms = message_delay - analytic_window_wait
+============================================================================================
+  p50  processing_overhead :    6332.0 ms
+  p90  processing_overhead :    7496.0 ms
+  p99  processing_overhead :    8285.6 ms
+  max  processing_overhead :   27256.0 ms
+  min  processing_overhead :  -26402.9 ms
+  mean processing_overhead :    6224.7 ms
+  std  processing_overhead :    2564.8 ms
+  Composition (approximate, mean):
+    ~5000 ms coordinator_service.py consumer.receive(5000) idle-flush timeout
+    ~1000-1200 ms pipeline: Pulsar -> Flink -> Pulsar -> TestConsumerFinal ->
+                  Pulsar -> coordinator -> dataPreparation -> Postgres insert
+
+============================================================================================
+6. COVERAGE SANITY CHECK
+============================================================================================
+  architecture1_1st_run_logs.log: 840 distinct timestamps, 840 rows, 14 windows
+  architecture1_2nd_run_logs.log: 840 distinct timestamps, 840 rows, 14 windows
+  architecture1_3d_run_logs.log: 540 distinct timestamps, 600 rows, 10 windows  <-- 60 duplicate timestamps; possible re-emission
+  architecture1_4th_run_logs.log: 840 distinct timestamps, 840 rows, 14 windows
+
+============================================================================================
+7. ANOMALIES TO REVIEW BEFORE PUBLISHING
+============================================================================================
+  - architecture1_3d_run_logs.log has 60 duplicate timestamps (600 rows but only
+    540 distinct sensor_timestamps) and only 10 windows captured.  Likely early
+    termination or Flink re-emission.  Consider re-running or discarding.
+  - min processing_overhead is strongly negative (-26 403 ms).  This occurs only
+    when a message arrives faster than its position's analytic floor, which is
+    not possible from a clean window emission.  Almost certainly the same run-3
+    issue (duplicate from an earlier window).
+
+============================================================================================
+8. THESIS-READY SUMMARY PARAGRAPH
+============================================================================================
+  Under ordered input on the Flink architecture (n = 3120 messages, 52 windows,
+  4 runs), median end-to-end latency is 35.6 s (p99 = 65.4 s, max = 67.3 s).
+  Run-to-run variability is below 2%.  The latency distribution is approximately
+  uniform on [6 s, 67 s], a direct consequence of Flink's 1-minute event-time
+  tumbling window: each consecutive message in a window waits 1 s less than the
+  previous, giving a per-position slope of -1 s.  After subtracting the
+  deterministic windowing wait, the pure infrastructure overhead is 6.2 +/- 2.6 s
+  per message, of which ~5 s is the coordinator's idle-flush timeout
+  (consumer.receive(5000)).
+
+============================================================================================
+END OF REPORT
+============================================================================================

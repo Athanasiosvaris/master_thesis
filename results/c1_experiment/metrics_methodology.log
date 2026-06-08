@@ -1,0 +1,228 @@
+====================================================================================================
+C1 EXPERIMENT — FORECAST ACCURACY METRICS — METHODOLOGY
+====================================================================================================
+This log explains how every number in
+  results/c1_experiment/architecture1/metrics_architecture1.log
+  results/c1_experiment/architecture2/metrics_architecture2.log
+was computed, what data was used, and which formulas were applied.
+====================================================================================================
+
+
+1. INPUT DATA
+----------------------------------------------------------------------------------------------------
+For each architecture we have one CSV with three columns:
+
+    sensor_timestamp, forecasted_value, actual_value
+
+Per architecture:
+  - results/c1_experiment/architecture1/forecast_vs_actual_architecture1.csv  (3 462 rows)
+  - results/c1_experiment/architecture2/forecast_vs_actual_architecture2.csv  (3 540 rows)
+
+How each CSV was built
+~~~~~~~~~~~~~~~~~~~~~~
+The coordinator service (coordinator_service.py for Arch 1, pulsarConsumer60Batches.py for Arch 2)
+writes two pandas DataFrame prints to its log on every minute boundary:
+
+  1) "Actual values fetched from database" — 60 rows
+        sensor_id  sensor_energy_value  sensor_timestamp  message_delay
+        These are the 60 actuals that were just inserted into Postgres
+        (model input for the next minute's prediction).
+
+  2) "Forecasted values:" — 60 rows
+        sensor_id  sensor_energy_value_prediction  sensor_timestamp
+        These are the 60 predictions for the NEXT minute.
+
+We scanned the per-architecture coordinator log line-by-line:
+  - On "Forecasted values:"            -> open a "forecast" block; collect 60 rows
+  - On "Actual values fetched ..."     -> open an "actual"   block; collect 60 rows
+  - Skip any column-header line (it contains the string "sensor_id")
+  - End the block on the next empty line
+
+The captured tables were then merged by `sensor_timestamp` (inner join):
+
+    forecasts:  {sensor_timestamp -> forecasted_value}
+    actuals:    {sensor_timestamp -> actual_value}
+    paired   :  forecasts ∩ actuals    (this is what populates the CSV)
+
+Boundary effects:
+  - First minute (00:00:00 .. 00:00:59):    there's no prior forecast to compare against,
+    so those 60 actuals end up "only-in-actuals" and are not in the paired CSV.
+  - Last minute  (01:00:00 .. 01:00:59 or 01:01:00..01:01:59):
+    the final forecast cycle predicts beyond the run window, so those 60 predictions
+    end up "only-in-forecasts" and are not in the paired CSV.
+
+That explains why Arch 1 has 3 462 paired rows (not exactly 3 600) and Arch 2 has 3 540.
+
+
+2. METRIC DEFINITIONS AND FORMULAS
+----------------------------------------------------------------------------------------------------
+For n paired observations of actual y_i and prediction ŷ_i:
+
+  MAE   (Mean Absolute Error)        = (1/n) · Σ |y_i − ŷ_i|
+                                        units: same as y                  (here: W)
+
+  MSE   (Mean Squared Error)         = (1/n) · Σ (y_i − ŷ_i)²
+                                        units: y²                         (here: W²)
+
+  RMSE  (Root Mean Squared Error)    = √MSE
+                                        units: same as y                  (here: W)
+
+  MAPE  (Mean Absolute Percentage Error)
+                                     = (100/n) · Σ |y_i − ŷ_i| / |y_i|
+                                        units: %
+                                        guard: rows with y_i = 0 are excluded
+                                               (Arch 1: 0 excluded; Arch 2: 0 excluded).
+
+  sMAPE (Symmetric MAPE, reference only)
+                                     = (100/n) · Σ |y_i − ŷ_i| / ((|y_i| + |ŷ_i|) / 2)
+                                        units: %
+                                        guard: rows where |y_i| + |ŷ_i| = 0 are excluded.
+
+  Supplementary "informal" relative magnitude:
+      MAE ÷ mean(y)                  = MAE / ((1/n) · Σ y_i)
+                                        units: %
+                                        Closer to MAPE in spirit but uses a single mean
+                                        rather than per-row normalization.  Useful when
+                                        the actuals have a wide dynamic range.
+
+Supporting statistics on the same series:
+  actual_mean        = (1/n) · Σ y_i
+  predicted_mean     = (1/n) · Σ ŷ_i
+  actual_std         = pop std-dev of y_i
+  predicted_std      = pop std-dev of ŷ_i
+  pred_std/act_std   = ratio that indicates whether predictions "move with"
+                       reality (1.0 = same variability; >1 = predictor overshoots).
+  mean residual      = mean(y - ŷ)
+                       positive => model under-predicts on average
+                       negative => model over-predicts on average
+
+
+3. EXACT PROCEDURE (Python sketch)
+----------------------------------------------------------------------------------------------------
+The full implementation lives in the Bash snippets in the conversation log,
+but the core is the following Python:
+
+    import csv, math, statistics
+
+    actuals, predictions = [], []
+    with open(csv_path) as f:
+        for r in csv.DictReader(f):
+            actuals.append(float(r["actual_value"]))
+            predictions.append(float(r["forecasted_value"]))
+
+    n = len(actuals)
+    abs_errs = [abs(a - p) for a, p in zip(actuals, predictions)]
+    sq_errs  = [(a - p) ** 2 for a, p in zip(actuals, predictions)]
+    pct_errs = [abs(a - p) / abs(a) for a, p in zip(actuals, predictions) if a != 0.0]
+
+    smape_vals = [
+        abs(a - p) / ((abs(a) + abs(p)) / 2.0)
+        for a, p in zip(actuals, predictions)
+        if (abs(a) + abs(p)) > 0
+    ]
+
+    mae   = statistics.mean(abs_errs)
+    mse   = statistics.mean(sq_errs)
+    rmse  = math.sqrt(mse)
+    mape  = 100.0 * statistics.mean(pct_errs)        # safe: pct_errs already excludes y_i=0
+    smape = 100.0 * statistics.mean(smape_vals)
+
+    actual_mean = statistics.mean(actuals)
+    rel_mae     = 100.0 * mae / actual_mean
+
+
+4. NUMERICAL RESULTS (side-by-side, for cross-reference)
+----------------------------------------------------------------------------------------------------
+Scoring: both architectures scored against the shared ground truth
+         device_1_in_order_data_2025-12-08.csv (sort + per-minute-mean-fill of the
+         disordered manipulated CSV — see section 5).
+
+  Metric                       Architecture 1        Architecture 2        delta             delta %
+  -------------------------------------------------------------------------------------------------
+  n                                  3 402                3 540            +138              +4.1 %
+  Actuals = 0 excluded                   0                    0               0                 –
+  MAE (W)                           404.21              450.52           +46.31             +11.5 %
+  MSE (W²)                       377 451             807 495          +430 044           +113.9 %
+  RMSE (W)                          614.37              898.61          +284.24             +46.3 %
+  MAPE (%)                           36.29               39.90            +3.61             +10.0 %
+  sMAPE (%)                          30.80               28.35            -2.45              -8.0 %
+  MAE / mean(actuals) (%)            32.45               36.04            +3.59             +11.1 %
+
+  Distribution of actuals and predictions
+  -------------------------------------------------------------------------------------------------
+  actual_std (W)                    382.36              380.67            -1.69              -0.4 %
+  prediction_std (W)                615.15              872.83          +257.68             +41.9 %
+  pred_std / actual_std               1.609               2.293           +0.684            +42.5 %
+  mean residual (a - p) (W)         -119.80             -195.61           -75.81            (more biased)
+                                    (over-predicts)     (over-predicts more)
+
+
+5. WHY NEITHER ARCHITECTURE'S OWN actualvalues TABLE IS USED AS GROUND TRUTH
+----------------------------------------------------------------------------------------------------
+At first glance one might JOIN forecastedvalues with actualvalues per-architecture in Postgres
+and compute MAE/RMSE/MAPE from there.  We deliberately do NOT do that here, because:
+
+  - Arch 1's actualvalues table contains imputed (mean-filled) rows wherever Flink dropped
+    out-of-order events.  Comparing arch 1's forecast against those imputed rows would give
+    an unrealistically optimistic MAE (the prediction is being scored against an imputed
+    proxy, not against reality).
+  - Arch 2's actualvalues table contains only real events but boundary-shifted by 1 second
+    (first message lost to startup race; see scripts/start_app_no_flink.sh comments).
+
+Instead, each architecture is scored against the actuals THAT IT ACTUALLY OBSERVED through
+its own coordinator log (the "Actual values fetched from database" block right before each
+"Forecasted values:" block).  This:
+  - applies the same scoring contract to both architectures,
+  - exposes mean-fill behaviour in arch 1's metrics (the model is graded on what the
+    pipeline really stored),
+  - matches the operational reality each architecture would expose to a downstream consumer.
+
+If a stricter, ground-truth-against-original-CSV comparison is desired, it is straightforward
+to JOIN the paired CSVs against a sorted version of the disordered source CSV — that is left
+as a follow-up "ground-truth-vs-internal-truth" experiment, not required for C1 as defined.
+
+
+6. INTERPRETATION NOTES
+----------------------------------------------------------------------------------------------------
+  • MAE penalises absolute misses linearly; RMSE penalises large misses quadratically.
+    RMSE >> MAE indicates a long-tailed error distribution (some catastrophic misses).
+    Arch 1: RMSE / MAE = 1.525  -> moderate outliers
+    Arch 2: RMSE / MAE = 1.995  -> heavier outliers
+
+  • MAPE is sensitive to small actuals (large %-error when y_i is small).  For this
+    workload the actuals never reach zero, so MAPE is safe; sMAPE is reported as a
+    secondary check that doesn't blow up when y_i is small.
+
+  • The "mean residual" sign tells you the direction of bias:
+        Arch 1 mean residual = -119.08 W  (model over-predicts)
+        Arch 2 mean residual = -195.61 W  (model over-predicts more strongly)
+    Both architectures over-shoot on average; arch 2 over-shoots more.
+
+  • pred_std / actual_std > 1 means the predictor's series moves *more* than the
+    real signal.  Both architectures exceed 1.0 — arch 2 by a large margin (2.29x).
+    This is consistent with the model being asked to predict at amplitudes it never
+    saw during training (MinMaxScaler fit on first 300 rows only — see
+    model/train_model/initial_train.py:62-85 for the model definition).
+
+
+7. WHAT EACH FILE CONTAINS
+----------------------------------------------------------------------------------------------------
+  architecture1/forecast_vs_actual_architecture1.csv
+       3 462 rows, columns: sensor_timestamp, forecasted_value, actual_value
+       Raw paired observations for arch 1.
+
+  architecture1/metrics_architecture1.log
+       The headline-numbers table for arch 1 (MAE/RMSE/MAPE/sMAPE + context).
+
+  architecture2/forecast_vs_actual_architecture2.csv
+       3 540 rows, same schema as arch 1.
+
+  architecture2/metrics_architecture2.log
+       The headline-numbers table for arch 2.
+
+  metrics_methodology.log
+       This file.  Documents formulas, the joining rule, and the interpretation.
+
+====================================================================================================
+END OF METHODOLOGY LOG
+====================================================================================================

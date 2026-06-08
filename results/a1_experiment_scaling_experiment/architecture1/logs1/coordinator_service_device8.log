@@ -1,0 +1,2190 @@
+2026-05-15 19:21:30.656 INFO  [137590301048960] Client:86 | Subscribing on Topic :device8_model_consume
+2026-05-15 19:21:30.656 INFO  [137590301048960] ClientConnection:196 | [<none> -> pulsar://localhost:6650] Create ClientConnection, timeout=10000
+2026-05-15 19:21:30.656 INFO  [137590301048960] ConnectionPool:125 | Created connection for pulsar://localhost:6650-pulsar://localhost:6650-0
+2026-05-15 19:21:30.657 INFO  [137589772252864] ClientConnection:416 | [127.0.0.1:50770 -> 127.0.0.1:6650] Connected to broker
+2026-05-15 19:21:30.661 INFO  [137589772252864] HandlerBase:112 | [persistent://public/default/device8_model_consume, pythonSubscription, 0] Getting connection from pool
+2026-05-15 19:21:30.663 INFO  [137589772252864] BinaryProtoLookupService:85 | Lookup response for persistent://public/default/device8_model_consume, lookup-broker-url pulsar://localhost:6650, from [127.0.0.1:50770 -> 127.0.0.1:6650] 
+2026-05-15 19:21:30.681 INFO  [137589772252864] ConsumerImpl:337 | [persistent://public/default/device8_model_consume, pythonSubscription, 0] Created consumer on broker [127.0.0.1:50770 -> 127.0.0.1:6650] 
+2026-05-15 19:21:30.681 INFO  [137589772252864] HandlerBase:134 | Finished connecting to broker after 19 ms
+Coordinator service started
+
+Database connection established
+Dropped table device8_actualvalues
+Table device8_actualvalues created successfully
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Dropped table device8_forecastedvalues
+Table device8_forecastedvalues created successfully
+
+Value of --retrain flag: False
+
+Forecasting for initial model using device8/initial/device8.keras and device8/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay
+0           8          1452.216667 2025-12-08 00:04:00       15931.25
+1           8          1452.216667 2025-12-08 00:04:01       15931.25
+2           8          1452.216667 2025-12-08 00:04:02       15931.25
+3           8          1452.216667 2025-12-08 00:04:03       15931.25
+4           8          1452.216667 2025-12-08 00:04:04       15931.25
+5           8          1452.216667 2025-12-08 00:04:05       15931.25
+6           8          1452.216667 2025-12-08 00:04:06       15931.25
+7           8          1452.216667 2025-12-08 00:04:07       15931.25
+8           8          1452.216667 2025-12-08 00:04:08       15931.25
+9           8          1452.216667 2025-12-08 00:04:09       15931.25
+10          8          1452.216667 2025-12-08 00:04:10       15931.25
+11          8          1452.216667 2025-12-08 00:04:11       15931.25
+12          8          1452.216667 2025-12-08 00:04:12       15931.25
+13          8          1452.216667 2025-12-08 00:04:13       15931.25
+14          8          1452.216667 2025-12-08 00:04:14       15931.25
+15          8          1452.216667 2025-12-08 00:04:15       15931.25
+16          8          1452.216667 2025-12-08 00:04:16       15931.25
+17          8          1452.216667 2025-12-08 00:04:17       15931.25
+18          8          1452.216667 2025-12-08 00:04:18       15931.25
+19          8          1452.216667 2025-12-08 00:04:19       15931.25
+20          8          1452.216667 2025-12-08 00:04:20       15931.25
+21          8          1452.216667 2025-12-08 00:04:21       15931.25
+22          8          1452.216667 2025-12-08 00:04:22       15931.25
+23          8          1452.216667 2025-12-08 00:04:23       15931.25
+24          8          1452.216667 2025-12-08 00:04:24       15931.25
+25          8          1452.216667 2025-12-08 00:04:25       15931.25
+26          8          1452.216667 2025-12-08 00:04:26       15931.25
+27          8          1452.216667 2025-12-08 00:04:27       15931.25
+28          8          1452.216667 2025-12-08 00:04:28       15931.25
+29          8          1452.216667 2025-12-08 00:04:29       15931.25
+30          8          1452.216667 2025-12-08 00:04:30       15931.25
+31          8          1452.216667 2025-12-08 00:04:31       15931.25
+32          8          1452.216667 2025-12-08 00:04:32       15931.25
+33          8          1452.216667 2025-12-08 00:04:33       15931.25
+34          8          1452.216667 2025-12-08 00:04:34       15931.25
+35          8          1452.216667 2025-12-08 00:04:35       15931.25
+36          8          1452.216667 2025-12-08 00:04:36       15931.25
+37          8          1452.216667 2025-12-08 00:04:37       15931.25
+38          8          1452.216667 2025-12-08 00:04:38       15931.25
+39          8          1452.216667 2025-12-08 00:04:39       15931.25
+40          8          1452.216667 2025-12-08 00:04:40       15931.25
+41          8          1452.216667 2025-12-08 00:04:41       15931.25
+42          8          1452.216667 2025-12-08 00:04:42       15931.25
+43          8          1452.216667 2025-12-08 00:04:43       15931.25
+44          8          1452.216667 2025-12-08 00:04:44       15931.25
+45          8          1452.216667 2025-12-08 00:04:45       15931.25
+46          8          1452.216667 2025-12-08 00:04:46       15931.25
+47          8          1452.216667 2025-12-08 00:04:47       15931.25
+48          8          1455.800000 2025-12-08 00:04:48       21441.00
+49          8          1452.600000 2025-12-08 00:04:49       20439.00
+50          8          1459.200000 2025-12-08 00:04:50       19437.00
+51          8          1459.300000 2025-12-08 00:04:51       18435.00
+52          8          1458.000000 2025-12-08 00:04:52       17433.00
+53          8          1450.600000 2025-12-08 00:04:53       16432.00
+54          8          1446.600000 2025-12-08 00:04:54       15431.00
+55          8          1445.900000 2025-12-08 00:04:55       14429.00
+56          8          1446.200000 2025-12-08 00:04:56       13427.00
+57          8          1453.600000 2025-12-08 00:04:57       12426.00
+58          8          1450.800000 2025-12-08 00:04:58       11423.00
+59          8          1448.000000 2025-12-08 00:04:59       10422.00
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           8                     1467.563110 2025-12-08 00:05:00
+1           8                     1470.734497 2025-12-08 00:05:01
+2           8                     1473.577881 2025-12-08 00:05:02
+3           8                     1476.405884 2025-12-08 00:05:03
+4           8                     1479.244385 2025-12-08 00:05:04
+5           8                     1482.116455 2025-12-08 00:05:05
+6           8                     1485.039551 2025-12-08 00:05:06
+7           8                     1488.028931 2025-12-08 00:05:07
+8           8                     1491.096191 2025-12-08 00:05:08
+9           8                     1494.250610 2025-12-08 00:05:09
+10          8                     1497.500000 2025-12-08 00:05:10
+11          8                     1500.851196 2025-12-08 00:05:11
+12          8                     1504.309814 2025-12-08 00:05:12
+13          8                     1507.880859 2025-12-08 00:05:13
+14          8                     1511.569702 2025-12-08 00:05:14
+15          8                     1515.381226 2025-12-08 00:05:15
+16          8                     1519.321045 2025-12-08 00:05:16
+17          8                     1523.394409 2025-12-08 00:05:17
+18          8                     1527.607056 2025-12-08 00:05:18
+19          8                     1531.965332 2025-12-08 00:05:19
+20          8                     1536.475830 2025-12-08 00:05:20
+21          8                     1541.145020 2025-12-08 00:05:21
+22          8                     1545.980469 2025-12-08 00:05:22
+23          8                     1550.989624 2025-12-08 00:05:23
+24          8                     1556.180420 2025-12-08 00:05:24
+25          8                     1561.561523 2025-12-08 00:05:25
+26          8                     1567.141479 2025-12-08 00:05:26
+27          8                     1572.929810 2025-12-08 00:05:27
+28          8                     1578.935669 2025-12-08 00:05:28
+29          8                     1585.168945 2025-12-08 00:05:29
+30          8                     1591.640503 2025-12-08 00:05:30
+31          8                     1598.360718 2025-12-08 00:05:31
+32          8                     1605.340942 2025-12-08 00:05:32
+33          8                     1612.592407 2025-12-08 00:05:33
+34          8                     1620.127075 2025-12-08 00:05:34
+35          8                     1627.957275 2025-12-08 00:05:35
+36          8                     1636.095337 2025-12-08 00:05:36
+37          8                     1644.554077 2025-12-08 00:05:37
+38          8                     1653.346191 2025-12-08 00:05:38
+39          8                     1662.485229 2025-12-08 00:05:39
+40          8                     1671.984009 2025-12-08 00:05:40
+41          8                     1681.855469 2025-12-08 00:05:41
+42          8                     1692.112793 2025-12-08 00:05:42
+43          8                     1702.769043 2025-12-08 00:05:43
+44          8                     1713.835815 2025-12-08 00:05:44
+45          8                     1725.325562 2025-12-08 00:05:45
+46          8                     1737.248657 2025-12-08 00:05:46
+47          8                     1749.615479 2025-12-08 00:05:47
+48          8                     1762.434814 2025-12-08 00:05:48
+49          8                     1775.713501 2025-12-08 00:05:49
+50          8                     1789.458130 2025-12-08 00:05:50
+51          8                     1803.671143 2025-12-08 00:05:51
+52          8                     1818.355469 2025-12-08 00:05:52
+53          8                     1833.510132 2025-12-08 00:05:53
+54          8                     1849.132324 2025-12-08 00:05:54
+55          8                     1865.214478 2025-12-08 00:05:55
+56          8                     1881.745239 2025-12-08 00:05:56
+57          8                     1898.710449 2025-12-08 00:05:57
+58          8                     1916.091064 2025-12-08 00:05:58
+59          8                     1933.867676 2025-12-08 00:05:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device8/initial/device8.keras and device8/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay
+0           8               1449.6 2025-12-08 00:05:00        69237.0
+1           8               1453.3 2025-12-08 00:05:01        68235.0
+2           8               1448.2 2025-12-08 00:05:02        67233.0
+3           8               1450.7 2025-12-08 00:05:03        66230.0
+4           8               1451.0 2025-12-08 00:05:04        65229.0
+5           8               1449.3 2025-12-08 00:05:05        64227.0
+6           8               1455.3 2025-12-08 00:05:06        63226.0
+7           8               1463.0 2025-12-08 00:05:07        62223.0
+8           8               1447.4 2025-12-08 00:05:08        61220.0
+9           8               1456.6 2025-12-08 00:05:09        60218.0
+10          8               1467.7 2025-12-08 00:05:10        59213.0
+11          8               1448.0 2025-12-08 00:05:11        58209.0
+12          8               1448.7 2025-12-08 00:05:12        57199.0
+13          8               1448.7 2025-12-08 00:05:13        56197.0
+14          8               1449.6 2025-12-08 00:05:14        55196.0
+15          8               1454.2 2025-12-08 00:05:15        54195.0
+16          8               1456.9 2025-12-08 00:05:16        53194.0
+17          8               1456.4 2025-12-08 00:05:17        52193.0
+18          8               1451.5 2025-12-08 00:05:18        51192.0
+19          8               1458.6 2025-12-08 00:05:19        50190.0
+20          8               1458.6 2025-12-08 00:05:20        49189.0
+21          8               1459.4 2025-12-08 00:05:21        48188.0
+22          8               1456.4 2025-12-08 00:05:22        47187.0
+23          8               1452.6 2025-12-08 00:05:23        46185.0
+24          8               1453.5 2025-12-08 00:05:24        45184.0
+25          8               1451.9 2025-12-08 00:05:25        44183.0
+26          8               1516.5 2025-12-08 00:05:26        43182.0
+27          8               1571.7 2025-12-08 00:05:27        42181.0
+28          8               1591.5 2025-12-08 00:05:28        41175.0
+29          8               1580.5 2025-12-08 00:05:29        40174.0
+30          8               1588.5 2025-12-08 00:05:30        39173.0
+31          8               1608.8 2025-12-08 00:05:31        38171.0
+32          8               1591.6 2025-12-08 00:05:32        37170.0
+33          8               1605.6 2025-12-08 00:05:33        36169.0
+34          8               1585.6 2025-12-08 00:05:34        35165.0
+35          8               1588.7 2025-12-08 00:05:35        34163.0
+36          8               1589.3 2025-12-08 00:05:36        33163.0
+37          8               1589.2 2025-12-08 00:05:37        32162.0
+38          8               1584.4 2025-12-08 00:05:38        31161.0
+39          8               1587.6 2025-12-08 00:05:39        30158.0
+40          8               1590.4 2025-12-08 00:05:40        29156.0
+41          8               1588.5 2025-12-08 00:05:41        28155.0
+42          8               1588.1 2025-12-08 00:05:42        27153.0
+43          8               1590.9 2025-12-08 00:05:43        26152.0
+44          8               1586.0 2025-12-08 00:05:44        25151.0
+45          8               1588.1 2025-12-08 00:05:45        24150.0
+46          8               1594.1 2025-12-08 00:05:46        23148.0
+47          8               1583.0 2025-12-08 00:05:47        22131.0
+48          8               1589.9 2025-12-08 00:05:48        21129.0
+49          8               1589.2 2025-12-08 00:05:49        20127.0
+50          8               1591.0 2025-12-08 00:05:50        19125.0
+51          8               1588.9 2025-12-08 00:05:51        18122.0
+52          8               1588.9 2025-12-08 00:05:52        17112.0
+53          8               1586.0 2025-12-08 00:05:53        16109.0
+54          8               1591.9 2025-12-08 00:05:54        15108.0
+55          8               1586.5 2025-12-08 00:05:55        14107.0
+56          8               1586.9 2025-12-08 00:05:56        13105.0
+57          8               1592.3 2025-12-08 00:05:57        12102.0
+58          8               1589.5 2025-12-08 00:05:58        11101.0
+59          8               1586.2 2025-12-08 00:05:59        10099.0
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           8                     1643.812500 2025-12-08 00:06:00
+1           8                     1655.163330 2025-12-08 00:06:01
+2           8                     1665.669800 2025-12-08 00:06:02
+3           8                     1676.288086 2025-12-08 00:06:03
+4           8                     1687.089478 2025-12-08 00:06:04
+5           8                     1698.142212 2025-12-08 00:06:05
+6           8                     1709.498413 2025-12-08 00:06:06
+7           8                     1721.198120 2025-12-08 00:06:07
+8           8                     1733.274658 2025-12-08 00:06:08
+9           8                     1745.759277 2025-12-08 00:06:09
+10          8                     1758.667114 2025-12-08 00:06:10
+11          8                     1772.012085 2025-12-08 00:06:11
+12          8                     1785.811768 2025-12-08 00:06:12
+13          8                     1800.067993 2025-12-08 00:06:13
+14          8                     1814.784058 2025-12-08 00:06:14
+15          8                     1829.959595 2025-12-08 00:06:15
+16          8                     1845.590698 2025-12-08 00:06:16
+17          8                     1861.672119 2025-12-08 00:06:17
+18          8                     1878.193848 2025-12-08 00:06:18
+19          8                     1895.144653 2025-12-08 00:06:19
+20          8                     1912.504272 2025-12-08 00:06:20
+21          8                     1930.253662 2025-12-08 00:06:21
+22          8                     1948.368774 2025-12-08 00:06:22
+23          8                     1966.821655 2025-12-08 00:06:23
+24          8                     1985.579712 2025-12-08 00:06:24
+25          8                     2004.605713 2025-12-08 00:06:25
+26          8                     2023.861084 2025-12-08 00:06:26
+27          8                     2043.289185 2025-12-08 00:06:27
+28          8                     2062.849609 2025-12-08 00:06:28
+29          8                     2082.506104 2025-12-08 00:06:29
+30          8                     2102.218750 2025-12-08 00:06:30
+31          8                     2121.933350 2025-12-08 00:06:31
+32          8                     2141.598633 2025-12-08 00:06:32
+33          8                     2161.171143 2025-12-08 00:06:33
+34          8                     2180.594727 2025-12-08 00:06:34
+35          8                     2199.827393 2025-12-08 00:06:35
+36          8                     2218.815918 2025-12-08 00:06:36
+37          8                     2237.515869 2025-12-08 00:06:37
+38          8                     2255.884521 2025-12-08 00:06:38
+39          8                     2273.882080 2025-12-08 00:06:39
+40          8                     2291.471191 2025-12-08 00:06:40
+41          8                     2308.619629 2025-12-08 00:06:41
+42          8                     2325.298096 2025-12-08 00:06:42
+43          8                     2341.482666 2025-12-08 00:06:43
+44          8                     2357.151367 2025-12-08 00:06:44
+45          8                     2372.288818 2025-12-08 00:06:45
+46          8                     2386.880615 2025-12-08 00:06:46
+47          8                     2400.918457 2025-12-08 00:06:47
+48          8                     2414.398682 2025-12-08 00:06:48
+49          8                     2427.317139 2025-12-08 00:06:49
+50          8                     2439.676514 2025-12-08 00:06:50
+51          8                     2451.481201 2025-12-08 00:06:51
+52          8                     2462.738281 2025-12-08 00:06:52
+53          8                     2473.456787 2025-12-08 00:06:53
+54          8                     2483.647705 2025-12-08 00:06:54
+55          8                     2493.323975 2025-12-08 00:06:55
+56          8                     2502.501221 2025-12-08 00:06:56
+57          8                     2511.193604 2025-12-08 00:06:57
+58          8                     2519.418213 2025-12-08 00:06:58
+59          8                     2527.192139 2025-12-08 00:06:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device8/initial/device8.keras and device8/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay
+0           8               1595.2 2025-12-08 00:06:00        69154.0
+1           8               1592.2 2025-12-08 00:06:01        68151.0
+2           8               1595.4 2025-12-08 00:06:02        67150.0
+3           8               1591.2 2025-12-08 00:06:03        66148.0
+4           8               1587.8 2025-12-08 00:06:04        65146.0
+5           8               1590.2 2025-12-08 00:06:05        64144.0
+6           8               1590.8 2025-12-08 00:06:06        63143.0
+7           8               1592.0 2025-12-08 00:06:07        62141.0
+8           8               1587.4 2025-12-08 00:06:08        61139.0
+9           8               1597.2 2025-12-08 00:06:09        60137.0
+10          8               1599.9 2025-12-08 00:06:10        59134.0
+11          8               1589.0 2025-12-08 00:06:11        58132.0
+12          8               1607.0 2025-12-08 00:06:12        57130.0
+13          8               1592.9 2025-12-08 00:06:13        56128.0
+14          8               1589.6 2025-12-08 00:06:14        55126.0
+15          8               1591.2 2025-12-08 00:06:15        54125.0
+16          8               1586.5 2025-12-08 00:06:16        53119.0
+17          8               1587.6 2025-12-08 00:06:17        52118.0
+18          8               1606.1 2025-12-08 00:06:18        51115.0
+19          8               1597.9 2025-12-08 00:06:19        50110.0
+20          8               1593.4 2025-12-08 00:06:20        49096.0
+21          8               1590.5 2025-12-08 00:06:21        48095.0
+22          8               1592.1 2025-12-08 00:06:22        47095.0
+23          8               1592.5 2025-12-08 00:06:23        46089.0
+24          8               1591.6 2025-12-08 00:06:24        45084.0
+25          8               1590.0 2025-12-08 00:06:25        44081.0
+26          8               1599.5 2025-12-08 00:06:26        43079.0
+27          8               1589.9 2025-12-08 00:06:27        42078.0
+28          8               1593.0 2025-12-08 00:06:28        41076.0
+29          8               1587.2 2025-12-08 00:06:29        40072.0
+30          8               1590.4 2025-12-08 00:06:30        39071.0
+31          8               1590.3 2025-12-08 00:06:31        38069.0
+32          8               1600.6 2025-12-08 00:06:32        37067.0
+33          8               1592.7 2025-12-08 00:06:33        36066.0
+34          8               1590.2 2025-12-08 00:06:34        35064.0
+35          8               1588.2 2025-12-08 00:06:35        34063.0
+36          8               1588.5 2025-12-08 00:06:36        33061.0
+37          8               1589.8 2025-12-08 00:06:37        32059.0
+38          8               1590.9 2025-12-08 00:06:38        31058.0
+39          8               1593.8 2025-12-08 00:06:39        30056.0
+40          8               1586.1 2025-12-08 00:06:40        29055.0
+41          8               1590.8 2025-12-08 00:06:41        28054.0
+42          8               1593.3 2025-12-08 00:06:42        27052.0
+43          8               1591.1 2025-12-08 00:06:43        26051.0
+44          8               1594.5 2025-12-08 00:06:44        25050.0
+45          8               1590.4 2025-12-08 00:06:45        24048.0
+46          8               1590.0 2025-12-08 00:06:46        23047.0
+47          8               1587.3 2025-12-08 00:06:47        22045.0
+48          8               1592.7 2025-12-08 00:06:48        21044.0
+49          8               1593.8 2025-12-08 00:06:49        20043.0
+50          8               1592.0 2025-12-08 00:06:50        19041.0
+51          8               1593.6 2025-12-08 00:06:51        18039.0
+52          8               1588.6 2025-12-08 00:06:52        17038.0
+53          8               1589.8 2025-12-08 00:06:53        16036.0
+54          8               1587.2 2025-12-08 00:06:54        15034.0
+55          8               1591.4 2025-12-08 00:06:55        14032.0
+56          8               1598.6 2025-12-08 00:06:56        13031.0
+57          8               1601.0 2025-12-08 00:06:57        12029.0
+58          8               1591.0 2025-12-08 00:06:58        11026.0
+59          8               1590.3 2025-12-08 00:06:59        10025.0
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           8                     1655.787109 2025-12-08 00:07:00
+1           8                     1668.126099 2025-12-08 00:07:01
+2           8                     1679.425903 2025-12-08 00:07:02
+3           8                     1690.788696 2025-12-08 00:07:03
+4           8                     1702.302002 2025-12-08 00:07:04
+5           8                     1714.042969 2025-12-08 00:07:05
+6           8                     1726.067993 2025-12-08 00:07:06
+7           8                     1738.423706 2025-12-08 00:07:07
+8           8                     1751.147705 2025-12-08 00:07:08
+9           8                     1764.269165 2025-12-08 00:07:09
+10          8                     1777.805176 2025-12-08 00:07:10
+11          8                     1791.772583 2025-12-08 00:07:11
+12          8                     1806.185303 2025-12-08 00:07:12
+13          8                     1821.040771 2025-12-08 00:07:13
+14          8                     1836.348877 2025-12-08 00:07:14
+15          8                     1852.104492 2025-12-08 00:07:15
+16          8                     1868.299194 2025-12-08 00:07:16
+17          8                     1884.925781 2025-12-08 00:07:17
+18          8                     1901.968750 2025-12-08 00:07:18
+19          8                     1919.407227 2025-12-08 00:07:19
+20          8                     1937.227783 2025-12-08 00:07:20
+21          8                     1955.405029 2025-12-08 00:07:21
+22          8                     1973.910156 2025-12-08 00:07:22
+23          8                     1992.709595 2025-12-08 00:07:23
+24          8                     2011.768066 2025-12-08 00:07:24
+25          8                     2031.046265 2025-12-08 00:07:25
+26          8                     2050.502441 2025-12-08 00:07:26
+27          8                     2070.089844 2025-12-08 00:07:27
+28          8                     2089.764893 2025-12-08 00:07:28
+29          8                     2109.476807 2025-12-08 00:07:29
+30          8                     2129.176514 2025-12-08 00:07:30
+31          8                     2148.811768 2025-12-08 00:07:31
+32          8                     2168.332520 2025-12-08 00:07:32
+33          8                     2187.687500 2025-12-08 00:07:33
+34          8                     2206.831299 2025-12-08 00:07:34
+35          8                     2225.716064 2025-12-08 00:07:35
+36          8                     2244.296631 2025-12-08 00:07:36
+37          8                     2262.530518 2025-12-08 00:07:37
+38          8                     2280.379883 2025-12-08 00:07:38
+39          8                     2297.808350 2025-12-08 00:07:39
+40          8                     2314.785400 2025-12-08 00:07:40
+41          8                     2331.284180 2025-12-08 00:07:41
+42          8                     2347.280518 2025-12-08 00:07:42
+43          8                     2362.754150 2025-12-08 00:07:43
+44          8                     2377.691650 2025-12-08 00:07:44
+45          8                     2392.079834 2025-12-08 00:07:45
+46          8                     2405.913330 2025-12-08 00:07:46
+47          8                     2419.187012 2025-12-08 00:07:47
+48          8                     2431.900391 2025-12-08 00:07:48
+49          8                     2444.055420 2025-12-08 00:07:49
+50          8                     2455.657959 2025-12-08 00:07:50
+51          8                     2466.716064 2025-12-08 00:07:51
+52          8                     2477.239990 2025-12-08 00:07:52
+53          8                     2487.241699 2025-12-08 00:07:53
+54          8                     2496.733887 2025-12-08 00:07:54
+55          8                     2505.731934 2025-12-08 00:07:55
+56          8                     2514.251709 2025-12-08 00:07:56
+57          8                     2522.309570 2025-12-08 00:07:57
+58          8                     2529.923096 2025-12-08 00:07:58
+59          8                     2537.111572 2025-12-08 00:07:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device8/initial/device8.keras and device8/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay
+0           8               1596.8 2025-12-08 00:07:00        68861.0
+1           8               1594.8 2025-12-08 00:07:01        67860.0
+2           8               1595.6 2025-12-08 00:07:02        66856.0
+3           8               1594.7 2025-12-08 00:07:03        65853.0
+4           8               1590.1 2025-12-08 00:07:04        64850.0
+5           8               1587.1 2025-12-08 00:07:05        63849.0
+6           8               1587.1 2025-12-08 00:07:06        62847.0
+7           8               1591.0 2025-12-08 00:07:07        61845.0
+8           8               1586.3 2025-12-08 00:07:08        60843.0
+9           8               1595.0 2025-12-08 00:07:09        59841.0
+10          8               1587.6 2025-12-08 00:07:10        58840.0
+11          8               1592.0 2025-12-08 00:07:11        57838.0
+12          8               1588.0 2025-12-08 00:07:12        56835.0
+13          8               1592.1 2025-12-08 00:07:13        55833.0
+14          8               1588.8 2025-12-08 00:07:14        54832.0
+15          8               1593.7 2025-12-08 00:07:15        53830.0
+16          8               1591.0 2025-12-08 00:07:16        52829.0
+17          8               1591.0 2025-12-08 00:07:17        51827.0
+18          8               1591.9 2025-12-08 00:07:18        50826.0
+19          8               1598.6 2025-12-08 00:07:19        49824.0
+20          8               1597.3 2025-12-08 00:07:20        48823.0
+21          8               1588.9 2025-12-08 00:07:21        47816.0
+22          8               1587.3 2025-12-08 00:07:22        46814.0
+23          8               1593.7 2025-12-08 00:07:23        45812.0
+24          8               1594.6 2025-12-08 00:07:24        44811.0
+25          8               1590.6 2025-12-08 00:07:25        43809.0
+26          8               1595.2 2025-12-08 00:07:26        42808.0
+27          8               1584.9 2025-12-08 00:07:27        41807.0
+28          8               1590.4 2025-12-08 00:07:28        40805.0
+29          8               1590.3 2025-12-08 00:07:29        39804.0
+30          8               1610.3 2025-12-08 00:07:30        38797.0
+31          8               1590.4 2025-12-08 00:07:31        37794.0
+32          8               1592.4 2025-12-08 00:07:32        36792.0
+33          8               1592.8 2025-12-08 00:07:33        35790.0
+34          8               1589.9 2025-12-08 00:07:34        34789.0
+35          8               1590.1 2025-12-08 00:07:35        33787.0
+36          8               1589.9 2025-12-08 00:07:36        32785.0
+37          8               1593.0 2025-12-08 00:07:37        31784.0
+38          8               1592.1 2025-12-08 00:07:38        30781.0
+39          8               1592.5 2025-12-08 00:07:39        29778.0
+40          8               1591.6 2025-12-08 00:07:40        28777.0
+41          8               1592.9 2025-12-08 00:07:41        27775.0
+42          8               1598.3 2025-12-08 00:07:42        26772.0
+43          8               1586.1 2025-12-08 00:07:43        25771.0
+44          8               1582.5 2025-12-08 00:07:44        24770.0
+45          8               1589.3 2025-12-08 00:07:45        23768.0
+46          8               1590.9 2025-12-08 00:07:46        22766.0
+47          8               1594.1 2025-12-08 00:07:47        21765.0
+48          8               1589.1 2025-12-08 00:07:48        20764.0
+49          8               1589.9 2025-12-08 00:07:49        19763.0
+50          8               1589.1 2025-12-08 00:07:50        18762.0
+51          8               1592.5 2025-12-08 00:07:51        17760.0
+52          8               1587.8 2025-12-08 00:07:52        16759.0
+53          8               1588.8 2025-12-08 00:07:53        15757.0
+54          8               1588.5 2025-12-08 00:07:54        14756.0
+55          8               1593.4 2025-12-08 00:07:55        13755.0
+56          8               1597.0 2025-12-08 00:07:56        12753.0
+57          8               1596.0 2025-12-08 00:07:57        11752.0
+58          8               1595.2 2025-12-08 00:07:58        10739.0
+59          8               1593.3 2025-12-08 00:07:59         9738.0
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           8                     1655.983521 2025-12-08 00:08:00
+1           8                     1668.232178 2025-12-08 00:08:01
+2           8                     1679.501343 2025-12-08 00:08:02
+3           8                     1690.841919 2025-12-08 00:08:03
+4           8                     1702.337891 2025-12-08 00:08:04
+5           8                     1714.067383 2025-12-08 00:08:05
+6           8                     1726.085938 2025-12-08 00:08:06
+7           8                     1738.438477 2025-12-08 00:08:07
+8           8                     1751.160156 2025-12-08 00:08:08
+9           8                     1764.280884 2025-12-08 00:08:09
+10          8                     1777.817993 2025-12-08 00:08:10
+11          8                     1791.790161 2025-12-08 00:08:11
+12          8                     1806.203247 2025-12-08 00:08:12
+13          8                     1821.064819 2025-12-08 00:08:13
+14          8                     1836.373901 2025-12-08 00:08:14
+15          8                     1852.129883 2025-12-08 00:08:15
+16          8                     1868.324219 2025-12-08 00:08:16
+17          8                     1884.949341 2025-12-08 00:08:17
+18          8                     1901.992188 2025-12-08 00:08:18
+19          8                     1919.434937 2025-12-08 00:08:19
+20          8                     1937.255859 2025-12-08 00:08:20
+21          8                     1955.432251 2025-12-08 00:08:21
+22          8                     1973.937988 2025-12-08 00:08:22
+23          8                     1992.738403 2025-12-08 00:08:23
+24          8                     2011.796143 2025-12-08 00:08:24
+25          8                     2031.073608 2025-12-08 00:08:25
+26          8                     2050.529541 2025-12-08 00:08:26
+27          8                     2070.117676 2025-12-08 00:08:27
+28          8                     2089.793457 2025-12-08 00:08:28
+29          8                     2109.504395 2025-12-08 00:08:29
+30          8                     2129.202393 2025-12-08 00:08:30
+31          8                     2148.832764 2025-12-08 00:08:31
+32          8                     2168.353027 2025-12-08 00:08:32
+33          8                     2187.709229 2025-12-08 00:08:33
+34          8                     2206.852295 2025-12-08 00:08:34
+35          8                     2225.736084 2025-12-08 00:08:35
+36          8                     2244.315674 2025-12-08 00:08:36
+37          8                     2262.548828 2025-12-08 00:08:37
+38          8                     2280.396973 2025-12-08 00:08:38
+39          8                     2297.825195 2025-12-08 00:08:39
+40          8                     2314.801514 2025-12-08 00:08:40
+41          8                     2331.299561 2025-12-08 00:08:41
+42          8                     2347.294678 2025-12-08 00:08:42
+43          8                     2362.767822 2025-12-08 00:08:43
+44          8                     2377.705566 2025-12-08 00:08:44
+45          8                     2392.095215 2025-12-08 00:08:45
+46          8                     2405.927979 2025-12-08 00:08:46
+47          8                     2419.200928 2025-12-08 00:08:47
+48          8                     2431.913330 2025-12-08 00:08:48
+49          8                     2444.068115 2025-12-08 00:08:49
+50          8                     2455.670898 2025-12-08 00:08:50
+51          8                     2466.728760 2025-12-08 00:08:51
+52          8                     2477.252197 2025-12-08 00:08:52
+53          8                     2487.252930 2025-12-08 00:08:53
+54          8                     2496.744629 2025-12-08 00:08:54
+55          8                     2505.742188 2025-12-08 00:08:55
+56          8                     2514.261230 2025-12-08 00:08:56
+57          8                     2522.318848 2025-12-08 00:08:57
+58          8                     2529.932373 2025-12-08 00:08:58
+59          8                     2537.119629 2025-12-08 00:08:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+No retrain triggered
+Triggering forecasting
+
+Forecasting.py script logs
+Database connection established
+Value of --retrain flag: False
+
+Forecasting for initial model using device8/initial/device8.keras and device8/initial/scaler.save
+Successfully downloaded model and scaler from S3
+
+Actual values fetched from database
+    sensor_id  sensor_energy_value    sensor_timestamp  message_delay
+0           8               1596.1 2025-12-08 00:08:00        69492.0
+1           8               1597.0 2025-12-08 00:08:01        68491.0
+2           8               1594.3 2025-12-08 00:08:02        67489.0
+3           8               1590.9 2025-12-08 00:08:03        66471.0
+4           8               1600.0 2025-12-08 00:08:04        65470.0
+5           8               1591.1 2025-12-08 00:08:05        64468.0
+6           8               1593.0 2025-12-08 00:08:06        63467.0
+7           8               1591.4 2025-12-08 00:08:07        62466.0
+8           8               1592.5 2025-12-08 00:08:08        61464.0
+9           8               1592.5 2025-12-08 00:08:09        60462.0
+10          8               1594.2 2025-12-08 00:08:10        59460.0
+11          8               1593.6 2025-12-08 00:08:11        58459.0
+12          8               1594.1 2025-12-08 00:08:12        57458.0
+13          8               1594.1 2025-12-08 00:08:13        56456.0
+14          8               1596.4 2025-12-08 00:08:14        55455.0
+15          8               1589.1 2025-12-08 00:08:15        54453.0
+16          8               1590.5 2025-12-08 00:08:16        53452.0
+17          8               1592.7 2025-12-08 00:08:17        52451.0
+18          8               1592.6 2025-12-08 00:08:18        51450.0
+19          8               1596.0 2025-12-08 00:08:19        50448.0
+20          8               1600.3 2025-12-08 00:08:20        49447.0
+21          8               1591.8 2025-12-08 00:08:21        48445.0
+22          8               1592.6 2025-12-08 00:08:22        47444.0
+23          8               1590.8 2025-12-08 00:08:23        46443.0
+24          8               1603.3 2025-12-08 00:08:24        45441.0
+25          8               1593.6 2025-12-08 00:08:25        44440.0
+26          8               1601.3 2025-12-08 00:08:26        43439.0
+27          8               1593.6 2025-12-08 00:08:27        42437.0
+28          8               1596.7 2025-12-08 00:08:28        41436.0
+29          8               1590.9 2025-12-08 00:08:29        40434.0
+30          8               1596.1 2025-12-08 00:08:30        39433.0
+31          8               1592.3 2025-12-08 00:08:31        38432.0
+32          8               1593.4 2025-12-08 00:08:32        37430.0
+33          8               1598.4 2025-12-08 00:08:33        36424.0
+34          8               1610.5 2025-12-08 00:08:34        35422.0
+35          8               1595.1 2025-12-08 00:08:35        34412.0
+36          8               1596.4 2025-12-08 00:08:36        33411.0
+37          8               1595.0 2025-12-08 00:08:37        32409.0
+38          8               1595.5 2025-12-08 00:08:38        31408.0
+39          8               1597.6 2025-12-08 00:08:39        30405.0
+40          8               1597.8 2025-12-08 00:08:40        29404.0
+41          8               1593.8 2025-12-08 00:08:41        28401.0
+42          8               1608.7 2025-12-08 00:08:42        27398.0
+43          8               1594.3 2025-12-08 00:08:43        26393.0
+44          8               1594.6 2025-12-08 00:08:44        25392.0
+45          8               1599.4 2025-12-08 00:08:45        24391.0
+46          8               1597.0 2025-12-08 00:08:46        23389.0
+47          8               1593.1 2025-12-08 00:08:47        22377.0
+48          8               1594.6 2025-12-08 00:08:48        21376.0
+49          8               1593.7 2025-12-08 00:08:49        20375.0
+50          8               1611.2 2025-12-08 00:08:50        19371.0
+51          8               1605.9 2025-12-08 00:08:51        18370.0
+52          8               1594.2 2025-12-08 00:08:52        17368.0
+53          8               1594.9 2025-12-08 00:08:53        16255.0
+54          8               1594.0 2025-12-08 00:08:54        15163.0
+55          8               1595.3 2025-12-08 00:08:55        14162.0
+56          8               1597.1 2025-12-08 00:08:56        13160.0
+57          8               1597.8 2025-12-08 00:08:57        12078.0
+58          8               1597.4 2025-12-08 00:08:58        11070.0
+59          8               1600.1 2025-12-08 00:08:59        10068.0
+Forecasted values:
+    sensor_id  sensor_energy_value_prediction    sensor_timestamp
+0           8                     1663.085815 2025-12-08 00:09:00
+1           8                     1675.738770 2025-12-08 00:09:01
+2           8                     1687.394531 2025-12-08 00:09:02
+3           8                     1699.112305 2025-12-08 00:09:03
+4           8                     1710.980591 2025-12-08 00:09:04
+5           8                     1723.075562 2025-12-08 00:09:05
+6           8                     1735.462036 2025-12-08 00:09:06
+7           8                     1748.184204 2025-12-08 00:09:07
+8           8                     1761.279419 2025-12-08 00:09:08
+9           8                     1774.775024 2025-12-08 00:09:09
+10          8                     1788.691895 2025-12-08 00:09:10
+11          8                     1803.042358 2025-12-08 00:09:11
+12          8                     1817.835205 2025-12-08 00:09:12
+13          8                     1833.073486 2025-12-08 00:09:13
+14          8                     1848.756836 2025-12-08 00:09:14
+15          8                     1864.879272 2025-12-08 00:09:15
+16          8                     1881.435181 2025-12-08 00:09:16
+17          8                     1898.409546 2025-12-08 00:09:17
+18          8                     1915.785767 2025-12-08 00:09:18
+19          8                     1933.544800 2025-12-08 00:09:19
+20          8                     1951.661743 2025-12-08 00:09:20
+21          8                     1970.109375 2025-12-08 00:09:21
+22          8                     1988.859863 2025-12-08 00:09:22
+23          8                     2007.874756 2025-12-08 00:09:23
+24          8                     2027.117065 2025-12-08 00:09:24
+25          8                     2046.541748 2025-12-08 00:09:25
+26          8                     2066.110352 2025-12-08 00:09:26
+27          8                     2085.771484 2025-12-08 00:09:27
+28          8                     2105.480957 2025-12-08 00:09:28
+29          8                     2125.185791 2025-12-08 00:09:29
+30          8                     2144.838379 2025-12-08 00:09:30
+31          8                     2164.384766 2025-12-08 00:09:31
+32          8                     2183.777832 2025-12-08 00:09:32
+33          8                     2202.966553 2025-12-08 00:09:33
+34          8                     2221.904297 2025-12-08 00:09:34
+35          8                     2240.544678 2025-12-08 00:09:35
+36          8                     2258.849609 2025-12-08 00:09:36
+37          8                     2276.776855 2025-12-08 00:09:37
+38          8                     2294.291504 2025-12-08 00:09:38
+39          8                     2311.360840 2025-12-08 00:09:39
+40          8                     2327.955811 2025-12-08 00:09:40
+41          8                     2344.053223 2025-12-08 00:09:41
+42          8                     2359.633301 2025-12-08 00:09:42
+43          8                     2374.677979 2025-12-08 00:09:43
+44          8                     2389.178223 2025-12-08 00:09:44
+45          8                     2403.123779 2025-12-08 00:09:45
+46          8                     2416.510010 2025-12-08 00:09:46
+47          8                     2429.335938 2025-12-08 00:09:47
+48          8                     2441.604492 2025-12-08 00:09:48
+49          8                     2453.318604 2025-12-08 00:09:49
+50          8                     2464.486572 2025-12-08 00:09:50
+51          8                     2475.117188 2025-12-08 00:09:51
+52          8                     2485.223145 2025-12-08 00:09:52
+53          8                     2494.817871 2025-12-08 00:09:53
+54          8                     2503.916260 2025-12-08 00:09:54
+55          8                     2512.532959 2025-12-08 00:09:55
+56          8                     2520.684814 2025-12-08 00:09:56
+57          8                     2528.388916 2025-12-08 00:09:57
+58          8                     2535.663330 2025-12-08 00:09:58
+59          8                     2542.525635 2025-12-08 00:09:59
+Forecasted values inserted into database
+Exiting forecasting script
+
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+2026-05-15 19:31:30.661 INFO  [137589772252864] ConsumerStatsImpl:59 | Consumer [persistent://public/default/device8_model_consume, pythonSubscription, 0] , ConsumerStatsImpl (numBytesRecieved_ = 6048, totalNumBytesRecieved_ = 6048, receivedMsgMap_ = {[Key: Ok, Value: 252], [Key: TimeOut, Value: 518], }, ackedMsgMap_ = {[Key: {Result: Ok, ackType: 0}, Value: 252], }, totalReceivedMsgMap_ = {[Key: Ok, Value: 252], [Key: TimeOut, Value: 518], }, totalAckedMsgMap_ = {[Key: {Result: Ok, ackType: 0}, Value: 252], })
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+No new messages received yet.Trying again...
+
+Actual data inserted to database
+Triggering retrain for window beetween 00:00:00 and 00:09:59
+lasttimestamp is  2025-12-08 00:09:59
+retrain.py completed successfully:
+Database connection established
+Retraining model for device device8 with data from table device8_actualvalues between timestamps 2025-12-08-00-04-00 and 2025-12-08-00-09-59...
+Epoch 1/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m5s[0m 2s/step - loss: 0.4916
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.4377
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 25ms/step - loss: 0.3960
+Epoch 2/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.2549
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.2457
+Epoch 3/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 48ms/step - loss: 0.1437
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.1270
+Epoch 4/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 56ms/step - loss: 0.0537
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0495
+Epoch 5/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 47ms/step - loss: 0.0306
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0324
+Epoch 6/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0440
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0446
+Epoch 7/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step - loss: 0.0543
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0422
+Epoch 8/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0426
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0332
+Epoch 9/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 39ms/step - loss: 0.0306
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0282
+Epoch 10/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 50ms/step - loss: 0.0279
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0268
+Epoch 11/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 40ms/step - loss: 0.0203
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0247
+Epoch 12/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0190
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0230
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0245
+Epoch 13/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 73ms/step - loss: 0.0183
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0255
+Epoch 14/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0270
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0224
+Epoch 15/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 42ms/step - loss: 0.0340
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0270
+Epoch 16/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0244
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.0237
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0244
+Epoch 17/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 48ms/step - loss: 0.0159
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0257
+Epoch 18/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 40ms/step - loss: 0.0202
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0228
+Epoch 19/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0117
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0258
+Epoch 20/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0369
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0248
+Epoch 21/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 48ms/step - loss: 0.0228
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0228
+Epoch 22/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 36ms/step - loss: 0.0288
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0232
+Epoch 23/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 39ms/step - loss: 0.0181
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0201
+Epoch 24/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0141
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0227
+Epoch 25/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 40ms/step - loss: 0.0142
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0230
+Epoch 26/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0225
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0197
+Epoch 27/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 40ms/step - loss: 0.0220
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0207
+Epoch 28/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0310
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0214
+Epoch 29/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 51ms/step - loss: 0.0231
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0197
+Epoch 30/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 40ms/step - loss: 0.0260
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0207
+Epoch 31/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0123
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0211
+Epoch 32/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 55ms/step - loss: 0.0109
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0189
+Epoch 33/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 66ms/step - loss: 0.0129
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0185
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step - loss: 0.0189
+Epoch 34/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 53ms/step - loss: 0.0269
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0192
+Epoch 35/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 51ms/step - loss: 0.0150
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0196
+Epoch 36/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0380
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0202
+Epoch 37/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 42ms/step - loss: 0.0126
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0189
+Epoch 38/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 40ms/step - loss: 0.0242
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0204
+Epoch 39/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 48ms/step - loss: 0.0287
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0209
+Epoch 40/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0114
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0185
+Epoch 41/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 49ms/step - loss: 0.0089
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0170
+Epoch 42/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 51ms/step - loss: 0.0258
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0200
+Epoch 43/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 50ms/step - loss: 0.0354
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0188
+Epoch 44/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0164
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0181
+Epoch 45/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 42ms/step - loss: 0.0190
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0208
+Epoch 46/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 39ms/step - loss: 0.0112
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0195
+Epoch 47/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 39ms/step - loss: 0.0251
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0196
+Epoch 48/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0136
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0184
+Epoch 49/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 49ms/step - loss: 0.0116
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0169
+Epoch 50/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 40ms/step - loss: 0.0127
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0179
+Epoch 51/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0088
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0175
+Epoch 52/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 40ms/step - loss: 0.0228
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0177
+Epoch 53/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step - loss: 0.0135
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0170
+Epoch 54/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 42ms/step - loss: 0.0204
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0162
+Epoch 55/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 56ms/step - loss: 0.0224
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 26ms/step - loss: 0.0167
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step - loss: 0.0163
+Epoch 56/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 60ms/step - loss: 0.0168
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 26ms/step - loss: 0.0136
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step - loss: 0.0160
+Epoch 57/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 51ms/step - loss: 0.0058
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0109
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0155
+Epoch 58/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 49ms/step - loss: 0.0069
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0172
+Epoch 59/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 52ms/step - loss: 0.0210
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0166
+Epoch 60/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0139
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.0160
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0167
+Epoch 61/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 48ms/step - loss: 0.0185
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0176
+Epoch 62/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0193
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0160
+Epoch 63/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0273
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0214
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0164
+Epoch 64/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0137
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.0149
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0159
+Epoch 65/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 54ms/step - loss: 0.0108
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 27ms/step - loss: 0.0136
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step - loss: 0.0151
+Epoch 66/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 50ms/step - loss: 0.0131
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0124
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step - loss: 0.0148
+Epoch 67/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 54ms/step - loss: 0.0126
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0157
+Epoch 68/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 47ms/step - loss: 0.0074
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0155
+Epoch 69/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step - loss: 0.0198
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0143
+Epoch 70/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 50ms/step - loss: 0.0204
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0159
+Epoch 71/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 82ms/step - loss: 0.0083
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 27ms/step - loss: 0.0139
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step - loss: 0.0147
+Epoch 72/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 53ms/step - loss: 0.0174
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0177
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 35ms/step - loss: 0.0165
+Epoch 73/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 81ms/step - loss: 0.0182
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0154
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step - loss: 0.0148
+Epoch 74/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 52ms/step - loss: 0.0098
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0151
+Epoch 75/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 57ms/step - loss: 0.0131
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0161
+Epoch 76/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 59ms/step - loss: 0.0113
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0134
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0164
+Epoch 77/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0198
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0175
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0152
+Epoch 78/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 53ms/step - loss: 0.0174
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0151
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0136
+Epoch 79/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 51ms/step - loss: 0.0130
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0165
+Epoch 80/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 40ms/step - loss: 0.0200
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0140
+Epoch 81/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 61ms/step - loss: 0.0324
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0136
+Epoch 82/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 51ms/step - loss: 0.0290
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0153
+Epoch 83/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 51ms/step - loss: 0.0139
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0165
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step - loss: 0.0145
+Epoch 84/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0060
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0135
+Epoch 85/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 55ms/step - loss: 0.0096
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0133
+Epoch 86/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 45ms/step - loss: 0.0101
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0145
+Epoch 87/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 57ms/step - loss: 0.0095
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0136
+Epoch 88/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0151
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0151
+Epoch 89/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 59ms/step - loss: 0.0092
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0133
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step - loss: 0.0142
+Epoch 90/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 74ms/step - loss: 0.0139
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 42ms/step - loss: 0.0162
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step - loss: 0.0141
+Epoch 91/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 71ms/step - loss: 0.0106
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0106
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 33ms/step - loss: 0.0131
+Epoch 92/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 67ms/step - loss: 0.0197
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0161
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step - loss: 0.0142
+Epoch 93/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 65ms/step - loss: 0.0199
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 35ms/step - loss: 0.0163
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step - loss: 0.0141
+Epoch 94/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 67ms/step - loss: 0.0193
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0166
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step - loss: 0.0142
+Epoch 95/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 55ms/step - loss: 0.0072
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0132
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0133
+Epoch 96/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 55ms/step - loss: 0.0229
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0165
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step - loss: 0.0127
+Epoch 97/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 56ms/step - loss: 0.0199
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0173
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step - loss: 0.0145
+Epoch 98/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 50ms/step - loss: 0.0135
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0133
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step - loss: 0.0144
+Epoch 99/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 56ms/step - loss: 0.0173
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step - loss: 0.0150
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step - loss: 0.0137
+Epoch 100/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 63ms/step - loss: 0.0099
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0126
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0136
+Epoch 101/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0104
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0139
+Epoch 102/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 52ms/step - loss: 0.0118
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0140
+Epoch 103/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 40ms/step - loss: 0.0168
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0138
+Epoch 104/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step - loss: 0.0161
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.0137
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0127
+Epoch 105/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 56ms/step - loss: 0.0097
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0136
+Epoch 106/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 45ms/step - loss: 0.0270
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step - loss: 0.0182
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step - loss: 0.0141
+Epoch 107/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 52ms/step - loss: 0.0056
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0115
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 37ms/step - loss: 0.0146
+Epoch 108/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 72ms/step - loss: 0.0036
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0114
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0134
+Epoch 109/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0204
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0149
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0134
+Epoch 110/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 47ms/step - loss: 0.0113
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0113
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0127
+Epoch 111/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step - loss: 0.0169
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step - loss: 0.0155
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0124
+Epoch 112/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step - loss: 0.0060
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0113
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0131
+Epoch 113/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0152
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0133
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0122
+Epoch 114/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0079
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0091
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0138
+Epoch 115/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 57ms/step - loss: 0.0091
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0129
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0141
+Epoch 116/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 50ms/step - loss: 0.0066
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0115
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step - loss: 0.0132
+Epoch 117/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 49ms/step - loss: 0.0042
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0111
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0128
+Epoch 118/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 48ms/step - loss: 0.0134
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step - loss: 0.0139
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0127
+Epoch 119/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 53ms/step - loss: 0.0264
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0169
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step - loss: 0.0118
+Epoch 120/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0169
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step - loss: 0.0141
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0121
+Epoch 121/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 47ms/step - loss: 0.0076
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0134
+Epoch 122/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0180
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0121
+Epoch 123/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 63ms/step - loss: 0.0127
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0121
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0130
+Epoch 124/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 51ms/step - loss: 0.0134
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0120
+Epoch 125/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 45ms/step - loss: 0.0086
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0123
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step - loss: 0.0127
+Epoch 126/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 50ms/step - loss: 0.0073
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0114
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step - loss: 0.0122
+Epoch 127/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 65ms/step - loss: 0.0081
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step - loss: 0.0103
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0127
+Epoch 128/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0185
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0124
+Epoch 129/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 61ms/step - loss: 0.0049
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0113
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step - loss: 0.0126
+Epoch 130/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 55ms/step - loss: 0.0090
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0118
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0124
+Epoch 131/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 49ms/step - loss: 0.0168
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step - loss: 0.0155
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0124
+Epoch 132/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 45ms/step - loss: 0.0106
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0133
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0122
+Epoch 133/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 60ms/step - loss: 0.0176
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step - loss: 0.0130
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0118
+Epoch 134/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 50ms/step - loss: 0.0074
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 25ms/step - loss: 0.0068
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step - loss: 0.0120
+Epoch 135/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 123ms/step - loss: 0.0097
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 30ms/step - loss: 0.0107 
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step - loss: 0.0132
+Epoch 136/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0194
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0129
+Epoch 137/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0057
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0098
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0128
+Epoch 138/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 53ms/step - loss: 0.0063
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0116
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step - loss: 0.0114
+Epoch 139/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 59ms/step - loss: 0.0132
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0121
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step - loss: 0.0124
+Epoch 140/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step - loss: 0.0136
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0139
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step - loss: 0.0118
+Epoch 141/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 58ms/step - loss: 0.0206
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0133
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step - loss: 0.0109
+Epoch 142/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 62ms/step - loss: 0.0126
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 33ms/step - loss: 0.0104
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step - loss: 0.0107
+Epoch 143/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 68ms/step - loss: 0.0045
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 30ms/step - loss: 0.0058
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step - loss: 0.0097
+Epoch 144/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 57ms/step - loss: 0.0029
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0062
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step - loss: 0.0112
+Epoch 145/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 53ms/step - loss: 0.0070
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 32ms/step - loss: 0.0115
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step - loss: 0.0125
+Epoch 146/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 62ms/step - loss: 0.0190
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 30ms/step - loss: 0.0141
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step - loss: 0.0116
+Epoch 147/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 59ms/step - loss: 0.0063
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0092
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step - loss: 0.0118
+Epoch 148/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 52ms/step - loss: 0.0133
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0120
+Epoch 149/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 42ms/step - loss: 0.0046
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0112
+Epoch 150/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0163
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.0125
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0117
+Epoch 151/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 55ms/step - loss: 0.0058
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0090
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step - loss: 0.0108
+Epoch 152/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 71ms/step - loss: 0.0125
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0113
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step - loss: 0.0112
+Epoch 153/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 50ms/step - loss: 0.0126
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0101
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 33ms/step - loss: 0.0100
+Epoch 154/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 63ms/step - loss: 0.0113
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step - loss: 0.0102
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step - loss: 0.0101
+Epoch 155/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 60ms/step - loss: 0.0049
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step - loss: 0.0076
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0113
+Epoch 156/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 51ms/step - loss: 0.0077
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0119
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step - loss: 0.0129
+Epoch 157/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 52ms/step - loss: 0.0160
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0132
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step - loss: 0.0108
+Epoch 158/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 76ms/step - loss: 0.0074
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0100
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step - loss: 0.0114
+Epoch 159/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 53ms/step - loss: 0.0048
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0086
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step - loss: 0.0119
+Epoch 160/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 59ms/step - loss: 0.0033
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0086
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0108
+Epoch 161/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0087
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.0109
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0114
+Epoch 162/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 45ms/step - loss: 0.0124
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0123
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step - loss: 0.0108
+Epoch 163/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 60ms/step - loss: 0.0183
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0113
+Epoch 164/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step - loss: 0.0055
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0132
+Epoch 165/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 52ms/step - loss: 0.0071
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0109
+Epoch 166/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0128
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0109
+Epoch 167/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step - loss: 0.0132
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.0129
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0112
+Epoch 168/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 97ms/step - loss: 0.0140
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0101
+Epoch 169/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step - loss: 0.0050
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0107
+Epoch 170/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 52ms/step - loss: 0.0195
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0115
+Epoch 171/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0039
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0114
+Epoch 172/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 57ms/step - loss: 0.0062
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step - loss: 0.0121
+Epoch 173/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 53ms/step - loss: 0.0214
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0116
+Epoch 174/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 78ms/step - loss: 0.0162
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step - loss: 0.0117
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0104
+Epoch 175/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 47ms/step - loss: 0.0110
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0107
+Epoch 176/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 41ms/step - loss: 0.0155
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0106
+Epoch 177/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0043
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0107
+Epoch 178/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 77ms/step - loss: 0.0047
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 36ms/step - loss: 0.0074
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step - loss: 0.0117
+Epoch 179/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 59ms/step - loss: 0.0102
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0109
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 37ms/step - loss: 0.0101
+Epoch 180/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 51ms/step - loss: 0.0133
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 28ms/step - loss: 0.0116
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step - loss: 0.0108
+Epoch 181/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 62ms/step - loss: 0.0215
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 26ms/step - loss: 0.0162
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step - loss: 0.0114
+Epoch 182/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 69ms/step - loss: 0.0130
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0102
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0102
+Epoch 183/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 53ms/step - loss: 0.0066
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 25ms/step - loss: 0.0086
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step - loss: 0.0107
+Epoch 184/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 81ms/step - loss: 0.0139
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 31ms/step - loss: 0.0105
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step - loss: 0.0111
+Epoch 185/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 76ms/step - loss: 0.0131
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 27ms/step - loss: 0.0104
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step - loss: 0.0092
+Epoch 186/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 57ms/step - loss: 0.0238
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step - loss: 0.0147
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0100
+Epoch 187/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 50ms/step - loss: 0.0074
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0101
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 37ms/step - loss: 0.0101
+Epoch 188/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 62ms/step - loss: 0.0041
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0061
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step - loss: 0.0091
+Epoch 189/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 60ms/step - loss: 0.0206
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0110
+Epoch 190/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 81ms/step - loss: 0.0046
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 34ms/step - loss: 0.0082
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 37ms/step - loss: 0.0094
+Epoch 191/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 45ms/step - loss: 0.0038
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.0078
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0098
+Epoch 192/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 45ms/step - loss: 0.0072
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0101
+Epoch 193/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 65ms/step - loss: 0.0053
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step - loss: 0.0091
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step - loss: 0.0101
+Epoch 194/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 78ms/step - loss: 0.0046
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 31ms/step - loss: 0.0102
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step - loss: 0.0102
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 57ms/step - loss: 0.0104
+Epoch 195/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 66ms/step - loss: 0.0144
+[1m3/4[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 30ms/step - loss: 0.0132
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step - loss: 0.0094
+Epoch 196/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 122ms/step - loss: 0.0063
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.0074 
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step - loss: 0.0095
+Epoch 197/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 53ms/step - loss: 0.0060
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step - loss: 0.0091
+Epoch 198/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 49ms/step - loss: 0.0044
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step - loss: 0.0057
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step - loss: 0.0091
+Epoch 199/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 44ms/step - loss: 0.0206
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step - loss: 0.0102
+Epoch 200/200
+
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 42ms/step - loss: 0.0131
+[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step - loss: 0.0102
+Using bucket name: missingtimestamp
+Bucket missingtimestamp created.
+Uploading device8.keras to bucket missingtimestamp...
+device8.keras uploaded to bucket missingtimestamp.
+Uploading scaler to bucket missingtimestamp...
+scaler.save uploaded to bucket missingtimestamp.
+
+Model path is:  2025-12-08-00-00-00-2025-12-08-00-09-59-model
+Triggering forecasting with retrained model
+2026-05-15 19:41:30.661 INFO  [137589772252864] ConsumerStatsImpl:59 | Consumer [persistent://public/default/device8_model_consume, pythonSubscription, 0] , ConsumerStatsImpl (numBytesRecieved_ = 1440, totalNumBytesRecieved_ = 7488, receivedMsgMap_ = {[Key: Ok, Value: 60], [Key: TimeOut, Value: 26], }, ackedMsgMap_ = {[Key: {Result: Ok, ackType: 0}, Value: 60], }, totalReceivedMsgMap_ = {[Key: Ok, Value: 312], [Key: TimeOut, Value: 544], }, totalAckedMsgMap_ = {[Key: {Result: Ok, ackType: 0}, Value: 312], })
+2026-05-15 19:51:30.661 INFO  [137589772252864] ConsumerStatsImpl:59 | Consumer [persistent://public/default/device8_model_consume, pythonSubscription, 0] , ConsumerStatsImpl (numBytesRecieved_ = 0, totalNumBytesRecieved_ = 7488, receivedMsgMap_ = {}, ackedMsgMap_ = {}, totalReceivedMsgMap_ = {[Key: Ok, Value: 312], [Key: TimeOut, Value: 544], }, totalAckedMsgMap_ = {[Key: {Result: Ok, ackType: 0}, Value: 312], })
+2026-05-15 20:03:35.016 INFO  [137589772252864] ClientConnection:1326 | [127.0.0.1:50770 -> 127.0.0.1:6650] Connection disconnected (refCnt: 3)
+2026-05-15 20:03:35.017 INFO  [137589772252864] ConnectionPool:142 | Remove connection for pulsar://localhost:6650-pulsar://localhost:6650-0
+2026-05-15 20:03:35.036 INFO  [137589772252864] HandlerBase:186 | [persistent://public/default/device8_model_consume, pythonSubscription, 0] Schedule reconnection in 0.1 s
+2026-05-15 20:03:35.049 INFO  [137589772252864] ConsumerStatsImpl:59 | Consumer [persistent://public/default/device8_model_consume, pythonSubscription, 0] , ConsumerStatsImpl (numBytesRecieved_ = 0, totalNumBytesRecieved_ = 7488, receivedMsgMap_ = {}, ackedMsgMap_ = {}, totalReceivedMsgMap_ = {[Key: Ok, Value: 312], [Key: TimeOut, Value: 544], }, totalAckedMsgMap_ = {[Key: {Result: Ok, ackType: 0}, Value: 312], })
+2026-05-15 20:03:35.052 INFO  [137589772252864] ClientConnection:288 | [127.0.0.1:50770 -> 127.0.0.1:6650] Destroyed connection to pulsar://localhost:6650-0
+2026-05-15 20:03:40.151 INFO  [137589772252864] HandlerBase:112 | [persistent://public/default/device8_model_consume, pythonSubscription, 0] Getting connection from pool
+2026-05-15 20:06:53.389 INFO  [137589772252864] ClientConnection:196 | [<none> -> pulsar://localhost:6650] Create ClientConnection, timeout=10000
+2026-05-15 20:06:53.459 INFO  [137589772252864] ConnectionPool:125 | Created connection for pulsar://localhost:6650-pulsar://localhost:6650-0
+2026-05-15 20:06:57.184 INFO  [137589772252864] ClientConnection:416 | [127.0.0.1:54334 -> 127.0.0.1:6650] Connected to broker
+2026-05-15 20:07:03.342 INFO  [137589772252864] BinaryProtoLookupService:85 | Lookup response for persistent://public/default/device8_model_consume, lookup-broker-url pulsar://localhost:6650, from [127.0.0.1:54334 -> 127.0.0.1:6650] 
+2026-05-15 20:07:15.303 INFO  [137589772252864] ConsumerImpl:337 | [persistent://public/default/device8_model_consume, pythonSubscription, 0] Created consumer on broker [127.0.0.1:54334 -> 127.0.0.1:6650] 
+2026-05-15 20:07:15.341 INFO  [137589772252864] HandlerBase:134 | Finished connecting to broker after 18182 ms

@@ -1,0 +1,304 @@
+====================================================================================================
+A1 SCALING EXPERIMENT - ARCHITECTURE 2 (NO FLINK) - RESOURCE METRICS
+Generated: 2026-05-16T09:13:27Z
+Source: Grafana CSV exports (UTF-16 TSV) of CPU / memory per container + totals.
+Note  : jobmanager and taskmanager were NOT started for architecture 2 (see
+        ./start_containers.sh --no-flink).  They appear in the per-container tables
+        as '<no data>' or with zero samples, which is the expected resource saving.
+Phase ('active_devices') = number of devices whose coordinator subscribed by this sample's time.
+Times in Athens local (+02:00).
+====================================================================================================
+
+Containers measured  : pulsar, jobmanager, taskmanager, mosquittoo, postgres, rustfs_container
+Sample count         : 259
+Time range           : 2026-05-16 09:30:00 -> 2026-05-16 10:34:30
+
+====================================================================================================
+1. PER-PHASE x PER-CONTAINER  (mean / p95 / max CPU in cores, mean / max memory in MiB)
+====================================================================================================
+  #dev container                 n    cpu_mean   cpu_p95   cpu_max    mem_mean_MiB  mem_max_MiB
+     0 pulsar                    2      0.0706    0.0750    0.0755          2324.5       2324.5
+     0 jobmanager                2   <no data>
+     0 taskmanager               2   <no data>
+     0 mosquittoo                2      0.0007    0.0007    0.0007             2.4          2.4
+     0 postgres                  2      0.0009    0.0010    0.0010            17.9         18.0
+     0 rustfs_container          2      0.0009    0.0009    0.0009            86.0         86.0
+     0 _TOTAL_(containers)       2      0.0731    0.0776    0.0781          2426.9       2426.9
+
+     1 pulsar                   13      0.5063    1.3780    1.3900          2383.6       2887.7
+     1 jobmanager               13   <no data>
+     1 taskmanager              13   <no data>
+     1 mosquittoo               13      0.0007    0.0008    0.0008             2.9          3.5
+     1 postgres                 13      0.0010    0.0014    0.0014            21.2         22.1
+     1 rustfs_container         13      0.0007    0.0011    0.0011            91.0         94.4
+     1 _TOTAL_(containers)      13      0.5081    1.3780    1.3900          2495.4       3000.3
+
+     2 pulsar                   13      0.4731    1.3660    1.3900          2400.1       2990.1
+     2 jobmanager               13   <no data>
+     2 taskmanager              13   <no data>
+     2 mosquittoo               13      0.0008    0.0009    0.0009             3.0          3.3
+     2 postgres                 13      0.0015    0.0019    0.0019            24.4         25.6
+     2 rustfs_container         13      0.0009    0.0012    0.0012            96.3         98.9
+     2 _TOTAL_(containers)      13      0.4756    1.3660    1.3900          2521.4       3113.0
+
+     3 pulsar                   12      0.4277    1.3745    1.3800          2359.5       2365.4
+     3 jobmanager               12   <no data>
+     3 taskmanager              12   <no data>
+     3 mosquittoo               12      0.0011    0.0013    0.0013             3.1          3.8
+     3 postgres                 12      0.0022    0.0033    0.0033            27.3         28.5
+     3 rustfs_container         12      0.0010    0.0014    0.0014            97.8         99.3
+     3 _TOTAL_(containers)      12      0.4310    1.3745    1.3800          2488.3       2498.6
+
+     4 pulsar                   13      0.4759    1.3640    1.3700          2436.3       2928.6
+     4 jobmanager               13   <no data>
+     4 taskmanager              13   <no data>
+     4 mosquittoo               13      0.0012    0.0014    0.0014             3.0          3.6
+     4 postgres                 13      0.0024    0.0031    0.0031            31.1         32.7
+     4 rustfs_container         13      0.0012    0.0016    0.0016           100.0        101.0
+     4 _TOTAL_(containers)      13      0.4803    1.3680    1.3800          2568.7       3051.5
+
+     5 pulsar                   13      0.4863    1.3960    1.4200          2408.8       2990.1
+     5 jobmanager               13   <no data>
+     5 taskmanager              13   <no data>
+     5 mosquittoo               13      0.0014    0.0016    0.0016             3.2          3.6
+     5 postgres                 13      0.0031    0.0037    0.0040            34.5         36.7
+     5 rustfs_container         13      0.0013    0.0017    0.0018           100.1        101.0
+     5 _TOTAL_(containers)      13      0.4910    1.3960    1.4200          2546.6       3123.2
+
+     6 pulsar                   13      0.4672    1.3480    1.3600          2406.4       2897.9
+     6 jobmanager               13   <no data>
+     6 taskmanager              13   <no data>
+     6 mosquittoo               13      0.0016    0.0017    0.0017             3.2          3.6
+     6 postgres                 13      0.0035    0.0044    0.0046            37.4         38.6
+     6 rustfs_container         13      0.0014    0.0019    0.0019           101.5        103.0
+     6 _TOTAL_(containers)      13      0.4734    1.3480    1.3600          2546.6       3041.3
+
+     7 pulsar                   12      0.3852    1.3390    1.3500          2385.9       2611.2
+     7 jobmanager               12   <no data>
+     7 taskmanager              12   <no data>
+     7 mosquittoo               12      0.0018    0.0019    0.0019             3.1          3.7
+     7 postgres                 12      0.0042    0.0049    0.0049            41.1         43.0
+     7 rustfs_container         12      0.0015    0.0020    0.0021           103.7        107.0
+     7 _TOTAL_(containers)      12      0.3927    1.3435    1.3600          2537.8       2764.8
+
+     8 pulsar                   13      0.4632    1.3540    1.3600          2412.7       2969.6
+     8 jobmanager               13   <no data>
+     8 taskmanager              13   <no data>
+     8 mosquittoo               13      0.0019    0.0020    0.0021             3.2          3.7
+     8 postgres                 13      0.0052    0.0063    0.0064            44.6         47.0
+     8 rustfs_container         13      0.0018    0.0024    0.0025           101.9        105.0
+     8 _TOTAL_(containers)      13      0.4728    1.3640    1.3700          2565.5       3123.2
+
+     9 pulsar                   13      0.4912    1.4240    1.4300          2426.1       3031.0
+     9 jobmanager               13   <no data>
+     9 taskmanager              13   <no data>
+     9 mosquittoo               13      0.0019    0.0021    0.0021             3.2          3.5
+     9 postgres                 13      0.0056    0.0068    0.0069            48.0         49.9
+     9 rustfs_container         13      0.0019    0.0024    0.0024           106.3        109.0
+     9 _TOTAL_(containers)      13      0.5011    1.4340    1.4400          2580.5       3194.9
+
+    10 pulsar                   13      0.4681    1.4060    1.4300          2424.5       2897.9
+    10 jobmanager               13   <no data>
+    10 taskmanager              13   <no data>
+    10 mosquittoo               13      0.0022    0.0023    0.0023             3.3          4.0
+    10 postgres                 13      0.0063    0.0073    0.0075            51.9         53.8
+    10 rustfs_container         13      0.0020    0.0028    0.0028           109.2        113.0
+    10 _TOTAL_(containers)      13      0.4787    1.4160    1.4400          2589.9       3061.8
+
+    11 pulsar                   12      0.4036    1.3445    1.3500          2427.7       2969.6
+    11 jobmanager               12   <no data>
+    11 taskmanager              12   <no data>
+    11 mosquittoo               12      0.0024    0.0025    0.0026             3.5          4.0
+    11 postgres                 12      0.0072    0.0087    0.0087            55.9         57.4
+    11 rustfs_container         12      0.0022    0.0030    0.0032           111.9        114.0
+    11 _TOTAL_(containers)      12      0.4155    1.3545    1.3600          2599.3       3143.7
+
+    12 pulsar                   13      0.4926    1.3900    1.3900          2402.5       2857.0
+    12 jobmanager               13   <no data>
+    12 taskmanager              13   <no data>
+    12 mosquittoo               13      0.0026    0.0028    0.0028             3.6          4.0
+    12 postgres                 13      0.0067    0.0074    0.0074            59.9         62.0
+    12 rustfs_container         13      0.0025    0.0034    0.0035           111.8        114.0
+    12 _TOTAL_(containers)      13      0.5048    1.4040    1.4100          2576.5       3031.0
+
+    13 pulsar                   13      0.4361    1.4280    1.4400          2426.1       3031.0
+    13 jobmanager               13   <no data>
+    13 taskmanager              13   <no data>
+    13 mosquittoo               13      0.0027    0.0030    0.0030             3.6          4.3
+    13 postgres                 13      0.0085    0.0097    0.0098            62.1         64.9
+    13 rustfs_container         13      0.0027    0.0033    0.0033           114.2        122.0
+    13 _TOTAL_(containers)      13      0.4500    1.4420    1.4600          2607.3       3225.6
+
+    14 pulsar                   13      0.4657    1.2800    1.2800          2460.0       2877.4
+    14 jobmanager               13   <no data>
+    14 taskmanager              13   <no data>
+    14 mosquittoo               13      0.0027    0.0029    0.0029             3.4          4.0
+    14 postgres                 13      0.0101    0.0113    0.0114            55.2         67.5
+    14 rustfs_container         13      0.0026    0.0032    0.0032           119.8        123.0
+    14 _TOTAL_(containers)      13      0.4822    1.3000    1.3000          2638.0       3061.8
+
+    15 pulsar                   12      0.4264    1.4280    1.4500          2444.8       2979.8
+    15 jobmanager               12   <no data>
+    15 taskmanager              12   <no data>
+    15 mosquittoo               12      0.0030    0.0032    0.0032             3.6          4.3
+    15 postgres                 12      0.0089    0.0098    0.0100            57.9         60.2
+    15 rustfs_container         12      0.0028    0.0031    0.0033           116.5        123.0
+    15 _TOTAL_(containers)      12      0.4405    1.4380    1.4600          2619.7       3153.9
+
+    16 pulsar                   13      0.4724    1.3880    1.4000          2368.6       2826.2
+    16 jobmanager               13   <no data>
+    16 taskmanager              13   <no data>
+    16 mosquittoo               13      0.0031    0.0033    0.0034             3.4          4.1
+    16 postgres                 13      0.0114    0.0133    0.0134            60.0         63.0
+    16 rustfs_container         13      0.0031    0.0037    0.0038           131.3        137.0
+    16 _TOTAL_(containers)      13      0.4902    1.4080    1.4200          2562.4       3020.8
+
+    17 pulsar                   13      0.5153    1.3940    1.4000          2180.3       2570.2
+    17 jobmanager               13   <no data>
+    17 taskmanager              13   <no data>
+    17 mosquittoo               13      0.0032    0.0034    0.0034             3.7          4.1
+    17 postgres                 13      0.0120    0.0141    0.0142            60.4         64.6
+    17 rustfs_container         13      0.0035    0.0043    0.0045           153.9        158.0
+    17 _TOTAL_(containers)      13      0.5345    1.4100    1.4100          2399.3       2795.5
+
+    18 pulsar                   13      0.4656    1.3640    1.3700          1982.6       2467.8
+    18 jobmanager               13   <no data>
+    18 taskmanager              13   <no data>
+    18 mosquittoo               13      0.0033    0.0036    0.0036             3.6          4.1
+    18 postgres                 13      0.0123    0.0160    0.0168            61.8         69.7
+    18 rustfs_container         13      0.0032    0.0042    0.0043           150.7        157.0
+    18 _TOTAL_(containers)      13      0.4833    1.3740    1.3800          2198.4       2672.6
+
+    19 pulsar                   13      0.5146    1.5000    1.5000          1696.7       2201.6
+    19 jobmanager               13   <no data>
+    19 taskmanager              13   <no data>
+    19 mosquittoo               13      0.0032    0.0037    0.0037             4.0          4.9
+    19 postgres                 13      0.0133    0.0179    0.0192            67.7         72.3
+    19 rustfs_container         13      0.0034    0.0043    0.0043           148.3        151.0
+    19 _TOTAL_(containers)      13      0.5343    1.5140    1.5200          1917.2       2426.9
+
+    20 pulsar                   14      0.3149    1.4075    1.4400          1287.3       1413.1
+    20 jobmanager               14   <no data>
+    20 taskmanager              14   <no data>
+    20 mosquittoo               14      0.0027    0.0035    0.0035             3.8          4.9
+    20 postgres                 14      0.0115    0.0146    0.0152            60.5         78.3
+    20 rustfs_container         14      0.0024    0.0031    0.0033           151.4        153.0
+    20 _TOTAL_(containers)      14      0.3310    1.4175    1.4500          1503.1       1648.6
+
+
+====================================================================================================
+2. SCALING CURVES (per phase, totals across measured containers)
+====================================================================================================
+  #dev    n    cpu_mean   cpu_p95   cpu_max    mem_mean_MiB  mem_max_MiB
+     0    2      0.0731    0.0776    0.0781          2426.9       2426.9
+     1   13      0.5081    1.3780    1.3900          2495.4       3000.3
+     2   13      0.4756    1.3660    1.3900          2521.4       3113.0
+     3   12      0.4310    1.3745    1.3800          2488.3       2498.6
+     4   13      0.4803    1.3680    1.3800          2568.7       3051.5
+     5   13      0.4910    1.3960    1.4200          2546.6       3123.2
+     6   13      0.4734    1.3480    1.3600          2546.6       3041.3
+     7   12      0.3927    1.3435    1.3600          2537.8       2764.8
+     8   13      0.4728    1.3640    1.3700          2565.5       3123.2
+     9   13      0.5011    1.4340    1.4400          2580.5       3194.9
+    10   13      0.4787    1.4160    1.4400          2589.9       3061.8
+    11   12      0.4155    1.3545    1.3600          2599.3       3143.7
+    12   13      0.5048    1.4040    1.4100          2576.5       3031.0
+    13   13      0.4500    1.4420    1.4600          2607.3       3225.6
+    14   13      0.4822    1.3000    1.3000          2638.0       3061.8
+    15   12      0.4405    1.4380    1.4600          2619.7       3153.9
+    16   13      0.4902    1.4080    1.4200          2562.4       3020.8
+    17   13      0.5345    1.4100    1.4100          2399.3       2795.5
+    18   13      0.4833    1.3740    1.3800          2198.4       2672.6
+    19   13      0.5343    1.5140    1.5200          1917.2       2426.9
+    20   14      0.3310    1.4175    1.4500          1503.1       1648.6
+
+====================================================================================================
+3. BOTTLENECK CANDIDATES PER PHASE (container with highest p95 CPU, top memory)
+====================================================================================================
+  #dev   top container by p95 CPU   cpu_p95   top container by mem_max  mem_max_MiB
+     0   pulsar                      0.0750   pulsar                         2324.5
+     1   pulsar                      1.3780   pulsar                         2887.7
+     2   pulsar                      1.3660   pulsar                         2990.1
+     3   pulsar                      1.3745   pulsar                         2365.4
+     4   pulsar                      1.3640   pulsar                         2928.6
+     5   pulsar                      1.3960   pulsar                         2990.1
+     6   pulsar                      1.3480   pulsar                         2897.9
+     7   pulsar                      1.3390   pulsar                         2611.2
+     8   pulsar                      1.3540   pulsar                         2969.6
+     9   pulsar                      1.4240   pulsar                         3031.0
+    10   pulsar                      1.4060   pulsar                         2897.9
+    11   pulsar                      1.3445   pulsar                         2969.6
+    12   pulsar                      1.3900   pulsar                         2857.0
+    13   pulsar                      1.4280   pulsar                         3031.0
+    14   pulsar                      1.2800   pulsar                         2877.4
+    15   pulsar                      1.4280   pulsar                         2979.8
+    16   pulsar                      1.3880   pulsar                         2826.2
+    17   pulsar                      1.3940   pulsar                         2570.2
+    18   pulsar                      1.3640   pulsar                         2467.8
+    19   pulsar                      1.5000   pulsar                         2201.6
+    20   pulsar                      1.4075   pulsar                         1413.1
+
+====================================================================================================
+4. HOST CONTEXT  (from Prometheus 'machine_*' metrics — host capacity, not usage)
+====================================================================================================
+    machine_cpu_cores   : 8
+    machine_memory     : 30.88 GiB
+    machine_swap        : 8.00 GiB
+
+  Container total at last phase (20 dev) :
+    mem_max  : 1.61 GiB  (5.2% of host RAM)
+    mem_mean : 1.47 GiB  (4.8% of host RAM)
+
+====================================================================================================
+5. HOST-PROCESS DATA
+====================================================================================================
+  Per-host-process CPU/memory is NOT in this dataset (no node-exporter / process-exporter).
+  See host_processes_cost.log in this directory for the structural cost breakdown
+  (~1.47 GiB per device for the 3 mvn JVMs + Python coordinator + transient TensorFlow).
+
+====================================================================================================
+6. SIDE-BY-SIDE WITH ARCHITECTURE 1 (from resources_a1_scaling.log)
+====================================================================================================
+  phase   arch1 cpu_mean arch2 cpu_mean   arch1 mem_mean_MiB arch2 mem_mean_MiB
+      1           0.9863         0.5081               5060.1             2495.4
+      5           1.0355         0.4910               6733.2             2546.6
+      9           1.3011         0.5011               8210.1             2580.5
+     13           1.5689         0.4500               6944.3             2607.3
+     17           1.4413         0.5345               5480.8             2399.3
+     19           1.4007         0.5343               4282.5             1917.2
+  Architecture 2 should have LOWER memory at every phase by ~2 GiB (jobmanager+taskmanager
+  containers absent).  CPU comparison is less informative because the workload differs
+  slightly (no Flink windowing, count-based Python flush).
+
+====================================================================================================
+7. THESIS-READY SUMMARY PARAGRAPH
+====================================================================================================
+  Across the 21 measured concurrency levels (0..20 active producers, sampled at 15 s),
+  total containerized CPU rose from 0.07 cores (mean at 0 device) to 0.33 cores
+  (mean at 20 devices), while total containerized memory climbed from 2427 MiB to 1503 MiB.
+  Pulsar remained the dominant CPU consumer; with the Flink containers absent, taskmanager/
+  jobmanager memory (~1.5-1.8 GiB combined in architecture 1) is fully freed for the host JVMs.
+  Per-host-process load is not visible in this dataset; see host_processes_cost.log for the
+  structural per-device cost (~1.47 GiB per device) that dominates the saturation behaviour.
+
+====================================================================================================
+END OF REPORT
+====================================================================================================
+
+====================================================================================================
+8. ACROSS-PHASE MEAN  (mean of per-phase statistic, n = number of phases that container appeared in)
+====================================================================================================
+  container               cpu_mean_avg  cpu_p95_avg  cpu_max_avg    mem_mean_MiB  mem_max_MiB
+  pulsar                        0.4391       1.3214       1.3322          2287.9       2718.5
+  jobmanager                 <no data>   (container not running for architecture 2)
+  taskmanager                <no data>   (container not running for architecture 2)
+  mosquittoo                    0.0021       0.0023       0.0023             3.3          3.9
+  postgres                      0.0066       0.0079       0.0081            46.7         50.3
+  rustfs_container              0.0020       0.0026       0.0027           114.5        117.6
+  _TOTAL_(containers)           0.4497       1.3299       1.3418          2451.9       2884.8
+
+  Notes:
+    - 'n' for the mean = number of phases (0..20) that this container reported data in (typically 21).
+    - jobmanager and taskmanager are absent: not started for architecture 2.
+    - _TOTAL_(containers) row = average of the per-phase total across the six measured containers.
+
