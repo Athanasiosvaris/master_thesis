@@ -16,10 +16,15 @@ services:
     image: flink:1.17.2-scala_2.12-java11
     container_name: jobmanager
     command: jobmanager
+    restart: unless-stopped
     ports:
       - "8081:8081"
     environment:
-      - "FLINK_PROPERTIES=jobmanager.rpc.address: jobmanager"
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        jobmanager.memory.process.size: 3g
+        jobmanager.memory.jvm-metaspace.size: 1024m
 
   taskmanager:
     image: flink:1.17.2-scala_2.12-java11
@@ -31,7 +36,11 @@ services:
       - |
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
-        taskmanager.numberOfTaskSlots: 5
+        taskmanager.numberOfTaskSlots: 20
+        taskmanager.memory.jvm-metaspace.size: 1024m
+        taskmanager.memory.task.off-heap.size: 1024m
+        taskmanager.memory.framework.off-heap.size: 512m
+        taskmanager.memory.process.size: 6g
 
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:latest
