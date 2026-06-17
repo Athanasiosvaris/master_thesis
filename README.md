@@ -31,7 +31,7 @@ This project uses Docker Compose to orchestrate multiple services for a data pip
 
 | Service         | Image                                         | Host Ports             | Description                                    |
 | --------------- | --------------------------------------------- | ---------------------- | ---------------------------------------------- |
-| **Pulsar**      | `athanasiosvaris/backupimage_pulsar:version1` | `6650`, `8080`, `1883` | Apache Pulsar standalone (messaging/streaming) |
+| **Pulsar**      | `athanasiosvaris/backupimage_pulsar:version1` | `6650`, `8080`, `1883` | Apache Pulsar 4.0.1 standalone (messaging/streaming), with the MoP protocol handler pre-configured |
 | **JobManager**  | `flink:1.17.2-scala_2.12-java11`              | `8081`                 | Apache Flink JobManager                        |
 | **TaskManager** | `flink:1.17.2-scala_2.12-java11`              | —                      | Apache Flink TaskManager                       |
 | **cAdvisor**    | `gcr.io/cadvisor/cadvisor:latest`             | `8079`                 | Container resource monitoring                  |
@@ -48,6 +48,19 @@ All services are connected via a custom Docker network named `pulsar-mosquitto`.
 ## Prerequisites
 
 Before running `docker compose up`, you **must** create the required directories and configuration files on the host. Docker bind mounts expect these to exist — if they don't, Docker will create them as directories instead of files, causing containers to fail.
+
+### Quick setup (recommended)
+
+The `scripts/bootstrap.sh` script performs all the prerequisite steps below automatically (creates `.env`, the Mosquitto config/dirs, the PostgreSQL and RustFS data dirs, and verifies the Prometheus config). It is idempotent and safe to re-run. For a new setup, this is all you need:
+
+```bash
+./scripts/bootstrap.sh
+docker compose up -d
+docker exec -it mosquittoo mosquitto_passwd -c /mosquitto/config/pwfile <username>
+docker restart mosquittoo
+```
+
+If you prefer to do it by hand, follow the manual steps below.
 
 ### 0. Configure the `.env` file
 
@@ -156,7 +169,11 @@ docker compose ps          # verify all containers are running
 
 ### 3. Configure Pulsar MoP (MQTT on Pulsar) protocol handler
 
-The Pulsar container includes the MoP protocol handler NAR (`pulsar-protocol-handler-mqtt-3.4.0-SNAPSHOT.nar`), but the configuration files inside the container must be updated to enable it. Copy them out, add the MoP properties, and copy them back:
+> **Note:** This step is **already done for you.** The public `athanasiosvaris/backupimage_pulsar:version1` image is based on **Apache Pulsar 4.0.1** and ships with the MoP protocol handler NAR bundled **and** enabled in `broker.conf` / `standalone.conf`. You do **not** need to do anything here — MQTT-on-Pulsar works out of the box.
+>
+> The instructions below are kept only for reference, in case you build your own Pulsar image or want to reconfigure the handler manually.
+
+The Pulsar container includes the MoP protocol handler NAR (`pulsar-protocol-handler-mqtt-3.4.0-SNAPSHOT.nar`), and the configuration files inside the container enable it. To configure it yourself from a clean Pulsar image, copy the config files out, add the MoP properties, and copy them back:
 
 ```bash
 # Copy config files from the container to the host
