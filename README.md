@@ -1,4 +1,29 @@
-# Master Thesis - Docker Compose Setup
+# Master Thesis — IoT Message Pipeline Architecture Comparison
+
+## About This Work
+
+This thesis presents a performance comparison between two different message pipeline architectures, which are two distinct implementations of the same IoT application.
+
+The application consists of sensors that measure the power consumption of various devices, create messages recording each measurement along with the date it was received, and forward these messages to the next stage of the message pipeline for further processing. The pipeline is composed of the following stages:
+
+- **MQTT broker (Mosquitto)** — the first stage, which connects directly to the sensors.
+- **Apache Pulsar** — a distributed message-flow service.
+- **Apache Flink** — a data-stream processing framework.
+- **Coordination service** — receives the messages corresponding to a one-minute period and, using a Long Short-Term Memory (LSTM) neural network, predicts the power-consumption values for the next minute.
+- **PostgreSQL database** — stores both the actual values and the predictions.
+
+The neural network is stored in **RustFS**, while **cAdvisor**, **Prometheus**, and **Grafana** are used to monitor system resource usage. All of the above subsystems — except for the coordination service, which runs locally — are deployed in a Docker environment using Docker Compose.
+
+### The Two Architectures
+
+The main difference between the two implementations lies in the type of sensors used:
+
+- **Architecture A** uses *"simple"* sensors that can only record measurements in real time and forward them into the system — i.e. they only support streaming data. Consequently, the need for message timing must be implemented by an external system.
+- **Architecture B** uses *"smart"* sensors that can create batches of messages at specific time intervals. Here, message timing is handled by the sensors themselves.
+
+---
+
+## Docker Compose Setup
 
 This project uses Docker Compose to orchestrate multiple services for a data pipeline architecture. Below you will find the full service list, prerequisites, known issues, and setup instructions.
 
