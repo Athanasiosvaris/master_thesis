@@ -30,15 +30,15 @@ machine and only orchestrates its backing services with Docker. Before doing
 anything below, the machine **must already have** the following installed and on
 `PATH`:
 
-| Tool | Version | Used for |
-| ---- | ------- | -------- |
-| **Docker Engine** | recent (tested on 29.x) | running the service stack |
-| **Docker Compose** | v2 (the `docker compose` plugin) | orchestrating the stack |
-| **JDK 17** | **exactly 17** (`java-17-openjdk`) | building **and** running the Java Pulsar & Flink modules |
-| **Maven** | 3.6+ | building the Java modules |
-| **Python** | 3 (3.10+; tested on 3.12) + `venv` + `pip` | the coordination/model service |
-| **Node.js + npm** | Node 18+ | the web app |
-| **Bash + coreutils** | — | the `scripts/*.sh` runners |
+| Tool                 | Version                                    | Used for                                                 |
+| -------------------- | ------------------------------------------ | -------------------------------------------------------- |
+| **Docker Engine**    | recent (tested on 29.x)                    | running the service stack                                |
+| **Docker Compose**   | v2 (the `docker compose` plugin)           | orchestrating the stack                                  |
+| **JDK 17**           | **exactly 17** (`java-17-openjdk`)         | building **and** running the Java Pulsar & Flink modules |
+| **Maven**            | 3.6+                                       | building the Java modules                                |
+| **Python**           | 3 (3.10+; tested on 3.12) + `venv` + `pip` | the coordination/model service                           |
+| **Node.js + npm**    | Node 18+                                   | the web app                                              |
+| **Bash + coreutils** | —                                          | the `scripts/*.sh` runners                               |
 
 > ⚠️ **Use JDK 17 for Maven — not a newer default JDK.** The Pulsar module
 > compiles with `release 17` and `scripts/start_app.sh` hardcodes
@@ -71,17 +71,17 @@ This project uses Docker Compose to orchestrate multiple services for a data pip
 
 ## Services Overview
 
-| Service         | Image                                         | Host Ports             | Description                                    |
-| --------------- | --------------------------------------------- | ---------------------- | ---------------------------------------------- |
+| Service         | Image                                         | Host Ports             | Description                                                                                        |
+| --------------- | --------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------- |
 | **Pulsar**      | `athanasiosvaris/backupimage_pulsar:version1` | `6650`, `8080`, `1883` | Apache Pulsar 4.0.1 standalone (messaging/streaming), with the MoP protocol handler pre-configured |
-| **JobManager**  | `flink:1.17.2-scala_2.12-java11`              | `8081`                 | Apache Flink JobManager                        |
-| **TaskManager** | `flink:1.17.2-scala_2.12-java11`              | —                      | Apache Flink TaskManager                       |
-| **cAdvisor**    | `gcr.io/cadvisor/cadvisor:latest`             | `8079`                 | Container resource monitoring                  |
-| **Prometheus**  | `prom/prometheus`                             | `9090`                 | Metrics collection and alerting                |
-| **Grafana**     | `grafana/grafana-oss`                         | `3000`                 | Metrics visualization and dashboards           |
-| **Mosquitto**   | `eclipse-mosquitto`                           | `1884`, `9001`         | MQTT broker                                    |
-| **PostgreSQL**  | `postgres:12`                                 | `5432`                 | Relational database                            |
-| **RustFS**      | `rustfs/rustfs:latest`                        | `9000`, `9002`         | S3-compatible object storage                   |
+| **JobManager**  | `flink:1.17.2-scala_2.12-java11`              | `8081`                 | Apache Flink JobManager                                                                            |
+| **TaskManager** | `flink:1.17.2-scala_2.12-java11`              | —                      | Apache Flink TaskManager                                                                           |
+| **cAdvisor**    | `gcr.io/cadvisor/cadvisor:latest`             | `8079`                 | Container resource monitoring                                                                      |
+| **Prometheus**  | `prom/prometheus`                             | `9090`                 | Metrics collection and alerting                                                                    |
+| **Grafana**     | `grafana/grafana-oss`                         | `3000`                 | Metrics visualization and dashboards                                                               |
+| **Mosquitto**   | `eclipse-mosquitto`                           | `1884`, `9001`         | MQTT broker                                                                                        |
+| **PostgreSQL**  | `postgres:12`                                 | `5432`                 | Relational database                                                                                |
+| **RustFS**      | `rustfs/rustfs:latest`                        | `9000`, `9002`         | S3-compatible object storage                                                                       |
 
 All services are connected via a custom Docker network named `pulsar-mosquitto`.
 
@@ -229,49 +229,216 @@ deactivate
 cd ..
 ```
 
-> The slowest step (TensorFlow wheel); be patient.
+## Experiments
 
-### 8. Train + upload the initial model _(required before any run/experiment)_
+Four experiments were run to compare the two architectures — **Architecture A**
+(stream-to-batch conversion with *"simple"* sensors) and **Architecture B**
+(native batch processing with *"smart"* sensors). Each targets a different
+dimension of the comparison.
 
-Before the pipeline can forecast, each device needs an **initial LSTM model +
-scaler** trained and uploaded to RustFS. At runtime `Forecasting.py` downloads
-`{device}/initial/{device}.keras` (+ `scaler.save`) from the RustFS bucket — if
-it isn't there, forecasting has no model to load. Do this **once per device**.
+> **Architecture A vs B is selected by the launch script.** Architecture A runs
+> with **`./scripts/start_app.sh`** (stream-to-batch via Flink); Architecture B
+> runs with **`./scripts/start_app_no_flink.sh`** (native batch processing, no
+> Flink). Both take the same `<path-to-csv> <device-name>` arguments. This
+> applies to all experiments below.
 
-**Prerequisites:** the stack is up (Step 3, so RustFS is reachable) and the
-Python venv is active (Step 7).
+> **Start / stop the container stack (every experiment).** Bring the Docker
+> services up and down between runs with **`./scripts/start_containers.sh`** and
+> **`./scripts/stop_containers.sh`** (they start/stop every container in
+> dependency order). For Architecture B, start without Flink:
+> **`./scripts/start_containers.sh --no-flink`** (skips JobManager + TaskManager).
 
-```bash
-source model/.venv/bin/activate          # if not already active
-cd model/train_model
-python3 initial_train.py \
-    --csv_file /path/to/master_thesis/apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv \
-    --bucket_name missingtimestamp \
-    --model_name device1
-cd ../..
+> **Observe results (applies to every experiment).** While an experiment runs,
+> watch live resource utilization and latency in **Grafana** —
+> <http://localhost:3000/login> — and inspect the trained/uploaded models in the
+> **RustFS console** (`rustfs_models`) — <http://localhost:9002/rustfs/console/>.
+
+> **Continuous retraining (every experiment).** While the pipeline runs, a **new
+> LSTM model is retrained every 10 minutes for each device** — in **both**
+> architectures — and re-uploaded to RustFS, so forecasts adapt to recent data.
+
+> **Where to read the forecasting results (every experiment).** Per-device output
+> is written under `logs/`: Architecture A → **`coordinator_service_deviceX.log`**,
+> Architecture B → **`pulsarConsumer60Batches_deviceX.log`** (`X` = device number,
+> e.g. `coordinator_service_device1.log`).
+
+### 1. Constant-load comparison
+
+Evaluates the two architectures under a **constant workload of 60 IoT messages
+per minute**, comparing resource utilization, end-to-end latency, bottlenecks,
+and the overhead introduced by the stream-to-batch conversion in Architecture A
+versus the native batch processing in Architecture B.
+
+**How to run.** Both architectures use the **same input CSV** (so the comparison
+is fair):
+
+```
+/home/athanasiosvaris/notes/thesis/master_thesis/apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv
 ```
 
-- `--model_name` **must match** the `<device>` you pass to `start_app.sh`
-  (e.g. `device1`) — that's how the runtime locates the model in RustFS.
-- `--bucket_name` is `missingtimestamp`.
-- `--csv_file` is a per-device training CSV under
-  `apache-pulsar/data/in_order_data/` (e.g. `device_1_in_order_data_2025-12-08.csv`).
+1. Train and upload the initial model (Build From Scratch → Step 8):
 
-### 9. Run the pipeline
+   ```bash
+   cd model/train_model
+   python3 initial_train.py \
+       --csv_file /home/athanasiosvaris/notes/thesis/master_thesis/apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv \
+       --bucket_name missingtimestamp \
+       --model_name device1
+   cd ../..
+   ```
 
-```bash
-./scripts/start_app.sh ./scripts/device_1_data_2025-12-08_2025-12-09.csv device1
-# stop with Ctrl+C, or:
-./scripts/stop_app.sh
-```
+2. Start the pipeline — run **once per architecture**, with the same CSV:
 
-This submits the Flink job, starts the coordinator service, and lands actual
-values + forecasts in Postgres (`device1_actualvalues` /
-`device1_forecastedvalues`).
+   ```bash
+   # Architecture A — stream-to-batch via Flink
+   ./scripts/start_app.sh \
+       /home/athanasiosvaris/notes/thesis/master_thesis/apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv \
+       device1
 
-> **Note:** After the initial setup, `start_app.sh` recompiles the Pulsar Java
-> code automatically. You only need to re-run `mvn clean install` if dependencies
-> change — and re-run the Flink `docker cp` from Step 6 after any Flink rebuild.
+   # Architecture B — native batch processing (no Flink)
+   ./scripts/start_app_no_flink.sh \
+       /home/athanasiosvaris/notes/thesis/master_thesis/apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv \
+       device1
+   ```
+
+### 2. Increasing-load comparison
+
+Evaluates the **scalability** of the two architectures by progressively
+increasing the workload **from 1 to 20 IoT devices**, comparing resource
+utilization, latency, message coverage, and overall performance under
+continuously growing load.
+
+**How to run.** Both architectures use the per-device CSVs in
+`apache-pulsar/data/in_order_data/` — one file per device, named
+`device_N_in_order_data_2025-12-08.csv` for `N = 1..20`.
+
+1. Train and upload the initial model for **all 20 devices** (required for both
+   architectures — one model per device, in the `missingtimestamp` bucket):
+
+   ```bash
+   cd model/train_model
+   for n in $(seq 1 20); do
+       python3 initial_train.py \
+           --csv_file /home/athanasiosvaris/notes/thesis/master_thesis/apache-pulsar/data/in_order_data/device_${n}_in_order_data_2025-12-08.csv \
+           --bucket_name missingtimestamp \
+           --model_name device${n}
+   done
+   cd ../..
+   ```
+
+2. Run the scaling experiment — **once per architecture** (scales 1 → 20,
+   adding one device per phase). Run from the repo root:
+
+   ```bash
+   # Architecture A — stream-to-batch via Flink
+    ./scripts/run_scaling_experiment.sh apache-pulsar/data/in_order_data
+
+   # Architecture B — native batch processing (no Flink)
+    ./scripts/run_scaling_experiment_no_flink.sh apache-pulsar/data/in_order_data
+   ```
+
+### 3. Prediction accuracy evaluation
+
+Compares the **prediction accuracy** of the two architectures by measuring the
+impact of **incomplete input windows in Architecture A** against the **complete
+input windows in Architecture B**, assessing how missing data affects
+forecasting quality.
+
+**How to run.** Unlike Experiment 1, each architecture uses a **different input
+CSV** — that *is* the comparison: Architecture A is fed data with missing
+timestamps (→ incomplete windows), Architecture B clean in-order data (→ complete
+windows). Both run `device1`.
+
+| Architecture     | Input CSV                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------- |
+| **A** (Flink)    | `apache-pulsar/data/missing_timestamp_data/device_1_data_2025-12-08_2025-12-09.csv` |
+| **B** (no Flink) | `apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv`            |
+
+1. Train and upload the initial model for `device1` (Build From Scratch → Step 8;
+   shared by both architectures):
+
+   ```bash
+   cd model/train_model
+   python3 initial_train.py \
+       --csv_file /home/athanasiosvaris/notes/thesis/master_thesis/apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv \
+       --bucket_name missingtimestamp \
+       --model_name device1
+   cd ../..
+   ```
+
+2. Start the pipeline — **once per architecture**, each with its own CSV. Run
+   from the repo root:
+
+   ```bash
+   # Architecture A — incomplete windows (missing timestamps), via Flink
+   ./scripts/start_app.sh \
+       apache-pulsar/data/missing_timestamp_data/device_1_data_2025-12-08_2025-12-09.csv \
+       device1
+
+   # Architecture B — complete windows (in-order), no Flink
+   ./scripts/start_app_no_flink.sh \
+       apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv \
+       device1
+   ```
+
+### 4. Watermark sensitivity analysis
+
+Investigates the impact of different **Apache Flink watermark values** on
+Architecture A, evaluating their effect on batch completeness, resource
+utilization, and prediction accuracy by balancing event lateness against data
+completeness.
+
+**How to run.** **Architecture A only** (watermarks are a Flink concept). You
+vary the Flink watermark, rebuild, and observe the effect — repeat for each value
+(e.g. 0s, 5s, 10s). Input CSV:
+`apache-pulsar/data/missing_timestamp_data/device_1_data_2025-12-08_2025-12-09.csv`.
+
+1. **Switch the watermark strategy** in
+   `apache-flink/src/main/java/sensor/SensorMqttPulsarConnector.java` (lines
+   77–81): comment out the monotonic-timestamps strategy and enable the
+   bounded-out-of-orderness one with your chosen lateness (**0, 5 or 10 seconds**):
+
+   ```java
+   // comment this out:
+   //DataStream<Sensor> Data = env.fromSource(source, WatermarkStrategy.<Sensor>forMonotonousTimestamps()
+   //        .withTimestampAssigner((event, timestamp) -> event.getSensor_timestamp() * 1000L ).withIdleness(Duration.ofMinutes(1)), "Pulsar Source");
+
+   // uncomment and set the watermark (5 or 10 seconds):
+   DataStream<Sensor> Data = env.fromSource(source, WatermarkStrategy.<Sensor>forBoundedOutOfOrderness(Duration.ofSeconds(5))
+           .withTimestampAssigner((event, timestamp) ->  event.getSensor_timestamp() * 1000L ) , "Pulsar Source");
+   ```
+
+2. **Rebuild Flink and redeploy the jar** (Build From Scratch → Step 6):
+
+   ```bash
+   cd apache-flink
+   mvn clean install
+   cd target
+   sudo docker cp ./ApacheFlink-0.0.1-SNAPSHOT.jar taskmanager:/opt/flink
+   cd ../..
+   ```
+
+3. **Train and upload the initial model** for `device1` (Build From Scratch →
+   Step 8):
+
+   ```bash
+   cd model/train_model
+   python3 initial_train.py \
+       --csv_file /home/athanasiosvaris/notes/thesis/master_thesis/apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv \
+       --bucket_name missingtimestamp \
+       --model_name device1
+   cd ../..
+   ```
+
+4. **Run the pipeline** (Architecture A), from the repo root:
+
+   ```bash
+   ./scripts/start_app.sh \
+       apache-pulsar/data/missing_timestamp_data/device_1_data_2025-12-08_2025-12-09.csv \
+       device1
+   ```
+
+Repeat steps 1–4 for each watermark value you want to compare (e.g. 5s vs 10s).
 
 ---
 
