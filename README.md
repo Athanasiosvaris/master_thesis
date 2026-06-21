@@ -331,10 +331,10 @@ continuously growing load.
 
    ```bash
    # Architecture A — stream-to-batch via Flink
-    ./scripts/run_scaling_experiment.sh apache-pulsar/data/in_order_data
+    ./scripts/run_scaling_experiment.sh ../apache-pulsar/data/in_order_data
 
    # Architecture B — native batch processing (no Flink)
-    ./scripts/run_scaling_experiment_no_flink.sh apache-pulsar/data/in_order_data
+    ./scripts/run_scaling_experiment_no_flink.sh ../apache-pulsar/data/in_order_data
    ```
 
 ### 3. Prediction accuracy evaluation
