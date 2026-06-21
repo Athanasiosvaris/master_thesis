@@ -23,6 +23,48 @@ The main difference between the two implementations lies in the type of sensors 
 
 ---
 
+## System Requirements
+
+This project is **not self-contained** — it builds and runs directly on the host
+machine and only orchestrates its backing services with Docker. Before doing
+anything below, the machine **must already have** the following installed and on
+`PATH`:
+
+| Tool | Version | Used for |
+| ---- | ------- | -------- |
+| **Docker Engine** | recent (tested on 29.x) | running the service stack |
+| **Docker Compose** | v2 (the `docker compose` plugin) | orchestrating the stack |
+| **JDK 17** | **exactly 17** (`java-17-openjdk`) | building **and** running the Java Pulsar & Flink modules |
+| **Maven** | 3.6+ | building the Java modules |
+| **Python** | 3 (3.10+; tested on 3.12) + `venv` + `pip` | the coordination/model service |
+| **Node.js + npm** | Node 18+ | the web app |
+| **Bash + coreutils** | — | the `scripts/*.sh` runners |
+
+> ⚠️ **Use JDK 17 for Maven — not a newer default JDK.** The Pulsar module
+> compiles with `release 17` and `scripts/start_app.sh` hardcodes
+> `/usr/lib/jvm/java-17-openjdk-amd64`, so JDK 17 is required for both build and
+> run. If your system default is newer (e.g. JDK 21), Maven picks that up and the
+> build fails with `error: release version 17 not supported`. Point `JAVA_HOME`
+> at JDK 17 before building, in the same shell you run Maven from:
+>
+> ```bash
+> export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+> mvn -v   # the "Java version:" line must read 17
+> ```
+>
+> (The Flink module targets Java 11 to match its `...-java11` runtime image, but
+> JDK 17 compiles it fine — one JDK 17 `JAVA_HOME` builds both modules.)
+
+This README does **not** cover installing these — set them up first (on Debian/
+Ubuntu: `sudo apt install docker-ce docker-compose-plugin openjdk-17-jdk maven
+python3 python3-venv nodejs npm`). Verify with `docker --version`,
+`java -version` (must report 17), `mvn -v`, `python3 --version`, `node --version`.
+
+> A scripted, fully isolated Ubuntu VM alternative (Multipass) lives in `vm/` if
+> you'd rather not install these on your host.
+
+---
+
 ## Docker Compose Setup
 
 This project uses Docker Compose to orchestrate multiple services for a data pipeline architecture. Below you will find the full service list, prerequisites, known issues, and setup instructions.
@@ -45,184 +87,120 @@ All services are connected via a custom Docker network named `pulsar-mosquitto`.
 
 ---
 
-## Prerequisites
+## Build From Scratch
 
-Before running `docker compose up`, you **must** create the required directories and configuration files on the host. Docker bind mounts expect these to exist — if they don't, Docker will create them as directories instead of files, causing containers to fail.
+End-to-end, validated instructions to build and run the project from a fresh
+checkout. For the system tools you need installed first, see
+**[System Requirements](#system-requirements)** above.
 
-### Quick setup (recommended)
+> **Status:** ✅ Validated end-to-end against a clean rebuild — clone → build →
+> run, with the pipeline confirmed flowing into Postgres.
 
-The `scripts/bootstrap.sh` script performs all the prerequisite steps below automatically (creates `.env`, the Mosquitto config/dirs, the PostgreSQL and RustFS data dirs, and verifies the Prometheus config). It is idempotent and safe to re-run. For a new setup, this is all you need:
+### 1. Clone the repository
+
+```bash
+git clone git@github.com:Athanasiosvaris/master_thesis.git
+cd master_thesis
+```
+
+A fresh clone contains everything needed to run — `grafana/`,
+`apache-pulsar/prometheus/prometheus.yml`, `apache-pulsar/sensor-schema.json`,
+the input CSV, and the trained models are all committed.
+
+> **Optional — cap Docker log size.** To stop container logs filling your disk,
+> create/edit `/etc/docker/daemon.json` with
+> `{"log-driver":"json-file","log-opts":{"max-size":"10m","max-file":"3"}}`,
+> then `sudo systemctl restart docker`. Caps each container to 3 × 10 MB logs.
+
+### 2. Bootstrap host dirs and config
+
+Creates `.env` (`HOST_HOME`), the Mosquitto config/dirs, and the PostgreSQL /
+RustFS data dirs. Idempotent.
 
 ```bash
 ./scripts/bootstrap.sh
+```
+
+> ⚠️ **RustFS needs a world-writable data dir.** `/mnt/rustfs/data` must be
+> `chmod 777` — the RustFS container runs as a **non-root UID** and otherwise
+> dies at `docker compose up` with `[FATAL] ... Io error: Permission denied
+> (os error 13)` (the container won't appear in `docker ps`; see it with
+> `docker ps -a` / `docker compose logs rustfs`). `bootstrap.sh` now sets this
+> automatically when it can; on a fresh machine where it needs root, run:
+>
+> ```bash
+> sudo mkdir -p /mnt/rustfs/data && sudo chmod 777 /mnt/rustfs/data
+> ```
+>
+> If a stale dir is carried over from a previous run, reset it:
+> `sudo rm -rf /mnt/rustfs/data && sudo mkdir -p /mnt/rustfs/data && sudo chmod 777 /mnt/rustfs/data`.
+
+### 3. Start the Docker stack
+
+```bash
 docker compose up -d
-docker exec -it mosquittoo mosquitto_passwd -c /mosquitto/config/pwfile <username>
+docker compose ps          # all containers should be Up
+```
+
+> **MoP (MQTT-on-Pulsar) is pre-configured.** The
+> `athanasiosvaris/backupimage_pulsar:version1` image ships with the MoP protocol
+> handler NAR bundled **and** enabled in `broker.conf` / `standalone.conf` —
+> MQTT-on-Pulsar works out of the box, nothing to do here.
+
+### 4. Create the Mosquitto user
+
+Must be done by the in-container binary (host-side hashing can mismatch).
+
+```bash
+docker exec mosquittoo mosquitto_passwd -b /mosquitto/config/pwfile user1 user1
 docker restart mosquittoo
 ```
 
-If you prefer to do it by hand, follow the manual steps below.
+The Java MQTT clients are hardcoded to `user1` / `user1` on Mosquitto
+(`127.0.0.1:1884`) — `MqttClientConsumerFinal.java` and
+`MqttClientProducerFinal.java`. The username/password here **must** match those.
 
-### 0. Configure the `.env` file
+> ⚠️ **Stale `~/mosquitto` pwfile → `CONNECTION_REFUSED_NOT_AUTHORIZED`.**
+> `~/mosquitto` lives in `$HOME` and persists across checkouts/rebuilds. If a
+> password file from an older Mosquitto version carries over, the current image
+> (`eclipse-mosquitto 2.1.2`) can't validate its hash and rejects every login —
+> the producer/consumer die with
+> `org.fusesource.mqtt.client.MQTTException: Could not connect: CONNECTION_REFUSED_NOT_AUTHORIZED`,
+> and `docker logs mosquittoo` shows `disconnected: not authorised`. **Fix:**
+> regenerate the user with *this* container's binary and restart (the command
+> above). For a truly clean rebuild, reset `~/mosquitto` too (not just
+> `~/postgres`): `rm -rf ~/mosquitto`, then re-run `./scripts/bootstrap.sh`
+> before this step. (The `world readable` / `owner is not root` lines are only
+> warnings, not the cause.)
 
-The `docker-compose.yml` uses a `HOST_HOME` variable for host volume paths, so it works on any machine. Before starting, edit the `.env` file in the project root and set `HOST_HOME` to your home directory :
+### 5. Build the Java / Pulsar module
 
-```bash
-whoami 
-cat > .env << 'EOF'
-HOST_HOME=/home/<your-username>
-EOF
-```
-
-
-> **Note:** This is required because running `docker compose` with `sudo` resolves `~` to `/root/` instead of your user home directory.
-
-### 1. Mosquitto (Eclipse MQTT Broker)
-
-Mosquitto requires a config file, a password file, and log/data directories to exist **before** starting the container.
-
-```bash
-# Create directory structure
-mkdir -p ~/mosquitto/config ~/mosquitto/log ~/mosquitto/data
-
-# Create the configuration file
-cat > ~/mosquitto/config/mosquitto.conf << 'EOF'
-allow_anonymous false
-listener 1883
-listener 9001
-protocol websockets
-persistence true
-password_file /mosquitto/config/pwfile
-persistence_file mosquitto.db
-persistence_location /mosquitto/data/
-EOF
-
-# Create an empty password file
-touch ~/mosquitto/config/pwfile
-```
-
-> **Important:** With `allow_anonymous false` and an empty password file, no MQTT client will be able to connect. After starting the container, create a user:
-> ```bash
-> docker exec -it mosquittoo mosquitto_passwd -c /mosquitto/config/pwfile <username>
-> ```
-
-### 2. Prometheus
-
-Prometheus expects a configuration file at `./apache-pulsar/prometheus/prometheus.yml` (relative to where `docker compose` is run). Make sure this file exists before starting the stack.
-
-```bash
-# Verify the file exists
-ls ./apache-pulsar/prometheus/prometheus.yml
-```
-
-### 3. RustFS
-
-RustFS mounts `/mnt/rustfs/data` from the host. Create it with proper permissions:
-
-```bash
-sudo mkdir -p /mnt/rustfs/data
-```
-
-### 4. PostgreSQL
-
-PostgreSQL stores its data at `~/postgres`. Docker will create the directory if it doesn't exist, but it's good practice to create it explicitly:
-
-```bash
-mkdir -p ~/postgres
-```
-
----
-
-## Quick Start
-
-After cloning the repo for the first time, follow these steps:
-
-### 1. Limit Docker log size
-
-To prevent container logs from filling your disk, create or edit `/etc/docker/daemon.json`:
-
-```json
-{
-  "log-driver": "json-file",
-  "log-opts": {
-    "max-size": "10m",
-    "max-file": "3"
-  }
-}
-```
-
-Then restart Docker:
-
-```bash
-sudo systemctl restart docker
-```
-
-This caps each container to 3 log files of 10MB each.
-
-### 2. Infrastructure
-
-Complete all prerequisite steps above, then start the Docker services:
-
-```bash
-docker compose up -d
-docker compose ps          # verify all containers are running
-```
-
-### 3. Configure Pulsar MoP (MQTT on Pulsar) protocol handler
-
-> **Note:** This step is **already done for you.** The public `athanasiosvaris/backupimage_pulsar:version1` image is based on **Apache Pulsar 4.0.1** and ships with the MoP protocol handler NAR bundled **and** enabled in `broker.conf` / `standalone.conf`. You do **not** need to do anything here — MQTT-on-Pulsar works out of the box.
+> ⚠️ **Build with JDK 17 — not the system default.** The modules target
+> `release 17`, and the runtime (`scripts/start_app.sh`) hardcodes
+> `/usr/lib/jvm/java-17-openjdk-amd64`, so use JDK 17 for both build and run.
+> Maven uses `JAVA_HOME` (or the default `java`); an older/mismatched JDK gives
+> `error: release version 17 not supported`. Pin it explicitly:
 >
-> The instructions below are kept only for reference, in case you build your own Pulsar image or want to reconfigure the handler manually.
-
-The Pulsar container includes the MoP protocol handler NAR (`pulsar-protocol-handler-mqtt-3.4.0-SNAPSHOT.nar`), and the configuration files inside the container enable it. To configure it yourself from a clean Pulsar image, copy the config files out, add the MoP properties, and copy them back:
-
-```bash
-# Copy config files from the container to the host
-docker cp pulsar:/pulsar/conf/broker.conf ./
-docker cp pulsar:/pulsar/conf/standalone.conf ./
-```
-
-Append the following lines to **both** `broker.conf` and `standalone.conf`:
-
-```properties
-# Properties for MoP protocol handler
-messagingProtocols=mqtt
-protocolHandlerDirectory=/pulsar
-mqttListeners=mqtt://127.0.0.1:1883
-advertisedAddress=127.0.0.1
-```
-
-Then copy them back and restart Pulsar:
+> ```bash
+> ls -d /usr/lib/jvm/*                                  # find your JDK 17
+> # install if missing:  sudo apt install openjdk-17-jdk
+> export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+> mvn -v                                                # confirm "Java version: 17"
+> ```
+>
+> Keep this `JAVA_HOME` exported for steps 5 and 6 (and whenever you run the app).
 
 ```bash
-# Copy modified config files back into the container
-docker cp ./broker.conf pulsar:/pulsar/conf/broker.conf
-docker cp ./standalone.conf pulsar:/pulsar/conf/standalone.conf
-
-# Restart Pulsar to apply changes
-docker restart pulsar
-
-# Clean up local copies
-rm -f broker.conf standalone.conf
+mvn -f apache-pulsar/pom.xml clean install
 ```
 
-### 4. Java / Pulsar module
+### 6. Build the Java / Flink module and deploy the jar
 
-Requires **JDK 17** (or newer) and **Maven**. If you don't have JDK 17:
-
-```bash
-sudo apt install openjdk-17-jdk
-sudo update-alternatives --config java   # select version 17
-```
-
-Verify with `java -version`.
-
-```bash
-cd apache-pulsar
-mvn clean install
-cd ..
-```
-
-### 5. Java / Flink module
+> ℹ️ The Flink module targets **Java 11** (`<target>11</target>`, matching the
+> `flink:1.17.2-scala_2.12-java11` runtime image), **not** 17. No need to switch
+> JDKs — the **JDK 17** `JAVA_HOME` from Step 5 compiles `target 11` fine and
+> produces Java-11 bytecode that runs in the Flink container. Use one JDK (17)
+> for both modules.
 
 ```bash
 cd apache-flink
@@ -232,66 +210,68 @@ sudo docker cp ./ApacheFlink-0.0.1-SNAPSHOT.jar taskmanager:/opt/flink
 cd ../..
 ```
 
-### 6. Python / Model
+> ⚠️ **The `docker cp` is mandatory and not automated.** `start_app.sh` runs the
+> jar by bare filename (`docker exec taskmanager flink run ... ApacheFlink-0.0.1-SNAPSHOT.jar`),
+> expecting it to already live in the taskmanager container (`/opt/flink`). Unlike
+> the Pulsar module — which `start_app.sh` recompiles automatically — the Flink jar
+> is **never** rebuilt or redeployed by the run scripts. **Re-run this `docker cp`
+> after every `apache-flink` rebuild**, otherwise the taskmanager keeps running the
+> old jar (or fails if it was never copied).
 
-Requires **Python 3** and **pip**.
+### 7. Python model service
 
 ```bash
 cd model
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+deactivate
 cd ..
 ```
 
-### 7. Web app
+> The slowest step (TensorFlow wheel); be patient.
 
-Requires **Node.js** and **npm**.
+### 8. Train + upload the initial model _(required before any run/experiment)_
 
-```bash
-cd web-app
-npm install
-cd ..
-```
-### 8. Configure mosquitto user/password
+Before the pipeline can forecast, each device needs an **initial LSTM model +
+scaler** trained and uploaded to RustFS. At runtime `Forecasting.py` downloads
+`{device}/initial/{device}.keras` (+ `scaler.save`) from the RustFS bucket — if
+it isn't there, forecasting has no model to load. Do this **once per device**.
 
-The password file **must** be generated by the Mosquitto binary running inside the container. If you create or edit the file manually on the host, the hash format may not match the version of Mosquitto in the Docker image, causing `CONNECTION_REFUSED_NOT_AUTHORIZED` errors even with correct credentials.
-
-```bash
-# Create (or overwrite) the password file and add user1 with password user1
-docker exec mosquittoo mosquitto_passwd -b /mosquitto/config/pwfile user1 user1
-
-# Restart the container so it picks up the new credentials
-docker restart mosquittoo
-
-# Confirm the password file was written
-cat ~/mosquitto/config/pwfile
-```
-
-### 9. Create Pulsar topics and schemas
-
-The Flink sink requires `FlinkTopicSinkFinal` to be a **partitioned topic** (Flink cannot auto-create partitioned topics). The `modelConsumeTopic` requires an Avro schema to be registered before producers can write to it.
+**Prerequisites:** the stack is up (Step 3, so RustFS is reachable) and the
+Python venv is active (Step 7).
 
 ```bash
-# Create the partitioned topic for Flink sink
-docker exec pulsar bin/pulsar-admin topics create-partitioned-topic persistent://public/default/FlinkTopicSinkFinal --partitions 1
-
-# Upload the Avro schema for modelConsumeTopic
-docker cp ./apache-pulsar/sensor-schema.json pulsar:/tmp/sensor-schema.json
-docker exec pulsar bin/pulsar-admin schemas upload persistent://public/default/modelConsumeTopic --filename /tmp/sensor-schema.json
+source model/.venv/bin/activate          # if not already active
+cd model/train_model
+python3 initial_train.py \
+    --csv_file /path/to/master_thesis/apache-pulsar/data/in_order_data/device_1_in_order_data_2025-12-08.csv \
+    --bucket_name missingtimestamp \
+    --model_name device1
+cd ../..
 ```
 
-### 10. Run the application
+- `--model_name` **must match** the `<device>` you pass to `start_app.sh`
+  (e.g. `device1`) — that's how the runtime locates the model in RustFS.
+- `--bucket_name` is `missingtimestamp`.
+- `--csv_file` is a per-device training CSV under
+  `apache-pulsar/data/in_order_data/` (e.g. `device_1_in_order_data_2025-12-08.csv`).
+
+### 9. Run the pipeline
 
 ```bash
-docker exec -it taskmanager /bin/bash
-flink run -m jobmanager:8081 ApacheFlink-0.0.1-SNAPSHOT.jar
-exit
-./scripts/start_app.sh    # compiles and starts the Pulsar Java processes
-./scripts/stop_app.sh     # stops them
+./scripts/start_app.sh ./scripts/device_1_data_2025-12-08_2025-12-09.csv device1
+# stop with Ctrl+C, or:
+./scripts/stop_app.sh
 ```
 
-> **Note:** After the initial setup, `start_app.sh` handles compilation automatically. You only need to re-run `mvn clean install` if dependencies change.
+This submits the Flink job, starts the coordinator service, and lands actual
+values + forecasts in Postgres (`device1_actualvalues` /
+`device1_forecastedvalues`).
+
+> **Note:** After the initial setup, `start_app.sh` recompiles the Pulsar Java
+> code automatically. You only need to re-run `mvn clean install` if dependencies
+> change — and re-run the Flink `docker cp` from Step 6 after any Flink rebuild.
 
 ---
 
@@ -383,19 +363,8 @@ docker compose down
 # Remove the incorrectly created directories
 rm -rf ~/mosquitto
 
-# Re-create everything properly (see Prerequisites section)
-mkdir -p ~/mosquitto/config ~/mosquitto/log ~/mosquitto/data
-cat > ~/mosquitto/config/mosquitto.conf << 'EOF'
-allow_anonymous false
-listener 1883
-listener 9001
-protocol websockets
-persistence true
-password_file /mosquitto/config/pwfile
-persistence_file mosquitto.db
-persistence_location /mosquitto/data/
-EOF
-touch ~/mosquitto/config/pwfile
+# Re-create everything properly (re-run the bootstrap script)
+./scripts/bootstrap.sh
 
 # Start again
 docker compose up -d
@@ -405,7 +374,7 @@ docker compose up -d
 
 **Symptom:** Java (or any) MQTT client fails with `CONNECTION_REFUSED_NOT_AUTHORIZED` even though the username and password look correct.
 
-**Cause:** The password file (`pwfile`) was created or edited on the host instead of being generated by the `mosquitto_passwd` tool **inside the container**. Different Mosquitto versions use different password hashing schemes. If the hash was produced by a different version (or manually), the broker cannot verify the credentials and rejects the connection.
+**Cause:** The password file (`pwfile`) was created or edited on the host instead of being generated by the `mosquitto_passwd` tool **inside the container**, or a stale `pwfile` from a different Mosquitto version persisted in `~/mosquitto`. Different Mosquitto versions use different password hashing schemes, so a foreign hash cannot be verified and the broker rejects the connection.
 
 **Fix:**
 ```bash
