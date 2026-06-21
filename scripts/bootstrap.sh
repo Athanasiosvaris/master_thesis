@@ -78,14 +78,17 @@ echo "[ok]   created postgres data dir"
 
 # ---------------------------------------------------------------------------
 # 3. RustFS data dir (/mnt/rustfs/data — needs root)
+#    Must be world-writable: the RustFS container runs as a non-root UID and
+#    dies with "Permission denied (os error 13)" if it can't write here.
 # ---------------------------------------------------------------------------
-if [ -d /mnt/rustfs/data ]; then
-    echo "[skip] /mnt/rustfs/data already exists"
-elif mkdir -p /mnt/rustfs/data 2>/dev/null; then
-    echo "[ok]   created /mnt/rustfs/data"
+if [ ! -d /mnt/rustfs/data ]; then
+    mkdir -p /mnt/rustfs/data 2>/dev/null || true
+fi
+if [ -d /mnt/rustfs/data ] && chmod 777 /mnt/rustfs/data 2>/dev/null; then
+    echo "[ok]   /mnt/rustfs/data ready (world-writable)"
 else
-    echo "[warn] could not create /mnt/rustfs/data (need root). Run:"
-    echo "       sudo mkdir -p /mnt/rustfs/data"
+    echo "[warn] could not create/chmod /mnt/rustfs/data (need root). Run:"
+    echo "       sudo mkdir -p /mnt/rustfs/data && sudo chmod 777 /mnt/rustfs/data"
 fi
 
 # ---------------------------------------------------------------------------
