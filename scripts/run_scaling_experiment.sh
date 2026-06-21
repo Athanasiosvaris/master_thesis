@@ -23,10 +23,10 @@ CSV_DIR="$1"
 
 # Resolve the CSV path for a given device number.
 csv_for_device() {
-    echo "$CSV_DIR/device_$1_data_2025-12-08_2025-12-09.csv"
+    echo "$CSV_DIR/device_$1_in_order_data_2025-12-08.csv"
 }
 
-MAX_DEVICES=${MAX_DEVICES:-5}
+MAX_DEVICES=${MAX_DEVICES:-20}
 
 # Verify CSV files exist
 for i in $(seq 1 "$MAX_DEVICES"); do
