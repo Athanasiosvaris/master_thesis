@@ -191,7 +191,9 @@ The Java MQTT clients are hardcoded to `user1` / `user1` on Mosquitto
 > Keep this `JAVA_HOME` exported for steps 5 and 6 (and whenever you run the app).
 
 ```bash
-mvn -f apache-pulsar/pom.xml clean install
+cd apache-pulsar
+mvn clean install
+cd ..
 ```
 
 ### 6. Build the Java / Flink module and deploy the jar
