@@ -30,14 +30,14 @@ machine and only orchestrates its backing services with Docker. Before doing
 anything below, the machine **must already have** the following installed and on
 `PATH`:
 
-| Tool                 | Version                                    | Used for                                                 |
-| -------------------- | ------------------------------------------ | -------------------------------------------------------- |
-| **Docker Engine**    | recent (tested on 29.x)                    | running the service stack                                |
-| **Docker Compose**   | v2 (the `docker compose` plugin)           | orchestrating the stack                                  |
-| **JDK 17**           | **exactly 17** (`java-17-openjdk`)         | building **and** running the Java Pulsar & Flink modules |
-| **Maven**            | 3.6+                                       | building the Java modules                                |
-| **Python**           | 3 (3.10+; tested on 3.12) + `venv` + `pip` | the coordination/model service                           |
-| **Node.js + npm**    | Node 18+                                   | the web app                                              |
+| Tool               | Version                                    | Used for                                                 |
+| ------------------ | ------------------------------------------ | -------------------------------------------------------- |
+| **Docker Engine**  | recent (tested on 29.x)                    | running the service stack                                |
+| **Docker Compose** | v2 (the `docker compose` plugin)           | orchestrating the stack                                  |
+| **JDK 17**         | **exactly 17** (`java-17-openjdk`)         | building **and** running the Java Pulsar & Flink modules |
+| **Maven**          | 3.6+                                       | building the Java modules                                |
+| **Python**         | 3 (3.10+; tested on 3.12) + `venv` + `pip` | the coordination/model service                           |
+                      
 | **Bash + coreutils** | —                                          | the `scripts/*.sh` runners                               |
 
 > ⚠️ **Use JDK 17 for Maven — not a newer default JDK.** The Pulsar module
